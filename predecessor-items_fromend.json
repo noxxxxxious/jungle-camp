@@ -350,6 +350,122 @@
 
 
 
+  {
+    "name": "Cyclone",
+    "cost": 3300,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance", "Movement Speed"],
+    "stats": {
+      "Physical Power": 30,
+      "Attack Speed": 20,
+      "Critical Chance": 20,
+      "Movement Speed": 3
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Critical strikes gain additional attack speed for 5 seconds, stacking up to 8 times. At maximum stacks you gain additional Physical Power and Movement Speed."
+      }
+    ]
+  },
+  {
+    "name": "Prophecy",
+    "cost": 3300,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power", "Attack Speed", "Ability Haste"],
+    "stats": {
+      "Magical Power": 50,
+      "Attack Speed": 20,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Basic attacks deal 15 (+20 Magical Power) bonus magic damage on-hit."
+      },{
+      "descriptionType": "Passive",
+      "description": "Gain (+75% Ability Haste) attack speed."
+      }
+    ]
+  },
+  {
+    "name": "Prophecy",
+    "cost": 3300,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power", "Attack Speed", "Ability Haste"],
+    "stats": {
+      "Magical Power": 50,
+      "Attack Speed": 20,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Basic attacks deal 15 (+20 Magical Power) bonus magic damage on-hit."
+      },{
+      "descriptionType": "Passive",
+      "description": "Gain (+75% Ability Haste) attack speed."
+      }
+    ]
+  },
+  {
+    "name": "Sky Splitter",
+    "cost": 3300,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance", "Omnivamp"],
+    "stats": {
+      "Physical Power": 15,
+      "Attack Speed": 25,
+      "Critical Chance": 20,
+      "Omnivamp": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Warlord",
+      "description": "Basic attacks against Enemy Heroes deal 4% of their maximum health as physical damage on-hit."
+      }
+    ]
+  },
+  {
+    "name": "Star Slayer",
+    "cost": 3300,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power", "Ability Haste", "Mana Regeneration"],
+    "stats": {
+      "Magical Power": 80,
+      "Ability Haste": 20,
+      "Mana Regeneration": 3
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Disintegrate",
+      "description": "Abilities deal additional magical damage based on how much more health the target has than you."
+      }
+    ]
+  },
+  {
+    "name": "World Breaker",
+    "cost": 3300,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power", "Health"],
+    "stats": {
+      "Magical Power": 60,
+      "Health": 200
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Archmage",
+      "description": "Gain 20% magical penetration plus an additional 1% per 100 bonus health."
+      },{
+      "descriptionType": "Passive - Fiend",
+      "description": "Dealing magical damage to an Enemy Hero increases magic damage dealt by 3% for 5s. Stacks up to 5 times."
+      }
+    ]
+  },
+
+
+
+
+
+
+
+
+
+
 
 
 

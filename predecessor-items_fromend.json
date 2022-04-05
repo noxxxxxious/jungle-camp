@@ -352,7 +352,91 @@
 
 
 
-
+  {
+    "name": "Wraith Leggings",
+    "cost": 3000,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power", "Magical Penetration"],
+    "stats": {
+      "Magical Power": 80,
+      "Magical Penetration": 15
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Dealing magical damage to an Enemy Hero grants increased magical power for 6s stacking up to 3 times. At maximum stacks, gain 10% movement speed."
+      }
+    ]
+  },
+  {
+    "name": "Zephyr",
+    "cost": 3000,
+    "rarity": "Epic",
+    "tags": ["Active", "Magical Power", "Physical Armor", "Ability Haste"],
+    "stats": {
+      "Magical Power": 70,
+      "Physical Armor": 40,
+      "Ability Haste": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "Displace all nearby enemies and deal magical damage to them - 30s CD."
+      }
+    ]
+  },
+  {
+    "name": "Reckoning",
+    "cost": 3050,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Critical Chance", "Lifesteal"],
+    "stats": {
+      "Physical Power": 45,
+      "Critical Chance": 20,
+      "Lifesteal": 12
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Basic Attacks deal bonus physical damage (doubled for critical strikes) vs targets below 40% max health."
+      },{
+      "descriptionType": "Passive",
+      "description": "Takedowns heal you over 5s based on your physical power."
+      }
+    ]
+  },
+  {
+    "name": "Crystalline Cuirass",
+    "cost": 3100,
+    "rarity": "Epic",
+    "tags": ["Passive", "Health", "Magical Armor", "Ability Haste"],
+    "stats": {
+      "Physical Power": 45,
+      "Critical Chance": 20,
+      "Lifesteal": 12
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "When you take magical damage, release a pulse of energy dealing magical damage to enemies within 800 units - 1.5s CD."
+      }
+    ]
+  },
+  {
+    "name": "Fell Blade",
+    "cost": 3100,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Physical Penetration", "Ability Haste"],
+    "stats": {
+      "Physical Power": 40,
+      "Physical Penetration", 10,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Corrode",
+      "description": "Dealing damage to an Enemy Hero reduces their physical armor by 5% for 2s. Stacks up to 6 times."
+      },{
+      "descriptionType": "Passive",
+      "description": "Your abilities deal 20% bonus true damage against targets with 6 stacks of Corrode."
+      }
+    ]
+  },
   {
     "name": "Megacosm",
     "cost": 3100,

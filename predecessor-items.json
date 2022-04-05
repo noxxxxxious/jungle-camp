@@ -269,8 +269,80 @@
       }
     ]
   },
+  {
+    "name": "Marksman Crest",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Active", "Crest", "Physical Power", "Attack Speed"],
+    "stats": {
+      "Physical Power": 5,
+      "Attack Speed": 5,
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Successful basic attacks restore 1 health, killing a unit restores 10 health. After restoring 400 health, evolve into Sharpshooter Crest."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 15 extra basic damage to Minions."
+      }
+    ]
+  }
 
+  {
+    "name": "Pacifier",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Active", "Crest", "Physical Power", "Attack Speed", "Critical Chance"],
+    "stats": {
+      "Physical Power": 18,
+      "Attack Speed": 10,
+      "Critical Chance": 20,
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "Dash forward and gain attack speed for 6s, killing an Enemy Hero within the duration resets the cooldown - 150s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 30 extra basic damage to Minions."
+      }
+    ]
+  }
 
+  {
+    "name": "Sharpshooter Crest",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Active", "Crest", "Physical Power", "Attack Speed"],
+    "stats": {
+      "Physical Power": 10,
+      "Attack Speed": 10,
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Successful basic attacks restore 1 health, killing a unit restores 10 health. After restoring 400 health, allows the purchase of a Legendary item."
+      }
+    ]
+  }
+
+  {
+    "name": "Brutallax",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Active", "Crest", "Physical Power", "Health", "Lifesteal"],
+    "stats": {
+      "Physical Power": 20,
+      "Health": 100,
+      "Lifesteal": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "Cleanse all Negative Debuffs, then gain additional tenacity and attack speed for 8s. Successful basic attacks extend this duration by 0.5s on-hit - 120s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 30 extra basic damage to Minions."
+      }
+    ]
+  }
 
 
 

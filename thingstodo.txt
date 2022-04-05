@@ -1,0 +1,2 @@
+/* CHECK FOR CREST EVOLUTIONS IN ITEM JSON*/
+/* Make stats have on-hover tooltip descriptions */

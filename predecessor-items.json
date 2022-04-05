@@ -1,5 +1,3 @@
-/* CHECK FOR CREST EVOLUTIONS */
-/* Make stats have on-hover tooltip descriptions */
 [
   {
     "name": "Sentry",
@@ -144,7 +142,7 @@
     },
     "descriptions": [{
       "descriptionType": "Passive",
-      "description": "Dealing damage to an enemy hero/monster with an ability restores 10 Health (Once per ability), killing an enemy target restores 5 Health. After restoring 300 Health, Allows the purchase of a "Legendary" Item."
+      "description": "Dealing damage to an enemy hero/monster with an ability restores 10 Health (Once per ability), killing an enemy target restores 5 Health. After restoring 300 Health, Allows the purchase of a \"Legendary\" Item."
       },{
       "descriptionType": "Passive",
       "description": "Deal 15 extra basic damage to minions"
@@ -351,7 +349,7 @@
     },
     "descriptions": [{
       "descriptionType": "Passive",
-      "description": "Dealing damage to an Enemy Hero/Jungle Minion or killing an Enemy Target restores 2.5% maximum health over 15s. After restoring 400 health, allows the purchase of a "Legendary" Item."
+      "description": "Dealing damage to an Enemy Hero/Jungle Minion or killing an Enemy Target restores 2.5% maximum health over 15s. After restoring 400 health, allows the purchase of a \"Legendary\" Item."
       },{
       "descriptionType": "Passive",
       "description": "Deal 15 extra basic damage to Minions."
@@ -586,7 +584,7 @@
     },
     "descriptions": [{
       "descriptionType": "Passive",
-      "description": "Dealing damage to an Enemy Hero/Jungle Minion with an ability restores 5 health (Once per ability), killing an Enemy Target restores 10 health. After restoring 400 health, allows the purchase of a "Legendary" Item."
+      "description": "Dealing damage to an Enemy Hero/Jungle Minion with an ability restores 5 health (Once per ability), killing an Enemy Target restores 10 health. After restoring 400 health, allows the purchase of a \"Legendary\" Item."
       },{
       "descriptionType": "Passive",
       "description": "Deal 15 extra basic damage to Minions."
@@ -605,7 +603,7 @@
     },
     "descriptions": [{
       "descriptionType": "Passive",
-      "description": "Dealing a damage to an Enemy Hero/Jungle Minion with an ability restores 5 mana (Once per ability), killing an Enemy Target restores 10 mana. After restoring 400 mana, allows the purchase of a "Legendary" Item."
+      "description": "Dealing a damage to an Enemy Hero/Jungle Minion with an ability restores 5 mana (Once per ability), killing an Enemy Target restores 10 mana. After restoring 400 mana, allows the purchase of a \"Legendary\" Item."
       },{
       "descriptionType": "Passive",
       "description": "Deal 15 extra basic damage to Minions."
@@ -683,7 +681,7 @@
     },
     "descriptions": [{
       "descriptionType": "Passive",
-      "description": "Grants a charge every 30s, up to 3 charges. Your next basic attack or damaging ability against an Enemy Hero, Minion or Structure will deal 15 additional magical damage and grant you 40 gold. Does not occur if no Allied Hero is within 3000 units. After granting 400 gold, allows the purchase of a "Legendary" Item."
+      "description": "Grants a charge every 30s, up to 3 charges. Your next basic attack or damaging ability against an Enemy Hero, Minion or Structure will deal 15 additional magical damage and grant you 40 gold. Does not occur if no Allied Hero is within 3000 units. After granting 400 gold, allows the purchase of a \"Legendary\" Item."
       },{
       "descriptionType": "Passive",
       "description": "Receive diminishing gold from excessive Minion kills."
@@ -813,7 +811,7 @@
     },
     "descriptions": [{
       "descriptionType": "Passive",
-      "description": "Grants a charge every 30s, up to 3 charges. Your next basic attack or damaging ability against an Enemy Hero, Minion or Structure will restore 30 health and grant you 40 gold. Does not occur if no Allied Hero is within 3000 units. After granting 400 gold, allows the purchase of a "Legendary" Item."
+      "description": "Grants a charge every 30s, up to 3 charges. Your next basic attack or damaging ability against an Enemy Hero, Minion or Structure will restore 30 health and grant you 40 gold. Does not occur if no Allied Hero is within 3000 units. After granting 400 gold, allows the purchase of a \"Legendary\" Item."
       },{
       "descriptionType": "Passive",
       "description": "Receive diminishing gold from excessive Minion kills."
@@ -831,7 +829,7 @@
     },
     "descriptions": [{
       "descriptionType": "Passive",
-      "description": "After taking damage, heal 15 (+1% of maximum health) over 15s. This healing is doubled for 5s after killing an Enemy Target. After restoring 400 health, allows the purchase of a "Legendary" Item."
+      "description": "After taking damage, heal 15 (+1% of maximum health) over 15s. This healing is doubled for 5s after killing an Enemy Target. After restoring 400 health, allows the purchase of a \"Legendary\" Item."
       },{
       "descriptionType": "Passive",
       "description": "Deal 15 extra basic damage to Minions."
@@ -2428,4 +2426,578 @@
       }
     ]
   },
+  {
+    "name": "Wraith Leggings",
+    "cost": 3000,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power", "Magical Penetration"],
+    "stats": {
+      "Magical Power": 80,
+      "Magical Penetration": 15
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Dealing magical damage to an Enemy Hero grants increased magical power for 6s stacking up to 3 times. At maximum stacks, gain 10% movement speed."
+      }
+    ]
+  },
+  {
+    "name": "Zephyr",
+    "cost": 3000,
+    "rarity": "Epic",
+    "tags": ["Active", "Magical Power", "Physical Armor", "Ability Haste"],
+    "stats": {
+      "Magical Power": 70,
+      "Physical Armor": 40,
+      "Ability Haste": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "Displace all nearby enemies and deal magical damage to them - 30s CD."
+      }
+    ]
+  },
+  {
+    "name": "Reckoning",
+    "cost": 3050,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Critical Chance", "Lifesteal"],
+    "stats": {
+      "Physical Power": 45,
+      "Critical Chance": 20,
+      "Lifesteal": 12
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Basic Attacks deal bonus physical damage (doubled for critical strikes) vs targets below 40% max health."
+      },{
+      "descriptionType": "Passive",
+      "description": "Takedowns heal you over 5s based on your physical power."
+      }
+    ]
+  },
+  {
+    "name": "Crystalline Cuirass",
+    "cost": 3100,
+    "rarity": "Epic",
+    "tags": ["Passive", "Health", "Magical Armor", "Ability Haste"],
+    "stats": {
+      "Physical Power": 45,
+      "Critical Chance": 20,
+      "Lifesteal": 12
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "When you take magical damage, release a pulse of energy dealing magical damage to enemies within 800 units - 1.5s CD."
+      }
+    ]
+  },
+  {
+    "name": "Fell Blade",
+    "cost": 3100,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Physical Penetration", "Ability Haste"],
+    "stats": {
+      "Physical Power": 40,
+      "Physical Penetration": 10,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Corrode",
+      "description": "Dealing damage to an Enemy Hero reduces their physical armor by 5% for 2s. Stacks up to 6 times."
+      },{
+      "descriptionType": "Passive",
+      "description": "Your abilities deal 20% bonus true damage against targets with 6 stacks of Corrode."
+      }
+    ]
+  },
+  {
+    "name": "Megacosm",
+    "cost": 3100,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power", "Health", "Ability Haste"],
+    "stats": {
+      "Magical Power": 55,
+      "Health": 200,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Disintegrate",
+      "description": "Dealing damage to an Enemy Hero with an ability deals 4.5% of their maximum health as magical damage over 3s. Additional applications from separate abilities within the duration will deal additional magical damage instantly and refresh the duration."
+      }
+    ]
+  },
+  {
+    "name": "Nightfall",
+    "cost": 3100,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Physical Penetration", "Omnivamp"],
+    "stats": {
+      "Physical Power": 45,
+      "Physical Penetration": 8,
+      "Omnivamp": 8
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Dusk",
+      "description": "Dealing damage to an isolated Enemyh Hero (no other Enemy Heroes within 600 units) grants additional attack speed and ability haste for 3s. Dusk stacks up to 3 times."
+      }
+    ]
+  },
+  {
+    "name": "Salvation",
+    "cost": 3100,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Magical Armor", "Health"],
+    "stats": {
+      "Physical Power": 45,
+      "Magical Armor": 25,
+      "Health": 300
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "If you would take damage that would reduce you below 30% of your maximum health, you gain a large shield (halved for Ranged Heroes) for 6s. - 60s CD"
+      },{
+      "descriptionType": "Passive",
+      "description": "Successful basic attacks against Enemy Heroes heal you for 4% of your missing health."
+      }
+    ]
+  },
+  {
+    "name": "Storm Breaker",
+    "cost": 3100,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance", "Movement Speed"],
+    "stats": {
+      "Physical Power": 20,
+      "Attack Speed": 35,
+      "Critical Chance": 20,
+      "Movement Speed": 3
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Zap",
+      "description": "Every fourth successful basic attack within 3s releases a bolt of lightning that leaps between 7 targets, dealing magical damage to each."
+      }
+    ]
+  },
+  {
+    "name": "Tainted Scepter",
+    "cost": 3100,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power", "Magical Lifesteal", "Health"],
+    "stats": {
+      "Magical Power": 60,
+      "Magical Lifesteal": 10,
+      "Health": 300
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Blight",
+      "description": "Dealing magical damage reduces the target's healing by 60^ for 3s."
+      }
+    ]
+  },
+  {
+    "name": "Void Helm",
+    "cost": 3100,
+    "rarity": "Epic",
+    "tags": ["Passive", "Health", "Magical Armor", "Ability Haste"],
+    "stats": {
+      "Health": 500,
+      "Magical Armor": 25,
+      "Ability Haste": 15
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "When receiving magical damage, gain 5 magical armor and 2 health regeneration per each 40 magical damage dealt for 8s, stacking up to 8 times."
+      }
+    ]
+  },
+  {
+    "name": "Lightning Hawk",
+    "cost": 3150,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance", "Movement Speed"],
+    "stats": {
+      "Physical Power": 30,
+      "Attack Speed": 30,
+      "Critical Chance": 20,
+      "Movement Speed": 3
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Zap",
+      "description": "Every third successful basic attack deals bonus magical damage."
+      }
+    ]
+  },
+  {
+    "name": "Ashbringer",
+    "cost": 3200,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance"],
+    "stats": {
+      "Physical Power": 40,
+      "Attack Speed": 20,
+      "Critical Chance": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Basic Attacks against Enemy Heroes decrease current basic ability cooldowns by 0.25 seconds (doubled for critical stikes)."
+      },{
+      "descriptionType": "Passive",
+      "description": "Abilities deal an additional 20% physical damage against Enemy Heroes below 40% maximum health."
+      }
+    ]
+  },
+  {
+    "name": "Astral Catalyst",
+    "cost": 3200,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power", "Mana", "Ability Haste"],
+    "stats": {
+      "Magical Power": 60,
+      "Mana": 500,
+      "Ability Haste": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Grants bonus magical power equal to (+4% Maximum Mana)."
+      },{
+      "descriptionType": "Passive",
+      "description": "When you damage an Enemy target with an ability or basic attack, restore maximum mana over 3s, stacking up to 4 times. At maximum stacks, gain ability haste."
+      }
+    ]
+  },
+  {
+    "name": "Caustica",
+    "cost": 3200,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power"],
+    "stats": {
+      "Magical Power": 80
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Archmage",
+      "description": "Gain 40% magical penetration."
+      }
+    ]
+  },
+  {
+    "name": "Combustion",
+    "cost": 3200,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power", "Magical Penetration", "Mana"],
+    "stats": {
+      "Magical Power": 60,      
+      "Magical Penetration": 10,
+      "Mana": 400
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Gain charges upon moving. At 100 charges, the next instance of magical damage you deal will expend all charges to deal bonus magical damage in a large radius."
+      },{
+      "descriptionType": "Passive",
+      "description": "When you damage an Enemy target with an ability or basic attack, restore maximum mana over 3s, stacking up to 4 times. At maximum stacks, gain ability haste."
+      }
+    ]
+  },
+  {
+    "name": "Mindrazor",
+    "cost": 3200,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Mana", "Ability Haste"],
+    "stats": {
+      "Physical Power": 50,
+      "Mana": 200,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Cleave",
+      "description": "Dealing damage to an enemy target deals an additional physical damage in a small area around them."
+      }
+    ]
+  },
+  {
+    "name": "Mooncleaver",
+    "cost": 3200,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Critical Chance", "Ability Haste"],
+    "stats": {
+      "Physical Power": 50,
+      "Critical Chance": 20,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Corrode",
+      "description": "Dealing damage to an Enemy Hero reduces their physical armor by 5% for 2s. Stacks up to 6 times."
+      },{
+      "descriptionType": "Passive",
+      "description": "Critical strikes deal 10% more damage against targets with 6 stacks of Corrode."
+      }
+    ]
+  },
+  {
+    "name": "Tainted Rounds",
+    "cost": 3200,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance"],
+    "stats": {
+      "Physical Power": 50,
+      "Attack Speed": 25,
+      "Critical Chance": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Blight",
+      "description": "Dealing physical damage reduces the target's healing by 60^ for 3s."
+      }
+    ]
+  },
+  {
+    "name": "Vanquisher",
+    "cost": 3200,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Mana", "Ability Haste"],
+    "stats": {
+      "Physical Power": 30,
+      "Mana": 400,
+      "Ability Haste": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Font",
+      "description": "Killing an Enemy Minion grants 8 bonus mana per stack, up to a maximum of 400 bonus mana. At maximum stacks, gain 10 ability haste."
+      },{
+      "descriptionType": "Passive",
+      "description": "Basic attacks and physical damage abvilities deal bonus physical damage based on your maximum mana."
+      },{
+      "descriptionType": "Passive",
+      "description": "Gain (+1.5 Maximum Mana) physical power."
+      }
+    ]
+  },
+  {
+    "name": "Cyclone",
+    "cost": 3300,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance", "Movement Speed"],
+    "stats": {
+      "Physical Power": 30,
+      "Attack Speed": 20,
+      "Critical Chance": 20,
+      "Movement Speed": 3
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Critical strikes gain additional attack speed for 5 seconds, stacking up to 8 times. At maximum stacks you gain additional Physical Power and Movement Speed."
+      }
+    ]
+  },
+  {
+    "name": "Prophecy",
+    "cost": 3300,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power", "Attack Speed", "Ability Haste"],
+    "stats": {
+      "Magical Power": 50,
+      "Attack Speed": 20,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Basic attacks deal 15 (+20 Magical Power) bonus magic damage on-hit."
+      },{
+      "descriptionType": "Passive",
+      "description": "Gain (+75% Ability Haste) attack speed."
+      }
+    ]
+  },
+  {
+    "name": "Prophecy",
+    "cost": 3300,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power", "Attack Speed", "Ability Haste"],
+    "stats": {
+      "Magical Power": 50,
+      "Attack Speed": 20,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Basic attacks deal 15 (+20 Magical Power) bonus magic damage on-hit."
+      },{
+      "descriptionType": "Passive",
+      "description": "Gain (+75% Ability Haste) attack speed."
+      }
+    ]
+  },
+  {
+    "name": "Sky Splitter",
+    "cost": 3300,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance", "Omnivamp"],
+    "stats": {
+      "Physical Power": 15,
+      "Attack Speed": 25,
+      "Critical Chance": 20,
+      "Omnivamp": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Warlord",
+      "description": "Basic attacks against Enemy Heroes deal 4% of their maximum health as physical damage on-hit."
+      }
+    ]
+  },
+  {
+    "name": "Star Slayer",
+    "cost": 3300,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power", "Ability Haste", "Mana Regeneration"],
+    "stats": {
+      "Magical Power": 80,
+      "Ability Haste": 20,
+      "Mana Regeneration": 3
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Disintegrate",
+      "description": "Abilities deal additional magical damage based on how much more health the target has than you."
+      }
+    ]
+  },
+  {
+    "name": "World Breaker",
+    "cost": 3300,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power", "Health"],
+    "stats": {
+      "Magical Power": 60,
+      "Health": 200
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Archmage",
+      "description": "Gain 20% magical penetration plus an additional 1% per 100 bonus health."
+      },{
+      "descriptionType": "Passive - Fiend",
+      "description": "Dealing magical damage to an Enemy Hero increases magic damage dealt by 3% for 5s. Stacks up to 5 times."
+      }
+    ]
+  },
+  {
+    "name": "Imperator",
+    "cost": 3400,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Critical Chance"],
+    "stats": {
+      "Physical Power": 50,
+      "Critical Chance": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Critical strikes deal 4% increased damage against Enemy Heroes per every 500 maximum health."
+      },{
+      "descriptionType": "Passive - Dire Strikes",
+      "description": "Gain 10% Critical Strike Damage."
+      }
+    ]
+  },
+  {
+    "name": "Imperator",
+    "cost": 3400,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Physical Penetration"],
+    "stats": {
+      "Physical Power": 50,
+      "Physical Penetration": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Moving generates stacks of Insanity. At 100 stacks your next basic attack will consume them to deal bonus physical damage."
+      },{
+      "descriptionType": "Passive - Massacre",
+      "description": "Increase flat physical penetration by 50%."
+      }
+    ]
+  },
+  {
+    "name": "Oathkeeper",
+    "cost": 3400,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power", "Ability Haste"],
+    "stats": {
+      "Magical Power": 90,
+      "Ability Haste": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Order",
+      "description": "Increase your ability haste by (+20% Magical Power)%."
+      }
+    ]
+  },
+  {
+    "name": "Oblivion Crown",
+    "cost": 3400,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power"],
+    "stats": {
+      "Magical Power": 100
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Order",
+      "description": "Increase your magical power by 40%."
+      }
+    ]
+  },
+  {
+    "name": "Omen",
+    "cost": 3400,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Physical Penetration", "Ability Haste"],
+    "stats": {
+      "Physical Power": 45,
+      "Physical Penetration": 8,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Dealing damage to an Enemy Hero slows them by 20% and grants you 20% movement speed for 3s. This effect refreshes on takedowns - 60s CD."
+      },{
+      "descriptionType": "Passive - Massacre",
+      "description": "Increase flat physical penetration by 50%."
+      }
+    ]
+  },
+  {
+    "name": "Augmentation",
+    "cost": 3500,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Health", "Attack Speed"],
+    "stats": {
+      "Physical Power": 30,
+      "Health": 300,
+      "Attack Speed": 30
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Spellblade",
+      "description": "After using an ability, your next 2 basic attacks within 6s deal bonus physical damage - 3s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Basic attacks deal bonus true damage."
+      }
+    ]
+  },
+  {
+    "name": "Mutilator",
+    "cost": 3500,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Omnivamp", "Ability Haste"],
+    "stats": {
+      "Physical Power": 45,
+      "Omnivamp": 10,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Spellblade",
+      "description": "After using an ability, your next 2 basic attacks within 6s deal 4% of the target's maximum health as bonus physical damage - 3s CD."
+      },{
+      "descriptionType": "Passive - Warlord",
+      "description": "Basic attacks against Enemy Heroes deal 2% of their maximum health as physical damage on-hit."
+      }
+    ]
+  }
 ]

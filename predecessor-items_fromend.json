@@ -355,37 +355,91 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  {
+    "name": "Void Helm",
+    "cost": 3100,
+    "rarity": "Epic",
+    "tags": ["Passive", "Health", "Magical Armor", "Ability Haste"],
+    "stats": {
+      "Health": 500,
+      "Magical Armor": 25,
+      "Ability Haste": 15
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "When receiving magical damage, gain 5 magical armor and 2 health regeneration per each 40 magical damage dealt for 8s, stacking up to 8 times."
+      }
+    ]
+  },
+  {
+    "name": "Lightning Hawk",
+    "cost": 3150,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance", "Movement Speed"],
+    "stats": {
+      "Physical Power": 30,
+      "Attack Speed": 30,
+      "Critical Chance": 20,
+      "Movement Speed": 3
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Zap",
+      "description": "Every third successful basic attack deals bonus magical damage."
+      }
+    ]
+  },
+  {
+    "name": "Ashbringer",
+    "cost": 3200,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance"],
+    "stats": {
+      "Physical Power": 40,
+      "Attack Speed": 20,
+      "Critical Chance": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Basic Attacks against Enemy Heroes decrease current basic ability cooldowns by 0.25 seconds (doubled for critical stikes)."
+      },{
+      "descriptionType": "Passive",
+      "description": "Abilities deal an additional 20% physical damage against Enemy Heroes below 40% maximum health."
+      }
+    ]
+  },
+  {
+    "name": "Astral Catalyst",
+    "cost": 3200,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power", "Mana", "Ability Haste"],
+    "stats": {
+      "Magical Power": 60,
+      "Mana": 500,
+      "Ability Haste": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Grants bonus magical power equal to (+4% Maximum Mana)."
+      },{
+      "descriptionType": "Passive",
+      "description": "When you damage an Enemy target with an ability or basic attack, restore maximum mana over 3s, stacking up to 4 times. At maximum stacks, gain ability haste."
+      }
+    ]
+  },
+  {
+    "name": "Caustica",
+    "cost": 3200,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power"],
+    "stats": {
+      "Magical Power": 80
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Archmage",
+      "description": "Gain 40% magical penetration."
+      }
+    ]
+  },
   {
     "name": "Combustion",
     "cost": 3200,

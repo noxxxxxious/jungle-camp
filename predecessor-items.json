@@ -2421,7 +2421,7 @@
       "descriptionType": "Passive - Stalwart",
       "description": "Enemy critical strikes deal 20% reduced damage."
       },{
-      "descriptionType": "Stifle",
+      "descriptionType": "Passive - Stifle",
       "description": "When hit by a basic attack, reduce the source's attack speed by 5% for 3s, stacking up to 5 times. Max stacks are applied if the damage received is a critical strike."
       }
     ]

@@ -879,12 +879,425 @@
     ]
   },
   {
+    "name": "Saphir's Mantle",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Active", "Health", "Health Regeneration", "Physical Armor", "Magical Armor"],
+    "stats": {
+      "Health": 180,
+      "Health Regeneration": 2,
+      "Physical Armor": 8,
+      "Magical Armor": 15
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "Take 0.8% less damage and deal 0.4% less damage per 1% missing health for 8s - 90s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 30 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Titan Crest",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Crest", "Health"],
+    "stats": {
+      "Health": 80
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "After taking damage, heal 15 (+1% of maximum health) over 15s. This healing is doubled for 5s after killing an Enemy Target. After restoring 400 health, evolves into Goliath Crest."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 15 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Nocstone",
+    "cost": 400,
+    "rarity": "Uncommon",
+    "tags": ["Passive", "Magical Power", "Ability Haste"],
+    "stats": {
+      "Magical Power": 5,
+      "Ability Haste": 5
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Stealth Wards last 30s longer."
+      }
+    ]
+  },
+  {
+    "name": "Shortsword",
+    "cost": 400,
+    "rarity": "Uncommon",
+    "tags": ["Passive", "Physical Power"],
+    "stats": {
+      "Physical Power": 8
+    }
+  },
+  {
+    "name": "Spirit Beads",
+    "cost": 400,
+    "rarity": "Uncommon",
+    "tags": ["Passive", "Mana"],
+    "stats": {
+      "Mana": 200
+    }
+  },
+  {
     "name": "Codex",
-    "cost": 300,
-    "rarity": ,
+    "cost": 450,
+    "rarity": "Uncommon",
     "tags": ["Passive", "Magical Power"],
     "stats": {
-      "Magical Power": 10
+      "Magical Power": 15
     }
+  },
+  {
+    "name": "Crossbow",
+    "cost": 600,
+    "rarity": "Uncommon",
+    "tags": ["Passive", "Critical Chance"],
+    "stats": {
+      "Critical Chance": 15
+    }
+  },
+  {
+    "name": "Spell Slasher",
+    "cost": 600,
+    "rarity": "Uncommon",
+    "tags": ["Passive"],
+    "descriptions": [{
+      "descriptionType": "Passive - Spellblade",
+      "description": "After using an ability, your next 2 basic attacks within 6s deal bonus physical damage - 3s CD."
+      }
+    ]
+  },
+  {
+    "name": "Sabre",
+    "cost": 700,
+    "rarity": "Uncommon",
+    "tags": ["Passive", "Physical Power"],
+    "stats": {
+      "Physical Power": 15
+    }
+  },
+  {
+    "name": "Crimson Edge",
+    "cost": 700,
+    "rarity": "Rare",
+    "tags": ["Passive", "Physical Power", "Lifesteal"],
+    "stats": {
+      "Physical Power": 10,
+      "Lifesteal": 5
+    }
+  },
+  {
+    "name": "Nullifying Mask",
+    "cost": 700,
+    "rarity": "Rare",
+    "tags": ["Passive", "Magical Armor"],
+    "stats": {
+      "Magical Armor": 10
+    }
+  },
+  {
+    "name": "Intellect Tonic",
+    "cost": 750,
+    "rarity": "Epic",
+    "tags": ["Consumable", "Active"],
+    "descriptions": [{
+      "descriptionType": "Consume",
+      "description": "Grant 50 magical power and 5 mana regeneration for 5 minutes. Level 11 required for purchase. Effect is lost upon death."
+      }
+    ]
+  },
+  {
+    "name": "Protection Tonic",
+    "cost": 750,
+    "rarity": "Epic",
+    "tags": ["Consumable", "Active"],
+    "descriptions": [{
+      "descriptionType": "Consume",
+      "description": "Grant 20 physical armor, 20 magical armor and 15 tenacity for 5 minutes. Level 11 required for purchase. Effect is lost upon death."
+      }
+    ]
+  },
+  {
+    "name": "Stamina Tonic",
+    "cost": 750,
+    "rarity": "Epic",
+    "tags": ["Consumable", "Active"],
+    "descriptions": [{
+      "descriptionType": "Consume",
+      "description": "Grant 300 health and 20% increased healing for 5 minutes. Level 11 required for purchase. Effect is lost upon death."
+      }
+    ]
+  },
+  {
+    "name": "Strength Tonic",
+    "cost": 750,
+    "rarity": "Epic",
+    "tags": ["Consumable", "Active"],
+    "descriptions": [{
+      "descriptionType": "Consume",
+      "description": "Grant 30 physical power and 10% omnivamp for 5 minutes. Level 11 required for purchase. Effect is lost upon death."
+      }
+    ]
+  },
+  {
+    "name": "Blood Tome",
+    "cost": 800,
+    "rarity": "Rare",
+    "tags": ["Passive", "Magical Power", "Magical Lifesteal"],
+    "stats": {
+      "Magical Power": 20,
+      "Magical Lifesteal": 5
+    }
+  },
+  {
+    "name": "Essence Ring",
+    "cost": 800,
+    "rarity": "Rare",
+    "tags": ["Passive", "Mana Regeneration", "Ability Haste"],
+    "stats": {
+      "Mana Regeneration": 2,5,
+      "Ability Haste": 10
+    }
+  },
+  {
+    "name": "Steel Mail",
+    "cost": 800,
+    "rarity": "Rare",
+    "tags": ["Passive", "Physical Armor"],
+    "stats": {
+      "Physical Armor": 25
+    }
+  },
+  {
+    "name": "Violet Brooch",
+    "cost": 800,
+    "rarity": "Rare",
+    "tags": ["Passive", "Health", "Ability Haste"],
+    "stats": {
+      "Health": 150,
+      "Ability Haste": 10
+    }
+  },
+  {
+    "name": "Barbed Pauldron",
+    "cost": 850,
+    "rarity": "Rare",
+    "tags": ["Passive", "Physical Armor"],
+    "stats": {
+      "Physical Armor": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Stifle",
+      "description": "When hit by a basic attack, reduce the source's attack speed by 5% for 3s, stacking up to 3 times."
+      }
+    ]
+  },
+  {
+    "name": "Scepter",
+    "cost": 900,
+    "rarity": "Uncommon",
+    "tags": ["Passive", "Magical Power"],
+    "stats": {
+      "Magical Power": 30
+    }
+  },
+  {
+    "name": "Banded Emerald",
+    "cost": 900,
+    "rarity": "Rare",
+    "tags": ["Passive", "Health"],
+    "stats": {
+      "Health": 275
+    }
+  },
+  {
+    "name": "Chronomatic Wand",
+    "cost": 900,
+    "rarity": "Rare",
+    "tags": ["Passive", "Magical Power", "Ability Haste"],
+    "stats": {
+      "Magical Power": 20,
+      "Ability Haste": 10
+    }
+  },
+  {
+    "name": "Stalwart Gauntlets",
+    "cost": 900,
+    "rarity": "Rare",
+    "tags": ["Passive", "Health", "Health Regeneration"],
+    "stats": {
+      "Health": 150,
+      "Health Regeneration": 2
+    }
+  },
+  {
+    "name": "Polar Treads",
+    "cost": 950,
+    "rarity": "Rare",
+    "tags": ["Passive", "Magical Armor", "Mana Regeneration"],
+    "stats": {
+      "Magical Armor": 12,
+      "Mana Regeneration": 2
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Celerity",
+      "description": "Gain 5% bonus movement speed out of combat."
+      }
+    ]
+  },
+  {
+    "name": "Divine Wreath",
+    "cost": 1000,
+    "rarity": "Rare",
+    "tags": ["Passive", "Magical Power", "Mana Regeneration"],
+    "stats": {
+      "Magical Power": 15,
+      "Mana Regeneration": 2
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Your heals and shields are 15% more effective."
+      }
+    ]
+  },
+  {
+    "name": "Soul Chalice",
+    "cost": 1000,
+    "rarity": "Rare",
+    "tags": ["Passive", "Mana'],
+    "stats": {
+      "Mana": 400
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Gain physical power based on your maximum mana."
+      }
+    ]
+  },
+{
+    "name": "Barbaric Cleaver",
+    "cost": 1050,
+    "rarity": "Rare",
+    "tags": ["Passive", "Physical Power"],
+    "stats": {
+      "Physical Power": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Cleave",
+      "description": "Basic attacks deal physical damage in a small area around the target."
+      }
+    ]
+  },
+{
+    "name": "Brimstone",
+    "cost": 1050,
+    "rarity": "Rare",
+    "tags": ["Passive", "Health", "Mana"],
+    "stats": {
+      "Health": 120,
+      "Mana": 200
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Blaze",
+      "description": "Deal 15 magical damage per second to nearby enemies."
+      }
+    ]
+  },
+{
+    "name": "Fortified Mantle",
+    "cost": 1050,
+    "rarity": "Rare",
+    "tags": ["Passive", "Physical Armor", "Magical Armor"],
+    "stats": {
+      "Physical Armor": 20,
+      "Magical Armor": 15
+    }
+  },
+{
+    "name": "Honed Kris",
+    "cost": 1050,
+    "rarity": "Rare",
+    "tags": ["Passive", "Physical Power"],
+    "stats": {
+      "Physical Power": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Gain 4 physical penetration."
+      }
+    ]
+  },
+  {
+    "name": "Claymore",
+    "cost": 1100,
+    "rarity": "rare",
+    "tags": ["Passive", "Physical Power", "Health"],
+    "stats": {
+      "Physical Power": 10,
+      "Health": 120
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Sunder",
+      "description": "Every third conescutive basic attack deals bonus physical damage based on your bonus health and slows the target by 10% for 1s."
+      }
+    ]
+  },
+  {
+    "name": "Serrated Blade",
+    "cost": 1100,
+    "rarity": "Rare",
+    "tags": ["Passive", "Physical Power"],
+    "stats": {
+      "Physical Power": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Blight",
+      "description": "Dealing physical damage reduces the target's healing by 40% for 3s."
+      }
+    ]
+  },
+  {
+    "name": "Spiked Birch",
+    "cost": 1100,
+    "rarity": "Rare",
+    "tags": ["Passive", "Magical Power"],
+    "stats": {
+      "Magical Power": 30
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Blight",
+      "description": "Dealing magical damage reduces the target's healing by 40% for 3s."
+      }
+    ]
+  },
+  {
+    "name": "Liberator",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Active", "Crest", "Physical Power", "Attack Speed", "Critical Chance", "Lifesteal"],
+    "stats": {
+      "Physical Power": 10,
+      "Attack Speed": 10,
+      "Critical Chance": 20,
+      "Lifesteal": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "Gain a large shield and 10% lifesteal for 5s - 120s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 30 extra basic damage to Minions."
+      }
+    ]
   },
 ]

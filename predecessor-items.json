@@ -12,7 +12,7 @@
     }]
   },
   {
-    "name": "Stealh Ward",
+    "name": "Stealth Ward",
     "cost": 25,
     "rarity": "Common",
     "tags": ["Consumable", "Ward", "Active"],
@@ -1941,8 +1941,8 @@
     "tags": ["Passive", "Physical Armor", "Magical Armor", "Mana Regeneration"],
     "stats": {
       "Physical Armor": 30,
-	  "Magical Armor": 30,
-	  "Mana Regeneration": 3
+	    "Magical Armor": 30,
+	    "Mana Regeneration": 3
     },
     "descriptions": [{
       "descriptionType": "Passive",
@@ -1960,8 +1960,8 @@
     "tags": ["Passive", "Physical Armor", "Mana", "Ability Haste"],
     "stats": {
       "Physical Armor": 45,
-	  "Mana": 450,
-	  "Ability Haste": 20
+	    "Mana": 450,
+	    "Ability Haste": 20
     },
     "descriptions": [{
       "descriptionType": "Passive",
@@ -1979,7 +1979,7 @@
     "tags": ["Passive", "Attack Speed", "Critical Chance"],
     "stats": {
       "Attack Speed": 50,
-	  "Critical Chance": 20
+	    "Critical Chance": 20
     },
     "descriptions": [{
       "descriptionType": "Passive",
@@ -2000,7 +2000,7 @@
     "tags": ["Passive", "Physical Power", "Health"],
     "stats": {
       "Physical Power": 25,
-	  "Health": 350
+	    "Health": 350
     },
     "descriptions": [{
       "descriptionType": "Passive",
@@ -2032,9 +2032,9 @@
     "tags": ["Passive", "Health", "Health Regeneration", "Magical Armor", "Ability Haste"],
     "stats": {
       "Health": 300,
-	  "Health Regeneration": 2,
-	  "Magical Armor": 30,
-	  "Ability Haste": 10
+	    "Health Regeneration": 2,
+	    "Magical Armor": 30,
+	    "Ability Haste": 10
     },
     "descriptions": [{
       "descriptionType": "Passive",
@@ -2052,8 +2052,8 @@
     "tags": ["Passive", "Health", "Physical Armor", "Ability Haste"],
     "stats": {
       "Health": 200,
-	  "Physical Armor": 60,
-	  "Ability Haste": 10
+	    "Physical Armor": 60,
+	    "Ability Haste": 10
     },
     "descriptions": [{
       "descriptionType": "Passive - Blight",
@@ -2068,7 +2068,7 @@
     "tags": ["Passive", "Physical Power", "Physical Penetration"],
     "stats": {
       "Physical Power": 50,
-	  "Physical Penetration": 14
+	    "Physical Penetration": 14
     },
     "descriptions": [{
       "descriptionType": "Passive - Blight",
@@ -2083,8 +2083,8 @@
     "tags": ["Passive", "Physical Power", "Physical Penetration", "Health"],
     "stats": {
       "Physical Power": 35,
-	  "Physical Penetration": 8,
-	  "Health": 180
+	    "Physical Penetration": 8,
+	    "Health": 180
     },
     "descriptions": [{
       "descriptionType": "Passive - Spell Shield",
@@ -2102,7 +2102,7 @@
     "tags": ["Passive", "Magical Power", "Magical Penetration"],
     "stats": {
       "Magical Power": 80,
-	  "Magical Penetration": 12
+	    "Magical Penetration": 12
     },
     "descriptions": [{
       "descriptionType": "Passive - Blight",
@@ -2117,8 +2117,8 @@
     "tags": ["Passive", "Health", "Health Regeneration", "Magical Armor"],
     "stats": {
       "Health": 450,
-	  "Health Regeneration": 2.5,
-	  "Magical Armor": 20
+	    "Health Regeneration": 2.5,
+	    "Magical Armor": 20
     },
     "descriptions": [{
       "descriptionType": "Passive",
@@ -2136,8 +2136,8 @@
     "tags": ["Active", "Physical Power", "Physical Penetration", "Ability Haste"],
     "stats": {
       "Physical Power": 40,
-	  "Physical Penetration": 8,
-	  "Ability Haste": 20
+	    "Physical Penetration": 8,
+	    "Ability Haste": 20
     },
     "descriptions": [{
       "descriptionType": "Active",
@@ -2152,8 +2152,8 @@
     "tags": ["Passive", "Magical Power", "Mana", "Ability Haste"],
     "stats": {
       "Magical Power": 60,
-	  "Mana": 400,
-	  "Ability Haste": 20
+	    "Mana": 400,
+	    "Ability Haste": 20
     },
     "descriptions": [{
       "descriptionType": "Passive - Font",
@@ -2171,8 +2171,8 @@
     "tags": ["Passive", "Physical Power", "Health", "Ability Haste"],
     "stats": {
       "Physical Power": 35,
-	  "Health": 250,
-	  "Ability Haste": 20
+	    "Health": 250,
+	    "Ability Haste": 20
     },
     "descriptions": [{
       "descriptionType": "Passive - Corrode",
@@ -2190,9 +2190,9 @@
     "tags": ["Passive", "Physical Power", "Physical Armor", "Magical Armor", "Ability Haste"],
     "stats": {
       "Physical Power": 25,
-	  "Physical Armor": 25,
-	  "Magical Armor": 25,
-	  "Ability Haste": 10
+	    "Physical Armor": 25,
+	    "Magical Armor": 25,
+	    "Ability Haste": 10
     },
     "descriptions": [{
       "descriptionType": "Passive",
@@ -2207,9 +2207,9 @@
     "tags": ["Passive", "Health", "Physical Armor", "Mana", "Ability Haste"],
     "stats": {
       "Health": 120,
-	  "Physical Armor": 40,
-	  "Mana": 250,
-	  "Ability Haste": 10
+	    "Physical Armor": 40,
+	    "Mana": 250,
+	    "Ability Haste": 10
     },
     "descriptions": [{
       "descriptionType": "Passive",
@@ -2227,8 +2227,8 @@
     "tags": ["Passive", "Physical Armor", "Mana", "Ability Haste"],
     "stats": {
       "Physical Armor": 50,
-	  "Mana": 300,
-	  "Ability Haste": 20
+	    "Mana": 300,
+	    "Ability Haste": 20
     },
     "descriptions": [{
       "descriptionType": "Passive - Spellblade",
@@ -2246,8 +2246,8 @@
     "tags": ["Passive", "Physical Power", "Physical Armor", "Critical Chance"],
     "stats": {
       "Physical Power": 40,
-	  "Physical Armor": 25,
-	  "Critical Chance": 20
+	    "Physical Armor": 25,
+	    "Critical Chance": 20
     },
     "descriptions": [{
       "descriptionType": "Passive - Shockwave",
@@ -2258,5 +2258,174 @@
       }
     ]
   },
-
+  {
+    "name": "Legacy",
+    "cost": 3000,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Physical Armor", "Health"],
+    "stats": {
+      "Physical Power": 20,
+	    "Physical Armor": 25,
+	    "Health": 250
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Bravery",
+      "description": "If you would take damage that would reduce you below 30% of your maximum health, cleanse all Negative Debuffs and gain 20% lifesteal for 8s - 90s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Gain 1 physical power for every 2% missing health, for a maximum of 35 physical power."
+      }
+    ]
+  },
+  {
+    "name": "Lifebinder",
+    "cost": 3000,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power", "Magical Lifesteal", "Health", "Ability Haste"],
+    "stats": {
+      "Magical Power": 55,
+	    "Magical Lifesteal": 10,
+	    "Health": 200,
+      "Ability Haste": 15
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Hitting an Enemy Hero with an ability restores health over 5s. Excess healing will be converted to a shield for 10s."
+      }
+    ]
+  },
+  {
+    "name": "Magnify",
+    "cost": 3000,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power", "Ability Haste"],
+    "stats": {
+      "Magical Power": 70,
+	    "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Spellblade",
+      "description": "After using an ability, your next 2 basic attacks within 6s deal bonus magical damage based on your magical power - 3s CD."
+      }
+    ]
+  },
+  {
+    "name": "Nullifier",
+    "cost": 3000,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Magical Armor", "Ability Haste"],
+    "stats": {
+      "Physical Power": 40,
+	    "Magical Armor": 30,
+	    "Ability Haste": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Safeguard",
+      "description": "If you take significant magical damage in the last 5s, gain 10% movement speed, 15% lifesteal and 40 magical armor for 5s. This duration is refreshed upon taking additional magical damage - 40s CD."
+      }
+    ]
+  },
+  {
+    "name": "Painweaver",
+    "cost": 3000,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Physical Penetration", "Ability Haste"],
+    "stats": {
+      "Physical Power": 40,
+	    "Physical Penetration": 12,
+	    "Ability Haste": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Spellblade",
+      "description": "After using an ability, your next 2 basic attacks or abilities within 6s deal bonus physical damage - 3s CD."
+      }
+    ]
+  },
+  {
+    "name": "Raiment of Renewal",
+    "cost": 3000,
+    "rarity": "Epic",
+    "tags": ["Passive", "Health", "Health Regeneration", "Mana"],
+    "stats": {
+      "Health": 600,
+	    "Health Regeneration": 4,
+	    "Mana": 250
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Regenerate 15% of damage taken over 5s."
+      },{
+      "descriptionType": "Passive",
+      "description": "Increases all healing received by 20%"
+      }
+    ]
+  },
+  {
+    "name": "Severance",
+    "cost": 3000,
+    "rarity": "Epic",
+    "tags": ["Active", "Physical Power", "Magical Armor"],
+    "stats": {
+      "Physical Power": 50,
+	    "Magical Armor": 30
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "Cleanse all Negative Debuffs from yourself and gain 30% movement speed for 3s - 90s CD."
+      }
+    ]
+  },
+  {
+    "name": "Spellbreaker",
+    "cost": 3000,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power", "Magical Armor", "Ability Haste"],
+    "stats": {
+      "Magical Power": 60,
+	    "Magical Armor": 35,
+	    "Ability Haste": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Spell Shield",
+      "description": "Grants a Spell Shield that blocks the next Enemy ability - 60s CD."
+      }
+    ]
+  },
+  {
+    "name": "Terminus",
+    "cost": 3000,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Ability Haste", "Critical Chance"],
+    "stats": {
+      "Physical Power": 40,
+	    "Ability Haste": 20,
+	    "Critical Chance": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Spellblade",
+      "description": "After using an ability, your next 2 basic attacks within 6s deal bonus physical damage based on your critical strike chance - 3s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Basic attacks restore 1% maximum mana on-hit."
+      }
+    ]
+  },
+  {
+    "name": "Warden's Faith",
+    "cost": 3000,
+    "rarity": "Epic",
+    "tags": ["Passive", "Health","Physical Armor"],
+    "stats": {
+      "Health": 300,
+	    "Physical Armor": 60
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Stalwart",
+      "description": "Enemy critical strikes deal 20% reduced damage."
+      },{
+      "descriptionType": "Stifle",
+      "description": "When hit by a basic attack, reduce the source's attack speed by 5% for 3s, stacking up to 5 times. Max stacks are applied if the damage received is a critical strike."
+      }
+    ]
+  },
 ]

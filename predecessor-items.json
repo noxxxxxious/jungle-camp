@@ -1065,7 +1065,7 @@
     "rarity": "Rare",
     "tags": ["Passive", "Mana Regeneration", "Ability Haste"],
     "stats": {
-      "Mana Regeneration": 2,5,
+      "Mana Regeneration": 2.5,
       "Ability Haste": 10
     }
   },
@@ -1523,7 +1523,7 @@
   },
   {
     "name": "Heroic Guard",
-    "cost": 1400
+    "cost": 1400,
     "rarity": "Rare",
     "tags": ["Passive", "Health", "Physical Armor"],
     "stats": {
@@ -1908,7 +1908,7 @@
     "stats": {
       "Physical Power": 40,
       "Attack Speed": 20,
-      "Ability Haste": 10,
+      "Ability Haste": 10
     },
     "descriptions": [{
       "descriptionType": "Passive",
@@ -1923,7 +1923,7 @@
     "tags": ["Passive", "Magical Power", "Health"],
     "stats": {
       "Magical Power": 70,
-      "Health": 250,
+      "Health": 250
     },
     "descriptions": [{
       "descriptionType": "Passive",
@@ -1934,7 +1934,7 @@
       }
     ]
   },
-    {
+  {
     "name": "Galaxy Greaves",
     "cost": 2800,
     "rarity": "Epic",
@@ -1942,7 +1942,7 @@
     "stats": {
       "Physical Armor": 30,
 	  "Magical Armor": 30,
-	  "Mana Regeneration": 3,
+	  "Mana Regeneration": 3
     },
     "descriptions": [{
       "descriptionType": "Passive",
@@ -1953,7 +1953,7 @@
       }
     ]
   },
-    {
+  {
     "name": "Hexbound Bracers",
     "cost": 2800,
     "rarity": "Epic",
@@ -1961,7 +1961,7 @@
     "stats": {
       "Physical Armor": 45,
 	  "Mana": 450,
-	  "Ability Haste": 20,
+	  "Ability Haste": 20
     },
     "descriptions": [{
       "descriptionType": "Passive",
@@ -1972,14 +1972,14 @@
       }
     ]
   },
-    {
+  {
     "name": "Mirage",
     "cost": 2800,
     "rarity": "Epic",
     "tags": ["Passive", "Attack Speed", "Critical Chance"],
     "stats": {
       "Attack Speed": 50,
-	  "Critical Chance": 20,
+	  "Critical Chance": 20
     },
     "descriptions": [{
       "descriptionType": "Passive",
@@ -1993,14 +1993,14 @@
 	  }
     ]
   },
-    {
+  {
     "name": "Overlord",
     "cost": 2800,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Health"],
     "stats": {
       "Physical Power": 25,
-	  "Health": 350,
+	  "Health": 350
     },
     "descriptions": [{
       "descriptionType": "Passive",
@@ -2011,7 +2011,7 @@
       }
     ]
   },
-    {
+  {
     "name": "The Perforator",
     "cost": 2800,
     "rarity": "Epic",
@@ -2025,7 +2025,7 @@
       }
     ]
   },
-    {
+  {
     "name": "Flux Matrix",
     "cost": 2850,
     "rarity": "Epic",
@@ -2034,7 +2034,7 @@
       "Health": 300,
 	  "Health Regeneration": 2,
 	  "Magical Armor": 30,
-	  "Ability Haste": 10,
+	  "Ability Haste": 10
     },
     "descriptions": [{
       "descriptionType": "Passive",
@@ -2045,7 +2045,7 @@
       }
     ]
   },
-    {
+  {
     "name": "Palisade",
     "cost": 2850,
     "rarity": "Epic",
@@ -2061,14 +2061,14 @@
       }
     ]
   },
-    {
+  {
     "name": "Demon Edge",
     "cost": 2900,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Physical Penetration"],
     "stats": {
       "Physical Power": 50,
-	  "Physical Penetration": 14,
+	  "Physical Penetration": 14
     },
     "descriptions": [{
       "descriptionType": "Passive - Blight",
@@ -2076,7 +2076,7 @@
       }
     ]
   },
-    {
+  {
     "name": "Dreadwind",
     "cost": 2900,
     "rarity": "Epic",
@@ -2095,7 +2095,7 @@
       }
     ]
   },
-    {
+  {
     "name": "Lethea",
     "cost": 2900,
     "rarity": "Epic",
@@ -2110,7 +2110,7 @@
       }
     ]
   },
-    {
+  {
     "name": "Unspoken Will",
     "cost": 2900,
     "rarity": "Epic",
@@ -2118,7 +2118,7 @@
     "stats": {
       "Health": 450,
 	  "Health Regeneration": 2.5,
-	  "Magical Armor": 20,
+	  "Magical Armor": 20
     },
     "descriptions": [{
       "descriptionType": "Passive",
@@ -2129,7 +2129,7 @@
       }
     ]
   },
-    {
+  {
     "name": "Blackout",
     "cost": 2950,
     "rarity": "Epic",
@@ -2145,7 +2145,7 @@
       }
     ]
   },
-    {
+  {
     "name": "Azure Core",
     "cost": 3000,
     "rarity": "Epic",
@@ -2164,7 +2164,7 @@
       }
     ]
   },
-    {
+  {
     "name": "Basilisk",
     "cost": 3000,
     "rarity": "Epic",
@@ -2172,7 +2172,7 @@
     "stats": {
       "Physical Power": 35,
 	  "Health": 250,
-	  "Ability Haste": 20,
+	  "Ability Haste": 20
     },
     "descriptions": [{
       "descriptionType": "Passive - Corrode",
@@ -2183,7 +2183,7 @@
       }
     ]
   },
-    {
+  {
     "name": "Draconum",
     "cost": 3000,
     "rarity": "Epic",
@@ -2192,7 +2192,7 @@
       "Physical Power": 25,
 	  "Physical Armor": 25,
 	  "Magical Armor": 25,
-	  "Ability Haste": 10,
+	  "Ability Haste": 10
     },
     "descriptions": [{
       "descriptionType": "Passive",
@@ -2200,7 +2200,7 @@
       }
     ]
   },
-    {
+  {
     "name": "Frostguard",
     "cost": 3000,
     "rarity": "Epic",
@@ -2209,7 +2209,7 @@
       "Health": 120,
 	  "Physical Armor": 40,
 	  "Mana": 250,
-	  "Ability Haste": 10,
+	  "Ability Haste": 10
     },
     "descriptions": [{
       "descriptionType": "Passive",
@@ -2220,7 +2220,7 @@
       }
     ]
   },
-    {
+  {
     "name": "Glacial Maul",
     "cost": 3000,
     "rarity": "Epic",
@@ -2228,7 +2228,7 @@
     "stats": {
       "Physical Armor": 50,
 	  "Mana": 300,
-	  "Ability Haste": 20,
+	  "Ability Haste": 20
     },
     "descriptions": [{
       "descriptionType": "Passive - Spellblade",
@@ -2239,7 +2239,7 @@
       }
     ]
   },
-    {
+  {
     "name": "Kingsbane",
     "cost": 3000,
     "rarity": "Epic",

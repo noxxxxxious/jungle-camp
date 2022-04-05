@@ -350,6 +350,134 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "name": "Combustion",
+    "cost": 3200,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power", "Magical Penetration", "Mana"],
+    "stats": {
+      "Magical Power": 60,      
+      "Magical Penetration": 10,
+      "Mana": 400
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Gain charges upon moving. At 100 charges, the next instance of magical damage you deal will expend all charges to deal bonus magical damage in a large radius."
+      },{
+      "descriptionType": "Passive",
+      "description": "When you damage an Enemy target with an ability or basic attack, restore maximum mana over 3s, stacking up to 4 times. At maximum stacks, gain ability haste."
+      }
+    ]
+  },
+  {
+    "name": "Mindrazor",
+    "cost": 3200,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Mana", "Ability Haste"],
+    "stats": {
+      "Physical Power": 50,
+      "Mana": 200,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Cleave",
+      "description": "Dealing damage to an enemy target deals an additional physical damage in a small area around them."
+      }
+    ]
+  },
+  {
+    "name": "Mooncleaver",
+    "cost": 3200,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Critical Chance", "Ability Haste"],
+    "stats": {
+      "Physical Power": 50,
+      "Critical Chance": 20,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Corrode",
+      "description": "Dealing damage to an Enemy Hero reduces their physical armor by 5% for 2s. Stacks up to 6 times."
+      },{
+      "descriptionType": "Passive",
+      "description": "Critical strikes deal 10% more damage against targets with 6 stacks of Corrode."
+      }
+    ]
+  },
+  {
+    "name": "Tainted Rounds",
+    "cost": 3200,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance"],
+    "stats": {
+      "Physical Power": 50,
+      "Attack Speed": 25,
+      "Critical Chance": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Blight",
+      "description": "Dealing physical damage reduces the target's healing by 60^ for 3s."
+      }
+    ]
+  },
+  {
+    "name": "Vanquisher",
+    "cost": 3200,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Mana", "Ability Haste"],
+    "stats": {
+      "Physical Power": 30,
+      "Mana": 400,
+      "Ability Haste": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Font",
+      "description": "Killing an Enemy Minion grants 8 bonus mana per stack, up to a maximum of 400 bonus mana. At maximum stacks, gain 10 ability haste."
+      },{
+      "descriptionType": "Passive",
+      "description": "Basic attacks and physical damage abvilities deal bonus physical damage based on your maximum mana."
+      },{
+      "descriptionType": "Passive",
+      "description": "Gain (+1.5 Maximum Mana) physical power."
+      }
+    ]
+  },
   {
     "name": "Cyclone",
     "cost": 3300,
@@ -456,26 +584,6 @@
       }
     ]
   },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   {
     "name": "Imperator",
     "cost": 3400,

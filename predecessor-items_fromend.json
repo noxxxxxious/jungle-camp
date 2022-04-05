@@ -1,0 +1,485 @@
+/* CHECK FOR CREST EVOLUTIONS */
+/* Make stats have on-hover tooltip descriptions */
+[
+  {
+    "name": "Sentry",
+    "cost": 25,
+    "rarity": "Common",
+    "tags": ["Consumable", "Ward", "Active"],
+    "descriptions": [{
+      "descriptionType": "Consume",
+      "description": "Reveal all wards in an 800 unit radius for 15 seconds. Max stacks: 1"
+    }]
+  },
+  {
+    "name": "Stealh Ward",
+    "cost": 25,
+    "rarity": "Common",
+    "tags": ["Consumable", "Ward", "Active"],
+    "descriptions": [{
+      "descriptionType": "Consume",
+      "description": "Place an invisible ward at target location that revealse nearby Visible and Camouflagued enemy targets, lasts for 2 and a half minutes. Max stacks: 2"
+    }]
+  },
+  {
+    "name": "Compound Potion",
+    "cost": 50,
+    "rarity": "Common",
+    "tags": ["Consumable", "Potion", "Active"],
+    "descriptions": [{
+      "descriptionType": "Consume",
+      "description": "Regenerates 6 health and 3 mana per second for 16 seconds, restoring a total of 90 health and 45 mana."
+    }]
+  },
+  {
+    "name": "Health Potion",
+    "cost": 50,
+    "rarity": "Common",
+    "tags": ["Consumable", "Potion", "Active"],
+    "descriptions": [{
+      "descriptionType": "Consume",
+      "description": "Regenerates 10 health per second for 15 seconds, restoring a total of 150 health."
+    }]
+  },
+  {
+    "name": "Mana Potion",
+    "cost": 50,
+    "rarity": "Common",
+    "tags": ["Consumable", "Potion", "Active"],
+    "descriptions": [{
+      "descriptionType": "Consume",
+      "description": "Restores 6 mana per second for 15 seconds, restoring a total of 90 mana."
+    }]
+  },
+  {
+    "name": "Hunt",
+    "cost": 50,
+    "rarity": "Uncommon",
+    "tags": ["Passive", "Jungle Item"],
+    "descriptions": [{
+      "descriptionType": "Passive - Artifact",
+      "description": "Deal additional damage to monsters and if melee, heal based on the damage dealt. Basic attacks against monsters regenerate mana on-hit and execute large monsters under 300 (+50 per level) health."
+      },{
+        "descriptionType": "Passive - Slayer",
+        "description": "Gain additional XP for each large monster kill as well as additional XP for your first large monster kill."
+      },{
+        "descriptionType": "Passive - Jungler",
+        "description": "Receive less gold from lane minion kills. This effect disables after 15 minutes. Hunt is consumed after killing 30 monsters, removing the item, but granting the passives permanently."
+      }
+    ]
+  },
+  {
+    "name": "Refillable Potion",
+    "cost": 150,
+    "rarity": "Common",
+    "tags": ["Consumable", "Potion", "Active"],
+    "descriptions": [{
+      "descriptionType": "Consume",
+      "description": "Restores 12 health per second for 12 seconds, restoring a total of 120 health. Holds 2 charges that refill upon visiting the base."
+    }]
+  },
+  {
+    "name": "Energy Stream",
+    "cost": 200,
+    "rarity": "Uncommon",
+    "tags": ["Passive", "Mana Regeneration"],
+    "stats": {
+      "Mana Regeneration": 1
+    }
+  },
+  {
+    "name": "Life Stream",
+    "cost": 200,
+    "rarity": "Uncommon",
+    "tags": ["Passive", "Health Regeneration"],
+    "stats": {
+      "Health Regeneration": 1
+    }
+  },
+  {
+    "name": "Longbow",
+    "cost": 300,
+    "rarity": "Uncommon",
+    "tags": ["Passive", "Attack Speed"],
+    "stats": {
+      "Attack Speed": 10
+    }
+  },
+  {
+    "name": "Wraps",
+    "cost": 300,
+    "rarity": "Uncommon",
+    "tags": ["Passive", "Magical Armor"],
+    "stats": {
+      "Magical Armor": 10
+    }
+  },
+  {
+    "name": "Tunic",
+    "cost": 300,
+    "rarity": "Uncommon",
+    "tags": ["Passive", "Physical Armor"],
+    "stats": {
+      "Physical Armor": 10
+    }
+  },
+  {
+    "name": "Vitality Beads",
+    "cost": 300,
+    "rarity": "Uncommon",
+    "tags": ["Passive", "Health"],
+    "stats": {
+      "Health": 100
+    }
+  },
+  {
+    "name": "Assassin Crest",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Crest", "Physical Power", "Ability Haste", "Physical Penetration"],
+    "stats": {
+      "Physical Power": 10,
+      "Ability Haste": 10,
+      "Physical Penetration": 8
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Dealing damage to an enemy hero/monster with an ability restores 10 Health (Once per ability), killing an enemy target restores 5 Health. After restoring 300 Health, Allows the purchase of a "Legendary" Item."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 15 extra basic damage to minions"
+      }
+    ]
+  },
+  {
+    "name": "Nex",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Active", "Physical Power", "Ability Haste", "Physical Penetration"],
+    "stats": {
+      "Physical Power": 25,
+      "Ability Haste": 10,
+      "Physical Penetration": 12
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "Dash forward and deal (+100% Bonus Physical Power)(100% of Sow) physical damage to all nearby enemy heroes and slow them by 80% for 1 seconds - 90s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Store 20% of damage dealt to enemy heroes (109% for AOE abilities) in the past 3 seconds as Sow."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 15 extra basic damage to minions."
+      }
+    ]
+  },
+  {
+    "name": "Ortus",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Active", "Crest", "Physical Power", "Ability Haste", "Physical Penetration"],
+    "stats": {
+      "Physical Power": 20,
+      "Ability Haste": 20,
+      "Physical Penetration": 6
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "Gain 15% bonus movement speed decaying over 5s. During this time your next 3 basic attacks or damaging abilities will deal bonus true damage and reduce current basic ability cooldowns by 2s - 90s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 30 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Rogue Crest",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Crest", "Physical Power", "Ability Haste"],
+    "stats": {
+      "Physical Power": 6,
+      "Ability Haste": 5
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Dealing damage to an Enemy Hero/Jungle Minion with an ability restores 5 health (Once per ability), killing an Enemy Target restores 10 health. After restoring 300 health, evolve into Assassin Crest."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 15 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Witchstalker",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Active", "Crest", "Physical Power", "Ability Haste", "Physical Penetration", "Omnivamp"],
+    "stats": {
+      "Physical Power": 15,
+      "Ability Haste": 10,
+      "Physical Penetration": 4,
+      "Omnivamp": 8
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "Cleanse all Negative Debuffs, your next basic attack or damaging ability within 8s will deal bonus true damage based on the target's maximum health, increased by each negative effect removed and heal you equal to the damage dealt - 120s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 30 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Eviscerator",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Active", "Crest", "Physical Power", "Attack Speed", "Critical Chance"],
+    "stats": {
+      "Physical Power": 10,
+      "Attack Speed": 20,
+      "Critical Chance": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "Basic attacks deal an additional 5% of the target's maximum health as magic damage and heal for 50% of the damage dealt for 6s - 90s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 30 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Liberator",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Active", "Crest", "Physical Power", "Attack Speed", "Critical Chance", "Lifesteal"],
+    "stats": {
+      "Physical Power": 10,
+      "Attack Speed": 10,
+      "Critical Chance": 20,
+      "Lifesteal": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "Gain a large shield and 10% lifesteal for 5s - 120s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 30 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Marksman Crest",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Crest", "Physical Power", "Attack Speed", "Om"],
+    "stats": {
+      "Physical Power": 5,
+      "Attack Speed": 5
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Successful basic attacks restore 1 health, killing a unit restores 10 health. After restoring 400 health, evolve into Sharpshooter Crest."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 15 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Pacifier",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Active", "Crest", "Physical Power", "Attack Speed", "Critical Chance"],
+    "stats": {
+      "Physical Power": 18,
+      "Attack Speed": 10,
+      "Critical Chance": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "Dash forward and gain attack speed for 6s, killing an Enemy Hero within the duration resets the cooldown - 150s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 30 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Sharpshooter Crest",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Crest", "Physical Power", "Attack Speed"],
+    "stats": {
+      "Physical Power": 10,
+      "Attack Speed": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Successful basic attacks restore 1 health, killing a unit restores 10 health. After restoring 400 health, allows the purchase of a Legendary Item."
+      }
+    ]
+  },
+  {
+    "name": "Brutallax",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Active", "Crest", "Physical Power", "Health", "Lifesteal"],
+    "stats": {
+      "Physical Power": 20,
+      "Health": 100,
+      "Lifesteal": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "Cleans all Negative Debuffs, then gain additional tenacity and attack speed for 8s. Successful basic attacks extend this duration by 0.5s on-hit - 120s CD"
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 30 extra basic damage to Minions."
+      }
+    ]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "name": "Imperator",
+    "cost": 3400,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Critical Chance"],
+    "stats": {
+      "Physical Power": 50,
+      "Critical Chance": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Critical strikes deal 4% increased damage against Enemy Heroes per every 500 maximum health."
+      },{
+      "descriptionType": "Passive - Dire Strikes",
+      "description": "Gain 10% Critical Strike Damage."
+      }
+    ]
+  },
+  {
+    "name": "Imperator",
+    "cost": 3400,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Physical Penetration"],
+    "stats": {
+      "Physical Power": 50,
+      "Physical Penetration": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Moving generates stacks of Insanity. At 100 stacks your next basic attack will consume them to deal bonus physical damage."
+      },{
+      "descriptionType": "Passive - Massacre",
+      "description": "Increase flat physical penetration by 50%."
+      }
+    ]
+  },
+  {
+    "name": "Oathkeeper",
+    "cost": 3400,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power", "Ability Haste"],
+    "stats": {
+      "Magical Power": 90,
+      "Ability Haste": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Order",
+      "description": "Increase your ability haste by (+20% Magical Power)%."
+      }
+    ]
+  },
+  {
+    "name": "Oblivion Crown",
+    "cost": 3400,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power"],
+    "stats": {
+      "Magical Power": 100
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Order",
+      "description": "Increase your magical power by 40%."
+      }
+    ]
+  },
+  {
+    "name": "Omen",
+    "cost": 3400,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Physical Penetration", "Ability Haste"],
+    "stats": {
+      "Physical Power": 45,
+      "Physical Penetration": 8,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Dealing damage to an Enemy Hero slows them by 20% and grants you 20% movement speed for 3s. This effect refreshes on takedowns - 60s CD."
+      },{
+      "descriptionType": "Passive - Massacre",
+      "description": "Increase flat physical penetration by 50%."
+      }
+    ]
+  },
+  {
+    "name": "Augmentation",
+    "cost": 3500,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Health", "Attack Speed"],
+    "stats": {
+      "Physical Power": 30,
+      "Health": 300,
+      "Attack Speed": 30
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Spellblade",
+      "description": "After using an ability, your next 2 basic attacks within 6s deal bonus physical damage - 3s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Basic attacks deal bonus true damage."
+      }
+    ]
+  },
+  {
+    "name": "Mutilator",
+    "cost": 3500,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Omnivamp", "Ability Haste"],
+    "stats": {
+      "Physical Power": 45,
+      "Omnivamp": 10,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Spellblade",
+      "description": "After using an ability, your next 2 basic attacks within 6s deal 4% of the target's maximum health as bonus physical damage - 3s CD."
+      },{
+      "descriptionType": "Passive - Warlord",
+      "description": "Basic attacks against Enemy Heroes deal 2% of their maximum health as physical damage on-hit."
+      }
+    ]
+  }
+]

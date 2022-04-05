@@ -353,8 +353,90 @@
 
 
 
-
-
+  {
+    "name": "Megacosm",
+    "cost": 3100,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power", "Health", "Ability Haste"],
+    "stats": {
+      "Magical Power": 55,
+      "Health": 200,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Disintegrate",
+      "description": "Dealing damage to an Enemy Hero with an ability deals 4.5% of their maximum health as magical damage over 3s. Additional applications from separate abilities within the duration will deal additional magical damage instantly and refresh the duration."
+      }
+    ]
+  },
+  {
+    "name": "Nightfall",
+    "cost": 3100,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Physical Penetration", "Omnivamp"],
+    "stats": {
+      "Physical Power": 45,
+      "Physical Penetration": 8,
+      "Omnivamp": 8
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Dusk",
+      "description": "Dealing damage to an isolated Enemyh Hero (no other Enemy Heroes within 600 units) grants additional attack speed and ability haste for 3s. Dusk stacks up to 3 times."
+      }
+    ]
+  },
+  {
+    "name": "Salvation",
+    "cost": 3100,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Magical Armor", "Health"],
+    "stats": {
+      "Physical Power": 45,
+      "Magical Armor": 25,
+      "Health": 300
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "If you would take damage that would reduce you below 30% of your maximum health, you gain a large shield (halved for Ranged Heroes) for 6s. - 60s CD"
+      },{
+      "descriptionType": "Passive",
+      "description": "Successful basic attacks against Enemy Heroes heal you for 4% of your missing health."
+      }
+    ]
+  },
+  {
+    "name": "Storm Breaker",
+    "cost": 3100,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance", "Movement Speed"],
+    "stats": {
+      "Physical Power": 20,
+      "Attack Speed": 35,
+      "Critical Chance": 20,
+      "Movement Speed": 3
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Zap",
+      "description": "Every fourth successful basic attack within 3s releases a bolt of lightning that leaps between 7 targets, dealing magical damage to each."
+      }
+    ]
+  },
+  {
+    "name": "Tainted Scepter",
+    "cost": 3100,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power", "Magical Lifesteal", "Health"],
+    "stats": {
+      "Magical Power": 60,
+      "Magical Lifesteal": 10,
+      "Health": 300
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Blight",
+      "description": "Dealing magical damage reduces the target's healing by 60^ for 3s."
+      }
+    ]
+  },
   {
     "name": "Void Helm",
     "cost": 3100,

@@ -325,7 +325,7 @@
     "name": "Brutallax",
     "cost": 400,
     "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Crest", "Physical Power", "Health", "Lifesteal"],
+    "tags": ["Passive", "Active", "Physical Power", "Health", "Lifesteal"],
     "stats": {
       "Physical Power": 20,
       "Health": 100,
@@ -340,11 +340,544 @@
       }
     ]
   },
-
-
-
-
-
+  {
+    "name": "Champion Crest",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Crest", "Physical Power", "Health"],
+    "stats": {
+      "Physical Power": 10,
+      "Health": 100
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Dealing damage to an Enemy Hero/Jungle Minion or killing an Enemy Target restores 2.5% maximum health over 15s. After restoring 400 health, allows the purchase of a "Legendary" Item."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 15 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Fenix",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Active", "Physical Power", "Health"],
+    "stats": {
+      "Physical Power": 30,
+      "Health": 100
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "Mark your current location. For the next 6s, upon taking lethal damage, resurrect at the target location and restore 40% maximum health and mana - 210s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 30 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Iceskorn Talons",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Active", "Physical Power", "Health", "Ability Haste"],
+    "stats": {
+      "Physical Power": 25,
+      "Health": 200,
+      "Ability Haste": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "Create a dueling zone around you in a large area that remains for 15s. Enemy units within are slowed by 15% and you gain increased damage and movement speed whilst inside - 30s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 30 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Warrior Crest",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Crest", "Physical Power", "Health"],
+    "stats": {
+      "Physical Power": 6,
+      "Health": 40
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Dealing damage to an Enemy Hero/Jungle Minion or killing an Enemy Target restores 2.5% maximum health over 15s. After restoring 400 health, evolve into Champion Crest."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 15 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Epoch",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Active", "Magical Power", "Mana", "Magical Penetration", "Health"],
+    "stats": {
+      "Magical Power": 25,
+      "Mana": 120,
+      "Magical Penetration": 8,
+      "Health": 120
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "Enter Stasis for 2.5s, rendering yourself invulnerable for the duration but unable to perform actions - 120s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 30 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Magician Crest",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Crest", "Magical Power", "Mana"],
+    "stats": {
+      "Magical Power": 10,
+      "Mana": 50
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Dealing damage to an Enemy Hero/Jungle Minion with an ability restores 5 mana (Once per ability), killing an Enemy Target restores 10 mana. After restoring 400 mana, evolve into Wizard Crest."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 15 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Obelisk",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Active", "Magical Power", "Health", "Magical Penetration"],
+    "stats": {
+      "Magical Power": 35,
+      "Health": 100,
+      "Magical Penetration": 8
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "Enhance your next basic attack to deal additional magic damage, increased by the amount of Souls you have gathered. If this kills the target or they die within 4s, gain an additional Soul - 30s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "When you achieve a takedown, gain a Soul that permanently grants you 3 Magical Power."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 30 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Occult Crest",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Crest", "Magical Power", "Health"],
+    "stats": {
+      "Magical Power": 10,
+      "Health": 40
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Dealing damage to an Enemy Hero/Jungle Minion with an ability restores 5 health (Once per ability), killing an Enemy Target restores 10 health. After restoring 400 health, evolve into Warlock Crest."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 15 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Soulbearer",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Active", "Magical Power", "Mana", "Magical Penetration", "Ability Haste"],
+    "stats": {
+      "Magical Power": 15,
+      "Mana": 300,
+      "Magical Penetration": 8,
+      "Ability Haste": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "Shield yourself based on your maximum mana for 4s, while shielded you are immune to CC - 120s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 30 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Tempest",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Active", "Magical Power", "Health", "Magical Penetration", "Ability Haste"],
+    "stats": {
+      "Magical Power": 15,
+      "Health": 150,
+      "Magical Penetration": 8,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "Overcharge for 8s causing lightning to zap up to 3 nearby Enemy Heroes every second dealing magical damage and healing you equal to the damage dealt. Multiple strikes can hit the same target dealing 50% damage per each strike beyond the first - 90s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 30 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Time-Flux Band",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Active", "Magical Power", "Mana", "Magical Penetration", "Ability Haste"],
+    "stats": {
+      "Magical Power": 20,
+      "Mana": 150,
+      "Magical Penetration": 8,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "Mark your current location. After 4s, teleport back to the marked location and reset your basic ability cooldowns - 60s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 30 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Typhoon",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Active", "Magical Power", "Health", "Magical Penetration", "Attack Speed"],
+    "stats": {
+      "Magical Power": 20,
+      "Health": 100,
+      "Magical Penetration": 8,
+      "Attack Speed": 15
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "When at maximum stacks of Typhoon, dash in current movement direction and reduce your current basic ability cooldowns by 3s - 30s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Basic attacks grant a stack of Typhoon for 3s, stacking up to 6 times. Each stack grants additional attack speed."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 30 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Warlock Crest",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Crest", "Magical Power", "Health", "Magical Penetration"],
+    "stats": {
+      "Magical Power": 12,
+      "Health": 100,
+      "Magical Penetration": 4
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Dealing damage to an Enemy Hero/Jungle Minion with an ability restores 5 health (Once per ability), killing an Enemy Target restores 10 health. After restoring 400 health, allows the purchase of a "Legendary" Item."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 15 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Wizard Crest",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Crest", "Magical Power", "Mana", "Magical Penetration"],
+    "stats": {
+      "Magical Power": 12,
+      "Mana": 120,
+      "Magical Penetration": 4
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Dealing a damage to an Enemy Hero/Jungle Minion with an ability restores 5 mana (Once per ability), killing an Enemy Target restores 10 mana. After restoring 400 mana, allows the purchase of a "Legendary" Item."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 15 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Citadel",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Active", "Health", "Health Regeneration", "Physical Armor", "Magical Armor"],
+    "stats": {
+      "Health": 150,
+      "Health Regeneration": 1,
+      "Physical Armor": 15,
+      "Magical Armor": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "Redirect 35% of all damage dealt to nearby Allied Heroes to yourself and reduce it by 80% for 8s. This effect disables if you fall below 15% maximum health - 120s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Increase Passive Gold Income by 50% and receive diminishing gold from excessive Minion kills."
+      },{
+      "descriptionType": "Passive",
+      "description": "Increase Ward Cap from 2 to 3."
+      }
+    ]
+  },
+  {
+    "name": "Consort Crest",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Crest", "Magical Power", "Mana Regeneration"],
+    "stats": {
+      "Magical Power": 5,
+      "Mana Regeneration": 0.5
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Grants a charge every 30s, up to 3 charges. Your next basic attack or damaging ability against an Enemy Hero, Minion or Structure will deal 10 additional magical damage and grant you 40 gold. Does not accur if no Allied Hero is within 3000 units. After granting 400 gold, evolves into Keeper Crest."
+      },{
+      "descriptionType": "Passive",
+      "description": "Receive diminishing gold from excessive Minion kills."
+      }
+    ]
+  },
+  {
+    "name": "Guardian Crest",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Crest", "Health", "Health Regeneration"],
+    "stats": {
+      "Health": 40,
+      "Health Regeneration": 0.5
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Grants a charge every 30s, up to 3 charges. Your next basic attack or damaging ability against an Enemy Hero, Minion or Structure will restore 20 health and grant you 40 gold. Does not occur if no Allied Hero is within 3000 units. After granting 400 gold, evolves into Warden Crest."
+      },{
+      "descriptionType": "Passive",
+      "description": "Receive diminishing gold from excessive Minion kills."
+      }
+    ]
+  },
+  {
+    "name": "Keeper Crest",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Crest", "Magical Power", "Mana Regeneration", "Gold Per Second"],
+    "stats": {
+      "Magical Power": 10,
+      "Mana Regeneration": 1,
+      "Gold Per Second": 0.5
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Grants a charge every 30s, up to 3 charges. Your next basic attack or damaging ability against an Enemy Hero, Minion or Structure will deal 15 additional magical damage and grant you 40 gold. Does not occur if no Allied Hero is within 3000 units. After granting 400 gold, allows the purchase of a "Legendary" Item."
+      },{
+      "descriptionType": "Passive",
+      "description": "Receive diminishing gold from excessive Minion kills."
+      }
+    ]
+  },
+  {
+    "name": "Malediction",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Active", "Magical Power", "Physical Armor", "Mana Regeneration"],
+    "stats": {
+      "Magical Power": 20,
+      "Physical Armor": 15,
+      "Mana Regeneration": 2
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "Target a nearby Enemy Hero, slowing and reducing their attack speed by for 2.5s - 90s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Increase Passive Gold income by 50% and receive diminishing gold from excessive Minion kills."
+      },{
+      "descriptionType": "Passive",
+      "description": "Increase Ward Cap from 2 to 3."
+      }
+    ]
+  },
+  {
+    "name": "Rift Walkers",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Active", "Magical Power", "Health", "Health Regeneration", "Mana"],
+    "stats": {
+      "Magical Power": 20,
+      "Health": 150,
+      "Health Regeneration": 1,
+      "Mana": 100
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "Dash forward a short distance and pull all nearby Enemy Heroes towards you. Enemy Heroes pulled take increased damage for 3s - 120s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Increase Passive Gold Income by 50% and receive diminishing gold from excessive Minion kills."
+      },{
+      "descriptionType": "Passive",
+      "description": "Increase Ward Cap from 2 to 3."
+      }
+    ]
+  },
+  {
+    "name": "Sanctification",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Active", "Health", "Health Regeneration", "Mana Regeneration"],
+    "stats": {
+      "Health": 200,
+      "Health Regeneration": 2,
+      "Mana Regeneration": 2
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "Grants nearby Allied Heroes a large shield for 3s. Whilst the shield holds, Heroes gain tenacity - 120s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Increase Passive Gold Income by 50% and receive diminishing gold from excessive Minion kills."
+      },{
+      "descriptionType": "Passive",
+      "description": "Increase Ward Cap from 2 to 3."
+      }
+    ]
+  },
+  {
+    "name": "Silentium",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Active", "Magical Power", "Magical Armor", "Mana Regeneration"],
+    "stats": {
+      "Magical Power": 25,
+      "Magical Armor": 10,
+      "Mana Regeneration": 2
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "Silences a target within 700 units for 1.5s, if this interrupts an ability, they additionally take magical damage - 90s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Increase Passive Gold Income by 50% and receive diminishing gold from excessive Minion kills."
+      },{
+      "descriptionType": "Passive",
+      "description": "Increase Ward Cap from 2 to 3."
+      }
+    ]
+  },
+  {
+    "name": "Thread of Mortality",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Active", "Magical Power", "Mana Regeneration", "Ability Haste"],
+    "stats": {
+      "Magical Power": 25,
+      "Mana Regeneration": 2,
+      "Ability Haste": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "Designate an Allied Hero as a Companion, if your Companion is nearby and takes damage greater than 8% of their maximum health, they gain a large shield and you both deal increased damage for 5s. If either you or your Companion die, the other receives a 10% movement speed boost for 5s - 15s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Increase Passive Gold Income by 50% and receive diminishing gold from excessive Minion kills."
+      },{
+      "descriptionType": "Passive",
+      "description": "Increase Ward Cap from 2 to 3."
+      }
+    ]
+  },
+  {
+    "name": "Warden Crest",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Crest", "Health", "Health Regeneration", "Gold Per Second"],
+    "stats": {
+      "Health": 120,
+      "Health Regeneration": 1,
+      "Gold Per Second": 0.5
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Grants a charge every 30s, up to 3 charges. Your next basic attack or damaging ability against an Enemy Hero, Minion or Structure will restore 30 health and grant you 40 gold. Does not occur if no Allied Hero is within 3000 units. After granting 400 gold, allows the purchase of a "Legendary" Item."
+      },{
+      "descriptionType": "Passive",
+      "description": "Receive diminishing gold from excessive Minion kills."
+      }
+    ]
+  },
+  {
+    "name": "Goliath Crest",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Crest", "Health", "Health Regeneration"],
+    "stats": {
+      "Health": 120,
+      "health Regeneration": 1
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "After taking damage, heal 15 (+1% of maximum health) over 15s. This healing is doubled for 5s after killing an Enemy Target. After restoring 400 health, allows the purchase of a "Legendary" Item."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 15 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Nyr Warboots",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Active", "Health", "Health Regeneration", "Physical Armor", "Magical Armor"],
+    "stats": {
+      "Health": 160,
+      "Health Regeneration": 2,
+      "Physical Armor": 12,
+      "Magical Armor": 12
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "Gain 20% movement speed and gain stacks of Resilience equal to damage taken for 5s. After the duration, restore health equal to 60% of Resilience over 3s - 120s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 30 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Razorback",
+    "cost": 400,
+    "rarity": "Legendary",
+    "tags": ["Passive", "Active", "Health", "Health Regeneration", "Physical Armor", "Magical Armor"],
+    "stats": {
+      "Health": 120,
+      "Health Regeneration": 2,
+      "Physical Armor": 20,
+      "Magical Armor": 8
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "For 3s, reflect 60% of the damage dealt to you back to the source - 90s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Deal 30 extra basic damage to Minions."
+      }
+    ]
+  },
   {
     "name": "Codex",
     "cost": 300,

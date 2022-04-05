@@ -1900,6 +1900,363 @@
       }
     ]
   },
-
+  {
+    "name": "Breach",
+    "cost": 2800,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Attack Speed", "Ability Haste"],
+    "stats": {
+      "Physical Power": 40,
+      "Attack Speed": 20,
+      "Ability Haste": 10,
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Deal 30% bonus damage to shielded targets as physical damage on-hit and slow the target by 20% for 1s."
+      }
+    ]
+  },
+  {
+    "name": "Dreambinder",
+    "cost": 2800,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power", "Health"],
+    "stats": {
+      "Magical Power": 70,
+      "Health": 250,
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Damaging abilities slow affected units by 20% for 1s."
+      },{
+      "descriptionType": "Passive - Fiend",
+      "description": "Dealing magic damage to an Enemy Hero increases magical damage dealt by 3% for 5s. Stacks up to 5 times."
+      }
+    ]
+  },
+    {
+    "name": "Galaxy Greaves",
+    "cost": 2800,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Armor", "Magical Armor", "Mana Regeneration"],
+    "stats": {
+      "Physical Armor": 30,
+	  "Magical Armor": 30,
+	  "Mana Regeneration": 3,
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Moving generates stacks of ZeroG, at 100 stacks your next jump will have increased height."
+      },{
+      "descriptionType": "Passive - Celerity",
+      "description": "Gain 10% movement speed out of combat."
+      }
+    ]
+  },
+    {
+    "name": "Hexbound Bracers",
+    "cost": 2800,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Armor", "Mana", "Ability Haste"],
+    "stats": {
+      "Physical Armor": 45,
+	  "Mana": 450,
+	  "Ability Haste": 20,
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Restore mana equal to 10% of damage taken from Heroes."
+      },{
+      "descriptionType": "Passive",
+      "description": "Gain 20 ability haste when above 60% maximum mana."
+      }
+    ]
+  },
+    {
+    "name": "Mirage",
+    "cost": 2800,
+    "rarity": "Epic",
+    "tags": ["Passive", "Attack Speed", "Critical Chance"],
+    "stats": {
+      "Attack Speed": 50,
+	  "Critical Chance": 20,
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Basic attacking an Enemy Hero grants the ability to travel through units and 1% movement speed for 3s stacking up to 5 times."
+      },{
+      "descriptionType": "Passive",
+      "description": "Reaching max stacks of Dancer grants a large shield for 4s - 30s CD."
+      },{
+		"descriptionType": "Passive",
+		"description": "Basic attacks deal 20 bonus true damage on-hit."
+	  }
+    ]
+  },
+    {
+    "name": "Overlord",
+    "cost": 2800,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Health"],
+    "stats": {
+      "Physical Power": 25,
+	  "Health": 350,
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Basic attacks deal physical damage based on your bonus health."
+      },{
+      "descriptionType": "Passive - Cleave",
+      "description": "Basic attacks deal physical damage in a small area around the target."
+      }
+    ]
+  },
+    {
+    "name": "The Perforator",
+    "cost": 2800,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power"],
+    "stats": {
+      "Physical Power": 50
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Gain 40% physical penetration."
+      }
+    ]
+  },
+    {
+    "name": "Flux Matrix",
+    "cost": 2850,
+    "rarity": "Epic",
+    "tags": ["Passive", "Health", "Health Regeneration", "Magical Armor", "Ability Haste"],
+    "stats": {
+      "Health": 300,
+	  "Health Regeneration": 2,
+	  "Magical Armor": 30,
+	  "Ability Haste": 10,
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Nearby Enemy Heroes take 15% additional magical damage."
+      },{
+      "descriptionType": "Passive - Tenacity",
+      "description": "Gain 35% Tenacity."
+      }
+    ]
+  },
+    {
+    "name": "Palisade",
+    "cost": 2850,
+    "rarity": "Epic",
+    "tags": ["Passive", "Health", "Physical Armor", "Ability Haste"],
+    "stats": {
+      "Health": 200,
+	  "Physical Armor": 60,
+	  "Ability Haste": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Blight",
+      "description": "When struck by a basic attack on-hit, reduce the attacker's healing by 60% and apply a bleed that deals magical damage based on your physical armor over 3s, increased by 150% to Jungle minions."
+      }
+    ]
+  },
+    {
+    "name": "Demon Edge",
+    "cost": 2900,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Physical Penetration"],
+    "stats": {
+      "Physical Power": 50,
+	  "Physical Penetration": 14,
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Blight",
+      "description": "Dealing physical damage reduces the target's healing by 60% for 3s."
+      }
+    ]
+  },
+    {
+    "name": "Dreadwind",
+    "cost": 2900,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Physical Penetration", "Health"],
+    "stats": {
+      "Physical Power": 35,
+	  "Physical Penetration": 8,
+	  "Health": 180
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Spell Shield",
+      "description": "Grants a Spell Shield that blocks the next Enemy ability - 80s CD."
+      },{
+      "descriptionType": "Passive - Sunder",
+      "description": "Every third consecutive basic attack or ability deals bonus physical damage, Slows them by 20% for 1s and reduces the cooldown of Spell Shield by 5s."
+      }
+    ]
+  },
+    {
+    "name": "Lethea",
+    "cost": 2900,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power", "Magical Penetration"],
+    "stats": {
+      "Magical Power": 80,
+	  "Magical Penetration": 12
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Blight",
+      "description": "Dealing magical damage reduces the target's healing by 60% for 3s."
+      }
+    ]
+  },
+    {
+    "name": "Unspoken Will",
+    "cost": 2900,
+    "rarity": "Epic",
+    "tags": ["Passive", "Health", "Health Regeneration", "Magical Armor"],
+    "stats": {
+      "Health": 450,
+	  "Health Regeneration": 2.5,
+	  "Magical Armor": 20,
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "If you are hit by a displacement, you restore (+16% Maximum Health) health over 8s."
+      },{
+      "descriptionType": "Passive - Tenacity",
+      "description": "Gain 35% Tenacity."
+      }
+    ]
+  },
+    {
+    "name": "Blackout",
+    "cost": 2950,
+    "rarity": "Epic",
+    "tags": ["Active", "Physical Power", "Physical Penetration", "Ability Haste"],
+    "stats": {
+      "Physical Power": 40,
+	  "Physical Penetration": 8,
+	  "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "Reveal nearby stealthed Heroes and Wards and gain 15% decaying movement speed for 10s - 90s CD."
+      }
+    ]
+  },
+    {
+    "name": "Azure Core",
+    "cost": 3000,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power", "Mana", "Ability Haste"],
+    "stats": {
+      "Magical Power": 60,
+	  "Mana": 400,
+	  "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Font",
+      "description": "Killing an Enemy Minion grants 8 bonus mana per stack, up to a maximum of 400 bonus mana. At maximum stacks, gain 20 ability haste."
+      },{
+      "descriptionType": "Passive",
+      "description": "When you damage an Enemy target with an ability or basic attack, restore maximum mana over 3s, stacking up to 4 times. At maximum stacks, gain ability haste."
+      }
+    ]
+  },
+    {
+    "name": "Basilisk",
+    "cost": 3000,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Health", "Ability Haste"],
+    "stats": {
+      "Physical Power": 35,
+	  "Health": 250,
+	  "Ability Haste": 20,
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Corrode",
+      "description": "Dealing damage to an Enemy Hero reduces their physical armor by 5% for 2s. Stacks up to 6 times."
+      },{
+      "descriptionType": "Passive - Sunder",
+      "description": "Every third consecutive basic attack deals bonus physical damage and slows them by 20% for 1s."
+      }
+    ]
+  },
+    {
+    "name": "Draconum",
+    "cost": 3000,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Physical Armor", "Magical Armor", "Ability Haste"],
+    "stats": {
+      "Physical Power": 25,
+	  "Physical Armor": 25,
+	  "Magical Armor": 25,
+	  "Ability Haste": 10,
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Hero takedowns grant you 30 attack speed and regenerate 6% of your missing health per second for 8s."
+      }
+    ]
+  },
+    {
+    "name": "Frostguard",
+    "cost": 3000,
+    "rarity": "Epic",
+    "tags": ["Passive", "Health", "Physical Armor", "Mana", "Ability Haste"],
+    "stats": {
+      "Health": 120,
+	  "Physical Armor": 40,
+	  "Mana": 250,
+	  "Ability Haste": 10,
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Slow nearby enemies by 10% and apply a stack of Stifle every 0.5s."
+      },{
+      "descriptionType": "Passive - Stifle",
+      "description": "When hit by a basic attack, reduce the source's attack speed by 5% for 3s, stacking up to 5 times."
+      }
+    ]
+  },
+    {
+    "name": "Glacial Maul",
+    "cost": 3000,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Armor", "Mana", "Ability Haste"],
+    "stats": {
+      "Physical Armor": 50,
+	  "Mana": 300,
+	  "Ability Haste": 20,
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Spellblade",
+      "description": "After using an ability, your next 2 basic attacks within 6s deal bonus physical damage based on your maximum health and slows the target by 10% for 1s, stacking up to 2 times - 3s CD."
+      },{
+      "descriptionType": "Passive - Blight",
+      "description": "Receiving physical damage reduces the target's healing by 60% for 3s."
+      }
+    ]
+  },
+    {
+    "name": "Kingsbane",
+    "cost": 3000,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Physical Armor", "Critical Chance"],
+    "stats": {
+      "Physical Power": 40,
+	  "Physical Armor": 25,
+	  "Critical Chance": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Shockwave",
+      "description": "If you would take damage that would reduce you below 30% maximum health, you unleash a shockwave that stuns all nearby enemies for 1s - 90s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Successful critical strikes increase your physical armor for 3s, stacking up to 5 times."
+      }
+    ]
+  },
 
 ]

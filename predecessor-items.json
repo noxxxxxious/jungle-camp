@@ -1646,7 +1646,7 @@
     "name": "Marshal",
     "cost": 2600,
     "rarity": "Epic",
-    "tags": ["Passive", "Magical Power", "Mana Regeneration". "Ability Haste"],
+    "tags": ["Passive", "Magical Power", "Mana Regeneration", "Ability Haste"],
     "stats": {
       "Magical Power": 35,
       "Mana Regeneration": 3,
@@ -1804,5 +1804,102 @@
       }
     ]
   },
+  {
+    "name": "Elafrost",
+    "cost": 2750,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power", "Attack Speed", "Ability Haste"],
+    "stats": {
+      "Magical Power": 50,
+      "Attack Speed": 15,
+      "Ability Haste": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Frostbite",
+      "description": "Basic attacks Slow the target by 3% for 2s, stacking up to 8 times. At max stacks, Root the target for 1.25s. The Root has an 8s cooldown per target."
+      }
+    ]
+  },
+  {
+    "name": "Leafsong",
+    "cost": 2750,
+    "rarity": "Epic",
+    "tags": ["Active", "Passive", "Magical Power", "Health", "Mana Regeneration", "Ability Haste"],
+    "stats": {
+      "Magical Power": 30,
+      "Health": 150,
+      "Mana Regeneration": 3.5,
+      "Ability Haste": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Active",
+      "description": "Expend all stacks of Penance to heal nearby Allied Heroes for 20% of Penance - 15s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Healing or shielding an ally grants charges of Penance equal to the value shielded/healed. Stacks cap at 1000."
+      },{
+      "descriptionType": "Passive",
+      "description": "Your heals and shields are 15% more effective."
+      }
+    ]
+  },
+  {
+    "name": "Stonewall",
+    "cost": 2750,
+    "rarity": "Epic",
+    "tags": ["Passive", "Health", "Health Regeneration", "Physical Armor"],
+    "stats": {
+      "Health": 300,
+      "Health Regeneration": 3,
+      "Physical Armor": 35
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Shockwave",
+      "description": "If you would take damage that would reduce you below 30% maximum health, you unleash a shockwave that stuns all nearby enemies for 1s - 90s CD."
+      },{
+      "descriptionType": "Passive - Stalwart",
+      "description": "Reduce physical damage taken by 8 (+8% Physical Armor)."
+      }
+    ]
+  },
+  {
+    "name": "Truesilver Bracelet",
+    "cost": 2750,
+    "rarity": "Epic",
+    "tags": ["Passive", "Magical Power", "Health", "Magical Armor", "Ability Haste"],
+    "stats": {
+      "Magical Power": 35,
+      "Health": 200,
+      "Magical Armor": 25,
+      "Ability Haste": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "When you cast your ultimate ability, gain a Spell Shield for 6s - 45s CD."
+      },{
+      "descriptionType": "Passive - Tenacity",
+      "description": "Gain 35% Tenacity."
+      }
+    ]
+  },
+  {
+    "name": "Bonesaw",
+    "cost": 2800,
+    "rarity": "Epic",
+    "tags": ["Passive", "Physical Power", "Health"],
+    "stats": {
+      "Physical Power": 20,
+      "Health": 400
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Sunder",
+      "description": "Every third consecutive basic attack deals bonus physical damage based on your maximum health and Slows them by 20% for 1s."
+      },{
+      "descriptionType": "Passive",
+      "description": "Dealing damage with Sunder grants attack speed for 4s, stacking up to 6 times."
+      }
+    ]
+  },
+
 
 ]

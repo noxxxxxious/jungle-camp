@@ -4,6 +4,7 @@
     "cost": 25,
     "rarity": "Common",
     "tags": ["Consumable", "Ward", "Active"],
+		"components": [],
     "descriptions": [{
       "descriptionType": "Consume",
       "description": "Reveal all wards in an 800 unit radius for 15 seconds. Max stacks: 1"
@@ -14,6 +15,7 @@
     "cost": 25,
     "rarity": "Common",
     "tags": ["Consumable", "Ward", "Active"],
+		"components": [],
     "descriptions": [{
       "descriptionType": "Consume",
       "description": "Place an invisible ward at target location that revealse nearby Visible and Camouflagued enemy targets, lasts for 2 and a half minutes. Max stacks: 2"
@@ -24,6 +26,7 @@
     "cost": 50,
     "rarity": "Common",
     "tags": ["Consumable", "Potion", "Active"],
+		"components": [],
     "descriptions": [{
       "descriptionType": "Consume",
       "description": "Regenerates 6 health and 3 mana per second for 16 seconds, restoring a total of 90 health and 45 mana."
@@ -34,6 +37,7 @@
     "cost": 50,
     "rarity": "Common",
     "tags": ["Consumable", "Potion", "Active"],
+		"components": [],
     "descriptions": [{
       "descriptionType": "Consume",
       "description": "Regenerates 10 health per second for 15 seconds, restoring a total of 150 health."
@@ -44,6 +48,7 @@
     "cost": 50,
     "rarity": "Common",
     "tags": ["Consumable", "Potion", "Active"],
+		"components": [],
     "descriptions": [{
       "descriptionType": "Consume",
       "description": "Restores 6 mana per second for 15 seconds, restoring a total of 90 mana."
@@ -54,6 +59,7 @@
     "cost": 50,
     "rarity": "Uncommon",
     "tags": ["Passive", "Jungle Item"],
+		"components": [],
     "descriptions": [{
       "descriptionType": "Passive - Artifact",
       "description": "Deal additional damage to monsters and if melee, heal based on the damage dealt. Basic attacks against monsters regenerate mana on-hit and execute large monsters under 300 (+50 per level) health."
@@ -71,6 +77,7 @@
     "cost": 150,
     "rarity": "Common",
     "tags": ["Consumable", "Potion", "Active"],
+		"components": [],
     "descriptions": [{
       "descriptionType": "Consume",
       "description": "Restores 12 health per second for 12 seconds, restoring a total of 120 health. Holds 2 charges that refill upon visiting the base."
@@ -81,6 +88,7 @@
     "cost": 200,
     "rarity": "Uncommon",
     "tags": ["Passive", "Mana Regeneration"],
+		"components": [],
     "stats": {
       "Mana Regeneration": 1
     }
@@ -90,6 +98,7 @@
     "cost": 200,
     "rarity": "Uncommon",
     "tags": ["Passive", "Health Regeneration"],
+		"components": [],
     "stats": {
       "Health Regeneration": 1
     }
@@ -99,6 +108,7 @@
     "cost": 300,
     "rarity": "Uncommon",
     "tags": ["Passive", "Attack Speed"],
+		"components": [],
     "stats": {
       "Attack Speed": 10
     }
@@ -108,6 +118,7 @@
     "cost": 300,
     "rarity": "Uncommon",
     "tags": ["Passive", "Magical Armor"],
+		"components": [],
     "stats": {
       "Magical Armor": 10
     }
@@ -117,6 +128,7 @@
     "cost": 300,
     "rarity": "Uncommon",
     "tags": ["Passive", "Physical Armor"],
+		"components": [],
     "stats": {
       "Physical Armor": 10
     }
@@ -126,6 +138,7 @@
     "cost": 300,
     "rarity": "Uncommon",
     "tags": ["Passive", "Health"],
+		"components": [],
     "stats": {
       "Health": 100
     }
@@ -135,6 +148,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Crest", "Physical Power", "Ability Haste", "Physical Penetration"],
+		"components": [],
     "stats": {
       "Physical Power": 10,
       "Ability Haste": 10,
@@ -154,6 +168,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Active", "Physical Power", "Ability Haste", "Physical Penetration"],
+		"components": [],
     "stats": {
       "Physical Power": 25,
       "Ability Haste": 10,
@@ -176,6 +191,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Active", "Crest", "Physical Power", "Ability Haste", "Physical Penetration"],
+		"components": [],
     "stats": {
       "Physical Power": 20,
       "Ability Haste": 20,
@@ -195,6 +211,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Crest", "Physical Power", "Ability Haste"],
+		"components": [],
     "stats": {
       "Physical Power": 6,
       "Ability Haste": 5
@@ -213,6 +230,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Active", "Crest", "Physical Power", "Ability Haste", "Physical Penetration", "Omnivamp"],
+		"components": [],
     "stats": {
       "Physical Power": 15,
       "Ability Haste": 10,
@@ -233,6 +251,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Active", "Crest", "Physical Power", "Attack Speed", "Critical Chance"],
+		"components": [],
     "stats": {
       "Physical Power": 10,
       "Attack Speed": 20,
@@ -252,6 +271,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Active", "Crest", "Physical Power", "Attack Speed", "Critical Chance", "Lifesteal"],
+		"components": [],
     "stats": {
       "Physical Power": 10,
       "Attack Speed": 10,
@@ -272,6 +292,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Crest", "Physical Power", "Attack Speed", "Om"],
+		"components": [],
     "stats": {
       "Physical Power": 5,
       "Attack Speed": 5
@@ -290,6 +311,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Active", "Crest", "Physical Power", "Attack Speed", "Critical Chance"],
+		"components": [],
     "stats": {
       "Physical Power": 18,
       "Attack Speed": 10,
@@ -309,6 +331,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Crest", "Physical Power", "Attack Speed"],
+		"components": [],
     "stats": {
       "Physical Power": 10,
       "Attack Speed": 10
@@ -324,6 +347,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Active", "Physical Power", "Health", "Lifesteal"],
+		"components": [],
     "stats": {
       "Physical Power": 20,
       "Health": 100,
@@ -343,6 +367,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Crest", "Physical Power", "Health"],
+		"components": [],
     "stats": {
       "Physical Power": 10,
       "Health": 100
@@ -361,6 +386,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Active", "Physical Power", "Health"],
+		"components": [],
     "stats": {
       "Physical Power": 30,
       "Health": 100
@@ -379,6 +405,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Active", "Physical Power", "Health", "Ability Haste"],
+		"components": [],
     "stats": {
       "Physical Power": 25,
       "Health": 200,
@@ -398,6 +425,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Crest", "Physical Power", "Health"],
+		"components": [],
     "stats": {
       "Physical Power": 6,
       "Health": 40
@@ -416,6 +444,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Active", "Magical Power", "Mana", "Magical Penetration", "Health"],
+		"components": [],
     "stats": {
       "Magical Power": 25,
       "Mana": 120,
@@ -436,6 +465,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Crest", "Magical Power", "Mana"],
+		"components": [],
     "stats": {
       "Magical Power": 10,
       "Mana": 50
@@ -454,6 +484,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Active", "Magical Power", "Health", "Magical Penetration"],
+		"components": [],
     "stats": {
       "Magical Power": 35,
       "Health": 100,
@@ -476,6 +507,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Crest", "Magical Power", "Health"],
+		"components": [],
     "stats": {
       "Magical Power": 10,
       "Health": 40
@@ -494,6 +526,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Active", "Magical Power", "Mana", "Magical Penetration", "Ability Haste"],
+		"components": [],
     "stats": {
       "Magical Power": 15,
       "Mana": 300,
@@ -514,6 +547,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Active", "Magical Power", "Health", "Magical Penetration", "Ability Haste"],
+		"components": [],
     "stats": {
       "Magical Power": 15,
       "Health": 150,
@@ -534,6 +568,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Active", "Magical Power", "Mana", "Magical Penetration", "Ability Haste"],
+		"components": [],
     "stats": {
       "Magical Power": 20,
       "Mana": 150,
@@ -554,6 +589,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Active", "Magical Power", "Health", "Magical Penetration", "Attack Speed"],
+		"components": [],
     "stats": {
       "Magical Power": 20,
       "Health": 100,
@@ -577,6 +613,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Crest", "Magical Power", "Health", "Magical Penetration"],
+		"components": [],
     "stats": {
       "Magical Power": 12,
       "Health": 100,
@@ -596,6 +633,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Crest", "Magical Power", "Mana", "Magical Penetration"],
+		"components": [],
     "stats": {
       "Magical Power": 12,
       "Mana": 120,
@@ -615,6 +653,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Active", "Health", "Health Regeneration", "Physical Armor", "Magical Armor"],
+		"components": [],
     "stats": {
       "Health": 150,
       "Health Regeneration": 1,
@@ -638,6 +677,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Crest", "Magical Power", "Mana Regeneration"],
+		"components": [],
     "stats": {
       "Magical Power": 5,
       "Mana Regeneration": 0.5
@@ -656,6 +696,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Crest", "Health", "Health Regeneration"],
+		"components": [],
     "stats": {
       "Health": 40,
       "Health Regeneration": 0.5
@@ -674,6 +715,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Crest", "Magical Power", "Mana Regeneration", "Gold Per Second"],
+		"components": [],
     "stats": {
       "Magical Power": 10,
       "Mana Regeneration": 1,
@@ -693,6 +735,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Active", "Magical Power", "Physical Armor", "Mana Regeneration"],
+		"components": [],
     "stats": {
       "Magical Power": 20,
       "Physical Armor": 15,
@@ -715,6 +758,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Active", "Magical Power", "Health", "Health Regeneration", "Mana"],
+		"components": [],
     "stats": {
       "Magical Power": 20,
       "Health": 150,
@@ -738,6 +782,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Active", "Health", "Health Regeneration", "Mana Regeneration"],
+		"components": [],
     "stats": {
       "Health": 200,
       "Health Regeneration": 2,
@@ -760,6 +805,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Active", "Magical Power", "Magical Armor", "Mana Regeneration"],
+		"components": [],
     "stats": {
       "Magical Power": 25,
       "Magical Armor": 10,
@@ -782,6 +828,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Active", "Magical Power", "Mana Regeneration", "Ability Haste"],
+		"components": [],
     "stats": {
       "Magical Power": 25,
       "Mana Regeneration": 2,
@@ -804,6 +851,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Crest", "Health", "Health Regeneration", "Gold Per Second"],
+		"components": [],
     "stats": {
       "Health": 120,
       "Health Regeneration": 1,
@@ -823,6 +871,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Crest", "Health", "Health Regeneration"],
+		"components": [],
     "stats": {
       "Health": 120,
       "health Regeneration": 1
@@ -841,6 +890,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Active", "Health", "Health Regeneration", "Physical Armor", "Magical Armor"],
+		"components": [],
     "stats": {
       "Health": 160,
       "Health Regeneration": 2,
@@ -861,6 +911,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Active", "Health", "Health Regeneration", "Physical Armor", "Magical Armor"],
+		"components": [],
     "stats": {
       "Health": 120,
       "Health Regeneration": 2,
@@ -881,6 +932,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Active", "Health", "Health Regeneration", "Physical Armor", "Magical Armor"],
+		"components": [],
     "stats": {
       "Health": 180,
       "Health Regeneration": 2,
@@ -901,6 +953,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Crest", "Health"],
+		"components": [],
     "stats": {
       "Health": 80
     },
@@ -918,6 +971,7 @@
     "cost": 400,
     "rarity": "Uncommon",
     "tags": ["Passive", "Magical Power", "Ability Haste"],
+		"components": [],
     "stats": {
       "Magical Power": 5,
       "Ability Haste": 5
@@ -933,6 +987,7 @@
     "cost": 400,
     "rarity": "Uncommon",
     "tags": ["Passive", "Physical Power"],
+		"components": [],
     "stats": {
       "Physical Power": 8
     }
@@ -942,6 +997,7 @@
     "cost": 400,
     "rarity": "Uncommon",
     "tags": ["Passive", "Mana"],
+		"components": [],
     "stats": {
       "Mana": 200
     }
@@ -951,6 +1007,7 @@
     "cost": 450,
     "rarity": "Uncommon",
     "tags": ["Passive", "Magical Power"],
+		"components": [],
     "stats": {
       "Magical Power": 15
     }
@@ -960,6 +1017,7 @@
     "cost": 600,
     "rarity": "Uncommon",
     "tags": ["Passive", "Critical Chance"],
+		"components": [],
     "stats": {
       "Critical Chance": 15
     }
@@ -969,6 +1027,7 @@
     "cost": 600,
     "rarity": "Uncommon",
     "tags": ["Passive"],
+		"components": [],
     "descriptions": [{
       "descriptionType": "Passive - Spellblade",
       "description": "After using an ability, your next 2 basic attacks within 6s deal bonus physical damage - 3s CD."
@@ -980,6 +1039,7 @@
     "cost": 700,
     "rarity": "Uncommon",
     "tags": ["Passive", "Physical Power"],
+		"components": [],
     "stats": {
       "Physical Power": 15
     }
@@ -989,6 +1049,7 @@
     "cost": 700,
     "rarity": "Rare",
     "tags": ["Passive", "Physical Power", "Lifesteal"],
+		"components": [],
     "stats": {
       "Physical Power": 10,
       "Lifesteal": 5
@@ -999,6 +1060,7 @@
     "cost": 700,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Armor"],
+		"components": [],
     "stats": {
       "Magical Armor": 10
     }
@@ -1008,6 +1070,7 @@
     "cost": 750,
     "rarity": "Epic",
     "tags": ["Consumable", "Active"],
+		"components": [],
     "descriptions": [{
       "descriptionType": "Consume",
       "description": "Grant 50 magical power and 5 mana regeneration for 5 minutes. Level 11 required for purchase. Effect is lost upon death."
@@ -1019,6 +1082,7 @@
     "cost": 750,
     "rarity": "Epic",
     "tags": ["Consumable", "Active"],
+		"components": [],
     "descriptions": [{
       "descriptionType": "Consume",
       "description": "Grant 20 physical armor, 20 magical armor and 15 tenacity for 5 minutes. Level 11 required for purchase. Effect is lost upon death."
@@ -1030,6 +1094,7 @@
     "cost": 750,
     "rarity": "Epic",
     "tags": ["Consumable", "Active"],
+		"components": [],
     "descriptions": [{
       "descriptionType": "Consume",
       "description": "Grant 300 health and 20% increased healing for 5 minutes. Level 11 required for purchase. Effect is lost upon death."
@@ -1041,6 +1106,7 @@
     "cost": 750,
     "rarity": "Epic",
     "tags": ["Consumable", "Active"],
+		"components": [],
     "descriptions": [{
       "descriptionType": "Consume",
       "description": "Grant 30 physical power and 10% omnivamp for 5 minutes. Level 11 required for purchase. Effect is lost upon death."
@@ -1052,6 +1118,7 @@
     "cost": 800,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Power", "Magical Lifesteal"],
+		"components": [],
     "stats": {
       "Magical Power": 20,
       "Magical Lifesteal": 5
@@ -1062,6 +1129,7 @@
     "cost": 800,
     "rarity": "Rare",
     "tags": ["Passive", "Mana Regeneration", "Ability Haste"],
+		"components": [],
     "stats": {
       "Mana Regeneration": 2.5,
       "Ability Haste": 10
@@ -1072,6 +1140,7 @@
     "cost": 800,
     "rarity": "Rare",
     "tags": ["Passive", "Physical Armor"],
+		"components": [],
     "stats": {
       "Physical Armor": 25
     }
@@ -1081,6 +1150,7 @@
     "cost": 800,
     "rarity": "Rare",
     "tags": ["Passive", "Health", "Ability Haste"],
+		"components": [],
     "stats": {
       "Health": 150,
       "Ability Haste": 10
@@ -1091,6 +1161,7 @@
     "cost": 850,
     "rarity": "Rare",
     "tags": ["Passive", "Physical Armor"],
+		"components": [],
     "stats": {
       "Physical Armor": 20
     },
@@ -1105,6 +1176,7 @@
     "cost": 900,
     "rarity": "Uncommon",
     "tags": ["Passive", "Magical Power"],
+		"components": [],
     "stats": {
       "Magical Power": 30
     }
@@ -1114,6 +1186,7 @@
     "cost": 900,
     "rarity": "Rare",
     "tags": ["Passive", "Health"],
+		"components": [],
     "stats": {
       "Health": 275
     }
@@ -1123,6 +1196,7 @@
     "cost": 900,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Power", "Ability Haste"],
+		"components": [],
     "stats": {
       "Magical Power": 20,
       "Ability Haste": 10
@@ -1133,6 +1207,7 @@
     "cost": 900,
     "rarity": "Rare",
     "tags": ["Passive", "Health", "Health Regeneration"],
+		"components": [],
     "stats": {
       "Health": 150,
       "Health Regeneration": 2
@@ -1143,6 +1218,7 @@
     "cost": 950,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Armor", "Mana Regeneration"],
+		"components": [],
     "stats": {
       "Magical Armor": 12,
       "Mana Regeneration": 2
@@ -1158,6 +1234,7 @@
     "cost": 1000,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Power", "Mana Regeneration"],
+		"components": [],
     "stats": {
       "Magical Power": 15,
       "Mana Regeneration": 2
@@ -1173,6 +1250,7 @@
     "cost": 1000,
     "rarity": "Rare",
     "tags": ["Passive", "Mana"],
+		"components": [],
     "stats": {
       "Mana": 400
     },
@@ -1187,6 +1265,7 @@
     "cost": 1050,
     "rarity": "Rare",
     "tags": ["Passive", "Physical Power"],
+		"components": [],
     "stats": {
       "Physical Power": 20
     },
@@ -1201,6 +1280,7 @@
     "cost": 1050,
     "rarity": "Rare",
     "tags": ["Passive", "Health", "Mana"],
+		"components": [],
     "stats": {
       "Health": 120,
       "Mana": 200
@@ -1216,6 +1296,7 @@
     "cost": 1050,
     "rarity": "Rare",
     "tags": ["Passive", "Physical Armor", "Magical Armor"],
+		"components": [],
     "stats": {
       "Physical Armor": 20,
       "Magical Armor": 15
@@ -1226,6 +1307,7 @@
     "cost": 1050,
     "rarity": "Rare",
     "tags": ["Passive", "Physical Power"],
+		"components": [],
     "stats": {
       "Physical Power": 20
     },
@@ -1240,6 +1322,7 @@
     "cost": 1100,
     "rarity": "rare",
     "tags": ["Passive", "Physical Power", "Health"],
+		"components": [],
     "stats": {
       "Physical Power": 10,
       "Health": 120
@@ -1255,6 +1338,7 @@
     "cost": 1100,
     "rarity": "Rare",
     "tags": ["Passive", "Physical Power"],
+		"components": [],
     "stats": {
       "Physical Power": 20
     },
@@ -1269,6 +1353,7 @@
     "cost": 1100,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Power"],
+		"components": [],
     "stats": {
       "Magical Power": 30
     },
@@ -1283,6 +1368,7 @@
     "cost": 1150,
     "rarity": "Rare",
     "tags": ["Passive", "Attack Speed"],
+		"components": [],
     "stats": {
       "Attack Speed": 20
     },
@@ -1297,6 +1383,7 @@
     "cost": 1150,
     "rarity": "Rare",
     "tags": ["Passive", "Physical Armor", "Mana", "Ability Haste"],
+		"components": [],
     "stats": {
       "Physical Armor": 15,
       "Mana": 200,
@@ -1308,6 +1395,7 @@
     "cost": 1150,
     "rarity": "Legendary",
     "tags": ["Passive", "Physical Armor"],
+		"components": [],
     "stats": {
       "Physical Armor": 25
     },
@@ -1322,6 +1410,7 @@
     "cost": 1200,
     "rarity": "Uncommon",
     "tags": ["Passive", "Magical Power"],
+		"components": [],
     "stats": {
       "Magical Power": 40
     }
@@ -1331,6 +1420,7 @@
     "cost": 1200,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Power", "Physical Armor"],
+		"components": [],
     "stats": {
       "Magical Power": 20,
       "Physical Armor": 10
@@ -1346,6 +1436,7 @@
     "cost": 1200,
     "rarity": "Rare",
     "tags": ["Active", "Magical Armor"],
+		"components": [],
     "stats": {
       "Magical Armor": 25
     },
@@ -1360,6 +1451,7 @@
     "cost": 1200,
     "rarity": "Rare",
     "tags": ["Passive", "Physical Power", "Ability Haste"],
+		"components": [],
     "stats": {
       "Physical Power": 20,
       "Ability Haste": 10
@@ -1370,6 +1462,7 @@
     "cost": 1250,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Power"],
+		"components": [],
     "stats": {
       "Magical Power": 30
     },
@@ -1384,6 +1477,7 @@
     "cost": 1250,
     "rarity": "Rare",
     "tags": ["Passive", "Critical Chance", "Attack Speed"],
+		"components": [],
     "stats": {
       "Critical Chance": 20,
       "Attack Speed": 15
@@ -1399,6 +1493,7 @@
     "cost": 1250,
     "rarity": "Rare",
     "tags": ["Passive", "Physical Power", "Magical Armor"],
+		"components": [],
     "stats": {
       "Physical Power": 15,
       "Magical Armor": 20
@@ -1414,6 +1509,7 @@
     "cost": 1300,
     "rarity": "Uncommon",
     "tags": ["Passive", "Physical Power"],
+		"components": [],
     "stats": {
       "Physical Power": 30
     }
@@ -1423,6 +1519,7 @@
     "cost": 1300,
     "rarity": "Rare",
     "tags": ["Passive", "Physical Power", "Lifesteal"],
+		"components": [],
     "stats": {
       "Physical Power": 15,
       "Lifesteal": 8
@@ -1438,6 +1535,7 @@
     "cost": 1300,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Armor", "Health", "Health Regeneration"],
+		"components": [],
     "stats": {
       "Magical Armor": 15,
       "Health": 120,
@@ -1454,6 +1552,7 @@
     "cost": 1300,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Power", "Health"],
+		"components": [],
     "stats": {
       "Magical Power": 25,
       "Health": 150
@@ -1469,6 +1568,7 @@
     "cost": 1300,
     "rarity": "Rare",
     "tags": ["Passive", "Physical Power"],
+		"components": [],
     "stats": {
       "Physical Power": 20
     },
@@ -1483,6 +1583,7 @@
     "cost": 1350,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Power"],
+		"components": [],
     "stats": {
       "Physical Power": 10,
       "Attack Speed": 10,
@@ -1500,6 +1601,7 @@
     "cost": 1350,
     "rarity": "Rare",
     "tags": ["Passive", "Physical Power", "Attack Speed"],
+		"components": [],
     "stats": {
       "Physical Power": 20,
       "Attack Speed": 15
@@ -1510,6 +1612,7 @@
     "cost": 1350,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Power"],
+		"components": [],
     "stats": {
       "Magical Power": 30
     },
@@ -1524,6 +1627,7 @@
     "cost": 1400,
     "rarity": "Rare",
     "tags": ["Passive", "Health", "Physical Armor"],
+		"components": [],
     "stats": {
       "Health": 220,
       "Physical Armor": 15
@@ -1539,6 +1643,7 @@
     "cost": 1400,
     "rarity": "Rare",
     "tags": ["Passive", "Physical Power", "Ability Haste"],
+		"components": [],
     "stats": {
       "Physical Power": 20,
       "Ability Haste": 10
@@ -1554,6 +1659,7 @@
     "cost": 1500,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Power", "Mana"],
+		"components": [],
     "stats": {
       "Magical Power": 20,
       "Mana": 250
@@ -1569,6 +1675,7 @@
     "cost": 1500,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Power", "Mana"],
+		"components": [],
     "stats": {
       "Magical Power": 30,
       "Mana": 250
@@ -1584,6 +1691,7 @@
     "cost": 1500,
     "rarity": "Rare",
     "tags": ["Passive", "Physical Power"],
+		"components": [],
     "stats": {
       "Physical Power": 30
     },
@@ -1598,6 +1706,7 @@
     "cost": 1800,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Power", "Ability Haste"],
+		"components": [],
     "stats": {
       "Magical Power": 50,
       "Ability Haste": 10
@@ -1608,6 +1717,7 @@
     "cost": 1950,
     "rarity": "Rare",
     "tags": ["Passive", "Active", "Magical Power", "Health", "Ability Haste"],
+		"components": [],
     "stats": {
       "Magical Power": 20,
       "Health": 250,
@@ -1627,6 +1737,7 @@
     "cost": 2600,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Mana Regeneration"],
+		"components": [],
     "stats": {
       "Magical Power": 50,
       "Mana Regeneration": 3
@@ -1645,6 +1756,7 @@
     "cost": 2600,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Mana Regeneration", "Ability Haste"],
+		"components": [],
     "stats": {
       "Magical Power": 35,
       "Mana Regeneration": 3,
@@ -1661,6 +1773,7 @@
     "cost": 2600,
     "rarity": "Epic",
     "tags": ["Passive", "Health", "Health Regeneration", "Ability Haste"],
+		"components": [],
     "stats": {
       "Health": 350,
       "Health Regeneration": 2,
@@ -1680,6 +1793,7 @@
     "cost": 2650,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Magical Armor", "Mana Regeneration", "Ability Haste"],
+		"components": [],
     "stats": {
       "Magical Power": 20,
       "Magical Armor": 15,
@@ -1700,6 +1814,7 @@
     "cost": 2700,
     "rarity": "Epic",
     "tags": ["Passive", "Health", "Physical Armor", "Mana"],
+		"components": [],
     "stats": {
       "Health": 300,
       "Physical Armor": 40,
@@ -1716,6 +1831,7 @@
     "cost": 2700,
     "rarity": "Epic",
     "tags": ["Passive", "Health", "Mana", "Physical Armor"],
+		"components": [],
     "stats": {
       "Health": 200,
       "Mana": 200,
@@ -1732,6 +1848,7 @@
     "cost": 2700,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Health", "Mana", "Ability Haste"],
+		"components": [],
     "stats": {
       "Physical Power": 35,
       "Health": 150,
@@ -1749,6 +1866,7 @@
     "cost": 2700,
     "rarity": "Epic",
     "tags": ["Passive", "Health", "Health Regeneration"],
+		"components": [],
     "stats": {
       "Health": 500,
       "Health Regeneration": 3
@@ -1767,6 +1885,7 @@
     "cost": 2700,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Armor", "Magical Armor", "Mana Regeneration", "Ability Haste"],
+		"components": [],
     "stats": {
       "Physical Armor": 25,
       "Magical Armor": 20,
@@ -1787,6 +1906,7 @@
     "cost": 2700,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Physical Armor", "Mana Regeneration", "Ability Haste"],
+		"components": [],
     "stats": {
       "Magical Power": 25,
       "Physical Armor": 15,
@@ -1807,6 +1927,7 @@
     "cost": 2750,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Attack Speed", "Ability Haste"],
+		"components": [],
     "stats": {
       "Magical Power": 50,
       "Attack Speed": 15,
@@ -1823,6 +1944,7 @@
     "cost": 2750,
     "rarity": "Epic",
     "tags": ["Active", "Passive", "Magical Power", "Health", "Mana Regeneration", "Ability Haste"],
+		"components": [],
     "stats": {
       "Magical Power": 30,
       "Health": 150,
@@ -1846,6 +1968,7 @@
     "cost": 2750,
     "rarity": "Epic",
     "tags": ["Passive", "Health", "Health Regeneration", "Physical Armor"],
+		"components": [],
     "stats": {
       "Health": 300,
       "Health Regeneration": 3,
@@ -1865,6 +1988,7 @@
     "cost": 2750,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Health", "Magical Armor", "Ability Haste"],
+		"components": [],
     "stats": {
       "Magical Power": 35,
       "Health": 200,
@@ -1885,6 +2009,7 @@
     "cost": 2800,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Health"],
+		"components": [],
     "stats": {
       "Physical Power": 20,
       "Health": 400
@@ -1903,6 +2028,7 @@
     "cost": 2800,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Attack Speed", "Ability Haste"],
+		"components": [],
     "stats": {
       "Physical Power": 40,
       "Attack Speed": 20,
@@ -1919,6 +2045,7 @@
     "cost": 2800,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Health"],
+		"components": [],
     "stats": {
       "Magical Power": 70,
       "Health": 250
@@ -1937,6 +2064,7 @@
     "cost": 2800,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Armor", "Magical Armor", "Mana Regeneration"],
+		"components": [],
     "stats": {
       "Physical Armor": 30,
 	    "Magical Armor": 30,
@@ -1956,6 +2084,7 @@
     "cost": 2800,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Armor", "Mana", "Ability Haste"],
+		"components": [],
     "stats": {
       "Physical Armor": 45,
 	    "Mana": 450,
@@ -1975,6 +2104,7 @@
     "cost": 2800,
     "rarity": "Epic",
     "tags": ["Passive", "Attack Speed", "Critical Chance"],
+		"components": [],
     "stats": {
       "Attack Speed": 50,
 	    "Critical Chance": 20
@@ -1996,6 +2126,7 @@
     "cost": 2800,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Health"],
+		"components": [],
     "stats": {
       "Physical Power": 25,
 	    "Health": 350
@@ -2014,6 +2145,7 @@
     "cost": 2800,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power"],
+		"components": [],
     "stats": {
       "Physical Power": 50
     },
@@ -2028,6 +2160,7 @@
     "cost": 2850,
     "rarity": "Epic",
     "tags": ["Passive", "Health", "Health Regeneration", "Magical Armor", "Ability Haste"],
+		"components": [],
     "stats": {
       "Health": 300,
 	    "Health Regeneration": 2,
@@ -2048,6 +2181,7 @@
     "cost": 2850,
     "rarity": "Epic",
     "tags": ["Passive", "Health", "Physical Armor", "Ability Haste"],
+		"components": [],
     "stats": {
       "Health": 200,
 	    "Physical Armor": 60,
@@ -2064,6 +2198,7 @@
     "cost": 2900,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Physical Penetration"],
+		"components": [],
     "stats": {
       "Physical Power": 50,
 	    "Physical Penetration": 14
@@ -2079,6 +2214,7 @@
     "cost": 2900,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Physical Penetration", "Health"],
+		"components": [],
     "stats": {
       "Physical Power": 35,
 	    "Physical Penetration": 8,
@@ -2098,6 +2234,7 @@
     "cost": 2900,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Magical Penetration"],
+		"components": [],
     "stats": {
       "Magical Power": 80,
 	    "Magical Penetration": 12
@@ -2113,6 +2250,7 @@
     "cost": 2900,
     "rarity": "Epic",
     "tags": ["Passive", "Health", "Health Regeneration", "Magical Armor"],
+		"components": [],
     "stats": {
       "Health": 450,
 	    "Health Regeneration": 2.5,
@@ -2132,6 +2270,7 @@
     "cost": 2950,
     "rarity": "Epic",
     "tags": ["Active", "Physical Power", "Physical Penetration", "Ability Haste"],
+		"components": [],
     "stats": {
       "Physical Power": 40,
 	    "Physical Penetration": 8,
@@ -2148,6 +2287,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Mana", "Ability Haste"],
+		"components": [],
     "stats": {
       "Magical Power": 60,
 	    "Mana": 400,
@@ -2167,6 +2307,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Health", "Ability Haste"],
+		"components": [],
     "stats": {
       "Physical Power": 35,
 	    "Health": 250,
@@ -2186,6 +2327,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Physical Armor", "Magical Armor", "Ability Haste"],
+		"components": [],
     "stats": {
       "Physical Power": 25,
 	    "Physical Armor": 25,
@@ -2203,6 +2345,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Health", "Physical Armor", "Mana", "Ability Haste"],
+		"components": [],
     "stats": {
       "Health": 120,
 	    "Physical Armor": 40,
@@ -2223,6 +2366,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Armor", "Mana", "Ability Haste"],
+		"components": [],
     "stats": {
       "Physical Armor": 50,
 	    "Mana": 300,
@@ -2242,6 +2386,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Physical Armor", "Critical Chance"],
+		"components": [],
     "stats": {
       "Physical Power": 40,
 	    "Physical Armor": 25,
@@ -2261,6 +2406,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Physical Armor", "Health"],
+		"components": [],
     "stats": {
       "Physical Power": 20,
 	    "Physical Armor": 25,
@@ -2280,6 +2426,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Magical Lifesteal", "Health", "Ability Haste"],
+		"components": [],
     "stats": {
       "Magical Power": 55,
 	    "Magical Lifesteal": 10,
@@ -2297,6 +2444,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Ability Haste"],
+		"components": [],
     "stats": {
       "Magical Power": 70,
 	    "Ability Haste": 20
@@ -2312,6 +2460,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Magical Armor", "Ability Haste"],
+		"components": [],
     "stats": {
       "Physical Power": 40,
 	    "Magical Armor": 30,
@@ -2328,6 +2477,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Physical Penetration", "Ability Haste"],
+		"components": [],
     "stats": {
       "Physical Power": 40,
 	    "Physical Penetration": 12,
@@ -2344,6 +2494,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Health", "Health Regeneration", "Mana"],
+		"components": [],
     "stats": {
       "Health": 600,
 	    "Health Regeneration": 4,
@@ -2363,6 +2514,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Active", "Physical Power", "Magical Armor"],
+		"components": [],
     "stats": {
       "Physical Power": 50,
 	    "Magical Armor": 30
@@ -2378,6 +2530,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Magical Armor", "Ability Haste"],
+		"components": [],
     "stats": {
       "Magical Power": 60,
 	    "Magical Armor": 35,
@@ -2394,6 +2547,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Ability Haste", "Critical Chance"],
+		"components": [],
     "stats": {
       "Physical Power": 40,
 	    "Ability Haste": 20,
@@ -2413,6 +2567,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Health","Physical Armor"],
+		"components": [],
     "stats": {
       "Health": 300,
 	    "Physical Armor": 60
@@ -2431,6 +2586,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Magical Penetration"],
+		"components": [],
     "stats": {
       "Magical Power": 80,
       "Magical Penetration": 15
@@ -2446,6 +2602,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Active", "Magical Power", "Physical Armor", "Ability Haste"],
+		"components": [],
     "stats": {
       "Magical Power": 70,
       "Physical Armor": 40,
@@ -2462,6 +2619,7 @@
     "cost": 3050,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Critical Chance", "Lifesteal"],
+		"components": [],
     "stats": {
       "Physical Power": 45,
       "Critical Chance": 20,
@@ -2481,6 +2639,7 @@
     "cost": 3100,
     "rarity": "Epic",
     "tags": ["Passive", "Health", "Magical Armor", "Ability Haste"],
+		"components": [],
     "stats": {
       "Physical Power": 45,
       "Critical Chance": 20,
@@ -2497,6 +2656,7 @@
     "cost": 3100,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Physical Penetration", "Ability Haste"],
+		"components": [],
     "stats": {
       "Physical Power": 40,
       "Physical Penetration": 10,
@@ -2516,6 +2676,7 @@
     "cost": 3100,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Health", "Ability Haste"],
+		"components": [],
     "stats": {
       "Magical Power": 55,
       "Health": 200,
@@ -2532,6 +2693,7 @@
     "cost": 3100,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Physical Penetration", "Omnivamp"],
+		"components": [],
     "stats": {
       "Physical Power": 45,
       "Physical Penetration": 8,
@@ -2548,6 +2710,7 @@
     "cost": 3100,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Magical Armor", "Health"],
+		"components": [],
     "stats": {
       "Physical Power": 45,
       "Magical Armor": 25,
@@ -2567,6 +2730,7 @@
     "cost": 3100,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance", "Movement Speed"],
+		"components": [],
     "stats": {
       "Physical Power": 20,
       "Attack Speed": 35,
@@ -2584,6 +2748,7 @@
     "cost": 3100,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Magical Lifesteal", "Health"],
+		"components": [],
     "stats": {
       "Magical Power": 60,
       "Magical Lifesteal": 10,
@@ -2600,6 +2765,7 @@
     "cost": 3100,
     "rarity": "Epic",
     "tags": ["Passive", "Health", "Magical Armor", "Ability Haste"],
+		"components": [],
     "stats": {
       "Health": 500,
       "Magical Armor": 25,
@@ -2616,6 +2782,7 @@
     "cost": 3150,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance", "Movement Speed"],
+		"components": [],
     "stats": {
       "Physical Power": 30,
       "Attack Speed": 30,
@@ -2633,6 +2800,7 @@
     "cost": 3200,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance"],
+		"components": [],
     "stats": {
       "Physical Power": 40,
       "Attack Speed": 20,
@@ -2652,6 +2820,7 @@
     "cost": 3200,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Mana", "Ability Haste"],
+		"components": [],
     "stats": {
       "Magical Power": 60,
       "Mana": 500,
@@ -2671,6 +2840,7 @@
     "cost": 3200,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power"],
+		"components": [],
     "stats": {
       "Magical Power": 80
     },
@@ -2685,6 +2855,7 @@
     "cost": 3200,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Magical Penetration", "Mana"],
+		"components": [],
     "stats": {
       "Magical Power": 60,      
       "Magical Penetration": 10,
@@ -2704,6 +2875,7 @@
     "cost": 3200,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Mana", "Ability Haste"],
+		"components": [],
     "stats": {
       "Physical Power": 50,
       "Mana": 200,
@@ -2720,6 +2892,7 @@
     "cost": 3200,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Critical Chance", "Ability Haste"],
+		"components": [],
     "stats": {
       "Physical Power": 50,
       "Critical Chance": 20,
@@ -2739,6 +2912,7 @@
     "cost": 3200,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance"],
+		"components": [],
     "stats": {
       "Physical Power": 50,
       "Attack Speed": 25,
@@ -2755,6 +2929,7 @@
     "cost": 3200,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Mana", "Ability Haste"],
+		"components": [],
     "stats": {
       "Physical Power": 30,
       "Mana": 400,
@@ -2777,6 +2952,7 @@
     "cost": 3300,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance", "Movement Speed"],
+		"components": [],
     "stats": {
       "Physical Power": 30,
       "Attack Speed": 20,
@@ -2794,6 +2970,7 @@
     "cost": 3300,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Attack Speed", "Ability Haste"],
+		"components": [],
     "stats": {
       "Magical Power": 50,
       "Attack Speed": 20,
@@ -2813,6 +2990,7 @@
     "cost": 3300,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Attack Speed", "Ability Haste"],
+		"components": [],
     "stats": {
       "Magical Power": 50,
       "Attack Speed": 20,
@@ -2832,6 +3010,7 @@
     "cost": 3300,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance", "Omnivamp"],
+		"components": [],
     "stats": {
       "Physical Power": 15,
       "Attack Speed": 25,
@@ -2849,6 +3028,7 @@
     "cost": 3300,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Ability Haste", "Mana Regeneration"],
+		"components": [],
     "stats": {
       "Magical Power": 80,
       "Ability Haste": 20,
@@ -2865,6 +3045,7 @@
     "cost": 3300,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Health"],
+		"components": [],
     "stats": {
       "Magical Power": 60,
       "Health": 200
@@ -2883,6 +3064,7 @@
     "cost": 3400,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Critical Chance"],
+		"components": [],
     "stats": {
       "Physical Power": 50,
       "Critical Chance": 20
@@ -2901,6 +3083,7 @@
     "cost": 3400,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Physical Penetration"],
+		"components": [],
     "stats": {
       "Physical Power": 50,
       "Physical Penetration": 10
@@ -2919,6 +3102,7 @@
     "cost": 3400,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Ability Haste"],
+		"components": [],
     "stats": {
       "Magical Power": 90,
       "Ability Haste": 10
@@ -2934,6 +3118,7 @@
     "cost": 3400,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power"],
+		"components": [],
     "stats": {
       "Magical Power": 100
     },
@@ -2948,6 +3133,7 @@
     "cost": 3400,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Physical Penetration", "Ability Haste"],
+		"components": [],
     "stats": {
       "Physical Power": 45,
       "Physical Penetration": 8,
@@ -2967,6 +3153,7 @@
     "cost": 3500,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Health", "Attack Speed"],
+		"components": [],
     "stats": {
       "Physical Power": 30,
       "Health": 300,
@@ -2986,6 +3173,7 @@
     "cost": 3500,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Omnivamp", "Ability Haste"],
+		"components": [],
     "stats": {
       "Physical Power": 45,
       "Omnivamp": 10,

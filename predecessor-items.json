@@ -64,11 +64,11 @@
       "descriptionType": "Passive - Artifact",
       "description": "Deal additional damage to monsters and if melee, heal based on the damage dealt. Basic attacks against monsters regenerate mana on-hit and execute large monsters under 300 (+50 per level) health."
       },{
-        "descriptionType": "Passive - Slayer",
-        "description": "Gain additional XP for each large monster kill as well as additional XP for your first large monster kill."
+      "descriptionType": "Passive - Slayer",
+      "description": "Gain additional XP for each large monster kill as well as additional XP for your first large monster kill."
       },{
-        "descriptionType": "Passive - Jungler",
-        "description": "Receive less gold from lane minion kills. This effect disables after 15 minutes. Hunt is consumed after killing 30 monsters, removing the item, but granting the passives permanently."
+      "descriptionType": "Passive - Jungler",
+      "description": "Receive less gold from lane minion kills. This effect disables after 15 minutes. Hunt is consumed after killing 30 monsters, removing the item, but granting the passives permanently."
       }
     ]
   },
@@ -77,7 +77,7 @@
     "cost": 150,
     "rarity": "Common",
     "tags": ["Consumable", "Potion", "Active"],
-		"components": [],
+		"components": ["Health Potion"],
     "descriptions": [{
       "descriptionType": "Consume",
       "description": "Restores 12 health per second for 12 seconds, restoring a total of 120 health. Holds 2 charges that refill upon visiting the base."
@@ -148,7 +148,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Crest", "Physical Power", "Ability Haste", "Physical Penetration"],
-		"components": [],
+		"components": ["Rogue Crest"],
     "stats": {
       "Physical Power": 10,
       "Ability Haste": 10,
@@ -167,8 +167,8 @@
     "name": "Nex",
     "cost": 400,
     "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Physical Power", "Ability Haste", "Physical Penetration"],
-		"components": [],
+    "tags": ["Passive", "Active", "Crest", "Physical Power", "Ability Haste", "Physical Penetration"],
+		"components": ["Assassin Crest"],
     "stats": {
       "Physical Power": 25,
       "Ability Haste": 10,
@@ -191,7 +191,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Active", "Crest", "Physical Power", "Ability Haste", "Physical Penetration"],
-		"components": [],
+		"components": ["Assassin Crest"],
     "stats": {
       "Physical Power": 20,
       "Ability Haste": 20,
@@ -230,7 +230,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Active", "Crest", "Physical Power", "Ability Haste", "Physical Penetration", "Omnivamp"],
-		"components": [],
+		"components": ["Assassin Crest"],
     "stats": {
       "Physical Power": 15,
       "Ability Haste": 10,
@@ -251,7 +251,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Active", "Crest", "Physical Power", "Attack Speed", "Critical Chance"],
-		"components": [],
+		"components": ["Sharpshooter Crest"],
     "stats": {
       "Physical Power": 10,
       "Attack Speed": 20,
@@ -271,7 +271,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Active", "Crest", "Physical Power", "Attack Speed", "Critical Chance", "Lifesteal"],
-		"components": [],
+		"components": ["Sharpshooter Crest"],
     "stats": {
       "Physical Power": 10,
       "Attack Speed": 10,
@@ -311,7 +311,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Active", "Crest", "Physical Power", "Attack Speed", "Critical Chance"],
-		"components": [],
+		"components": ["Sharpshooter Crest"],
     "stats": {
       "Physical Power": 18,
       "Attack Speed": 10,
@@ -331,7 +331,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Crest", "Physical Power", "Attack Speed"],
-		"components": [],
+		"components": ["Marksman Crest"],
     "stats": {
       "Physical Power": 10,
       "Attack Speed": 10
@@ -346,8 +346,8 @@
     "name": "Brutallax",
     "cost": 400,
     "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Physical Power", "Health", "Lifesteal"],
-		"components": [],
+    "tags": ["Passive", "Active", "Crest", "Physical Power", "Health", "Lifesteal"],
+		"components": ["Champion Crest"],
     "stats": {
       "Physical Power": 20,
       "Health": 100,
@@ -367,7 +367,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Crest", "Physical Power", "Health"],
-		"components": [],
+		"components": ["Warrior Crest"],
     "stats": {
       "Physical Power": 10,
       "Health": 100
@@ -385,8 +385,8 @@
     "name": "Fenix",
     "cost": 400,
     "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Physical Power", "Health"],
-		"components": [],
+    "tags": ["Passive", "Active", "Crest", "Physical Power", "Health"],
+		"components": ["Champion Crest"],
     "stats": {
       "Physical Power": 30,
       "Health": 100
@@ -404,8 +404,8 @@
     "name": "Iceskorn Talons",
     "cost": 400,
     "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Physical Power", "Health", "Ability Haste"],
-		"components": [],
+    "tags": ["Passive", "Active", "Crest", "Physical Power", "Health", "Ability Haste"],
+		"components": ["Champion Crest"],
     "stats": {
       "Physical Power": 25,
       "Health": 200,
@@ -443,8 +443,8 @@
     "name": "Epoch",
     "cost": 400,
     "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Magical Power", "Mana", "Magical Penetration", "Health"],
-		"components": [],
+    "tags": ["Passive", "Active", "Crest", "Magical Power", "Mana", "Magical Penetration", "Health"],
+		"components": ["Wizard Crest"],
     "stats": {
       "Magical Power": 25,
       "Mana": 120,
@@ -483,8 +483,8 @@
     "name": "Obelisk",
     "cost": 400,
     "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Magical Power", "Health", "Magical Penetration"],
-		"components": [],
+    "tags": ["Passive", "Active", "Crest", "Magical Power", "Health", "Magical Penetration"],
+		"components": ["Warlock Crest"],
     "stats": {
       "Magical Power": 35,
       "Health": 100,
@@ -525,8 +525,8 @@
     "name": "Soulbearer",
     "cost": 400,
     "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Magical Power", "Mana", "Magical Penetration", "Ability Haste"],
-		"components": [],
+    "tags": ["Passive", "Active", "Crest", "Magical Power", "Mana", "Magical Penetration", "Ability Haste"],
+		"components": ["Wizard Crest"],
     "stats": {
       "Magical Power": 15,
       "Mana": 300,
@@ -546,8 +546,8 @@
     "name": "Tempest",
     "cost": 400,
     "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Magical Power", "Health", "Magical Penetration", "Ability Haste"],
-		"components": [],
+    "tags": ["Passive", "Active", "Crest", "Magical Power", "Health", "Magical Penetration", "Ability Haste"],
+		"components": ["Warlock Crest"],
     "stats": {
       "Magical Power": 15,
       "Health": 150,
@@ -567,8 +567,8 @@
     "name": "Time-Flux Band",
     "cost": 400,
     "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Magical Power", "Mana", "Magical Penetration", "Ability Haste"],
-		"components": [],
+    "tags": ["Passive", "Active", "Crest", "Magical Power", "Mana", "Magical Penetration", "Ability Haste"],
+		"components": ["Wizard Crest"],
     "stats": {
       "Magical Power": 20,
       "Mana": 150,
@@ -588,8 +588,8 @@
     "name": "Typhoon",
     "cost": 400,
     "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Magical Power", "Health", "Magical Penetration", "Attack Speed"],
-		"components": [],
+    "tags": ["Passive", "Active", "Crest", "Magical Power", "Health", "Magical Penetration", "Attack Speed"],
+		"components": ["Warlock Crest"],
     "stats": {
       "Magical Power": 20,
       "Health": 100,
@@ -613,7 +613,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Crest", "Magical Power", "Health", "Magical Penetration"],
-		"components": [],
+		"components": ["Occult Crest"],
     "stats": {
       "Magical Power": 12,
       "Health": 100,
@@ -633,7 +633,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Crest", "Magical Power", "Mana", "Magical Penetration"],
-		"components": [],
+		"components": ["Magician Crest"],
     "stats": {
       "Magical Power": 12,
       "Mana": 120,
@@ -652,8 +652,8 @@
     "name": "Citadel",
     "cost": 400,
     "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Health", "Health Regeneration", "Physical Armor", "Magical Armor"],
-		"components": [],
+    "tags": ["Passive", "Active", "Crest", "Health", "Health Regeneration", "Physical Armor", "Magical Armor"],
+		"components": ["Warden Crest"],
     "stats": {
       "Health": 150,
       "Health Regeneration": 1,
@@ -715,7 +715,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Crest", "Magical Power", "Mana Regeneration", "Gold Per Second"],
-		"components": [],
+		"components": ["Consort Crest"],
     "stats": {
       "Magical Power": 10,
       "Mana Regeneration": 1,
@@ -734,8 +734,8 @@
     "name": "Malediction",
     "cost": 400,
     "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Magical Power", "Physical Armor", "Mana Regeneration"],
-		"components": [],
+    "tags": ["Passive", "Active", "Crest", "Magical Power", "Physical Armor", "Mana Regeneration"],
+		"components": ["Keeper Crest"],
     "stats": {
       "Magical Power": 20,
       "Physical Armor": 15,
@@ -757,8 +757,8 @@
     "name": "Rift Walkers",
     "cost": 400,
     "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Magical Power", "Health", "Health Regeneration", "Mana"],
-		"components": [],
+    "tags": ["Passive", "Active", "Crest", "Magical Power", "Health", "Health Regeneration", "Mana"],
+		"components": ["Warden Crest"],
     "stats": {
       "Magical Power": 20,
       "Health": 150,
@@ -781,8 +781,8 @@
     "name": "Sanctification",
     "cost": 400,
     "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Health", "Health Regeneration", "Mana Regeneration"],
-		"components": [],
+    "tags": ["Passive", "Active", "Crest", "Health", "Health Regeneration", "Mana Regeneration"],
+		"components": ["Warden Crest"],
     "stats": {
       "Health": 200,
       "Health Regeneration": 2,
@@ -804,8 +804,8 @@
     "name": "Silentium",
     "cost": 400,
     "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Magical Power", "Magical Armor", "Mana Regeneration"],
-		"components": [],
+    "tags": ["Passive", "Active", "Crest", "Magical Power", "Magical Armor", "Mana Regeneration"],
+		"components": ["Keeper Crest"],
     "stats": {
       "Magical Power": 25,
       "Magical Armor": 10,
@@ -827,8 +827,8 @@
     "name": "Thread of Mortality",
     "cost": 400,
     "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Magical Power", "Mana Regeneration", "Ability Haste"],
-		"components": [],
+    "tags": ["Passive", "Active", "Crest", "Magical Power", "Mana Regeneration", "Ability Haste"],
+		"components": ["Keeper Crest"],
     "stats": {
       "Magical Power": 25,
       "Mana Regeneration": 2,
@@ -851,7 +851,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Crest", "Health", "Health Regeneration", "Gold Per Second"],
-		"components": [],
+		"components": ["Guardian Crest"],
     "stats": {
       "Health": 120,
       "Health Regeneration": 1,

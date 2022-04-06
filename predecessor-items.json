@@ -871,7 +871,7 @@
     "cost": 400,
     "rarity": "Legendary",
     "tags": ["Passive", "Crest", "Health", "Health Regeneration"],
-		"components": [],
+		"components": ["Titan Crest"],
     "stats": {
       "Health": 120,
       "health Regeneration": 1
@@ -889,8 +889,8 @@
     "name": "Nyr Warboots",
     "cost": 400,
     "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Health", "Health Regeneration", "Physical Armor", "Magical Armor"],
-		"components": [],
+    "tags": ["Passive", "Active", "Crest", "Health", "Health Regeneration", "Physical Armor", "Magical Armor"],
+		"components": ["Goliath Crest"],
     "stats": {
       "Health": 160,
       "Health Regeneration": 2,
@@ -910,8 +910,8 @@
     "name": "Razorback",
     "cost": 400,
     "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Health", "Health Regeneration", "Physical Armor", "Magical Armor"],
-		"components": [],
+    "tags": ["Passive", "Active", "Crest", "Health", "Health Regeneration", "Physical Armor", "Magical Armor"],
+		"components": ["Goliath Crest"],
     "stats": {
       "Health": 120,
       "Health Regeneration": 2,
@@ -931,8 +931,8 @@
     "name": "Saphir's Mantle",
     "cost": 400,
     "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Health", "Health Regeneration", "Physical Armor", "Magical Armor"],
-		"components": [],
+    "tags": ["Passive", "Active", "Crest", "Health", "Health Regeneration", "Physical Armor", "Magical Armor"],
+		"components": ["Goliath Crest"],
     "stats": {
       "Health": 180,
       "Health Regeneration": 2,
@@ -1049,7 +1049,7 @@
     "cost": 700,
     "rarity": "Rare",
     "tags": ["Passive", "Physical Power", "Lifesteal"],
-		"components": [],
+		"components": ["Shortsword"],
     "stats": {
       "Physical Power": 10,
       "Lifesteal": 5
@@ -1060,7 +1060,7 @@
     "cost": 700,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Armor"],
-		"components": [],
+		"components": ["Wraps"],
     "stats": {
       "Magical Armor": 10
     }
@@ -1118,7 +1118,7 @@
     "cost": 800,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Power", "Magical Lifesteal"],
-		"components": [],
+		"components": ["Codex"],
     "stats": {
       "Magical Power": 20,
       "Magical Lifesteal": 5
@@ -1129,7 +1129,7 @@
     "cost": 800,
     "rarity": "Rare",
     "tags": ["Passive", "Mana Regeneration", "Ability Haste"],
-		"components": [],
+		"components": ["Energy Stream", "Energy Stream"],
     "stats": {
       "Mana Regeneration": 2.5,
       "Ability Haste": 10
@@ -1140,7 +1140,7 @@
     "cost": 800,
     "rarity": "Rare",
     "tags": ["Passive", "Physical Armor"],
-		"components": [],
+		"components": ["Tunic"],
     "stats": {
       "Physical Armor": 25
     }
@@ -1150,7 +1150,7 @@
     "cost": 800,
     "rarity": "Rare",
     "tags": ["Passive", "Health", "Ability Haste"],
-		"components": [],
+		"components": ["Vitality Beads"],
     "stats": {
       "Health": 150,
       "Ability Haste": 10
@@ -1161,7 +1161,7 @@
     "cost": 850,
     "rarity": "Rare",
     "tags": ["Passive", "Physical Armor"],
-		"components": [],
+		"components": ["Tunic"],
     "stats": {
       "Physical Armor": 20
     },
@@ -1186,7 +1186,7 @@
     "cost": 900,
     "rarity": "Rare",
     "tags": ["Passive", "Health"],
-		"components": [],
+		"components": ["Vitality Beads"],
     "stats": {
       "Health": 275
     }
@@ -1196,7 +1196,7 @@
     "cost": 900,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Power", "Ability Haste"],
-		"components": [],
+		"components": ["Codex"],
     "stats": {
       "Magical Power": 20,
       "Ability Haste": 10
@@ -1207,7 +1207,7 @@
     "cost": 900,
     "rarity": "Rare",
     "tags": ["Passive", "Health", "Health Regeneration"],
-		"components": [],
+		"components": ["Vitality Beads", "Life Stream"],
     "stats": {
       "Health": 150,
       "Health Regeneration": 2
@@ -1218,7 +1218,7 @@
     "cost": 950,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Armor", "Mana Regeneration"],
-		"components": [],
+		"components": ["Wraps", "Energy Stream"],
     "stats": {
       "Magical Armor": 12,
       "Mana Regeneration": 2
@@ -1234,7 +1234,7 @@
     "cost": 1000,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Power", "Mana Regeneration"],
-		"components": [],
+		"components": ["Energy Stream", "Codex"],
     "stats": {
       "Magical Power": 15,
       "Mana Regeneration": 2
@@ -1250,7 +1250,7 @@
     "cost": 1000,
     "rarity": "Rare",
     "tags": ["Passive", "Mana"],
-		"components": [],
+		"components": ["Spirit Beads", "Spirit Beads"],
     "stats": {
       "Mana": 400
     },
@@ -1265,7 +1265,7 @@
     "cost": 1050,
     "rarity": "Rare",
     "tags": ["Passive", "Physical Power"],
-		"components": [],
+		"components": ["Shortsword", "Shortsword"],
     "stats": {
       "Physical Power": 20
     },
@@ -1280,7 +1280,7 @@
     "cost": 1050,
     "rarity": "Rare",
     "tags": ["Passive", "Health", "Mana"],
-		"components": [],
+		"components": ["Vitality Beads", "Spirit Beads"],
     "stats": {
       "Health": 120,
       "Mana": 200
@@ -1296,7 +1296,7 @@
     "cost": 1050,
     "rarity": "Rare",
     "tags": ["Passive", "Physical Armor", "Magical Armor"],
-		"components": [],
+		"components": ["Tunic", "Wraps"],
     "stats": {
       "Physical Armor": 20,
       "Magical Armor": 15
@@ -1307,7 +1307,7 @@
     "cost": 1050,
     "rarity": "Rare",
     "tags": ["Passive", "Physical Power"],
-		"components": [],
+		"components": ["Shortsword", "Shortsword"],
     "stats": {
       "Physical Power": 20
     },
@@ -1322,7 +1322,7 @@
     "cost": 1100,
     "rarity": "rare",
     "tags": ["Passive", "Physical Power", "Health"],
-		"components": [],
+		"components": ["Shortsword", "Vitality Beads"],
     "stats": {
       "Physical Power": 10,
       "Health": 120
@@ -1338,7 +1338,7 @@
     "cost": 1100,
     "rarity": "Rare",
     "tags": ["Passive", "Physical Power"],
-		"components": [],
+		"components": ["Shortsword", "Shortsword"],
     "stats": {
       "Physical Power": 20
     },
@@ -1353,7 +1353,7 @@
     "cost": 1100,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Power"],
-		"components": [],
+		"components": ["Codex", "Codex"],
     "stats": {
       "Magical Power": 30
     },
@@ -1368,7 +1368,7 @@
     "cost": 1150,
     "rarity": "Rare",
     "tags": ["Passive", "Attack Speed"],
-		"components": [],
+		"components": ["Longbow", "Longbow"],
     "stats": {
       "Attack Speed": 20
     },
@@ -1383,7 +1383,7 @@
     "cost": 1150,
     "rarity": "Rare",
     "tags": ["Passive", "Physical Armor", "Mana", "Ability Haste"],
-		"components": [],
+		"components": ["Tunic", "Spirit Beads"],
     "stats": {
       "Physical Armor": 15,
       "Mana": 200,
@@ -1395,7 +1395,7 @@
     "cost": 1150,
     "rarity": "Legendary",
     "tags": ["Passive", "Physical Armor"],
-		"components": [],
+		"components": ["Tunic", "Tunic"],
     "stats": {
       "Physical Armor": 25
     },
@@ -1420,7 +1420,7 @@
     "cost": 1200,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Power", "Physical Armor"],
-		"components": [],
+		"components": ["Codex", "Tunic"],
     "stats": {
       "Magical Power": 20,
       "Physical Armor": 10
@@ -1436,7 +1436,7 @@
     "cost": 1200,
     "rarity": "Rare",
     "tags": ["Active", "Magical Armor"],
-		"components": [],
+		"components": ["Wraps"],
     "stats": {
       "Magical Armor": 25
     },
@@ -1451,7 +1451,7 @@
     "cost": 1200,
     "rarity": "Rare",
     "tags": ["Passive", "Physical Power", "Ability Haste"],
-		"components": [],
+		"components": ["Shortsword", "Shortsword"],
     "stats": {
       "Physical Power": 20,
       "Ability Haste": 10
@@ -1462,7 +1462,7 @@
     "cost": 1250,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Power"],
-		"components": [],
+		"components": ["Spell Slasher", "Codex"],
     "stats": {
       "Magical Power": 30
     },
@@ -1477,7 +1477,7 @@
     "cost": 1250,
     "rarity": "Rare",
     "tags": ["Passive", "Critical Chance", "Attack Speed"],
-		"components": [],
+		"components": ["Crossbow", "Longbow"],
     "stats": {
       "Critical Chance": 20,
       "Attack Speed": 15
@@ -1493,7 +1493,7 @@
     "cost": 1250,
     "rarity": "Rare",
     "tags": ["Passive", "Physical Power", "Magical Armor"],
-		"components": [],
+		"components": ["Shortsword", "Wraps"],
     "stats": {
       "Physical Power": 15,
       "Magical Armor": 20
@@ -1519,7 +1519,7 @@
     "cost": 1300,
     "rarity": "Rare",
     "tags": ["Passive", "Physical Power", "Lifesteal"],
-		"components": [],
+		"components": ["Sabre"],
     "stats": {
       "Physical Power": 15,
       "Lifesteal": 8
@@ -1535,7 +1535,7 @@
     "cost": 1300,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Armor", "Health", "Health Regeneration"],
-		"components": [],
+		"components": ["Wraps", "Vitality Beads", "Life Stream"],
     "stats": {
       "Magical Armor": 15,
       "Health": 120,
@@ -1552,7 +1552,7 @@
     "cost": 1300,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Power", "Health"],
-		"components": [],
+		"components": ["Codex", "Vitality Beads"],
     "stats": {
       "Magical Power": 25,
       "Health": 150
@@ -1568,7 +1568,7 @@
     "cost": 1300,
     "rarity": "Rare",
     "tags": ["Passive", "Physical Power"],
-		"components": [],
+		"components": ["Sabre"],
     "stats": {
       "Physical Power": 20
     },
@@ -1583,7 +1583,7 @@
     "cost": 1350,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Power"],
-		"components": [],
+		"components": ["Codex", "Codex"],
     "stats": {
       "Physical Power": 10,
       "Attack Speed": 10,
@@ -1601,7 +1601,7 @@
     "cost": 1350,
     "rarity": "Rare",
     "tags": ["Passive", "Physical Power", "Attack Speed"],
-		"components": [],
+		"components": ["Shortsword", "Longbow", "Shortsword"],
     "stats": {
       "Physical Power": 20,
       "Attack Speed": 15
@@ -1612,7 +1612,7 @@
     "cost": 1350,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Power"],
-		"components": [],
+		"components": ["Scepter"],
     "stats": {
       "Magical Power": 30
     },
@@ -1627,7 +1627,7 @@
     "cost": 1400,
     "rarity": "Rare",
     "tags": ["Passive", "Health", "Physical Armor"],
-		"components": [],
+		"components": ["Vitality Beads", "Tunic", "Vitality Beads"],
     "stats": {
       "Health": 220,
       "Physical Armor": 15
@@ -1643,7 +1643,7 @@
     "cost": 1400,
     "rarity": "Rare",
     "tags": ["Passive", "Physical Power", "Ability Haste"],
-		"components": [],
+		"components": ["Shortsword", "Shortsword"],
     "stats": {
       "Physical Power": 20,
       "Ability Haste": 10
@@ -1659,7 +1659,7 @@
     "cost": 1500,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Power", "Mana"],
-		"components": [],
+		"components": ["Codex", "Spirit Beads"],
     "stats": {
       "Magical Power": 20,
       "Mana": 250
@@ -1675,7 +1675,7 @@
     "cost": 1500,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Power", "Mana"],
-		"components": [],
+		"components": ["Codex", "Codex", "Spirit Beads"],
     "stats": {
       "Magical Power": 30,
       "Mana": 250
@@ -1691,7 +1691,7 @@
     "cost": 1500,
     "rarity": "Rare",
     "tags": ["Passive", "Physical Power"],
-		"components": [],
+		"components": ["Sabre", "Shortsword"],
     "stats": {
       "Physical Power": 30
     },
@@ -1706,7 +1706,7 @@
     "cost": 1800,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Power", "Ability Haste"],
-		"components": [],
+		"components": ["Potent Staff"],
     "stats": {
       "Magical Power": 50,
       "Ability Haste": 10
@@ -1717,7 +1717,7 @@
     "cost": 1950,
     "rarity": "Rare",
     "tags": ["Passive", "Active", "Magical Power", "Health", "Ability Haste"],
-		"components": [],
+		"components": ["Nocstone", "Violet Brooch"],
     "stats": {
       "Magical Power": 20,
       "Health": 250,
@@ -1737,7 +1737,7 @@
     "cost": 2600,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Mana Regeneration"],
-		"components": [],
+		"components": ["Divine Wreath", "Scepter"],
     "stats": {
       "Magical Power": 50,
       "Mana Regeneration": 3
@@ -1756,7 +1756,7 @@
     "cost": 2600,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Mana Regeneration", "Ability Haste"],
-		"components": [],
+		"components": ["Essence Ring", "Chronomatic Wand", "Codex"],
     "stats": {
       "Magical Power": 35,
       "Mana Regeneration": 3,
@@ -1773,7 +1773,7 @@
     "cost": 2600,
     "rarity": "Epic",
     "tags": ["Passive", "Health", "Health Regeneration", "Ability Haste"],
-		"components": [],
+		"components": ["Stalwart Gauntlets", "Violet Brooch"],
     "stats": {
       "Health": 350,
       "Health Regeneration": 2,
@@ -1793,7 +1793,7 @@
     "cost": 2650,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Magical Armor", "Mana Regeneration", "Ability Haste"],
-		"components": [],
+		"components": ["Essence Ring", "Wraps", "Divine Wreath"],
     "stats": {
       "Magical Power": 20,
       "Magical Armor": 15,
@@ -1814,7 +1814,7 @@
     "cost": 2700,
     "rarity": "Epic",
     "tags": ["Passive", "Health", "Physical Armor", "Mana"],
-		"components": [],
+		"components": ["Banded Emerald", "Steel Mail", "Spirit Beads"],
     "stats": {
       "Health": 300,
       "Physical Armor": 40,

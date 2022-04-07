@@ -1831,7 +1831,7 @@
     "cost": 2700,
     "rarity": "Epic",
     "tags": ["Passive", "Health", "Mana", "Physical Armor"],
-		"components": [],
+		"components": ["Brimstone", "Steel Mail"],
     "stats": {
       "Health": 200,
       "Mana": 200,
@@ -1848,7 +1848,7 @@
     "cost": 2700,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Health", "Mana", "Ability Haste"],
-		"components": [],
+		"components": ["Brimstone", "Temporal Ripper"],
     "stats": {
       "Physical Power": 35,
       "Health": 150,
@@ -1866,7 +1866,7 @@
     "cost": 2700,
     "rarity": "Epic",
     "tags": ["Passive", "Health", "Health Regeneration"],
-		"components": [],
+		"components": ["Banded Emerald", "Stalwart Gauntlets"],
     "stats": {
       "Health": 500,
       "Health Regeneration": 3
@@ -1885,7 +1885,7 @@
     "cost": 2700,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Armor", "Magical Armor", "Mana Regeneration", "Ability Haste"],
-		"components": [],
+		"components": ["Fortified Mantle", "Essence Ring"],
     "stats": {
       "Physical Armor": 25,
       "Magical Armor": 20,
@@ -1906,7 +1906,7 @@
     "cost": 2700,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Physical Armor", "Mana Regeneration", "Ability Haste"],
-		"components": [],
+		"components": ["Abyssal Bracers", "Essence Ring"],
     "stats": {
       "Magical Power": 25,
       "Physical Armor": 15,
@@ -1927,7 +1927,7 @@
     "cost": 2750,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Attack Speed", "Ability Haste"],
-		"components": [],
+		"components": ["Chronomatic Wand", "Scepter", "Longbow"],
     "stats": {
       "Magical Power": 50,
       "Attack Speed": 15,
@@ -1944,7 +1944,7 @@
     "cost": 2750,
     "rarity": "Epic",
     "tags": ["Active", "Passive", "Magical Power", "Health", "Mana Regeneration", "Ability Haste"],
-		"components": [],
+		"components": ["Divine Wreath", "Chronomatic Wand", "Vitality Beads"],
     "stats": {
       "Magical Power": 30,
       "Health": 150,
@@ -1968,7 +1968,7 @@
     "cost": 2750,
     "rarity": "Epic",
     "tags": ["Passive", "Health", "Health Regeneration", "Physical Armor"],
-		"components": [],
+		"components": ["Stalwart Gauntlets", "Steel Mail", "Vitality Beads"],
     "stats": {
       "Health": 300,
       "Health Regeneration": 3,
@@ -1988,7 +1988,7 @@
     "cost": 2750,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Health", "Magical Armor", "Ability Haste"],
-		"components": [],
+		"components": ["Tenacious Drape", "Chronomatic Wand"],
     "stats": {
       "Magical Power": 35,
       "Health": 200,
@@ -2009,7 +2009,7 @@
     "cost": 2800,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Health"],
-		"components": [],
+		"components": ["Claymore", "Banded Emerald"],
     "stats": {
       "Physical Power": 20,
       "Health": 400
@@ -2028,7 +2028,7 @@
     "cost": 2800,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Attack Speed", "Ability Haste"],
-		"components": [],
+		"components": ["Ironwood Warbow", "Temporal Ripper"],
     "stats": {
       "Physical Power": 40,
       "Attack Speed": 20,
@@ -2045,7 +2045,7 @@
     "cost": 2800,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Health"],
-		"components": [],
+		"components": ["Void Crystal", "Scepter"],
     "stats": {
       "Magical Power": 70,
       "Health": 250
@@ -2064,7 +2064,7 @@
     "cost": 2800,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Armor", "Magical Armor", "Mana Regeneration"],
-		"components": [],
+		"components": ["Fortified Mantle", "Polar Treads"],
     "stats": {
       "Physical Armor": 30,
 	    "Magical Armor": 30,
@@ -2084,7 +2084,7 @@
     "cost": 2800,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Armor", "Mana", "Ability Haste"],
-		"components": [],
+		"components": ["Frosted Quartz", "Frosted Quartz"],
     "stats": {
       "Physical Armor": 45,
 	    "Mana": 450,
@@ -2104,7 +2104,7 @@
     "cost": 2800,
     "rarity": "Epic",
     "tags": ["Passive", "Attack Speed", "Critical Chance"],
-		"components": [],
+		"components": ["Robust Arbalest", "Composite Bow"],
     "stats": {
       "Attack Speed": 50,
 	    "Critical Chance": 20
@@ -2126,7 +2126,7 @@
     "cost": 2800,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Health"],
-		"components": [],
+		"components": ["Barbaric Cleaver", "Banded Emerald"],
     "stats": {
       "Physical Power": 25,
 	    "Health": 350
@@ -2145,7 +2145,7 @@
     "cost": 2800,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power"],
-		"components": [],
+		"components": ["Zealous Tomahawk", "Greatsword"],
     "stats": {
       "Physical Power": 50
     },
@@ -2160,7 +2160,7 @@
     "cost": 2850,
     "rarity": "Epic",
     "tags": ["Passive", "Health", "Health Regeneration", "Magical Armor", "Ability Haste"],
-		"components": [],
+		"components": ["Tenacious Drape", "Violet Brooch"],
     "stats": {
       "Health": 300,
 	    "Health Regeneration": 2,
@@ -2181,7 +2181,7 @@
     "cost": 2850,
     "rarity": "Epic",
     "tags": ["Passive", "Health", "Physical Armor", "Ability Haste"],
-		"components": [],
+		"components": ["Horned Plate", "Violet Brooch", "Tunic"],
     "stats": {
       "Health": 200,
 	    "Physical Armor": 60,
@@ -2198,7 +2198,7 @@
     "cost": 2900,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Physical Penetration"],
-		"components": [],
+		"components": ["Serrated Blade", "Honed Kris"],
     "stats": {
       "Physical Power": 50,
 	    "Physical Penetration": 14
@@ -2214,7 +2214,7 @@
     "cost": 2900,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Physical Penetration", "Health"],
-		"components": [],
+		"components": ["Honed Kris", "Claymore"],
     "stats": {
       "Physical Power": 35,
 	    "Physical Penetration": 8,
@@ -2234,7 +2234,7 @@
     "cost": 2900,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Magical Penetration"],
-		"components": [],
+		"components": ["Spiked Birch", "Diffusal Cane"],
     "stats": {
       "Magical Power": 80,
 	    "Magical Penetration": 12
@@ -2250,7 +2250,7 @@
     "cost": 2900,
     "rarity": "Epic",
     "tags": ["Passive", "Health", "Health Regeneration", "Magical Armor"],
-		"components": [],
+		"components": ["Tenacious Drape", "Banded Emerald"],
     "stats": {
       "Health": 450,
 	    "Health Regeneration": 2.5,
@@ -2270,7 +2270,7 @@
     "cost": 2950,
     "rarity": "Epic",
     "tags": ["Active", "Physical Power", "Physical Penetration", "Ability Haste"],
-		"components": [],
+		"components": ["Honed Kris", "Temporal Ripper"],
     "stats": {
       "Physical Power": 40,
 	    "Physical Penetration": 8,
@@ -2287,7 +2287,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Mana", "Ability Haste"],
-		"components": [],
+		"components": ["Rod of Thirst", "Chronomatic Wand"],
     "stats": {
       "Magical Power": 60,
 	    "Mana": 400,
@@ -2307,7 +2307,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Health", "Ability Haste"],
-		"components": [],
+		"components": ["Claymore", "Ruthless Broadsword"],
     "stats": {
       "Physical Power": 35,
 	    "Health": 250,
@@ -2327,7 +2327,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Physical Armor", "Magical Armor", "Ability Haste"],
-		"components": [],
+		"components": ["Fortified Mantle", "Temporal Ripper"],
     "stats": {
       "Physical Power": 25,
 	    "Physical Armor": 25,
@@ -2345,7 +2345,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Health", "Physical Armor", "Mana", "Ability Haste"],
-		"components": [],
+		"components": ["Barbed Pauldron", "Frosted Quartz", "Vitality Beads"],
     "stats": {
       "Health": 120,
 	    "Physical Armor": 40,
@@ -2366,7 +2366,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Armor", "Mana", "Ability Haste"],
-		"components": [],
+		"components": ["Spell Slasher", "Horned Plate", "Frosted Quartz"],
     "stats": {
       "Physical Armor": 50,
 	    "Mana": 300,
@@ -2386,7 +2386,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Physical Armor", "Critical Chance"],
-		"components": [],
+		"components": ["Greatsword", "Steel Mail", "Crossbow"],
     "stats": {
       "Physical Power": 40,
 	    "Physical Armor": 25,
@@ -2406,7 +2406,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Physical Armor", "Health"],
-		"components": [],
+		"components": ["Heroic Guard", "Sabre"],
     "stats": {
       "Physical Power": 20,
 	    "Physical Armor": 25,
@@ -2426,7 +2426,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Magical Lifesteal", "Health", "Ability Haste"],
-		"components": [],
+		"components": ["Blood Tome", "Violet Brooch", "Blood Tome"],
     "stats": {
       "Magical Power": 55,
 	    "Magical Lifesteal": 10,
@@ -2444,7 +2444,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Ability Haste"],
-		"components": [],
+		"components": ["Dusk Stave", "Chronomatic Wand"],
     "stats": {
       "Magical Power": 70,
 	    "Ability Haste": 20
@@ -2460,7 +2460,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Magical Armor", "Ability Haste"],
-		"components": [],
+		"components": ["Swift Shawl", "Temporal Ripper"],
     "stats": {
       "Physical Power": 40,
 	    "Magical Armor": 30,
@@ -2477,7 +2477,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Physical Penetration", "Ability Haste"],
-		"components": [],
+		"components": ["Honed Kris", "Spell Slasher", "Sabre"],
     "stats": {
       "Physical Power": 40,
 	    "Physical Penetration": 12,
@@ -2494,7 +2494,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Health", "Health Regeneration", "Mana"],
-		"components": [],
+		"components": ["Banded Emerald", "Stalwart Gauntlets", "Spirit Beads"],
     "stats": {
       "Health": 600,
 	    "Health Regeneration": 4,
@@ -2514,7 +2514,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Active", "Physical Power", "Magical Armor"],
-		"components": [],
+		"components": ["Hallowed Braid", "Greatsword"],
     "stats": {
       "Physical Power": 50,
 	    "Magical Armor": 30
@@ -2530,7 +2530,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Magical Armor", "Ability Haste"],
-		"components": [],
+		"components": ["Chronomatic Wand", "Nullifying Mask", "Scepter"],
     "stats": {
       "Magical Power": 60,
 	    "Magical Armor": 35,
@@ -2547,7 +2547,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Ability Haste", "Critical Chance"],
-		"components": [],
+		"components": ["Temporal Ripper", "Spell Slasher", "Crossbow"],
     "stats": {
       "Physical Power": 40,
 	    "Ability Haste": 20,
@@ -2567,7 +2567,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Health","Physical Armor"],
-		"components": [],
+		"components": ["Steel Mail", "Banded Emerald", "Barbed Pauldron"],
     "stats": {
       "Health": 300,
 	    "Physical Armor": 60
@@ -2586,7 +2586,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Magical Penetration"],
-		"components": [],
+		"components": ["Diffusal Cane", "Scepter"],
     "stats": {
       "Magical Power": 80,
       "Magical Penetration": 15
@@ -2602,7 +2602,7 @@
     "cost": 3000,
     "rarity": "Epic",
     "tags": ["Active", "Magical Power", "Physical Armor", "Ability Haste"],
-		"components": [],
+		"components": ["Abyssal Bracers", "Chronomatic Wand"],
     "stats": {
       "Magical Power": 70,
       "Physical Armor": 40,
@@ -2619,7 +2619,7 @@
     "cost": 3050,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Critical Chance", "Lifesteal"],
-		"components": [],
+		"components": ["Greatsword", "Crimson Edge", "Crossbow"],
     "stats": {
       "Physical Power": 45,
       "Critical Chance": 20,
@@ -2639,7 +2639,7 @@
     "cost": 3100,
     "rarity": "Epic",
     "tags": ["Passive", "Health", "Magical Armor", "Ability Haste"],
-		"components": [],
+		"components": ["Violet Brooch", "Nullifying Mask", "Nullifying Mask"],
     "stats": {
       "Physical Power": 45,
       "Critical Chance": 20,
@@ -2656,7 +2656,7 @@
     "cost": 3100,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Physical Penetration", "Ability Haste"],
-		"components": [],
+		"components": ["Honed Kris", "Ruthless Broadsword"],
     "stats": {
       "Physical Power": 40,
       "Physical Penetration": 10,
@@ -2676,7 +2676,7 @@
     "cost": 3100,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Health", "Ability Haste"],
-		"components": [],
+		"components": ["Chaotic Core", "Violet Brooch"],
     "stats": {
       "Magical Power": 55,
       "Health": 200,
@@ -2693,7 +2693,7 @@
     "cost": 3100,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Physical Penetration", "Omnivamp"],
-		"components": [],
+		"components": ["Honed Kris", "Crimson Edge", "Sabre"],
     "stats": {
       "Physical Power": 45,
       "Physical Penetration": 8,
@@ -2710,7 +2710,7 @@
     "cost": 3100,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Magical Armor", "Health"],
-		"components": [],
+		"components": ["Sabre", "Banded Emerald", "Nullifying Mask"],
     "stats": {
       "Physical Power": 45,
       "Magical Armor": 25,
@@ -2730,7 +2730,7 @@
     "cost": 3100,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance", "Movement Speed"],
-		"components": [],
+		"components": ["Ironwood Warbow", "Robust Arbalest"],
     "stats": {
       "Physical Power": 20,
       "Attack Speed": 35,
@@ -2748,7 +2748,7 @@
     "cost": 3100,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Magical Lifesteal", "Health"],
-		"components": [],
+		"components": ["Spiked Birch", "Blood Tome", "Banded Emerald"],
     "stats": {
       "Magical Power": 60,
       "Magical Lifesteal": 10,
@@ -2765,7 +2765,7 @@
     "cost": 3100,
     "rarity": "Epic",
     "tags": ["Passive", "Health", "Magical Armor", "Ability Haste"],
-		"components": [],
+		"components": ["Nullifying Mask", "Stalwart Gauntlets", "Banded Emerald"],
     "stats": {
       "Health": 500,
       "Magical Armor": 25,
@@ -2782,7 +2782,7 @@
     "cost": 3150,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance", "Movement Speed"],
-		"components": [],
+		"components": ["Ironwood Warbow", "Robust Arbalest"],
     "stats": {
       "Physical Power": 30,
       "Attack Speed": 30,
@@ -2800,7 +2800,7 @@
     "cost": 3200,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance"],
-		"components": [],
+		"components": ["Ironwood Warbow", "Sabre", "Crossbow"],
     "stats": {
       "Physical Power": 40,
       "Attack Speed": 20,
@@ -2820,7 +2820,7 @@
     "cost": 3200,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Mana", "Ability Haste"],
-		"components": [],
+		"components": ["Rod of Thirst", "Scepter"],
     "stats": {
       "Magical Power": 60,
       "Mana": 500,
@@ -2840,7 +2840,7 @@
     "cost": 3200,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power"],
-		"components": [],
+		"components": ["Scalding Sceptre", "Potent Staff"],
     "stats": {
       "Magical Power": 80
     },
@@ -2855,7 +2855,7 @@
     "cost": 3200,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Magical Penetration", "Mana"],
-		"components": [],
+		"components": ["Rod of Thirst", "Diffusal Cane"],
     "stats": {
       "Magical Power": 60,      
       "Magical Penetration": 10,
@@ -2875,7 +2875,7 @@
     "cost": 3200,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Mana", "Ability Haste"],
-		"components": [],
+		"components": ["Barbaric Cleaver", "Temporal Ripper", "Spirit Beads"],
     "stats": {
       "Physical Power": 50,
       "Mana": 200,
@@ -2892,7 +2892,7 @@
     "cost": 3200,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Critical Chance", "Ability Haste"],
-		"components": [],
+		"components": ["Ruthless Broadsword", "Sabre", "Crossbow"],
     "stats": {
       "Physical Power": 50,
       "Critical Chance": 20,
@@ -2912,7 +2912,7 @@
     "cost": 3200,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance"],
-		"components": [],
+		"components": ["Serrated Blade", "Ironwood Warbow", "Crossbow"],
     "stats": {
       "Physical Power": 50,
       "Attack Speed": 25,
@@ -2929,7 +2929,7 @@
     "cost": 3200,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Mana", "Ability Haste"],
-		"components": [],
+		"components": ["Soul Chalice", "Temporal Ripper", "Sabre"],
     "stats": {
       "Physical Power": 30,
       "Mana": 400,
@@ -2952,7 +2952,7 @@
     "cost": 3300,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance", "Movement Speed"],
-		"components": [],
+		"components": ["Robust Arbalest", "Greatsword"],
     "stats": {
       "Physical Power": 30,
       "Attack Speed": 20,
@@ -2970,27 +2970,7 @@
     "cost": 3300,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Attack Speed", "Ability Haste"],
-		"components": [],
-    "stats": {
-      "Magical Power": 50,
-      "Attack Speed": 20,
-      "Ability Haste": 20
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Basic attacks deal 15 (+20 Magical Power) bonus magic damage on-hit."
-      },{
-      "descriptionType": "Passive",
-      "description": "Gain (+75% Ability Haste) attack speed."
-      }
-    ]
-  },
-  {
-    "name": "Prophecy",
-    "cost": 3300,
-    "rarity": "Epic",
-    "tags": ["Passive", "Magical Power", "Attack Speed", "Ability Haste"],
-		"components": [],
+		"components": ["Chaotic Core", "Composite Bow"],
     "stats": {
       "Magical Power": 50,
       "Attack Speed": 20,
@@ -3010,7 +2990,7 @@
     "cost": 3300,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance", "Omnivamp"],
-		"components": [],
+		"components": ["Ravenous Rapier", "Composite Bow", "Crossbow"],
     "stats": {
       "Physical Power": 15,
       "Attack Speed": 25,
@@ -3028,7 +3008,7 @@
     "cost": 3300,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Ability Haste", "Mana Regeneration"],
-		"components": [],
+		"components": ["Chaotic Core", "Essence Ring"],
     "stats": {
       "Magical Power": 80,
       "Ability Haste": 20,
@@ -3045,7 +3025,7 @@
     "cost": 3300,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Health"],
-		"components": [],
+		"components": ["Scalding Sceptre", "Void Crystal"],
     "stats": {
       "Magical Power": 60,
       "Health": 200
@@ -3064,7 +3044,7 @@
     "cost": 3400,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Critical Chance"],
-		"components": [],
+		"components": ["Greatsword", "Sabre", "Crossbow"],
     "stats": {
       "Physical Power": 50,
       "Critical Chance": 20
@@ -3079,11 +3059,11 @@
     ]
   },
   {
-    "name": "Imperator",
+    "name": "Insanity",
     "cost": 3400,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Physical Penetration"],
-		"components": [],
+		"components": ["Sawtoothed Scimitar", "Honed Kris"],
     "stats": {
       "Physical Power": 50,
       "Physical Penetration": 10
@@ -3102,7 +3082,7 @@
     "cost": 3400,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Ability Haste"],
-		"components": [],
+		"components": ["Potent Staff", "Chaotic Core"],
     "stats": {
       "Magical Power": 90,
       "Ability Haste": 10
@@ -3118,7 +3098,7 @@
     "cost": 3400,
     "rarity": "Epic",
     "tags": ["Passive", "Magical Power"],
-		"components": [],
+		"components": ["Potent Staff", "Potent Staff"],
     "stats": {
       "Magical Power": 100
     },
@@ -3133,7 +3113,7 @@
     "cost": 3400,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Physical Penetration", "Ability Haste"],
-		"components": [],
+		"components": ["Sawtoothed Scimitar", "Temporal Ripper"],
     "stats": {
       "Physical Power": 45,
       "Physical Penetration": 8,
@@ -3153,7 +3133,7 @@
     "cost": 3500,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Health", "Attack Speed"],
-		"components": [],
+		"components": ["Spell Slasher", "Ironwood Warbow", "Banded Emerald"],
     "stats": {
       "Physical Power": 30,
       "Health": 300,
@@ -3173,7 +3153,7 @@
     "cost": 3500,
     "rarity": "Epic",
     "tags": ["Passive", "Physical Power", "Omnivamp", "Ability Haste"],
-		"components": [],
+		"components": ["Spell Slasher", "Ravenous Rapier", "Temporal Ripper"],
     "stats": {
       "Physical Power": 45,
       "Omnivamp": 10,

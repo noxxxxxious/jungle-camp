@@ -29,24 +29,30 @@
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-toolbar-title v-text="title" />
     </v-app-bar>
-    .
     <div class="item-card-container">
-      <item-card v-for="item in itemList" :key="item.name" :item="item"></item-card>
+      <draggable v-model="draggableArray" group="cards" @start="drag=true" @end="drag=false">
+        <item-card v-for="item in itemList" :key="item.name" :item="item"></item-card>
+      </draggable>
     </div>
   </div>
 </template>
 
 <script>
 import ItemCard from '@/components/ItemCard.vue'
+import draggable from 'vuedraggable';
 const itemJSON = require('@/assets/predecessor-items.json')
 
 export default {
   name: 'Index',
-  components: [ItemCard],
+  components: [
+    ItemCard,
+    draggable
+    ],
   data () {
     return {
       drawer: false,
       itemList: itemJSON,
+      draggableArray: [],
       items: [
         {
           icon: 'mdi-apps',

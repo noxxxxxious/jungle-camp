@@ -1,12 +1,16 @@
 <template>
   <div class="card-container">
-    {{item.name}}
+    {{ item.name }}
   </div>
 </template>
 
 <script>
 export default {
-  props: ['item']
+  props: {
+    item: {
+      type: Object
+    }
+  }
 }
 </script>
 
@@ -22,5 +26,11 @@ export default {
     border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
     background: #282828;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .card-container:hover {
+    background: #333333;
   }
 </style>

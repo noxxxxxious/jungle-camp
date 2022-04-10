@@ -212,13 +212,13 @@ export default {
   }
 
   .item-list::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
     border-radius: 10px;
   }
 
   .item-list::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
     border: 1px solid #ddd;
   }
 

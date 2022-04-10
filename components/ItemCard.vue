@@ -1,6 +1,19 @@
 <template>
   <div class="card-container">
-    {{ item.name }}
+    <div class="item-name">
+      {{ item.name }}
+    </div>
+    <div class="item-glance-details">
+      <div class="active-or-passive">
+        <span v-if="item.tags.includes('Consumable')">Consumable</span>
+        <span v-else-if="item.tags.includes('Active')">Active</span>
+        <span v-else>Passive</span>
+      </div>
+      <div class="item-cost-container">
+        <span class="mdi mdi-coins item-cost" />
+        <span class="item-cost">{{ item.cost }}</span>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -16,6 +29,7 @@ export default {
 
 <style scoped>
   .card-container {
+    position: relative;
     width: 250px;
     height: 350px;
     display: flex;
@@ -25,12 +39,27 @@ export default {
     margin: 20px;
     border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    background: #282828;
+    background: #333;
     cursor: pointer;
     user-select: none;
   }
 
   .card-container:hover {
-    background: #333333;
+    background: #363636;
+  }
+
+  .item-glance-details {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .item-cost-container {
+    text-align: center;
+  }
+
+  .item-cost {
+    color: gold;
   }
 </style>

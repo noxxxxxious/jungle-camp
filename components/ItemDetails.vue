@@ -1,6 +1,7 @@
 <template>
   <div>
-    {{ item ? item.name : "No item selected."}}
+    {{ item ? item.name : "No item selected."}}<br>
+    {{ item }}
   </div>
 </template>
 

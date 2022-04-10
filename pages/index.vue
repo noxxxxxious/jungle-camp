@@ -25,10 +25,10 @@ const itemList = require('@/assets/predecessor-items.json')
 
 export default {
   name: 'The Jungle Camp | Predecessor Items',
-  components: [
+  components: {
     ItemCard,
     ItemDetails
-  ],
+  },
   data: () => ({
     showTray: true,
     currentlySelectedItem: null,
@@ -46,6 +46,7 @@ export default {
     },
     selectItem (inItem) {
       this.currentlySelectedItem = inItem
+      console.log(inItem)
     }
   }
 }
@@ -123,6 +124,22 @@ export default {
     width: auto;
     overflow-y: scroll;
     height: 100%;
+    justify-content: space-around;
+  }
+
+  .item-list::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  .item-list::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
+    border-radius: 10px;
+  }
+
+  .item-list::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    border: 1px solid #ddd;
   }
 
   .item-details {

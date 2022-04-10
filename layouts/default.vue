@@ -48,7 +48,7 @@ export default {
 
   .footer {
     background-color: #202020;
-    padding: 5px 20px;
+    padding: 1px 20px;
     text-align: right;
   }
 </style>

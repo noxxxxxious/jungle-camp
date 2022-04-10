@@ -3,7 +3,7 @@
     "name": "Sentry",
     "cost": 25,
     "rarity": "Common",
-    "tags": ["Consumable", "Ward", "Active"],
+    "tags": ["Consumable", "Active"],
     "components": [],
     "descriptions": [{
       "descriptionType": "Consume",
@@ -14,7 +14,7 @@
     "name": "Stealth Ward",
     "cost": 25,
     "rarity": "Common",
-    "tags": ["Consumable", "Ward", "Active"],
+    "tags": ["Consumable", "Active"],
     "components": [],
     "descriptions": [{
       "descriptionType": "Consume",
@@ -25,7 +25,7 @@
     "name": "Compound Potion",
     "cost": 50,
     "rarity": "Common",
-    "tags": ["Consumable", "Potion", "Active"],
+    "tags": ["Consumable", "Active"],
     "components": [],
     "descriptions": [{
       "descriptionType": "Consume",
@@ -36,7 +36,7 @@
     "name": "Health Potion",
     "cost": 50,
     "rarity": "Common",
-    "tags": ["Consumable", "Potion", "Active"],
+    "tags": ["Consumable", "Active"],
     "components": [],
     "descriptions": [{
       "descriptionType": "Consume",
@@ -47,7 +47,7 @@
     "name": "Mana Potion",
     "cost": 50,
     "rarity": "Common",
-    "tags": ["Consumable", "Potion", "Active"],
+    "tags": ["Consumable", "Active"],
     "components": [],
     "descriptions": [{
       "descriptionType": "Consume",
@@ -58,7 +58,7 @@
     "name": "Hunt",
     "cost": 50,
     "rarity": "Uncommon",
-    "tags": ["Passive", "Jungle Item"],
+    "tags": ["Passive"],
     "components": [],
     "descriptions": [{
       "descriptionType": "Passive - Artifact",
@@ -76,7 +76,7 @@
     "name": "Refillable Potion",
     "cost": 150,
     "rarity": "Common",
-    "tags": ["Consumable", "Potion", "Active"],
+    "tags": ["Consumable", "Active"],
     "components": ["Health Potion"],
     "descriptions": [{
       "descriptionType": "Consume",
@@ -291,7 +291,7 @@
     "name": "Marksman Crest",
     "cost": 400,
     "rarity": "Legendary",
-    "tags": ["Passive", "Crest", "Physical Power", "Attack Speed", "Om"],
+    "tags": ["Passive", "Crest", "Physical Power", "Attack Speed"],
     "components": [],
     "stats": {
       "Physical Power": 5,
@@ -874,7 +874,7 @@
     "components": ["Titan Crest"],
     "stats": {
       "Health": 120,
-      "health Regeneration": 1
+      "Health Regeneration": 1
     },
     "descriptions": [{
       "descriptionType": "Passive",

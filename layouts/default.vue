@@ -50,5 +50,6 @@ export default {
     background-color: #202020;
     padding: 1px 20px;
     text-align: right;
+    z-index: 5;
   }
 </style>

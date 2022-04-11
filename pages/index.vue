@@ -12,17 +12,17 @@
         <div class="separator"></div>
         <div class="filter-tray-list">
           <div v-for="tag in tagList" :key="tag" class="filter-selection">
-            <input type="checkbox" :name="getFilterTrayName(tag)" :id="getFilterTrayName(tag)">
+            <input type="checkbox" class="filter-checkbox" :name="getFilterTrayName(tag)" :id="getFilterTrayName(tag)" @change="changeFilter(getFilterTrayName(tag), tag)">
             <label :for="getFilterTrayName(tag)">{{ tag }}</label>
           </div>
         </div>
         <div class="reset-button-container">
-          <div class="reset-button">RESET</div>
+          <div class="reset-button" @click="resetFilters">RESET</div>
         </div>
       </div>
     </div>
     <div class="item-list">
-      <ItemCard v-for="item in itemList" :key="item.name" :item="item" @click.native="selectItem(item)"/>
+      <ItemCard v-for="item in filteredItemList" :key="item.name" :item="item" @click.native="selectItem(item)"/>
     </div>
     <div class="item-details">
       <ItemDetails :item="currentlySelectedItem" />
@@ -42,11 +42,15 @@ export default {
     ItemCard,
     ItemDetails
   },
+
   data: () => ({
     showTray: true,
     currentlySelectedItem: null,
-    itemList
+    itemList,
+    filteredItemList: [...itemList],
+    filteredTags: []
   }),
+
   methods: {
     toggleTray () {
       this.showTray = !this.showTray
@@ -57,14 +61,59 @@ export default {
         filterTray.classList.add('show-tray')
       }
     },
+
     selectItem (inItem) {
       this.currentlySelectedItem = inItem
       console.log(inItem)
     },
+
     getFilterTrayName (inTag) {
       return `filter-tray-${inTag.replace(' ', '-')}`.toLowerCase()
+    },
+
+    changeFilter (elementId, inTag) {
+      const checkbox = document.getElementById(elementId)
+      if (checkbox.checked && !this.filteredTags.includes(inTag)) {
+        this.filteredTags.push(inTag)
+      } else if (!checkbox.checked && this.filteredTags.includes(inTag)) {
+        this.filteredTags = this.filteredTags.filter((tag) => {
+          return tag !== inTag
+        })
+      }
+
+      this.updateFilter()
+    },
+
+    updateFilter () {
+      let filteredItemList = []
+
+      if (this.filteredTags.length === 0) {
+        console.log('No filters, using all items')
+        filteredItemList = [...this.itemList]
+      } else {
+        console.log('Using filters ', this.filteredTags)
+        filteredItemList = this.itemList.filter((item) => {
+          let returnValue = true
+          this.filteredTags.forEach((tag) => {
+            if (!item.tags.includes(tag)) {
+              returnValue = false
+            }
+          })
+          return returnValue
+        })
+      }
+      this.filteredItemList = filteredItemList
+    },
+
+    resetFilters () {
+      document.querySelectorAll('.filter-checkbox').forEach((checkbox) => {
+        checkbox.checked = false
+      })
+      this.filteredTags = []
+      this.updateFilter()
     }
   },
+
   computed: {
     tagList () {
       const tagList = []
@@ -77,7 +126,7 @@ export default {
         })
       })
 
-      return tagList
+      return tagList.sort()
     }
   }
 }

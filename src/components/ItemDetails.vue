@@ -1,7 +1,7 @@
 <template>
   <div class="item-details-container">
     <span v-if="!item">No item selected.</span>
-    <div v-else>
+    <div class="item-details" v-else>
       <div class="item-name">{{ item.name.toUpperCase() }}</div>
       <div class="active-or-passive">
         <div v-if="item.tags.includes('Consumable')">CONSUMABLE</div>
@@ -106,6 +106,26 @@ export default {
     justify-content: center;
     align-items: center;
     height: 100%;
+    overflow-y: auto;
+  }
+
+  .item-details-container::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  .item-details-container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
+    border-radius: 10px;
+  }
+
+  .item-details-container::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    border: 1px solid #ddd;
+  }
+
+  .item-details {
+    max-height: 100%;
   }
 
   .item-name {
@@ -153,5 +173,6 @@ export default {
 
   .item-cost {
     color: gold;
+    padding-bottom: 25px;
   }
 </style>

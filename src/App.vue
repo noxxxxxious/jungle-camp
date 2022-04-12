@@ -1,21 +1,15 @@
 <template>
   <div class="app-wrapper">
     <div class="header">The Jungle Camp</div>
-    <div class="main">
-      <Nuxt />
-    </div>
+      <div class="main">
+        <router-view/>
+      </div>
     <div class="footer">Discord: noxxxxxious#7568</div>
   </div>
 </template>
 
-<script>
-export default {
-
-}
-</script>
-
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
   * {
     box-sizing: border-box;

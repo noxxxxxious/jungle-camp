@@ -4,7 +4,7 @@
       <div class="filter-tray__button-container">
         <div class="filter-tray__button" @click="toggleTray">
           <span v-if="showTray" class="mdi mdi-36px mdi-chevron-left" />
-          <span v-else class="mdi mdi-36px mdi-chevron-right"  />
+          <span v-else class="mdi mdi-36px mdi-chevron-right" />
         </div>
       </div>
       <div class="filter-tray-contents">
@@ -22,13 +22,12 @@
       </div>
     </div>
     <div class="item-list">
-      <ItemCard v-for="item in filteredItemList" :key="item.name" :item="item" @click.native="selectItem(item)"/>
+      <ItemCard v-for="item in filteredItemList" :key="item.name" :item="item" @click="selectItem(item)"/>
     </div>
     <div class="item-details">
       <ItemDetails :item="currentlySelectedItem" />
     </div>
   </div>
-
 </template>
 
 <script>
@@ -37,7 +36,7 @@ import ItemDetails from '@/components/ItemDetails.vue'
 const itemList = require('@/assets/predecessor-items.json')
 
 export default {
-  name: 'The Jungle Camp | Predecessor Items',
+  name: 'IndexPage',
   components: {
     ItemCard,
     ItemDetails
@@ -64,7 +63,6 @@ export default {
 
     selectItem (inItem) {
       this.currentlySelectedItem = inItem
-      console.log(inItem)
     },
 
     getFilterTrayName (inTag) {
@@ -88,10 +86,8 @@ export default {
       let filteredItemList = []
 
       if (this.filteredTags.length === 0) {
-        console.log('No filters, using all items')
         filteredItemList = [...this.itemList]
       } else {
-        console.log('Using filters ', this.filteredTags)
         filteredItemList = this.itemList.filter((item) => {
           let returnValue = true
           this.filteredTags.forEach((tag) => {
@@ -139,13 +135,14 @@ export default {
   }
 
   .filter-tray {
-    flex: 0 0 auto;
+    flex-shrink: 0;
     background-color: #151515;
     position: relative;
     width: 0px;
     transition: 0.3s;
     box-shadow: 5px 0px 5px #0004;
     padding: 25px 0px;
+    /* overflow-x: auto; */
   }
 
   .filter-tray.show-tray {
@@ -199,7 +196,7 @@ export default {
   }
 
   .filter-tray-contents {
-    overflow: hidden;
+    max-height: 100vh;
   }
 
   .filter-tray-title {
@@ -217,8 +214,8 @@ export default {
   }
 
   .filter-tray-list {
-    display: flex;
-    flex-direction: column;
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
   }
 
   .filter-selection {
@@ -256,15 +253,18 @@ export default {
     justify-content: space-around;
   }
 
+  .filter-tray-list::-webkit-scrollbar,
   .item-list::-webkit-scrollbar {
     width: 12px;
   }
 
+  .filter-tray-list::-webkit-scrollbar-track,
   .item-list::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
     border-radius: 10px;
   }
 
+  .filter-tray-list::-webkit-scrollbar-thumb,
   .item-list::-webkit-scrollbar-thumb {
     border-radius: 10px;
     box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
@@ -272,7 +272,7 @@ export default {
   }
 
   .item-details {
-    flex: 0 0 auto;
+    flex-shrink: 0;
     background-color: #151515;
     width: 350px;
     height: 100%;

@@ -197,6 +197,7 @@ export default {
 
   .filter-tray-contents {
     max-height: 100vh;
+    overflow: hidden;
   }
 
   .filter-tray-title {

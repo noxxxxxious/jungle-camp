@@ -2920,7 +2920,7 @@
     },
     "descriptions": [{
       "descriptionType": "Passive - Blight",
-      "description": "Dealing physical damage reduces the target's healing by 60^ for 3s."
+      "description": "Dealing physical damage reduces the target's healing by 60% for 3s."
       }
     ]
   },

@@ -70,6 +70,10 @@
           <span class="item-stat-identifier">Ability Haste</span>
           <span class="item-stat-value">{{ item.stats['Ability Haste'] }}</span>
         </div>
+        <div v-if="item.stats['Movement Speed']" class="item-stat">
+          <span class="item-stat-identifier">Movement Speed</span>
+          <span class="item-stat-value">{{ item.stats['Movement Speed'] }}</span>
+        </div>
         <div v-if="item.stats['Gold Per Second']" class="item-stat">
           <span class="item-stat-identifier">Gold Per Second</span>
           <span class="item-stat-value">{{ item.stats['Gold Per Second'] }}</span>
@@ -82,7 +86,7 @@
         </div>
       </div>
       <div class="item-cost-container">
-        <span class="mdi mdi-coins item-cost" />
+        <span class="mdi mdi-circle-multiple-outline item-cost" />
         <span class="item-cost">{{ item.cost }}</span>
       </div>
     </div>

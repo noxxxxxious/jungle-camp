@@ -10,7 +10,7 @@
         <span v-else>Passive</span>
       </div>
       <div class="item-cost-container">
-        <span class="mdi mdi-coins item-cost" />
+        <span class="mdi mdi-circle-multiple-outline item-cost" />
         <span class="item-cost">{{ item.cost }}</span>
       </div>
     </div>

@@ -1,5 +1,6 @@
 <template>
-  <div class="card-container">
+  <div class="card-container" :style="`background-image: url('${getImgUrl()}')`">
+    <div class="card-container-overlay"></div>
     <div class="item-name">
       {{ item.name }}
     </div>
@@ -23,6 +24,14 @@ export default {
     item: {
       type: Object
     }
+  },
+
+  methods: {
+    getImgUrl () {
+      // const imgUrl = require('@/assets/images/' + this.item.name.replace(' ', '_') + '.png')
+      const imgUrl = require('@/assets/images/Sentry.png')
+      return imgUrl 
+    }
   }
 }
 </script>
@@ -42,10 +51,16 @@ export default {
     background: #333;
     cursor: pointer;
     user-select: none;
+    background-position: center;
+    background-size: contain;
   }
 
   .card-container:hover {
     background: #363636;
+  }
+
+  .card-container-overlay {
+    
   }
 
   .item-glance-details {

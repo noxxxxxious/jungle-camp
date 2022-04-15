@@ -2756,7 +2756,7 @@
     },
     "descriptions": [{
       "descriptionType": "Passive - Blight",
-      "description": "Dealing magical damage reduces the target's healing by 60^ for 3s."
+      "description": "Dealing magical damage reduces the target's healing by 60% for 3s."
       }
     ]
   },

@@ -89,15 +89,33 @@
         <span class="mdi mdi-circle-multiple-outline item-cost" />
         <span class="item-cost">{{ item.cost }}</span>
       </div>
+      <div v-if="hasComponents" class="item-components">
+        <div class="components-headline">COMPONENTS</div>
+        <div class="separator"></div>
+        <RecipeItem :itemName="item.name" recipeIndex=0 />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import RecipeItem from '@/components/RecipeItem.vue'
+
 export default {
   props: {
     item: {
-      type: Object
+      type: [Object, null]
+    }
+  },
+
+  components: {
+    RecipeItem
+  },
+
+  computed: {
+    hasComponents () {
+      const { components } = this.item
+      return components && components.length > 0
     }
   }
 }
@@ -138,7 +156,8 @@ export default {
     letter-spacing: 10px;
   }
 
-  .active-or-passive {
+  .active-or-passive,
+  .components-headline {
     margin: 10px 0px;
     text-align: center;
   }
@@ -178,5 +197,10 @@ export default {
   .item-cost {
     color: gold;
     padding-bottom: 25px;
+    margin-bottom: 10px;
+  }
+
+  .item-components {
+    margin-top: 20px;
   }
 </style>

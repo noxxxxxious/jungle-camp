@@ -44,8 +44,6 @@ export default {
 
   data: () => ({
     showTray: true,
-    currentlySelectedItem: null,
-    itemList,
     filteredItemList: [...itemList],
     filteredTags: []
   }),
@@ -62,7 +60,7 @@ export default {
     },
 
     selectItem (inItem) {
-      this.currentlySelectedItem = inItem
+      this.$store.dispatch('setCurrentlySelectedItem', inItem)
     },
 
     getFilterTrayName (inTag) {
@@ -111,6 +109,14 @@ export default {
   },
 
   computed: {
+    itemList() {
+      return this.$store.getters.getItemList
+    },
+
+    currentlySelectedItem() {
+      return this.$store.getters.getCurrentlySelectedItem
+    },
+
     tagList () {
       const tagList = []
 

@@ -1,6 +1,9 @@
 <template>
   <div class="item-recipe-container">
     <div class="item-image" @click="selectComponent" :style="`background-image: url('${getImgUrl()}')`">
+      <div v-if="recipeIndex > 0" class="hover-stats" >
+        <ItemStats :itemObject="itemObject" />
+      </div>
     </div>
     <div v-if="hasComponents" class="separator">
       <div class="separator-edge"></div>
@@ -9,12 +12,19 @@
     <div v-if="hasComponents" class='components-container'>
       <RecipeItem v-for="(component, index) in itemObject.components" :key="`${component.replace(' ', '-')}-componentOf-${itemObject.name.replace(' ', '-')}-${index}`" :itemName="component" :recipeIndex="parseInt(recipeIndex) + 1" />
     </div>
+    
   </div>
 </template>
 
 <script>
+import ItemStats from '@/components/ItemStats.vue'
+
 export default {
   name: 'RecipeItem',
+
+  components: {
+    ItemStats
+  },
 
   props: {
     itemName: {
@@ -38,7 +48,7 @@ export default {
     hasComponents () {
       const { components } = this.itemObject
       return components && components.length > 0
-    }
+    },
   },
 
   methods: {
@@ -48,6 +58,14 @@ export default {
 
     getImgUrl () {
       return require('@/assets/images/' + this.itemName.replaceAll(' ', '_').replaceAll("'", "")  + '.png')
+    },
+
+    setHoverComponent (visible) {
+      if (visible) {
+        this.$store.dispatch('setCurrentlyHoveredComponent', this.itemObject)
+      } else {
+        this.$store.dispatch('setCurrentlyHoveredComponent', null)
+      }
     }
   }
 }
@@ -63,6 +81,7 @@ export default {
   }
 
   .item-image {
+    position: relative;
     border: 1px solid #ccc;
     padding: 5px;
     margin: 5px 0px;
@@ -99,5 +118,24 @@ export default {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+  }
+
+  .hover-stats {
+    background: #171717;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    transform: translate(-100%, -100%);
+    display: none;
+    padding: 50px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: 1px solid gold;
+    z-index: 10;
+    box-shadow: 0px 0px 5px 5px #ffd70022;
+  }
+
+  .item-image:hover .hover-stats {
+    display: initial;
   }
 </style>

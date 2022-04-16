@@ -85,6 +85,10 @@ export default {
     font-weight: bold;
   }
 
+  .active-or-passive {
+    color: #999;
+  }
+
   .item-cost-container {
     text-align: center;
   }

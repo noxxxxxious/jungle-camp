@@ -27,7 +27,6 @@
     <div class="item-details">
       <ItemDetails :item="currentlySelectedItem" />
     </div>
-    <!-- <div class="recipe-hover-details"></div> -->
   </div>
 </template>
 

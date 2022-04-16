@@ -21,6 +21,7 @@
   }
 
   .app-wrapper {
+    position: relative;
     display: grid;
     grid-template-rows: 69px calc(100vh - 89px) 20px;
     background: #282828;

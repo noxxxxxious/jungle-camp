@@ -6,7 +6,7 @@
       <div class="separator-edge"></div>
       <div class="separator-edge"></div>
     </div>
-    <div v-if="hasComponents" :class="componentsContainerClasses">
+    <div v-if="hasComponents" class='components-container'>
       <RecipeItem v-for="(component, index) in itemObject.components" :key="`${component.replace(' ', '-')}-componentOf-${itemObject.name.replace(' ', '-')}-${index}`" :itemName="component" :recipeIndex="parseInt(recipeIndex) + 1" />
     </div>
   </div>
@@ -38,14 +38,6 @@ export default {
     hasComponents () {
       const { components } = this.itemObject
       return components && components.length > 0
-    },
-
-    componentsContainerClasses () {
-      const classes = ['components-container']
-      if (this.recipeIndex > 0) {
-        classes.push('stacked-recipes')
-      }
-      return classes.join(' ')
     }
   },
 
@@ -107,9 +99,5 @@ export default {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-  }
-
-  .stacked-recipes {
-    /* flex-direction: column; */
   }
 </style>

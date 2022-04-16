@@ -72,4 +72,12 @@ export default {
   .components-headline {
     text-align: center;
   }
+
+  .separator {
+    display: flex;
+    justify-content: space-between;
+    height: 1px;
+    background: linear-gradient(to right, #8885, #888, #8885);
+    width: 100%;
+  }
 </style>

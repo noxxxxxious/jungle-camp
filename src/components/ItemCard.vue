@@ -1,10 +1,10 @@
 <template>
   <div class="card-container" :style="`background-image: url('${getImgUrl()}')`">
     <div class="card-container-overlay"></div>
-    <div class="item-name">
-      {{ item.name }}
-    </div>
     <div class="item-glance-details">
+      <div class="item-name">
+        {{ item.name }}
+      </div>
       <div class="active-or-passive">
         <span v-if="item.tags.includes('Consumable')">Consumable</span>
         <span v-else-if="item.tags.includes('Active')">Active</span>
@@ -28,9 +28,7 @@ export default {
 
   methods: {
     getImgUrl () {
-      // const imgUrl = require('@/assets/images/' + this.item.name.replace(' ', '_') + '.png')
-      const imgUrl = require('@/assets/images/Sentry.png')
-      return imgUrl 
+      return require('@/assets/images/' + this.item.name.replaceAll(' ', '_').replaceAll("'", "")  + '.png')
     }
   }
 }
@@ -53,14 +51,23 @@ export default {
     user-select: none;
     background-position: center;
     background-size: contain;
-  }
-
-  .card-container:hover {
-    background: #363636;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 10px #0002;
   }
 
   .card-container-overlay {
-    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle 100px at center 160px, #2220, #2220, #111);
+    background-repeat: no-repeat;
+  }
+
+  .card-container:hover {
+    box-shadow: 0px 0px 5px 5px #ffd70022;
+    border: solid gold 1px;
   }
 
   .item-glance-details {
@@ -68,6 +75,14 @@ export default {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .item-name {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
   }
 
   .item-cost-container {

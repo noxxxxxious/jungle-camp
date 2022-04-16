@@ -1,16 +1,13 @@
 <template>
   <div class="item-recipe-container">
-    <div class="item-name" @click="selectComponent">
-      <div v-for="namePiece in itemObject.name.split(' ')" :key="namePiece">
-        {{ namePiece }}
-      </div>
+    <div class="item-image" @click="selectComponent" :style="`background-image: url('${getImgUrl()}')`">
     </div>
     <div v-if="hasComponents" class="separator">
       <div class="separator-edge"></div>
       <div class="separator-edge"></div>
     </div>
     <div v-if="hasComponents" :class="componentsContainerClasses">
-      <RecipeItem v-for="component in itemObject.components" :key="`${component.replace(' ', '-')}-componentOf-${itemObject.name.replace(' ', '-')}`" :itemName="component" :recipeIndex="recipeIndex + 1" />
+      <RecipeItem v-for="(component, index) in itemObject.components" :key="`${component.replace(' ', '-')}-componentOf-${itemObject.name.replace(' ', '-')}-${index}`" :itemName="component" :recipeIndex="parseInt(recipeIndex) + 1" />
     </div>
   </div>
 </template>
@@ -55,6 +52,10 @@ export default {
   methods: {
     selectComponent() {
       this.$store.dispatch('setCurrentlySelectedItem', this.itemObject)
+    },
+
+    getImgUrl () {
+      return require('@/assets/images/' + this.itemName.replaceAll(' ', '_').replaceAll("'", "")  + '.png')
     }
   }
 }
@@ -69,20 +70,22 @@ export default {
     align-items: center;
   }
 
-  .item-name {
-    flex-grow: 0;
-    display: flex;
-    flex-direction: column;
+  .item-image {
     border: 1px solid #ccc;
     padding: 5px;
     margin: 5px 0px;
     user-select: none;
+    box-shadow: 0px 0px 10px 10px #0002;
+    height: 45px;
+    width: 45px;
+    background-position: 50% 20%;
+    background-size: 130%;
   }
 
-  .item-name:hover {
+  .item-image:hover {
     cursor: pointer;
-    background: #ccc;
-    color: #222;
+    border: 1px solid gold;
+    box-shadow: 0px 0px 5px 5px #ffd70022;
   }
 
   .separator {
@@ -107,6 +110,6 @@ export default {
   }
 
   .stacked-recipes {
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 </style>

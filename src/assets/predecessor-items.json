@@ -1608,7 +1608,7 @@
     }
   },
   {
-    "name": "Scalding Scepter",
+    "name": "Scalding Sceptre",
     "cost": 1350,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Power"],
@@ -1655,7 +1655,7 @@
     ]
   },
 {
-    "name": "Fluorishing Totem",
+    "name": "Flourishing Totem",
     "cost": 1500,
     "rarity": "Rare",
     "tags": ["Passive", "Magical Power", "Mana"],
@@ -2246,7 +2246,7 @@
     ]
   },
   {
-    "name": "Unspoken Will",
+    "name": "Unbroken Will",
     "cost": 2900,
     "rarity": "Epic",
     "tags": ["Passive", "Health", "Health Regeneration", "Magical Armor"],

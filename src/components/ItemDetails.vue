@@ -92,7 +92,7 @@
       <div v-if="hasComponents" class="item-components">
         <div class="components-headline">COMPONENTS</div>
         <div class="separator"></div>
-        <RecipeItem :itemName="item.name" recipeIndex=0 />
+        <RecipeItem :itemName="item.name" :recipeIndex="0" />
       </div>
     </div>
   </div>

@@ -68,4 +68,8 @@ export default {
   .item-components {
     margin-top: 20px;
   }
+
+  .components-headline {
+    text-align: center;
+  }
 </style>

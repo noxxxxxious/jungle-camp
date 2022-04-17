@@ -33,17 +33,23 @@ export default {
       const { components } = this.item
       return components && components.length > 0
     }
-  }
+  },
+
+  emits: ['closeDetails']
 }
 </script>
 
 <style scoped>
   .item-details-container {
+    position: relative;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+    max-width: 500px;
+    margin: auto;
+    flex-direction: column;
   }
 
   .item-details-container::-webkit-scrollbar {
@@ -79,5 +85,16 @@ export default {
     height: 1px;
     background: linear-gradient(to right, #8885, #888, #8885);
     width: 100%;
+  }
+
+  @media screen and (max-width: 720px) {
+    .item-details-container {
+      overflow-y: auto;
+      width: 100%;
+    }
+
+    .item-details {
+      width: 100%;
+    }
   }
 </style>

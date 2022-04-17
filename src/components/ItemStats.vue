@@ -9,6 +9,10 @@
       <div v-else-if="item.tags.includes('Active')">ACTIVE</div>
       <div v-else>PASSIVE</div>
     </div>
+    <div class="item-cost-container">
+      <span class="mdi mdi-circle-multiple-outline item-cost" />
+      <span class="item-cost">{{ item.cost }}</span>
+    </div>
     <div class="separator"></div>
     <div v-if="item.stats" class="item-stats">
       <div v-if="item.stats['Physical Power']" class="item-stat">
@@ -86,10 +90,6 @@
         <span class="item-description">{{ description.description }}</span>
       </div>
     </div>
-    <div class="item-cost-container">
-      <span class="mdi mdi-circle-multiple-outline item-cost" />
-      <span class="item-cost">{{ item.cost }}</span>
-    </div>
   </div>
 </template>
 
@@ -159,6 +159,7 @@ export default {
     display: flex;
     justify-content: space-between;
     margin: 5px 0px;
+    width: 100%;
   }
 
   .item-descriptions {
@@ -175,6 +176,7 @@ export default {
 
   .item-cost-container {
     text-align: center;
+    margin-bottom: 10px;
   }
 
   .item-cost {

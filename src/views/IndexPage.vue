@@ -21,11 +21,17 @@
         </div>
       </div>
     </div>
-    <div class="item-list">
-      <ItemCard v-for="item in filteredItemList" :key="item.name" :item="item" @click="selectItem(item)"/>
-    </div>
-    <div class="item-details">
-      <ItemDetails :item="currentlySelectedItem" />
+    <div class="mobile-grouping">
+      <div class="item-list">
+        <ItemCard v-for="item in filteredItemList" :key="item.name" :item="item" @click="selectItem(item)"/>
+        <div class="no-items-found" v-if="filteredItemList.length <= 0">No items found...</div>
+      </div>
+      <div :class="itemDetailsClasses">
+        <ItemDetails ref="itemDetails" :item="currentlySelectedItem" @closeDetails="showDetails = false"/>
+        <div class="mobile-close-arrow-button" @click="closeDetails">
+          <span class="mdi mdi-48px mdi-chevron-down" />
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -44,6 +50,7 @@ export default {
 
   data: () => ({
     showTray: true,
+    showDetails: false,
     filteredItemList: [...itemList],
     filteredTags: []
   }),
@@ -61,6 +68,9 @@ export default {
 
     selectItem (inItem) {
       this.$store.dispatch('setCurrentlySelectedItem', inItem)
+      if(this.showDetails === false) {
+        this.showDetails = true
+      }
     },
 
     getFilterTrayName (inTag) {
@@ -105,6 +115,11 @@ export default {
       })
       this.filteredTags = []
       this.updateFilter()
+    },
+
+    closeDetails () {
+      this.showDetails = false
+      this.$store.dispatch('setCurrentlySelectedItem', null)
     }
   },
 
@@ -117,7 +132,7 @@ export default {
       return this.$store.getters.getCurrentlySelectedItem
     },
 
-    tagList () {
+    tagList() {
       const tagList = []
 
       this.itemList.forEach((item) => {
@@ -129,6 +144,14 @@ export default {
       })
 
       return tagList.sort()
+    },
+
+    itemDetailsClasses() {
+      const classes = ['item-details']
+      if (this.showDetails) {
+        classes.push('show-item-details')
+      }
+      return classes.join(' ')
     }
   }
 }
@@ -249,6 +272,10 @@ export default {
     color: #222;
   }
 
+  .mobile-grouping {
+    display: contents;
+  }
+
   .item-list {
     display: flex;
     flex-wrap: wrap;
@@ -260,18 +287,26 @@ export default {
     justify-content: space-around;
   }
 
+  .no-items-found {
+    justify-self: center;
+    align-self: center;
+  }
+
   .filter-tray-list::-webkit-scrollbar,
+  .item-details::-webkit-scrollbar,
   .item-list::-webkit-scrollbar {
     width: 12px;
   }
 
   .filter-tray-list::-webkit-scrollbar-track,
+  .item-details::-webkit-scrollbar-track,
   .item-list::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
     border-radius: 10px;
   }
 
   .filter-tray-list::-webkit-scrollbar-thumb,
+  .item-details::-webkit-scrollbar-thumb,
   .item-list::-webkit-scrollbar-thumb {
     border-radius: 10px;
     box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
@@ -285,5 +320,83 @@ export default {
     height: 100%;
     align-self: flex-end;
     box-shadow: -5px 0px 5px #0004;
+  }
+
+  .mobile-close-arrow-button {
+    display: none;
+  }
+
+  @media screen and (max-width: 970px) {
+    .index-container{
+      display: inherit;
+      position: relative;
+    }
+
+    .filter-tray {
+      position: absolute;
+      inset: 0px 0px;
+      z-index: 5;
+      box-shadow: 10px 0px 10px #000d;
+      background: #111;
+    }
+
+    .mobile-grouping {
+      display: grid;
+      grid-template-columns: 1fr 350px;
+      height: calc(100vh - 69px);
+    }
+
+    .filter-tray__button {
+      background-color: #111;
+      box-shadow: 10px 0px 10px #0008;
+    }
+
+    .filter-tray__button::before {
+      box-shadow: 0 25px 0 0px #111;
+    }
+
+    .filter-tray__button::after {
+      box-shadow: 0 -25px 0 0 #111;
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    .mobile-grouping {
+      display: inherit;
+    }
+
+    .item-list {
+      width: 100%;
+    }
+
+    .item-details {
+      position: absolute;
+      display: grid;
+      grid-template-rows: 1fr 50px;
+      padding-bottom: 10px;
+      inset: 0px 0px;
+      transform: translateY(110%);
+      transition: 0.3s transform;
+      width: 100%;
+      height: 100%;
+      overflow-y: hidden;
+      z-index: 10;
+    }
+
+    .item-details.show-item-details {
+      transform: translateY(0%);
+    }
+
+    .mobile-close-arrow-button {
+      display: initial;
+      background-color: #222;
+      margin: auto;
+      border-radius: 10px;
+      text-align: center;
+      cursor: pointer;
+      z-index: 10;
+      width: 80%;
+      box-shadow: 10px 0px 10px #0008;
+    }
   }
 </style>

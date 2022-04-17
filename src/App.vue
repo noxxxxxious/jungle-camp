@@ -36,7 +36,7 @@
     padding-left: 75px;
     background-color: #202020;
     box-shadow: 0px 5px 5px #0004;
-    z-index: 5;
+    z-index: 20;
     font-weight: bold;
     font-size: 1.5rem;
   }
@@ -45,6 +45,6 @@
     background-color: #202020;
     padding: 1px 20px;
     text-align: right;
-    z-index: 5;
+    z-index: 20;
   }
 </style>

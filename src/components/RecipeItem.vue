@@ -138,4 +138,10 @@ export default {
   .item-image:hover .hover-stats {
     display: initial;
   }
+
+  @media screen and (max-width: 970px) {
+    .item-image:hover .hover-stats {
+      display: none;
+    }
+  }
 </style>

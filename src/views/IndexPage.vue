@@ -21,6 +21,7 @@
         </div>
       </div>
     </div>
+    <div v-if="showTray" class="filter-tray-mobile-exit-overlay" @click="toggleTray"></div>
     <div class="mobile-grouping">
       <div class="item-list">
         <ItemCard v-for="item in filteredItemList" :key="item.name" :item="item" @click="selectItem(item)"/>
@@ -161,6 +162,7 @@ export default {
   .index-container {
     display: flex;
     height: 100%;
+    position: relative;
   }
 
   .filter-tray {
@@ -320,9 +322,14 @@ export default {
     height: 100%;
     align-self: flex-end;
     box-shadow: -5px 0px 5px #0004;
+    overflow: auto;
   }
 
   .mobile-close-arrow-button {
+    display: none;
+  }
+
+  .filter-tray-mobile-exit-overlay {
     display: none;
   }
 
@@ -335,7 +342,7 @@ export default {
     .filter-tray {
       position: absolute;
       inset: 0px 0px;
-      z-index: 5;
+      z-index: 15;
       box-shadow: 10px 0px 10px #000d;
       background: #111;
     }
@@ -343,7 +350,7 @@ export default {
     .mobile-grouping {
       display: grid;
       grid-template-columns: 1fr 350px;
-      height: calc(100vh - 69px);
+      height: calc(100vh - 89px);
     }
 
     .filter-tray__button {
@@ -357,6 +364,16 @@ export default {
 
     .filter-tray__button::after {
       box-shadow: 0 -25px 0 0 #111;
+    }
+
+    .filter-tray-mobile-exit-overlay {
+      display: initial;
+      position: absolute;
+      inset: 0 0;
+      height: 100%;
+      width: 100%;
+      cursor: pointer;
+      z-index: 11;
     }
   }
 

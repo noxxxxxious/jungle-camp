@@ -71,6 +71,10 @@
         <span class="item-stat-identifier">Critical Chance</span>
         <span class="item-stat-value">{{ item.stats['Critical Chance'] }}</span>
       </div>
+      <div v-if="item.stats['Omnivamp']" class="item-stat">
+        <span class="item-stat-identifier">Omnivamp</span>
+        <span class="item-stat-value">{{ item.stats['Omnivamp'] }}</span>
+      </div>
       <div v-if="item.stats['Ability Haste']" class="item-stat">
         <span class="item-stat-identifier">Ability Haste</span>
         <span class="item-stat-value">{{ item.stats['Ability Haste'] }}</span>

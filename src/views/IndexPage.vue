@@ -416,4 +416,10 @@ export default {
       box-shadow: 10px 0px 10px #0008;
     }
   }
+
+  @media screen and (max-width: 400px) {
+    .item-list {
+      padding: 0px 10px;
+    }
+  }
 </style>

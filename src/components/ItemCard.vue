@@ -96,4 +96,37 @@ export default {
   .item-cost {
     color: gold;
   }
+
+  @media screen and (max-width: 1002px) {
+    .card-container {
+      width: 150px;
+      height: 210px;
+      background-repeat: no-repeat;
+      background-color: #111;
+      margin: 10px;
+    }
+
+    .active-or-passive {
+      display: none;
+    }
+
+    .card-container-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle 80px at center 80px, #2220, #2220, #111);
+      background-repeat: no-repeat;
+    }
+
+    .item-glance-details {
+      bottom: 5px;
+    }
+
+    .item-name {
+      font-size: 1rem;
+      letter-spacing: 1px;
+    }
+  }
 </style>

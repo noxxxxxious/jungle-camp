@@ -107,7 +107,7 @@ export default {
 
   methods: {
     getImgUrl () {
-      return require('@/assets/images/' + this.item.name.replaceAll(' ', '_').replaceAll("'", "")  + '.png')
+      return require('@/assets/images/' + this.item.name.replace(/\s/g, '_').replace(/'/g, "")  + '.png')
     }
   },
 

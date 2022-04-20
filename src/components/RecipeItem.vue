@@ -57,7 +57,7 @@ export default {
     },
 
     getImgUrl () {
-      return require('@/assets/images/' + this.itemName.replaceAll(' ', '_').replaceAll("'", "")  + '.png')
+      return require('@/assets/images/' + this.itemName.replace(/\s/g, '_').replace(/'/g, "")  + '.png')
     },
 
     setHoverComponent (visible) {

@@ -75,7 +75,6 @@ export default {
 
       this.$refs.statsEl.style.top = `${imageElCoords.y.toFixed(0) - 69}px`
       this.$refs.statsEl.style.left = `${parseInt(imageElCoords.x.toFixed(0)) + 25}px`
-      console.log(imageElCoords, imageElCoords.y.toFixed(0) - 69 + 'px', parseInt(imageElCoords.x.toFixed(0)) + 10 + 'px')
     }
   }
 }

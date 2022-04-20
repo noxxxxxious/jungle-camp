@@ -1,7 +1,7 @@
 <template>
   <div class="item-recipe-container">
-    <div class="item-image" @click="selectComponent" :style="`background-image: url('${getImgUrl()}')`">
-      <div v-if="recipeIndex > 0" class="hover-stats" >
+    <div ref="imageEl" class="item-image" @click="selectComponent" @mouseenter="repositionStats" :style="`background-image: url('${getImgUrl()}')`">
+      <div ref="statsEl" v-if="recipeIndex > 0" class="hover-stats" >
         <ItemStats :itemObject="itemObject" />
       </div>
     </div>
@@ -66,6 +66,16 @@ export default {
       } else {
         this.$store.dispatch('setCurrentlyHoveredComponent', null)
       }
+    },
+
+    repositionStats () {
+      if (!this.$refs.statsEl) { return }
+      
+      const imageElCoords = this.$refs.imageEl.getBoundingClientRect()
+
+      this.$refs.statsEl.style.top = `${imageElCoords.y.toFixed(0) - 69}px`
+      this.$refs.statsEl.style.left = `${parseInt(imageElCoords.x.toFixed(0)) + 25}px`
+      console.log(imageElCoords, imageElCoords.y.toFixed(0) - 69 + 'px', parseInt(imageElCoords.x.toFixed(0)) + 10 + 'px')
     }
   }
 }
@@ -81,7 +91,6 @@ export default {
   }
 
   .item-image {
-    position: relative;
     border: 1px solid #ccc;
     padding: 5px;
     margin: 5px 0px;
@@ -123,9 +132,7 @@ export default {
   .hover-stats {
     background: #171717;
     position: absolute;
-    top: -10px;
-    left: -10px;
-    transform: translate(-100%, -100%);
+    transform: translate(-110%, -100%);
     display: none;
     padding: 50px;
     border-top-left-radius: 25px;

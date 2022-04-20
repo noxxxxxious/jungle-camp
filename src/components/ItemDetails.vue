@@ -41,7 +41,6 @@ export default {
 
 <style scoped>
   .item-details-container {
-    position: relative;
     padding: 20px;
     display: flex;
     justify-content: center;

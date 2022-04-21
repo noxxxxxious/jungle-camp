@@ -132,10 +132,12 @@ export default {
   }
 
   .item-image-overlay {
-    width: 100%;
-    height: 100%;
-    background-image: radial-gradient(circle 100px at center, #2220, #2220, #151515);
-  }
+    position: absolute;
+    inset: -1px -1px;
+    width: 101%;
+    height: 101%;
+    background-image: radial-gradient(circle 95px at center,#2220,#2220,#151515);
+}
 
   .item-name {
     text-align: center;

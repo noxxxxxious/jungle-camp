@@ -1,6 +1,6 @@
 <template>
   <div id="hover-details" class="hover-item-details">
-    <ItemStats :hover="true" />
+    <ItemStats />
   </div>
 </template>
 

@@ -100,7 +100,7 @@
 <script>
 export default {
   props: {
-    itemObject: {
+    item: {
       type: [Object, null]
     }
   },
@@ -108,16 +108,6 @@ export default {
   methods: {
     getImgUrl () {
       return require('@/assets/images/' + this.item.name.replace(/\s/g, '_').replace(/'/g, "")  + '.png')
-    }
-  },
-
-  computed: {
-    item () {
-      if (this.hover) {
-        return this.$store.getters.getCurrentlyHoveredComponent
-      } else {
-        return this.itemObject
-      }
     }
   }
 }

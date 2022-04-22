@@ -2,7 +2,7 @@
   <div class="item-recipe-container">
     <div ref="imageEl" class="item-image" @click="selectComponent" @mouseenter="repositionStats" :style="`background-image: url('${getImgUrl()}')`">
       <div ref="statsEl" v-if="recipeIndex > 0" class="hover-stats" >
-        <ItemStats :itemObject="itemObject" />
+        <ItemStats :item="itemObject" />
       </div>
     </div>
     <div v-if="hasComponents" class="separator">

@@ -2,7 +2,7 @@
   <div class="item-details-container">
     <span v-if="!item">No item selected.</span>
     <div class="item-details" v-else>
-      <ItemStats :itemObject="item" />
+      <ItemStats :item="item" />
       <div v-if="hasComponents" class="item-components">
         <div class="components-headline">COMPONENTS</div>
         <div class="separator"></div>

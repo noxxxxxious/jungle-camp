@@ -160,8 +160,11 @@ export default {
     border: 1px solid #ddd;
   }
 
-  .item-details {
+  .third-panel-container {
     flex-shrink: 0;
+  }
+
+  .item-details {
     background-color: #151515;
     width: 350px;
     height: 100%;

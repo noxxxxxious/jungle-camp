@@ -74,7 +74,7 @@ export default {
     transition: 0.3s;
     box-shadow: 5px 0px 5px #0004;
     padding: 25px 0px;
-    /* overflow-x: auto; */
+    user-select: none;
   }
 
   .filter-tray.show-tray {
@@ -101,6 +101,7 @@ export default {
     height: 50px;
     width: 50px;
     box-shadow: 5px 0px 5px #0004;
+    user-select: none;
   }
 
   .filter-tray__button::before {
@@ -173,5 +174,38 @@ export default {
     cursor: pointer;
     background-color: #ddd;
     color: #222;
+  }
+
+  @media screen and (max-width: 970px) {
+    .filter-tray {
+      position: absolute;
+      inset: 0px 0px;
+      z-index: 15;
+      box-shadow: 10px 0px 10px #000d;
+      background: #111;
+    }
+
+    .filter-tray__button {
+      background-color: #111;
+      box-shadow: 10px 0px 10px #0008;
+    }
+
+    .filter-tray__button::before {
+      box-shadow: 0 25px 0 0px #111;
+    }
+
+    .filter-tray__button::after {
+      box-shadow: 0 -25px 0 0 #111;
+    }
+
+    .filter-tray-mobile-exit-overlay {
+      display: initial;
+      position: absolute;
+      inset: 0 0;
+      height: 100%;
+      width: 100%;
+      cursor: pointer;
+      z-index: 11;
+    }
   }
 </style>

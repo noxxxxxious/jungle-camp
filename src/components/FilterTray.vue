@@ -152,6 +152,21 @@ export default {
     overflow-y: auto;
   }
 
+  .filter-tray-list::-webkit-scrollbar{
+    width: 12px;
+  }
+
+  .filter-tray-list::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
+    border-radius: 10px;
+  }
+
+  .filter-tray-list::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    border: 1px solid #ddd;
+  }
+
   .filter-selection {
     user-select: none;
     margin: 2px 0px;

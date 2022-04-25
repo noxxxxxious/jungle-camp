@@ -7,12 +7,15 @@
         <div class="no-items-found" v-if="filteredItemList.length <= 0">No items found...</div>
       </div>
       <div class="third-panel-container">
-        <div :class="itemDetailsClasses">
+        <div v-if="currentView === 'itemDescriptions'" :class="itemDetailsClasses">
           <ItemDetails ref="itemDetails" :item="currentlySelectedItem" @closeDetails="showDetails = false"/>
           <div class="mobile-close-arrow-button" @click="closeDetails">
             <span class="mdi mdi-48px mdi-chevron-down" />
           </div>
-      </div>
+        </div>
+        <div v-else-if="currentView === 'deckBuilder'">
+          Deck Builder
+        </div>
       </div>
     </div>
   </div>
@@ -107,6 +110,10 @@ export default {
         classes.push('show-item-details')
       }
       return classes.join(' ')
+    },
+
+    currentView() {
+      return this.$store.getters.getCurrentView
     }
   }
 }
@@ -139,21 +146,18 @@ export default {
     align-self: center;
   }
 
-  .filter-tray-list::-webkit-scrollbar,
-  .item-details::-webkit-scrollbar,
+  .third-panel-container::-webkit-scrollbar,
   .item-list::-webkit-scrollbar {
     width: 12px;
   }
 
-  .filter-tray-list::-webkit-scrollbar-track,
-  .item-details::-webkit-scrollbar-track,
+  .third-panel-container::-webkit-scrollbar-track,
   .item-list::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
     border-radius: 10px;
   }
 
-  .filter-tray-list::-webkit-scrollbar-thumb,
-  .item-details::-webkit-scrollbar-thumb,
+  .third-panel-container::-webkit-scrollbar-thumb,
   .item-list::-webkit-scrollbar-thumb {
     border-radius: 10px;
     box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
@@ -162,15 +166,15 @@ export default {
 
   .third-panel-container {
     flex-shrink: 0;
+    box-shadow: -5px 0px 5px #0004;
+    background-color: #151515;
+    height: calc(100vh - 89px);
+    width: 350px;
+    overflow: auto;
   }
 
   .item-details {
-    background-color: #151515;
-    width: 350px;
-    height: 100%;
-    align-self: flex-end;
-    box-shadow: -5px 0px 5px #0004;
-    overflow: auto;
+    width: 100%;
   }
 
   .mobile-close-arrow-button {

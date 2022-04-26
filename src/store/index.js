@@ -4,7 +4,7 @@ const itemList = require('@/assets/predecessor-items.json')
 export default createStore({
   state: {
     itemList,
-    currentView: 'itemDescriptions',
+    currentView: 'itemDescriptions', //'itemDescriptions' or 'deckBuilder'
     currentlySelectedItem: null,
     currentlyHoveredComponent: null
   },

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import ItemStats from '@/components/ItemStats.vue'
+import ItemStats from '@/components/ItemDescriptions/ItemStats.vue'
 
 export default {
   components: {

@@ -6,7 +6,7 @@
         <ItemCard v-for="item in filteredItemList" :key="item.name" :item="item" @click="selectItem(item)"/>
         <div class="no-items-found" v-if="filteredItemList.length <= 0">No items found...</div>
       </div>
-      <div class="third-panel-container">
+      <div :class="thirdPanelContainerClasses">
         <div v-if="currentView === 'itemDescriptions'" :class="itemDetailsClasses">
           <ItemDetails ref="itemDetails" :item="currentlySelectedItem" @closeDetails="showDetails = false"/>
           <div class="mobile-close-arrow-button" @click="closeDetails">
@@ -14,7 +14,7 @@
           </div>
         </div>
         <div v-else-if="currentView === 'deckBuilder'">
-          Deck Builder
+          <DeckBuilder />
         </div>
       </div>
     </div>
@@ -24,7 +24,8 @@
 <script>
 import FilterTray from '@/components/FilterTray.vue'
 import ItemCard from '@/components/ItemCard.vue'
-import ItemDetails from '@/components/ItemDetails.vue'
+import ItemDetails from '@/components/ItemDescriptions/ItemDetails.vue'
+import DeckBuilder from '@/components/DeckBuilder/DeckBuilder.vue'
 const itemList = require('@/assets/predecessor-items.json')
 
 export default {
@@ -32,11 +33,12 @@ export default {
   components: {
     FilterTray,
     ItemCard,
-    ItemDetails
+    ItemDetails,
+    DeckBuilder
   },
 
   data: () => ({
-    showDetails: false,
+    showDetails: false, //For mobile
     filteredItemList: [...itemList],
     filteredTags: []
   }),
@@ -112,6 +114,14 @@ export default {
       return classes.join(' ')
     },
 
+    thirdPanelContainerClasses() {
+      const classes = ['third-panel-container']
+      if (this.currentView === 'deckBuilder') {
+        classes.push('deck-builder')
+      }
+      return classes.join(' ')
+    },
+
     currentView() {
       return this.$store.getters.getCurrentView
     }
@@ -171,10 +181,16 @@ export default {
     height: calc(100vh - 89px);
     width: 350px;
     overflow: auto;
+    transition: width 0.3s;
+  }
+
+  .third-panel-container.deck-builder {
+    width: 500px;
   }
 
   .item-details {
     width: 100%;
+    height: 100%;
   }
 
   .mobile-close-arrow-button {

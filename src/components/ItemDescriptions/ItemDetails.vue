@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import RecipeItem from '@/components/RecipeItem.vue'
-import ItemStats from '@/components/ItemStats.vue'
+import RecipeItem from '@/components/ItemDescriptions/RecipeItem.vue'
+import ItemStats from '@/components/ItemDescriptions/ItemStats.vue'
 
 export default {
   props: {

@@ -2,24 +2,16 @@
   <div class="deck-builder-container">
     <div class="deck-builder-title">DECK BUILDER</div>
     <div class="separator"></div>
-    <div class="deck-builder-section">
-      <div class="section-title-container">
-        <div class="section-title">STARTING ITEMS</div>
-        <div class="separator"></div>
-      </div>
-      <div class="section-item-container">
-        <ItemContainer v-for="i in 6" :key="'starting-item-' + i"/>
-      </div>
-    </div>
+    <BuildSection title="starting items" :startingItems="true"/>
   </div>
 </template>
 
 <script>
-import ItemContainer from '@/components/DeckBuilder/ItemContainer.vue'
+import BuildSection from '@/components/DeckBuilder/BuildSection.vue'
 
 export default {
   components: {
-    ItemContainer
+    BuildSection
   }
 }
 </script>
@@ -28,6 +20,11 @@ export default {
   .deck-builder-container {
     padding: 20px;
     width: 100%;
+  }
+
+  .separator {
+    height: 1px;
+    background: linear-gradient(to right, #0000, #888, #0000);
   }
 
   .deck-builder-section {
@@ -41,22 +38,5 @@ export default {
     letter-spacing: 10px;
     margin-bottom: 10px;
     user-select: none;
-  }
-
-  .separator {
-    height: 1px;
-    background: linear-gradient(to right, #0000, #888, #0000);
-  }
-
-  .section-title-container {
-    margin: auto;
-    display: inline-block;
-    letter-spacing: 5px;
-    text-align: center;
-  }
-
-  .section-title {
-    user-select: none;
-    margin-bottom: 10px;
   }
 </style>

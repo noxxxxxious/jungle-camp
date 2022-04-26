@@ -8,6 +8,8 @@
 
 <script>
 export default {
+  emits: ['onitemchange'],
+
   data: () => ({
     item: null,
     hoveredItem: null,
@@ -22,8 +24,10 @@ export default {
       // remove "card-" from element ID
       const cardName = data.split('-')
       cardName.shift()
-
-      this.item = this.getItem(cardName.join(' '))
+      const item = this.getItem(cardName.join(' '))
+      this.item = item
+      console.log(item.cost)
+      this.$emit('onitemchange', item.cost)
     },
 
     getItem (inItemName) {
@@ -36,6 +40,7 @@ export default {
 
     removeItem () {
       this.item = null
+      this.$emit('onitemchange', 0)
     }
   },
 
@@ -75,6 +80,11 @@ export default {
     background-size: 130%;
   }
 
+  .item-container:hover {
+    box-shadow: 0px 0px 5px 5px #ffd70022;
+    border: solid gold 1px;
+  }
+
   .remove-item-button {
     position: absolute;
     display: none;
@@ -86,7 +96,7 @@ export default {
     cursor: pointer;
   }
 
-  .item-container.has-item:hover  .remove-item-button {
+  .item-container.has-item:hover .remove-item-button {
     display: initial;
   }
 

@@ -7,9 +7,9 @@
     <div class="section-item-container">
       <ItemContainer v-for="i in 6" :key="'starting-item-' + i" @onitemchange="(itemCost) => { updateCost(itemCost, i) }"/>
     </div>
-    <div class="remaining-gold">
+    <div :class="remainingGoldClasses">
       <span class="mdi mdi-circle-multiple-outline item-cost" />
-      <span class="item-cost">{{ remainingStartingGold }}</span>
+      <span class="item-cost">{{ Math.abs(remainingStartingGold) }}</span>
     </div>
   </div>
 </template>
@@ -48,6 +48,14 @@ export default {
   computed: {
     remainingStartingGold() {
       return 500 - this.itemCosts.reduce((preVal, curVal) => preVal + curVal, 0)
+    },
+
+    remainingGoldClasses() {
+      if (this.remainingStartingGold >= 0) {
+        return 'remaining-gold-ok'
+      } else {
+        return 'remaining-gold-error'
+      }
     }
   }
 }
@@ -71,7 +79,11 @@ export default {
     background: linear-gradient(to right, #0000, #888, #0000);
   }
 
-  .remaining-gold {
+  .remaining-gold-ok {
     color: gold;
+  }
+
+  .remaining-gold-error {
+    color: red;
   }
 </style>

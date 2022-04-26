@@ -1,6 +1,8 @@
 <template>
-  <div class="item-container" :style="itemImageStyle" @drop="onDrop" @dragover.prevent @dragenter.prevent>
-
+  <div :class="itemContainerStyles" :style="itemImageStyle" @drop="onDrop" @dragover.prevent @dragenter.prevent>
+    <div class="remove-item-button" @click="removeItem">
+      <span class="mdi mdi-24px mdi-close-box-outline"></span>
+    </div>
   </div>
 </template>
 
@@ -8,6 +10,7 @@
 export default {
   data: () => ({
     item: null,
+    hoveredItem: null,
     hasDropped: false
   }),
 
@@ -29,13 +32,29 @@ export default {
 
     getImgUrl (inItem) {
       return require('@/assets/images/' + inItem.name.replace(/\s/g, '_').replace(/'/g, "")  + '.png')
+    },
+
+    removeItem () {
+      this.item = null
     }
   },
 
   computed: {
     itemImageStyle () {
-      if (!this.item) { return '' }
-      return `background-image: url('${this.getImgUrl(this.item)}');`
+      if (!this.item && !this.hoveredItem) { return '' }
+      if (this.hoveredItem) {
+        return `background-image: url('${this.getImgUrl(this.hoveredItem)}');`
+      } else {
+        return `background-image: url('${this.getImgUrl(this.item)}');`
+      }
+    },
+
+    itemContainerStyles  () {
+      const classes = ['item-container']
+      if (this.item) {
+        classes.push('has-item')
+      }
+      return classes.join(' ')
     }
   }
 }
@@ -43,6 +62,7 @@ export default {
 
 <style scoped>
   .item-container {
+    position: relative;
     display: inline-block;
     margin: 10px 5px;
     height: 60px;
@@ -53,5 +73,24 @@ export default {
     background: #333;
     background-position: 50% 20%;
     background-size: 130%;
+  }
+
+  .remove-item-button {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+  }
+
+  .remove-item-button:hover {
+    cursor: pointer;
+  }
+
+  .item-container.has-item:hover  .remove-item-button {
+    display: initial;
+  }
+
+  .remove-item-button .mdi {
+    color: #ddd;
   }
 </style>

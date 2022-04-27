@@ -13,9 +13,7 @@
             <span class="mdi mdi-48px mdi-chevron-down" />
           </div>
         </div>
-        <div v-else-if="currentView === 'deckBuilder'">
-          <DeckBuilder />
-        </div>
+        <DeckBuilder v-else-if="currentView === 'deckBuilder'" />
       </div>
     </div>
   </div>

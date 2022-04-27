@@ -10,8 +10,13 @@
 export default {
   emits: ['onitemchange'],
 
+  props: {
+    item: {
+      type: null
+    }
+  },
+
   data: () => ({
-    item: null,
     hoveredItem: null,
     hasDropped: false
   }),
@@ -24,10 +29,7 @@ export default {
       // remove "card-" from element ID
       const cardName = data.split('-')
       cardName.shift()
-      const item = this.getItem(cardName.join(' '))
-      this.item = item
-      console.log(item.cost)
-      this.$emit('onitemchange', item.cost)
+      this.$emit('onitemchange', cardName.join(' '))
     },
 
     getItem (inItemName) {
@@ -39,8 +41,7 @@ export default {
     },
 
     removeItem () {
-      this.item = null
-      this.$emit('onitemchange', 0)
+      this.$emit('onitemchange', null)
     }
   },
 

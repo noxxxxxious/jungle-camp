@@ -2,7 +2,12 @@
   <div class="deck-builder-container">
     <div class="deck-builder-title">DECK BUILDER</div>
     <div class="separator"></div>
-    <BuildSection title="starting items" :startingItems="true"/>
+    <div class="build-sections">
+      <BuildSection title="starting items" :startingItems="true"/>
+      <BuildSection title="main build" />
+      <BuildSection title="variation one" />
+      <BuildSection title="variation two" />
+    </div>
   </div>
 </template>
 
@@ -27,16 +32,18 @@ export default {
     background: linear-gradient(to right, #0000, #888, #0000);
   }
 
-  .deck-builder-section {
-    margin: 10px 0px;
-    text-align: center;
-  }
-
   .deck-builder-title {
     text-align: center;
     font-size: 1.5rem;
     letter-spacing: 10px;
     margin-bottom: 10px;
     user-select: none;
+  }
+
+  .build-sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
   }
 </style>

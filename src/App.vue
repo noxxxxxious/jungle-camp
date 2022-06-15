@@ -13,6 +13,18 @@ import SiteHeader from '@/components/SiteHeader.vue'
 export default {
   components: {
     SiteHeader
+  },
+
+  beforeMount() {
+    //Check if login cookie exists
+    //Only 1 cookie, so we can simply separate on '=' without needing to search through other cookies
+    //Then split on . to get the payload
+    //Decode from base64 and parse the JSON
+    const splitCookie = document.cookie.split('=')
+    if (splitCookie.length > 1 && splitCookie[0] === 'access_token'){
+      const userInfo = JSON.parse(atob(splitCookie[1].split('%20')[1].split('.')[1]))
+      this.$store.dispatch('setUserInfo', userInfo)
+    }
   }
 }
 </script>

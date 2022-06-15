@@ -2,10 +2,19 @@
   <div class="header">
     <span class="site-title">The Jungle Camp</span>
     <nav>
-      <ul>
-        <li ref="itemDescBtn" class="button active" @click="navChange('itemDescriptions')">Item Descriptions</li>
-        <li ref="deckBuilderBtn" class="button" @click="navChange('deckBuilder')">Deck Builder</li>
-      </ul>
+      <div v-if="userInfo">
+        <ul>
+          <li ref="itemDescBtn" class="button active" @click="navChange('itemDescriptions')">Item Descriptions</li>
+          <li ref="deckBuilderBtn" class="button" @click="navChange('deckBuilder')">Deck Builder</li>
+        </ul>
+        <div class="user-banner">
+          <span>{{ userInfo.name }}#{{ userInfo.discriminator }}</span>
+          <img :src="`https://cdn.discordapp.com/avatars/${ userInfo.discordId }/${ userInfo.avatar }.jpg`" >
+        </div>
+      </div>
+      <div v-else>
+        <a href="https://discord.com/oauth2/authorize?client_id=985091844658561026&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Fapi%2Fauth%2Fdiscord%2Fredirect&response_type=code&scope=identify">Log in with Discord</a>
+      </div>
     </nav>
   </div>
 </template>
@@ -24,6 +33,12 @@ export default {
         this.$refs.deckBuilderBtn.classList.add('active')
       }
       this.$store.dispatch('setCurrentView', inButton)
+    }
+  },
+
+  computed: {
+    userInfo() {
+      return this.$store.getters.getUserInfo
     }
   }
 }

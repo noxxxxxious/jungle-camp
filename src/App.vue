@@ -4,7 +4,7 @@
       <div class="main">
         <router-view/>
       </div>
-    <div class="footer">Discord: noxxxxxious#7568</div>
+    <div class="footer">Discord: noxxxxxious#7568 | Hire me as a front end developer!</div>
   </div>
 </template>
 
@@ -54,7 +54,7 @@ export default {
 
   .footer {
     background-color: #202020;
-    padding: 1px 20px;
+    padding: 10px 20px;
     text-align: right;
     z-index: 20;
   }

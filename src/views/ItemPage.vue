@@ -6,14 +6,13 @@
         <ItemCard v-for="item in filteredItemList" :key="item.name" :item="item" @click="selectItem(item)"/>
         <div class="no-items-found" v-if="filteredItemList.length <= 0">No items found...</div>
       </div>
-      <div :class="thirdPanelContainerClasses">
-        <div v-if="currentView === 'itemDescriptions'" :class="itemDetailsClasses">
+      <div class="third-panel-container">
+        <div :class="itemDetailsClasses">
           <ItemDetails ref="itemDetails" :item="currentlySelectedItem" @closeDetails="showDetails = false"/>
           <div class="mobile-close-arrow-button" @click="closeDetails">
             <span class="mdi mdi-48px mdi-chevron-down" />
           </div>
         </div>
-        <DeckBuilder v-else-if="currentView === 'deckBuilder'" />
       </div>
     </div>
   </div>
@@ -23,7 +22,6 @@
 import FilterTray from '@/components/FilterTray.vue'
 import ItemCard from '@/components/ItemCard.vue'
 import ItemDetails from '@/components/ItemDescriptions/ItemDetails.vue'
-import DeckBuilder from '@/components/DeckBuilder/DeckBuilder.vue'
 const itemList = require('@/assets/predecessor-items.json')
 
 export default {
@@ -31,8 +29,7 @@ export default {
   components: {
     FilterTray,
     ItemCard,
-    ItemDetails,
-    DeckBuilder
+    ItemDetails
   },
 
   data: () => ({
@@ -110,18 +107,6 @@ export default {
         classes.push('show-item-details')
       }
       return classes.join(' ')
-    },
-
-    thirdPanelContainerClasses() {
-      const classes = ['third-panel-container']
-      if (this.currentView === 'deckBuilder') {
-        classes.push('deck-builder')
-      }
-      return classes.join(' ')
-    },
-
-    currentView() {
-      return this.$store.getters.getCurrentView
     }
   }
 }

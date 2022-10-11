@@ -1,5 +1,5 @@
 <template>
-  <div class="index-container">
+  <div class="item-page-container">
     <FilterTray @onfilterchange="changeFilter" />
     <div class="mobile-grouping">
       <div class="item-list">
@@ -128,7 +128,7 @@ export default {
 </script>
 
 <style scoped>
-  .index-container {
+  .item-page-container {
     display: flex;
     height: 100%;
     position: relative;
@@ -200,7 +200,7 @@ export default {
   }
 
   @media screen and (max-width: 970px) {
-    .index-container{
+    .item-page-container{
       display: inherit;
       position: relative;
     }

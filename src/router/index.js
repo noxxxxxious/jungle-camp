@@ -1,12 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import IndexPage from '../views/IndexPage.vue'
+import NewsPage from '../views/NewsPage.vue'
+import ItemPage from '../views/ItemPage.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: IndexPage
-  }
+    name: 'news',
+    component: NewsPage
+  },
+  {
+    path: '/items',
+    name: 'items',
+    component: ItemPage
+  },
 ]
 
 const router = createRouter({

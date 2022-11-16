@@ -9,18 +9,21 @@
       <iframe class="article-video" width="100%" height="auto" :src="articleInfo.mediaLink">
       </iframe> 
     </div>
-    <div class="article-content">
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem eum magni, voluptas cupiditate culpa, ullam, repellendus ipsum impedit sequi quasi at necessitatibus excepturi labore accusamus natus sunt nihil fuga laboriosam. Tempore odit ullam dolorem nesciunt reprehenderit non adipisci debitis facilis minima possimus autem eligendi eaque ipsa distinctio animi voluptatum ab ad asperiores, minus architecto, totam accusamus impedit facere et. Iste!</p>
-      <p>Nihil magni ea autem voluptatem aliquid, enim earum sunt ducimus culpa atque esse, at molestiae animi dignissimos tempore nam. Eius beatae atque rerum neque odit praesentium, alias quia nulla sit?</p>
-      <p>Magni dolore praesentium itaque quas eius, officiis nemo laudantium explicabo consequuntur sit quae rerum accusantium obcaecati iste sapiente quidem placeat illum quo voluptas. Illum quaerat numquam magni beatae iure quasi! Rerum explicabo repellendus, doloribus quod nisi quae voluptate eaque cupiditate repellat, aliquam voluptas obcaecati nostrum porro distinctio minima eos voluptatum architecto fugiat. Temporibus qui aspernatur culpa vitae dolore. Ullam, id?</p>
-      <p>Sapiente molestias fugit doloribus reprehenderit impedit dolore quod repellendus ut omnis magnam est rerum iure odit quis, laborum asperiores obcaecati nostrum ex. Odit ex aliquam voluptates, temporibus dolorem pariatur atque.</p>
+    <div class="article-content" ref="contentElement">
     </div>
   </div>
 </template>
 
 <script setup>
+import { onMounted, ref } from 'vue';
 // eslint-disable-next-line
-defineProps(['articleInfo'])
+const props = defineProps(['articleInfo'])
+
+const contentElement = ref(null)
+
+onMounted(() => {
+  contentElement.value.innerHTML = props.articleInfo.content
+})
 </script>
 
 <style scoped>
@@ -88,5 +91,16 @@ defineProps(['articleInfo'])
 
   p::first-letter {
     margin-left: 50px;
+  }
+
+  @media screen and (max-width: 800px){
+    .article-container {
+      max-width: 100%;
+      background-color: #353535;
+      border-top-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      overflow: hidden;
+      box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.3);
+    }
   }
 </style>

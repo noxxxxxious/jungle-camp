@@ -24,7 +24,7 @@ const articles = reactive([
   },
   {
     title: 'Early Access Date Announced',
-    subheading: 'Paid Early Access & Battlepass',
+    subheading: 'Paid Early Access',
     mediaLink: null,
     content: `<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem eum magni, voluptas cupiditate culpa, ullam, repellendus ipsum impedit sequi quasi at necessitatibus excepturi labore accusamus natus sunt nihil fuga laboriosam. Tempore odit ullam dolorem nesciunt reprehenderit non adipisci debitis facilis minima possimus autem eligendi eaque ipsa distinctio animi voluptatum ab ad asperiores, minus architecto, totam accusamus impedit facere et. Iste!</p>
       <p>Nihil magni ea autem voluptatem aliquid, enim earum sunt ducimus culpa atque esse, at molestiae animi dignissimos tempore nam. Eius beatae atque rerum neque odit praesentium, alias quia nulla sit?</p>

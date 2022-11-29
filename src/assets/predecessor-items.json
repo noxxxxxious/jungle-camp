@@ -1461,7 +1461,7 @@
     },
     "descriptions": [{
       "descriptionType": "Bravery",
-      "description": "Upon falling below 40$ maximum health, Cleanse all Negative Debuffs - 90s CD."
+      "description": "Upon falling below 40% maximum health, Cleanse all Negative Debuffs - 90s CD."
       }
     ]
   },
@@ -2379,6 +2379,275 @@
     ]
   },
   {
+    "name": "Painweaver",
+    "cost": 3100,
+    "tags": ["Passive", "Physical Power", "Physical Penetration", "Ability Haste"],
+    "components": ["Honed Kris", "Spell Slasher", "Temporal Ripper"],
+    "stats": {
+      "Physical Power": 45,
+      "Physical Penetration": 12,
+      "Ability Haste": 15
+    },
+    "descriptions": [{
+      "descriptionType": "Spellweaver",
+      "description": "After using an ability, your next basic attack within 6s deal (+50% Bonus Physical Power) bonus physical damage on-hit, increasing by up to 50% based on the Target's missing health - 1.5s CD."
+      }
+    ]
+  },
+  {
+    "name": "Omen",
+    "cost": 3100,
+    "tags": ["Passive", "Physical Power", "Physical Penetration", "Ability Haste"],
+    "components": ["Honed Kris", "Temporal Ripper"],
+    "stats": {
+      "Physical Power": 45,
+      "Physical Penetration": 8,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Bestial Torment",
+      "description": "Moving generates stacks of Torment. At 100 stacks, your next basic attack consumes them to deal 30 (+40% Bonus Physical Power) bonus physical damage and reduce your curent basic ability cooldowns by 1.5s."
+      }
+    ]
+  },
+  {
+    "name": "Nightfall",
+    "cost": 3100,
+    "tags": ["Passive", "Physical Power", "Physical Penetration", "Omnivamp"],
+    "components": ["Sabre", "Honed Kris", "Crimson Edge"],
+    "stats": {
+      "Physical Power": 45,
+      "Physical Penetration": 8,
+      "Omnivamp": 5
+    },
+    "descriptions": [{
+      "descriptionType": "Eclipse",
+      "description": "Dealing damage to an isolated Enemy Hero grants 10% attack speed and 10 ability haste for 5s, stacking up to 3 times. At maximum stacks, gain 10% omnivamp."
+      }
+    ]
+  },
+  {
+    "name": "Lifebinder",
+    "cost": 3100,
+    "tags": ["Passive", "Magical Power", "Health", "Magical Lifesteal", "Tenacity"],
+    "components": ["Blood Tome", "Tenacious Drape", "Blood Tome"],
+    "stats": {
+      "Magical Power": 55,
+      "Health": 200,
+      "Magical Lifesteal": 15,
+      "Tenacity": 15
+    },
+    "descriptions": [{
+      "descriptionType": "Leech",
+      "description": "Damaging an Enemy Hero with an ability restores 4% (+1% per 100 Magical Power) of your maximum health over 8s. Additional applications refresh the duration."
+      },{
+      "descriptionType": "Magi",
+      "description": "Achieving a Takedown grants 50 magical power for 8s."
+      }
+    ]
+  },
+  {
+    "name": "Infernum",
+    "cost": 3100,
+    "tags": ["Passive", "Physical Power", "Health", "Ability Haste"],
+    "components": ["Temporal Ripper", "Vitality Beads", "Temporal Ripper"],
+    "stats": {
+      "Physical Power": 40,
+      "Health": 300,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Cinder",
+      "description": "Abilities burn Enemy Units, dealing an additional (+80% Total Physical Power) physical damage over 3s."
+      }
+    ]
+  },
+  {
+    "name": "Deathstalker",
+    "cost": 3100,
+    "tags": ["Passive", "Physical Power", "Physical Penetration", "Ability Haste"],
+    "components": ["Honed Kris", "Ruthless Broadsword"],
+    "stats": {
+      "Physical Power": 40,
+      "Physical Penetration": 10,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Corrode",
+      "description": "Dealing damage to an Enemy Hero reduces their physical armor by 5% for 2s. Stacks up to 6 times."
+      },{
+      "descriptionType": "Virulence",
+      "description": "Your abilities deal 20% bonus true damage against Targets with 6 stacks of Corrode."
+      }
+    ]
+  },
+  {
+    "name": "Crystalline Cuirass",
+    "cost": 3100,
+    "tags": ["Passive", "Health", "Magical Armor", "Ability Haste"],
+    "components": ["Nullifying Mask", "Violet Brooch", "Nullifying Mask"],
+    "stats": {
+      "Health": 200,
+      "Magical Armor": 70,
+      "Ability Haste": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Volatile",
+      "description": "When you take ability damage, release a pulse of energy dealing 20 (+3% Maximum Health) magical damage to all nearby Enemies - 1.5s CD."
+      }
+    ]
+  },
+  {
+    "name": "Basilisk",
+    "cost": 3150,
+    "tags": ["Passive", "Physical Power", "Health", "Ability Haste"],
+    "components": ["Sabre", "Ruthless Broadsword", "Vitality Beads"],
+    "stats": {
+      "Physical Power": 35,
+      "Health": 250,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Corrode",
+      "description": "Dealing damage to an Enemy Hero reduces their physical armor by 5% for 2s. Stacks up to 6 times."
+      },{
+      "descriptionType": "Eminence",
+      "description": "Your basic attacks against Targets with 6 stacks of Corrode deal 4% of their missing health as bonus physical damage."
+      }
+    ]
+  },
+  {
+    "name": "Terminus",
+    "cost": 3200,
+    "tags": ["Passive", "Physical Power", "Lifesteal", "Critical Chance"],
+    "components": ["Crimson Edge", "Crossbow", "Crimson Edge"],
+    "stats": {
+      "Physical Power": 50,
+      "Lifesteal": 15,
+      "Critical Chance": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Spellblade",
+      "description": "After using an ability, your next 2 basic attacks within 6s deal bonus physical damage based on your critical strike chance - 3s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Basic attacks restore 1% maximum mana on-hit."
+      }
+    ]
+  },
+  {
+    "name": "Tainted Rounds",
+    "cost": 3200,
+    "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance"],
+    "components": ["Serrated Blade", "Crossbow", "Rune Bow"],
+    "stats": {
+      "Physical Power": 25,
+      "Attack Speed": 30,
+      "Critical Chance": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Blighted Strikes",
+      "description": "Successful Basic Attacks reduce the Target's Healing by 30% for 3s."
+      },{
+      "descriptionType": "Wicked Strikes",
+      "description": "Basic attacks deal (+12% Total Physical Power) magical damage on-hit, increasing by up to 100% based on the Target's missing health."
+      }
+    ]
+  },
+  {
+    "name": "Sky Splitter",
+    "cost": 3200,
+    "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance", "Lifesteal"],
+    "components": ["Ravenous Rapier", "Composite Bow", "Crossbow"],
+    "stats": {
+      "Physical Power": 25,
+      "Attack Speed": 25,
+      "Critical Chance": 20,
+      "Lifesteal": 5
+    },
+    "descriptions": [{
+      "descriptionType": "Rend",
+      "description": "Basic attacks deal 5% of the Target's current health as bonus physical damage on-hit and heal you equal to 50% of the bonus damage dealt."
+      },{
+      "descriptionType": "MPA",
+      "description": "Rend's bonus damage deals a minimum of 10 and is capped at 50 against Monsters and Minions."
+      }
+    ]
+  },
+  {
+    "name": "Absolution",
+    "cost": 3200,
+    "tags": ["Passive", "Physical Power", "Magical Armor", "Critical Chance"],
+    "components": ["Sabre", "Heroic Guard", "Crossbow"],
+    "stats": {
+      "Physical Power": 40,
+      "Magical Armor": 30,
+      "Critical Chance": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Swift Bravery",
+      "description": "Upon falling below 40% maximum health, cleans all Negative Debuffs and gain 20% movement speed for 3s - 60s CD."
+      },{
+      "descriptionType": "Determined",
+      "description": "Gain 1% attack speed for every 2% missing health, for a maximum of 30% attack speed."
+      }
+    ]
+  },
+  {
+    "name": "Resolution",
+    "cost": 3200,
+    "tags": ["Passive", "Physical Power", "Mana", "Critical Chance"],
+    "components": ["Greatsword", "Soul Chalice", "Crossbow"],
+    "stats": {
+      "Physical Power": 45,
+      "Mana": 200,
+      "Critical Chance": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Critical Font",
+      "description": "Killing an Enemy Minion grants 8 bonus mana, up to a maximum of 400. At maximum stacks, gain gain 2.5% of your bonus mana as additional critical strike chance."
+      },{
+      "descriptionType": "Arcane Strikes",
+      "description": "Deal 3% of your maximum mana as bonus physical damage on-hit."
+      }
+    ]
+  },
+  {
+    "name": "Viper",
+    "cost": 3200,
+    "tags": ["Passive", "Physical Power", "Critical Chance", "Lifesteal"],
+    "components": ["Greatsword", "Crimson Edge", "Crossbow"],
+    "stats": {
+      "Physical Power": 45,
+      "Critical Chance": 20,
+      "Lifesteal": 12
+    },
+    "descriptions": [{
+      "descriptionType": "Passive",
+      "description": "Basic Attacks deal bonus physical damage (doubled for critical strikes) vs targets below 40% max health."
+      },{
+      "descriptionType": "Passive",
+      "description": "Takedowns heal you over 5s based on your physical power."
+      }
+    ]
+  },
+  {
+    "name": "Mindrazor",
+    "cost": 3200,
+    "tags": ["Passive", "Physical Power", "Mana", "Ability Haste"],
+    "components": ["Barbaric Cleaver", "Temporal Ripper", "Spirit Beads"],
+    "stats": {
+      "Physical Power": 50,
+      "Mana": 200,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Cleave",
+      "description": "Dealing damage to an enemy target deals an additional physical damage in a small area around them."
+      }
+    ]
+  },
+  {
     "name": "Frosted Quartz",
     "cost": 1150,
     "tags": ["Passive", "Physical Armor", "Mana", "Ability Haste"],
@@ -2575,25 +2844,6 @@
     ]
   },
   {
-    "name": "Basilisk",
-    "cost": 3000,
-    "tags": ["Passive", "Physical Power", "Health", "Ability Haste"],
-    "components": ["Claymore", "Ruthless Broadsword"],
-    "stats": {
-      "Physical Power": 35,
-      "Health": 250,
-      "Ability Haste": 20
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Corrode",
-      "description": "Dealing damage to an Enemy Hero reduces their physical armor by 5% for 2s. Stacks up to 6 times."
-      },{
-      "descriptionType": "Passive - Sunder",
-      "description": "Every third consecutive basic attack deals bonus physical damage and slows them by 20% for 1s."
-      }
-    ]
-  },
-  {
     "name": "Glacial Maul",
     "cost": 3000,
     "tags": ["Passive", "Physical Armor", "Mana", "Ability Haste"],
@@ -2632,23 +2882,6 @@
     ]
   },
   {
-    "name": "Lifebinder",
-    "cost": 3000,
-    "tags": ["Passive", "Magical Power", "Magical Lifesteal", "Health", "Ability Haste"],
-    "components": ["Blood Tome", "Violet Brooch", "Blood Tome"],
-    "stats": {
-      "Magical Power": 55,
-      "Magical Lifesteal": 10,
-      "Health": 200,
-      "Ability Haste": 15
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Hitting an Enemy Hero with an ability restores health over 5s. Excess healing will be converted to a shield for 10s."
-      }
-    ]
-  },
-  {
     "name": "Nullifier",
     "cost": 3000,
     "tags": ["Passive", "Physical Power", "Magical Armor", "Ability Haste"],
@@ -2661,22 +2894,6 @@
     "descriptions": [{
       "descriptionType": "Passive - Safeguard",
       "description": "If you take significant magical damage in the last 5s, gain 10% movement speed, 15% lifesteal and 40 magical armor for 5s. This duration is refreshed upon taking additional magical damage - 40s CD."
-      }
-    ]
-  },
-  {
-    "name": "Painweaver",
-    "cost": 3000,
-    "tags": ["Passive", "Physical Power", "Physical Penetration", "Ability Haste"],
-    "components": ["Honed Kris", "Spell Slasher", "Sabre"],
-    "stats": {
-      "Physical Power": 40,
-      "Physical Penetration": 12,
-      "Ability Haste": 10
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Spellblade",
-      "description": "After using an ability, your next 2 basic attacks or abilities within 6s deal bonus physical damage - 3s CD."
       }
     ]
   },
@@ -2696,25 +2913,6 @@
     ]
   },
   {
-    "name": "Terminus",
-    "cost": 3000,
-    "tags": ["Passive", "Physical Power", "Ability Haste", "Critical Chance"],
-    "components": ["Temporal Ripper", "Spell Slasher", "Crossbow"],
-    "stats": {
-      "Physical Power": 40,
-      "Ability Haste": 20,
-      "Critical Chance": 20
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Spellblade",
-      "description": "After using an ability, your next 2 basic attacks within 6s deal bonus physical damage based on your critical strike chance - 3s CD."
-      },{
-      "descriptionType": "Passive",
-      "description": "Basic attacks restore 1% maximum mana on-hit."
-      }
-    ]
-  },
-  {
     "name": "Zephyr",
     "cost": 3000,
     "tags": ["Active", "Magical Power", "Physical Armor", "Ability Haste"],
@@ -2727,41 +2925,6 @@
     "descriptions": [{
       "descriptionType": "Active",
       "description": "Displace all nearby enemies and deal magical damage to them - 30s CD."
-      }
-    ]
-  },
-  {
-    "name": "Reckoning",
-    "cost": 3050,
-    "tags": ["Passive", "Physical Power", "Critical Chance", "Lifesteal"],
-    "components": ["Greatsword", "Crimson Edge", "Crossbow"],
-    "stats": {
-      "Physical Power": 45,
-      "Critical Chance": 20,
-      "Lifesteal": 12
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Basic Attacks deal bonus physical damage (doubled for critical strikes) vs targets below 40% max health."
-      },{
-      "descriptionType": "Passive",
-      "description": "Takedowns heal you over 5s based on your physical power."
-      }
-    ]
-  },
-  {
-    "name": "Crystalline Cuirass",
-    "cost": 3100,
-    "tags": ["Passive", "Health", "Magical Armor", "Ability Haste"],
-    "components": ["Violet Brooch", "Nullifying Mask", "Nullifying Mask"],
-    "stats": {
-      "Physical Power": 45,
-      "Critical Chance": 20,
-      "Lifesteal": 12
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "When you take magical damage, release a pulse of energy dealing magical damage to enemies within 800 units - 1.5s CD."
       }
     ]
   },
@@ -2797,22 +2960,6 @@
     "descriptions": [{
       "descriptionType": "Passive - Disintegrate",
       "description": "Dealing damage to an Enemy Hero with an ability deals 4.5% of their maximum health as magical damage over 3s. Additional applications from separate abilities within the duration will deal additional magical damage instantly and refresh the duration."
-      }
-    ]
-  },
-  {
-    "name": "Nightfall",
-    "cost": 3100,
-    "tags": ["Passive", "Physical Power", "Physical Penetration", "Omnivamp"],
-    "components": ["Honed Kris", "Crimson Edge", "Sabre"],
-    "stats": {
-      "Physical Power": 45,
-      "Physical Penetration": 8,
-      "Omnivamp": 8
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Dusk",
-      "description": "Dealing damage to an isolated Enemyh Hero (no other Enemy Heroes within 600 units) grants additional attack speed and ability haste for 3s. Dusk stacks up to 3 times."
       }
     ]
   },
@@ -2869,22 +3016,6 @@
     ]
   },
   {
-    "name": "Mindrazor",
-    "cost": 3200,
-    "tags": ["Passive", "Physical Power", "Mana", "Ability Haste"],
-    "components": ["Barbaric Cleaver", "Temporal Ripper", "Spirit Beads"],
-    "stats": {
-      "Physical Power": 50,
-      "Mana": 200,
-      "Ability Haste": 20
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Cleave",
-      "description": "Dealing damage to an enemy target deals an additional physical damage in a small area around them."
-      }
-    ]
-  },
-  {
     "name": "Mooncleaver",
     "cost": 3200,
     "tags": ["Passive", "Physical Power", "Critical Chance", "Ability Haste"],
@@ -2900,22 +3031,6 @@
       },{
       "descriptionType": "Passive",
       "description": "Critical strikes deal 10% more damage against targets with 6 stacks of Corrode."
-      }
-    ]
-  },
-  {
-    "name": "Tainted Rounds",
-    "cost": 3200,
-    "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance"],
-    "components": ["Serrated Blade", "Ironwood Warbow", "Crossbow"],
-    "stats": {
-      "Physical Power": 50,
-      "Attack Speed": 25,
-      "Critical Chance": 20
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Blight",
-      "description": "Dealing physical damage reduces the target's healing by 60% for 3s."
       }
     ]
   },
@@ -2952,23 +3067,6 @@
       },{
       "descriptionType": "Passive",
       "description": "Gain (+75% Ability Haste) attack speed."
-      }
-    ]
-  },
-  {
-    "name": "Sky Splitter",
-    "cost": 3300,
-    "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance", "Omnivamp"],
-    "components": ["Ravenous Rapier", "Composite Bow", "Crossbow"],
-    "stats": {
-      "Physical Power": 15,
-      "Attack Speed": 25,
-      "Critical Chance": 20,
-      "Omnivamp": 10
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Warlord",
-      "description": "Basic attacks against Enemy Heroes deal 4% of their maximum health as physical damage on-hit."
       }
     ]
   },
@@ -3053,25 +3151,6 @@
     "descriptions": [{
       "descriptionType": "Passive - Order",
       "description": "Increase your magical power by 40%."
-      }
-    ]
-  },
-  {
-    "name": "Omen",
-    "cost": 3400,
-    "tags": ["Passive", "Physical Power", "Physical Penetration", "Ability Haste"],
-    "components": ["Sawtoothed Scimitar", "Temporal Ripper"],
-    "stats": {
-      "Physical Power": 45,
-      "Physical Penetration": 8,
-      "Ability Haste": 20
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Dealing damage to an Enemy Hero slows them by 20% and grants you 20% movement speed for 3s. This effect refreshes on takedowns - 60s CD."
-      },{
-      "descriptionType": "Passive - Massacre",
-      "description": "Increase flat physical penetration by 50%."
       }
     ]
   },

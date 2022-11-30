@@ -1,6 +1,6 @@
 <template>
   <div class="item-page-container">
-    <FilterTray @onfilterchange="changeFilter" />
+    <FilterTray @onfilterchange="changeFilter" @onfilterreset="resetFilters"/>
     <div class="mobile-grouping">
       <div class="item-list">
         <ItemCard v-for="item in filteredItemList" :key="item.name" :item="item" @click="selectItem(item)"/>

@@ -1,15 +1,16 @@
 <template>
   <div class="article-container">
     <div class="article-heading">
-      <h1>{{ articleInfo.title }}</h1>
-      <h3>{{ articleInfo.subheading}}</h3>
+      <h1>{{ title }}</h1>
+      <h3>{{ subheading}}</h3>
     </div>
     <div class="divider"></div>
-    <div v-if="articleInfo.mediaLink" class="article-media">
+    <!-- <div v-if="articleInfo.mediaLink" class="article-media">
       <iframe class="article-video" width="100%" height="auto" :src="articleInfo.mediaLink">
       </iframe> 
-    </div>
+    </div> -->
     <div class="article-content" ref="contentElement">
+      <slot></slot>
     </div>
   </div>
 </template>
@@ -17,7 +18,7 @@
 <script setup>
 import { onMounted, ref } from 'vue';
 // eslint-disable-next-line
-const props = defineProps(['articleInfo'])
+const props = defineProps(['title', 'subheading'])
 
 const contentElement = ref(null)
 

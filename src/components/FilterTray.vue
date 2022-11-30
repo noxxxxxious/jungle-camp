@@ -25,7 +25,7 @@
 
 <script>
 export default {
-  emits: ['onfilterchange'],
+  emits: ['onfilterchange', 'onfilterreset'],
 
   data: () => ({
     showTray: true
@@ -44,6 +44,10 @@ export default {
 
     getFilterTrayName (inTag) {
       return `filter-tray-${inTag.replace(' ', '-')}`.toLowerCase()
+    },
+
+    resetFilters () {
+      this.$emit('onfilterreset')
     }
   },
 

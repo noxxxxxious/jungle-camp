@@ -27,9 +27,9 @@
         <span class="item-stat-identifier">Health</span>
         <span class="item-stat-value">{{ item.stats['Health'] }}</span>
       </div>
-      <div v-if="item.stats['Health Regeneration']" class="item-stat">
-        <span class="item-stat-identifier">Health Regeneration</span>
-        <span class="item-stat-value">{{ item.stats['Health Regeneration'] }}</span>
+      <div v-if="item.stats['Base Health Regen']" class="item-stat">
+        <span class="item-stat-identifier">Base Health Regen</span>
+        <span class="item-stat-value">{{ item.stats['Base Health Regen'] }}</span>
       </div>
       <div v-if="item.stats['Physical Armor']" class="item-stat">
         <span class="item-stat-identifier">Physical Armor</span>
@@ -47,9 +47,9 @@
         <span class="item-stat-identifier">Mana</span>
         <span class="item-stat-value">{{ item.stats['Mana'] }}</span>
       </div>
-      <div v-if="item.stats['Mana Regeneration']" class="item-stat">
-        <span class="item-stat-identifier">Mana Regeneration</span>
-        <span class="item-stat-value">{{ item.stats['Mana Regeneration'] }}</span>
+      <div v-if="item.stats['Base Mana Regen']" class="item-stat">
+        <span class="item-stat-identifier">Base Mana Regen</span>
+        <span class="item-stat-value">{{ item.stats['Base Mana Regen'] }}</span>
       </div>
       <div v-if="item.stats['Magical Penetration']" class="item-stat">
         <span class="item-stat-identifier">Magical Penetration</span>
@@ -86,6 +86,14 @@
       <div v-if="item.stats['Gold Per Second']" class="item-stat">
         <span class="item-stat-identifier">Gold Per Second</span>
         <span class="item-stat-value">{{ item.stats['Gold Per Second'] }}</span>
+      </div>
+      <div v-if="item.stats['Heal & Shield Power']" class="item-stat">
+        <span class="item-stat-identifier">Heal &amp; Shield Power</span>
+        <span class="item-stat-value">{{ item.stats['Heal & Shield Power'] }}</span>
+      </div>
+      <div v-if="item.stats['Tenacity']" class="item-stat">
+        <span class="item-stat-identifier">Tenacity</span>
+        <span class="item-stat-value">{{ item.stats['Tenacity'] }}</span>
       </div>
     </div>
     <div v-if="item.descriptions" class="item-descriptions">

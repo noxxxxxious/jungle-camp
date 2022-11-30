@@ -5,14 +5,14 @@
       <div class="nav-buttons">
         <router-link to="/" class="button" active-class="active">News</router-link>
         <router-link to="/items" class="button" active-class="active">Items</router-link>
-        <router-link to="/heroes" class="button" active-class="active">Heroes</router-link>
+        <!-- <router-link to="/heroes" class="button" active-class="active">Heroes</router-link>
         <router-link to="/builder" class="button" active-class="active">Builder</router-link>
-        <router-link to="/decks" class="button" active-class="active">Decks</router-link>
+        <router-link to="/decks" class="button" active-class="active">Decks</router-link> -->
       </div>
-      <a class="button button--discord" href="https://discord.com/oauth2/authorize?client_id=985091844658561026&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Fapi%2Fauth%2Fdiscord%2Fredirect&response_type=code&scope=identify">
+      <!-- <a class="button button--discord" href="https://discord.com/oauth2/authorize?client_id=985091844658561026&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Fapi%2Fauth%2Fdiscord%2Fredirect&response_type=code&scope=identify">
         <img class="discord-logo" src="@/assets/images/Discord_Logo.svg">
         <span>Log in with Discord</span>
-      </a>
+      </a> -->
     </nav>
   </div>
 </template>

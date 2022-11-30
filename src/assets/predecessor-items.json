@@ -2615,19 +2615,19 @@
   {
     "name": "Viper",
     "cost": 3200,
-    "tags": ["Passive", "Physical Power", "Critical Chance", "Lifesteal"],
-    "components": ["Greatsword", "Crimson Edge", "Crossbow"],
+    "tags": ["Passive", "Physical Power", "Critical Chance", "Ability Haste"],
+    "components": ["Sabre", "Ruthless Broadsword", "Crossbow"],
     "stats": {
       "Physical Power": 45,
       "Critical Chance": 20,
-      "Lifesteal": 12
+      "Ability Haste": 20
     },
     "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Basic Attacks deal bonus physical damage (doubled for critical strikes) vs targets below 40% max health."
+      "descriptionType": "Corrode",
+      "description": "Dealing damage to an Enemy Hero reduces their physical armor by 5% for 2s. Stacks up to 6 times."
       },{
-      "descriptionType": "Passive",
-      "description": "Takedowns heal you over 5s based on your physical power."
+      "descriptionType": "Diligence",
+      "description": "Your Critical Strikes deal 15% more damage against Targets with 6 stacks of Corrode."
       }
     ]
   },
@@ -2635,15 +2635,201 @@
     "name": "Mindrazor",
     "cost": 3200,
     "tags": ["Passive", "Physical Power", "Mana", "Ability Haste"],
-    "components": ["Barbaric Cleaver", "Temporal Ripper", "Spirit Beads"],
+    "components": ["Barbaric Cleaver", "Spirit Beads", "Temporal Ripper"],
     "stats": {
-      "Physical Power": 50,
+      "Physical Power": 40,
       "Mana": 200,
       "Ability Haste": 20
     },
     "descriptions": [{
-      "descriptionType": "Passive - Cleave",
-      "description": "Dealing damage to an enemy target deals an additional physical damage in a small area around them."
+      "descriptionType": "Ingenious Cleave",
+      "description": "Dealing damage to an Enemy Unit with a basic attack or ability deals an additional (+25% Total Physical Power) physical damage in a small area around them. Damage ranges from 100% to 50% based on distance between Targets. DOT sources are excluded."
+      },{
+      "descriptionType": "Arcane Power",
+      "description": "Gain (+2.5% Maximum Mana) Physical Power."
+      }
+    ]
+  },
+  {
+    "name": "Megacosm",
+    "cost": 3200,
+    "tags": ["Passive", "Magical Power", "Mana", "Ability Haste"],
+    "components": ["Potent Staff", "Dusk Stave"],
+    "stats": {
+      "Magical Power": 70,
+      "Mana": 200,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Disintegrate",
+      "description": "Dealing damage to an Enemy Target with an ability deals 5% of their maximum health as magical damage over 3s. Additional applications within the duration deal 2.5% of their maximum health as magical damage instantly and refresh the duration."
+      }
+    ]
+  },
+  {
+    "name": "Kingsbane",
+    "cost": 3200,
+    "tags": ["Passive", "Physical Power", "Physical Armor", "Critical Chance"],
+    "components": ["Greatsword", "Crimson Edge", "Crossbow"],
+    "stats": {
+      "Physical Power": 45,
+      "Lifesteal": 8,
+      "Critical Chance": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Order",
+      "description": "Successful Basic Attacks against Enemy Heroes grant you a shield equal to 12% of the damage dealt for 3s."
+      },{
+      "descriptionType": "Regicide",
+      "description": "Takedowns grant you a (+150% Total Physical Power) shield for 3s."
+      }
+    ]
+  },
+  {
+    "name": "Caustica",
+    "cost": 3200,
+    "tags": ["Passive", "Magical Power", "Magical Penetration"],
+    "components": ["Scalding Sceptre", "Potent Staff"],
+    "stats": {
+      "Magical Power": 80,
+      "Magical Penetration": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Magus",
+      "description": "While above 50% maximum mana, gain 20% magical penetration."
+      },{
+      "descriptionType": "Arcane Resolve",
+      "description": "While below 50% maximum mana, gain (+1% Maximum Mana) mana regeneration per second."
+      }
+    ]
+  },
+  {
+    "name": "World Breaker",
+    "cost": 3300,
+    "tags": ["Passive", "Magical Power", "Health", "Tenacity"],
+    "components": ["Void Crystal", "Tenacious Drape"],
+    "stats": {
+      "Magical Power": 45,
+      "Health": 200,
+      "Tenacity": 30
+    },
+    "descriptions": [{
+      "descriptionType": "Fiend",
+      "description": "Dealing magical damage to an Enemy Hero increases your magical damage dealt by 4% for 5s, stacking up to 5 times"
+      },{
+      "descriptionType": "Maya",
+      "description": "Gain (+2% Maximum Health) bonus magical power."
+      }
+    ]
+  },
+  {
+    "name": "Salvation",
+    "cost": 3300,
+    "tags": ["Passive", "Physical Power", "Health", "Tenacity"],
+    "components": ["Greatsword", "Banded Emerald", "Tenacious Drape"],
+    "stats": {
+      "Physical Power": 35,
+      "Health": 500,
+      "Tenacity": 30
+    },
+    "descriptions": [{
+      "descriptionType": "Aegis",
+      "description": "Falling below 40% maximum health grants you a (+20% Maximum Health) shield (halved for Ranged Heroes) and 10% Omnivamp for 6s - 60s CD."
+      }
+    ]
+  },
+  {
+    "name": "Prophecy",
+    "cost": 3300,
+    "tags": ["Passive", "Magical Power", "Attack Speed", "Ability Haste"],
+    "components": ["Scepter", "Composite Bow", "Chronomatic Wand"],
+    "stats": {
+      "Magical Power": 60,
+      "Attack Speed": 25,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Magical Strikes",
+      "description": "Basic attacks deal 15 (+20 Magical Power) bonus magic damage on-hit."
+      },{
+      "descriptionType": "Hasty",
+      "description": "Gain (+75% Ability Haste)% attack speed."
+      }
+    ]
+  },
+  {
+    "name": "Mutilator",
+    "cost": 3300,
+    "tags": ["Passive", "Physical Power", "Ability Haste", "Omnivamp"],
+    "components": ["Bloodlust", "Temporal Ripper"],
+    "stats": {
+      "Physical Power": 45,
+      "Ability Haste": 20,
+      "Omnivamp": 8
+    },
+    "descriptions": [{
+      "descriptionType": "Mutilate",
+      "description": "Basic attacks deal 1.5% of the Enemy Hero's maximum health as bonus physical damage. Applies twice on non-DOT abilities."
+      },{
+      "descriptionType": "Devour",
+      "description": "Damaging an Enemy Hero with an ability steals 8% of their maximum health for 20s. Can only occur once per Target."
+      }
+    ]
+  },
+  {
+    "name": "Demolisher",
+    "cost": 3300,
+    "tags": ["Passive", "Physical Power", "Omnivamp", "Ability Haste"],
+    "components": ["Spell Slasher", "Ravenous Rapier", "Temporal Ripper"],
+    "stats": {
+      "Physical Power": 45,
+      "Omnivamp": 10,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Spellblade",
+      "description": "After using an ability, your next 2 basic attacks within 6s deal 4% of the target's maximum health as bonus physical damage - 3s CD."
+      },{
+      "descriptionType": "Passive - Warlord",
+      "description": "Basic attacks against Enemy Heroes deal 2% of their maximum health as physical damage on-hit."
+      }
+    ]
+  },
+  {
+    "name": "Dust Devil",
+    "cost": 3300,
+    "tags": ["Passive", "Physical Power", "Omnivamp", "Ability Haste"],
+    "components": ["Spell Slasher", "Ravenous Rapier", "Temporal Ripper"],
+    "stats": {
+      "Physical Power": 45,
+      "Omnivamp": 10,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Spellblade",
+      "description": "After using an ability, your next 2 basic attacks within 6s deal 4% of the target's maximum health as bonus physical damage - 3s CD."
+      },{
+      "descriptionType": "Passive - Warlord",
+      "description": "Basic attacks against Enemy Heroes deal 2% of their maximum health as physical damage on-hit."
+      }
+    ]
+  },
+  {
+    "name": "Augmentation",
+    "cost": 3300,
+    "tags": ["Passive", "Physical Power", "Health", "Attack Speed"],
+    "components": ["Spell Slasher", "Ironwood Warbow", "Banded Emerald"],
+    "stats": {
+      "Physical Power": 30,
+      "Health": 300,
+      "Attack Speed": 30
+    },
+    "descriptions": [{
+      "descriptionType": "Passive - Spellblade",
+      "description": "After using an ability, your next 2 basic attacks within 6s deal bonus physical damage - 3s CD."
+      },{
+      "descriptionType": "Passive",
+      "description": "Basic attacks deal bonus true damage."
       }
     ]
   },
@@ -2863,25 +3049,6 @@
     ]
   },
   {
-    "name": "Kingsbane",
-    "cost": 3000,
-    "tags": ["Passive", "Physical Power", "Physical Armor", "Critical Chance"],
-    "components": ["Greatsword", "Steel Mail", "Crossbow"],
-    "stats": {
-      "Physical Power": 40,
-      "Physical Armor": 25,
-      "Critical Chance": 20
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Shockwave",
-      "description": "If you would take damage that would reduce you below 30% maximum health, you unleash a shockwave that stuns all nearby enemies for 1s - 90s CD."
-      },{
-      "descriptionType": "Passive",
-      "description": "Successful critical strikes increase your physical armor for 3s, stacking up to 5 times."
-      }
-    ]
-  },
-  {
     "name": "Nullifier",
     "cost": 3000,
     "tags": ["Passive", "Physical Power", "Magical Armor", "Ability Haste"],
@@ -2948,41 +3115,6 @@
     ]
   },
   {
-    "name": "Megacosm",
-    "cost": 3100,
-    "tags": ["Passive", "Magical Power", "Health", "Ability Haste"],
-    "components": ["Chaotic Core", "Violet Brooch"],
-    "stats": {
-      "Magical Power": 55,
-      "Health": 200,
-      "Ability Haste": 20
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Disintegrate",
-      "description": "Dealing damage to an Enemy Hero with an ability deals 4.5% of their maximum health as magical damage over 3s. Additional applications from separate abilities within the duration will deal additional magical damage instantly and refresh the duration."
-      }
-    ]
-  },
-  {
-    "name": "Salvation",
-    "cost": 3100,
-    "tags": ["Passive", "Physical Power", "Magical Armor", "Health"],
-    "components": ["Sabre", "Banded Emerald", "Nullifying Mask"],
-    "stats": {
-      "Physical Power": 45,
-      "Magical Armor": 25,
-      "Health": 300
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "If you would take damage that would reduce you below 30% of your maximum health, you gain a large shield (halved for Ranged Heroes) for 6s. - 60s CD"
-      },{
-      "descriptionType": "Passive",
-      "description": "Successful basic attacks against Enemy Heroes heal you for 4% of your missing health."
-      }
-    ]
-  },
-  {
     "name": "Ashbringer",
     "cost": 3200,
     "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance"],
@@ -2998,20 +3130,6 @@
       },{
       "descriptionType": "Passive",
       "description": "Abilities deal an additional 20% physical damage against Enemy Heroes below 40% maximum health."
-      }
-    ]
-  },
-  {
-    "name": "Caustica",
-    "cost": 3200,
-    "tags": ["Passive", "Magical Power"],
-    "components": ["Scalding Sceptre", "Potent Staff"],
-    "stats": {
-      "Magical Power": 80
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Archmage",
-      "description": "Gain 40% magical penetration."
       }
     ]
   },
@@ -3052,25 +3170,6 @@
     ]
   },
   {
-    "name": "Prophecy",
-    "cost": 3300,
-    "tags": ["Passive", "Magical Power", "Attack Speed", "Ability Haste"],
-    "components": ["Chaotic Core", "Composite Bow"],
-    "stats": {
-      "Magical Power": 50,
-      "Attack Speed": 20,
-      "Ability Haste": 20
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Basic attacks deal 15 (+20 Magical Power) bonus magic damage on-hit."
-      },{
-      "descriptionType": "Passive",
-      "description": "Gain (+75% Ability Haste) attack speed."
-      }
-    ]
-  },
-  {
     "name": "Star Slayer",
     "cost": 3300,
     "tags": ["Passive", "Magical Power", "Ability Haste", "Base Mana Regen"],
@@ -3083,24 +3182,6 @@
     "descriptions": [{
       "descriptionType": "Passive - Disintegrate",
       "description": "Abilities deal additional magical damage based on how much more health the target has than you."
-      }
-    ]
-  },
-  {
-    "name": "World Breaker",
-    "cost": 3300,
-    "tags": ["Passive", "Magical Power", "Health"],
-    "components": ["Scalding Sceptre", "Void Crystal"],
-    "stats": {
-      "Magical Power": 60,
-      "Health": 200
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Archmage",
-      "description": "Gain 20% magical penetration plus an additional 1% per 100 bonus health."
-      },{
-      "descriptionType": "Passive - Fiend",
-      "description": "Dealing magical damage to an Enemy Hero increases magic damage dealt by 3% for 5s. Stacks up to 5 times."
       }
     ]
   },
@@ -3151,44 +3232,6 @@
     "descriptions": [{
       "descriptionType": "Passive - Order",
       "description": "Increase your magical power by 40%."
-      }
-    ]
-  },
-  {
-    "name": "Augmentation",
-    "cost": 3500,
-    "tags": ["Passive", "Physical Power", "Health", "Attack Speed"],
-    "components": ["Spell Slasher", "Ironwood Warbow", "Banded Emerald"],
-    "stats": {
-      "Physical Power": 30,
-      "Health": 300,
-      "Attack Speed": 30
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Spellblade",
-      "description": "After using an ability, your next 2 basic attacks within 6s deal bonus physical damage - 3s CD."
-      },{
-      "descriptionType": "Passive",
-      "description": "Basic attacks deal bonus true damage."
-      }
-    ]
-  },
-  {
-    "name": "Mutilator",
-    "cost": 3500,
-    "tags": ["Passive", "Physical Power", "Omnivamp", "Ability Haste"],
-    "components": ["Spell Slasher", "Ravenous Rapier", "Temporal Ripper"],
-    "stats": {
-      "Physical Power": 45,
-      "Omnivamp": 10,
-      "Ability Haste": 20
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Spellblade",
-      "description": "After using an ability, your next 2 basic attacks within 6s deal 4% of the target's maximum health as bonus physical damage - 3s CD."
-      },{
-      "descriptionType": "Passive - Warlord",
-      "description": "Basic attacks against Enemy Heroes deal 2% of their maximum health as physical damage on-hit."
       }
     ]
   }

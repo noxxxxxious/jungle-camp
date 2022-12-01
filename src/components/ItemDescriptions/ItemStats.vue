@@ -122,6 +122,10 @@ export default {
 </script>
 
 <style scoped>
+  .item-stats-container {
+    min-width: 300px;
+  }
+
   .item-image {
     margin: auto;
     height: 180px;

@@ -174,6 +174,7 @@ export default {
   .item-details {
     width: 100%;
     height: 100%;
+    background-color: #151515;
   }
 
   .mobile-close-arrow-button {

@@ -16,15 +16,15 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue';
+import { ref } from 'vue';
 // eslint-disable-next-line
 const props = defineProps(['title', 'subheading'])
 
 const contentElement = ref(null)
 
-onMounted(() => {
-  contentElement.value.innerHTML = props.articleInfo.content
-})
+// onMounted(() => {
+//   contentElement.value.innerHTML = props.articleInfo.content
+// })
 </script>
 
 <style scoped>

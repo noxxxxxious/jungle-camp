@@ -4,9 +4,19 @@
       title="Items Updated for Early Access"
       subheading="Crests Only Actives, Additional Filters, & The Future"
     >
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 1.5rem;">Hi, everyone!</span> I figured this would be a good place to make some announcements about the site, as well as keep track of changes to items and other things about the game as we go. There are more features I'd like to add, but they will likely come slowly. I plan on eventually open sourcing it for those who won't mind dealing with my junior level code. 😅</p>
-      <h1>Crests Are Only Actives</h1>
-      <p>One of the biggest changes going from the previous stress test to EA is tier 3 crests being the only actives. You will select a crest at the beginning of the game, and depending on the crest, have to complete specific goals to upgrade it, such as dealing damage to enemy units while a teammate is around. Once the tier 1 and tier 2 quests have been completed, you can head back to base to be able to choose 1 of 3 legendary crests with active abilities.</p>
+      <h1>Hi, everyone!</h1>
+      <p>I figured this would be a good place to make some announcements about the site, as well as keep track of changes to items and other things about the game as we go. There are more features I'd like to add, but they will likely come slowly. I plan on eventually open sourcing it for those who won't mind dealing with my junior level code. 😅 For now, I'd like to use this space to make updates on changes to the items as we go, as well as do some community spotlights among other things.</p>
+      <h1>Crests Are The Only Actives</h1>
+      <p>One of the biggest changes going from the previous stress test to EA is tier 3 crests being the only actives. You will select a crest at the beginning of the game, and depending on the crest, have to complete specific goals to upgrade it, such as dealing damage to enemy units while a teammate is nearby. Once the tier 1 and tier 2 quests have been completed, you can head back to base to be able to choose 1 of 3 legendary crests with active abilities. You can see what these are by filtering for actives on the items page.</p>
+      <h1>A Few Liberties</h1>
+      <p>I took a few liberties with a couple of the item active and passive descriptions, namely adding missing punctuation and the order in which the passives and actives appear. For example, Nex describes its active "Reap" first, which uses stacks of "Sow", before explaining what Sow is. I have simply reversed the order of these so you learn about Sow before Reap which uses it.</p>
+      <p>I've also added a few extra filters, like On-Hit and When-hit, to see items which have those effects. If you see any items that are missing stats or should be seen when a filter is on but isn't, please shoot me a message on Discord! My information is at the bottom of the screen.</p>
+      <h1>The Last Few Items</h1>
+      <p>I am not 100% certain of the build paths on the last 6 or so items as I was unable to look them up. The passive descriptions and stats are accurate, so it's just the build path. Once the game goes live, I will double check these and update them if need be, so please keep that in mind while looking at Demolisher through Imperator (Oblivion Crown is accurate, however).</p>
+      <div style="text-align:right">
+        <em>See you on the battlefield.<br>-noxxxxxious
+        </em>
+      </div>
     </ArticleSection>
   </div>
 </template>
@@ -52,5 +62,9 @@ import ArticleSection from '@/components/NewsBlog/ArticleSection.vue'
     height: 100%;
     overflow-y: auto;
     background: url('@/assets/images/news-header-jungle01.webp') center cover;
+  }
+
+  p::first-letter {
+    margin-left: 50px;
   }
 </style>

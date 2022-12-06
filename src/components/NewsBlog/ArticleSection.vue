@@ -3,6 +3,7 @@
     <div class="article-heading">
       <h1>{{ title }}</h1>
       <h3>{{ subheading}}</h3>
+      <h5>{{ date }}</h5>
     </div>
     <div class="divider"></div>
     <!-- <div v-if="articleInfo.mediaLink" class="article-media">
@@ -18,7 +19,7 @@
 <script setup>
 import { ref } from 'vue';
 // eslint-disable-next-line
-const props = defineProps(['title', 'subheading'])
+const props = defineProps(['title', 'subheading', 'date'])
 
 const contentElement = ref(null)
 
@@ -41,6 +42,7 @@ const contentElement = ref(null)
   }
 
   .article-heading {
+    position: relative;
     padding: 20px;
     background-color: #151515;
     background-image: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 20%, rgba(0,0,0,0.3) 75%, rgba(0,0,0,0) 100%), url('@/assets/images/news-header-jungle01.webp');
@@ -55,6 +57,15 @@ const contentElement = ref(null)
   
   h3 {
     margin: 0;
+    color: #aaa;
+  }
+
+  h5 {
+    position: absolute;
+    margin: 0;
+    margin-right: 5px;
+    bottom: 0;
+    right: 0;
     color: #aaa;
   }
 

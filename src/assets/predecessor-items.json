@@ -2527,11 +2527,8 @@
       "Critical Chance": 20
     },
     "descriptions": [{
-      "descriptionType": "Passive - Spellblade",
-      "description": "After using an ability, your next 2 basic attacks within 6s deal bonus physical damage based on your critical strike chance - 3s CD."
-      },{
-      "descriptionType": "Passive",
-      "description": "Basic attacks restore 1% maximum mana on-hit."
+      "descriptionType": "Anon",
+      "description": "Excess healing from lifesteal is converted into a shield, up to (+80% Total Physical Power) total. The shield slowly decays after 15s of leaving combat."
       }
     ]
   },

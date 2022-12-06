@@ -1,8 +1,25 @@
 <template>
   <div class="container">
     <ArticleSection 
+      title="Updates to Item Page"
+      subheading="More Filters, Fixes, &amp; Thanks"
+      date="2022/12/06"
+    >
+      <h1>Filters &amp; Fixes</h1>
+      <p>An Aura filter has been added to the Items page. This should show anything that gives stats simply for being around the player with that item. This does not include anything that affects nearby allies or enemies on-hit. In addition, I've double checked and fixed the item components for the last few items in the list, as well as Terminus' description, which still had the description from the stress test.</p>
+      <h1>Thank you!</h1>
+      <p>Thanks to everyone who has reached out and suggested filters, told me about bugs and things that needed to be fixed, as well as everyone who has been using this resource! A little under 1000 people have been using this, which is awesome!</p>
+
+      <p>As always, if you have any feature requests or find any issues with anything, please shoot me a message on Discord. You can find my info at the bottom of the page!</p>
+      <div style="text-align:right">
+        <em>See you on the battlefield.<br>-noxxxxxious
+        </em>
+      </div>
+    </ArticleSection>
+    <ArticleSection 
       title="Items Updated for Early Access"
       subheading="Crests Only Actives, Additional Filters, & The Future"
+      date="2022/11/30"
     >
       <h1>Hi, everyone!</h1>
       <p>I figured this would be a good place to make some announcements about the site, as well as keep track of changes to items and other things about the game as we go. There are more features I'd like to add, but they will likely come slowly. I plan on eventually open sourcing it for those who won't mind dealing with my junior level code. 😅 For now, I'd like to use this space to make updates on changes to the items as we go, as well as do some community spotlights among other things.</p>

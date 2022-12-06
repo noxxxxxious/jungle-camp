@@ -1067,7 +1067,7 @@
   {
     "name": "Polar Treads",
     "cost": 950,
-    "tags": ["Passive", "Magical Armor", "Base Mana Regen"],
+    "tags": ["Passive", "Magical Armor", "Base Mana Regen", "Movement Speed"],
     "components": ["Wraps", "Energy Stream"],
     "stats": {
       "Magical Armor": 12,
@@ -1303,7 +1303,7 @@
   {
     "name": "Brimstone",
     "cost": 1200,
-    "tags": ["Passive", "Health", "Mana"],
+    "tags": ["Passive", "Health", "Mana", "Aura"],
     "components": ["Vitality Beads", "Spirit Beads"],
     "stats": {
       "Health": 150,
@@ -1503,7 +1503,7 @@
   {
     "name": "Vanguardian",
     "cost": 2600,
-    "tags": ["Passive", "Health", "Magical Armor", "Tenacity", "When-hit"],
+    "tags": ["Passive", "Health", "Magical Armor", "Tenacity", "When-hit", "Aura"],
     "components": ["Tenacious Drape", "Vitality Beads", "Nullifying Mask"],
     "stats": {
       "Health": 300,
@@ -1592,7 +1592,7 @@
   {
     "name": "Requiem",
     "cost": 2700,
-    "tags": ["Passive", "Magical Power", "Health", "Base Mana Regen", "Heal & Shield Power"],
+    "tags": ["Passive", "Magical Power", "Health", "Base Mana Regen", "Heal & Shield Power", "Aura"],
     "components": ["Hallowed Braid", "Divine Wreath"],
     "stats": {
       "Magical Power": 20,
@@ -1612,7 +1612,7 @@
   {
     "name": "Fire Blossom",
     "cost": 2700,
-    "tags": ["Passive", "Health", "Mana", "Physical Armor"],
+    "tags": ["Passive", "Health", "Mana", "Physical Armor", "Aura"],
     "components": ["Brimstone", "Steel Mail"],
     "stats": {
       "Health": 275,
@@ -1683,7 +1683,7 @@
   {
     "name": "Tainted Totem",
     "cost": 2800,
-    "tags": ["Passive", "Physical Armor", "Magical Armor", "Base Mana Regen", "Ability Haste"],
+    "tags": ["Passive", "Physical Armor", "Magical Armor", "Base Mana Regen", "Ability Haste", "Aura"],
     "components": ["Steel Mail", "Essence Ring", "Nullifying Mask"],
     "stats": {
       "Physical Armor": 40,
@@ -1740,7 +1740,7 @@
   {
     "name": "Galaxy Greaves",
     "cost": 2800,
-    "tags": ["Passive", "Physical Armor", "Magical Armor", "Base Mana Regen", "Ability Haste"],
+    "tags": ["Passive", "Physical Armor", "Magical Armor", "Base Mana Regen", "Ability Haste", "Movement Speed"],
     "components": ["Steel Mail", "Polar Treads", "Wraps"],
     "stats": {
       "Physical Armor": 30,
@@ -1760,7 +1760,7 @@
   {
     "name": "Flux Matrix",
     "cost": 2800,
-    "tags": ["Passive", "Health", "Magical Armor", "Ability Haste"],
+    "tags": ["Passive", "Health", "Magical Armor", "Ability Haste", "Aura"],
     "components": ["Violet Brooch", "Nullifying Mask", "Violet Brooch"],
     "stats": {
       "Health": 350,
@@ -2211,7 +2211,7 @@
   {
     "name": "Dread",
     "cost": 3000,
-    "tags": ["Passive", "Physical Power", "Physical Penetration", "Magical Armor", "Base Mana Regen"],
+    "tags": ["Passive", "Physical Power", "Physical Penetration", "Magical Armor", "Base Mana Regen", "Movement Speed"],
     "components": ["Honed Kris", "Sabre", "Polar Treads"],
     "stats": {
       "Physical Power": 40,
@@ -2231,7 +2231,7 @@
   {
     "name": "Tectonic Mallet",
     "cost": 3000,
-    "tags": ["Passive", "Physical Power", "Magical Armor", "Omnivamp"],
+    "tags": ["Passive", "Physical Power", "Magical Armor", "Omnivamp", "Movement Speed"],
     "components": ["Nullifying Mask", "Bloodlust", "Shortsword"],
     "stats": {
       "Physical Power": 35,
@@ -2250,7 +2250,7 @@
   {
     "name": "Frostguard",
     "cost": 3000,
-    "tags": ["Passive", "Health", "Physical Armor", "Mana", "Ability Haste"],
+    "tags": ["Passive", "Health", "Physical Armor", "Mana", "Ability Haste", "Aura"],
     "components": ["Barbed Pauldron", "Cerulean Stone", "Vitality Beads"],
     "stats": {
       "Health": 200,
@@ -2289,7 +2289,7 @@
   {
     "name": "Citadel",
     "cost": 3000,
-    "tags": ["Passive", "Physical Power", "Health", "Physical Armor"],
+    "tags": ["Passive", "Physical Power", "Health", "Physical Armor", "Aura"],
     "components": ["Fortified Mantle", "Vitality Beads", "Fortified Mantle"],
     "stats": {
       "Physical Power": 35,
@@ -2327,7 +2327,7 @@
   {
     "name": "Void Helm",
     "cost": 3100,
-    "tags": ["Passive", "Health", "Magical Armor", "Ability Haste", "When-hit"],
+    "tags": ["Passive", "Health", "Magical Armor", "Ability Haste", "When-hit", "Movement Speed"],
     "components": ["Nullifying Mask", "Violet Brooch", "Banded Emerald"],
     "stats": {
       "Health": 500,
@@ -2577,7 +2577,7 @@
   {
     "name": "Absolution",
     "cost": 3200,
-    "tags": ["Passive", "Physical Power", "Magical Armor", "Critical Chance"],
+    "tags": ["Passive", "Physical Power", "Magical Armor", "Critical Chance", "Movement Speed"],
     "components": ["Sabre", "Heroic Guard", "Crossbow"],
     "stats": {
       "Physical Power": 40,
@@ -2780,7 +2780,7 @@
     "name": "Demolisher",
     "cost": 3300,
     "tags": ["Passive", "Physical Power", "Critical Chance"],
-    "components": ["Spell Slasher", "Ravenous Rapier", "Temporal Ripper"],
+    "components": ["Sabre", "Zealous Tomahawk", "Crossbow"],
     "stats": {
       "Physical Power": 50,
       "Critical Chance": 20
@@ -2798,7 +2798,7 @@
     "name": "Dust Devil",
     "cost": 3300,
     "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance", "Movement Speed"],
-    "components": ["Robust Arbalest", "Rune Bow"],
+    "components": ["Robust Arbalest", "Greatsword"],
     "stats": {
       "Physical Power": 45,
       "Attack Speed": 20,
@@ -2814,7 +2814,7 @@
   {
     "name": "Augmentation",
     "cost": 3300,
-    "tags": ["Passive", "Physical Power", "Health", "Attack Speed", "On-hit"],
+    "tags": ["Passive", "Physical Power", "Health", "Attack Speed", "On-hit", "Movement Speed"],
     "components": ["Sabre", "Composite Bow", "Banded Emerald"],
     "stats": {
       "Physical Power": 30,

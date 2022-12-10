@@ -2269,7 +2269,7 @@
   },
   {
     "name": "Combustion",
-    "cost": 3200,
+    "cost": 3000,
     "tags": ["Passive", "Magical Power", "Magical Penetration", "Mana"],
     "components": ["Scepter", "Diffusal Cane", "Spirit Beads"],
     "stats": {

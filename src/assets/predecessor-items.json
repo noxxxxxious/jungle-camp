@@ -1,7 +1,6 @@
 [
   {
     "name": "Solstone",
-    "cost": 0,
     "tags": ["Active", "Vision"],
     "descriptions": [{
       "descriptionType": "Active - Oracle Ward",
@@ -17,7 +16,6 @@
   },
   {
     "name": "Stealth Ward",
-    "cost": 25,
     "tags": ["Active", "Vision"],
     "descriptions": [{
       "descriptionType": "Active - Stealth Ward",
@@ -26,7 +24,6 @@
   },
   {
     "name": "Sentry",
-    "cost": 25,
     "tags": ["Active", "Vision"],
     "descriptions": [{
       "descriptionType": "Active - Sentry",
@@ -530,7 +527,7 @@
     },
     "descriptions": [{
       "descriptionType": "Soul Stealer",
-      "description": "When you achieve a Takedown, gain a Soul which permanently grants you 2 Magical Power."
+      "description": "When you achieve a Takedown, gain a Soul which permanently grants you 1 Magical Power."
       },{
       "descriptionType": "Active - Condemn",
       "description": "Enhance your next basic attack to deal 80 (+30% Magical Power)(+15 per Soul) additional magic damage. If a Target struck by Condemn dies within 4s, gain a Soul - 30s CD."
@@ -708,7 +705,7 @@
     },
     "descriptions": [{
       "descriptionType": "Active - Rending Strikes",
-      "description": "Upon activation, gain 25% attack speed and empower your basic attacks to deal (+10% Total Physical Power) true damage on-hit for 6s, increasing by (+5% Total Physical Power) for each successful hit against Enemy Heroes - 90s CD."
+      "description": "Upon activation, gain 10% attack speed and empower your basic attacks to deal (+15% Total Physical Power) true damage on-hit for 6s, increasing by (+5% Total Physical Power) for each successful hit against Enemy Heroes - 90s CD."
       },{
       "descriptionType": "Creep Slayer",
       "description": "Deal 30 extra basic damage to Minions."
@@ -1089,7 +1086,7 @@
     },
     "descriptions": [{
       "descriptionType": "Blighted Skin",
-      "description": "When hit by a basic attack, reduce the Source's Healing by 15% for 3s."
+      "description": "When hit by a basic attack, reduce the Source's Healing by 20% for 3s."
       }
     ]
   },
@@ -1127,7 +1124,7 @@
     },
     "descriptions": [{
       "descriptionType": "Blighted Spells",
-      "description": "Dealing magical damage reduces the Target's Healing by 15% for 3s."
+      "description": "Dealing magical damage reduces the Target's Healing by 20% for 3s."
       }
     ]
   },
@@ -1141,7 +1138,7 @@
     },
     "descriptions": [{
       "descriptionType": "Blighted Strikes",
-      "description": "Dealing physical damage reduces the Target's Healing by 15% for 3s."
+      "description": "Dealing physical damage reduces the Target's Healing by 20% for 3s."
       }
     ]
   },
@@ -1381,7 +1378,7 @@
     },
     "descriptions": [{
       "descriptionType": "Colossus",
-      "description": "Killing an Enemy Minion grants 4 bonus health per stack, up to a maximum of 400. At maximum stacks, gain 10 ability haste."
+      "description": "Killing an Enemy Minion grants 2 bonus health per stack, up to a maximum of 400. At maximum stacks, gain 15 ability haste."
       }
     ]
   },
@@ -1615,7 +1612,7 @@
     "tags": ["Passive", "Health", "Mana", "Physical Armor", "Aura"],
     "components": ["Brimstone", "Steel Mail"],
     "stats": {
-      "Health": 275,
+      "Health": 225,
       "Mana": 200,
       "Physical Armor": 40
     },
@@ -1686,17 +1683,17 @@
     "tags": ["Passive", "Physical Armor", "Magical Armor", "Base Mana Regen", "Ability Haste", "Aura"],
     "components": ["Steel Mail", "Essence Ring", "Nullifying Mask"],
     "stats": {
-      "Physical Armor": 40,
+      "Physical Armor": 35,
       "Magical Armor": 30,
       "Base Mana Regen": 150,
       "Ability Haste": 15
     },
     "descriptions": [{
       "descriptionType": "Chilling Blight",
-      "description": "Nearby Enemy Heroes have their Healing reduced by 30% and are Slowed by 10%."
+      "description": "Nearby Enemy Heroes have their Healing reduced by 40% and are Slowed by 10%."
       },{
       "descriptionType": "Nirvana",
-      "description": "Yourself and nearby Allied Heroes receive 20% increased Healing and Shielding."
+      "description": "Yourself and nearby Allied Heroes receive 15% increased Healing and Shielding."
       }
     ]
   },
@@ -1867,13 +1864,13 @@
     "tags": ["Passive", "Health", "Physical Armor", "Ability Haste"],
     "components": ["Violet Brooch", "Horned Plate", "Vitality Beads"],
     "stats": {
-      "Health": 400,
+      "Health": 350,
       "Physical Armor": 40,
       "Ability Haste": 10
     },
     "descriptions": [{
       "descriptionType": "Blighted Thorns",
-      "description": "When hit by a basic attack, reduce the Source's Healing by 30% and apply a bleed dealing 30 (+30% Bonus Physical Armor) magical damage over 3s."
+      "description": "When hit by a basic attack, reduce the Source's Healing by 40% and apply a bleed dealing 30 (+21% Bonus Physical Armor) magical damage over 3s."
       }
     ]
   },
@@ -2009,24 +2006,6 @@
     ]
   },
   {
-    "name": "Warden's Faith",
-    "cost": 3000,
-    "tags": ["Passive", "Health", "Physical Armor"],
-    "components": ["Steel Mail", "Banded Emerald", "Steel Mail"],
-    "stats": {
-      "Health": 300,
-      "Physical Armor": 70
-    },
-    "descriptions": [{
-      "descriptionType": "Stalwart",
-      "description": "Take 15% reduced damage from Critical Strikes."
-      },{
-      "descriptionType": "Retribution",
-      "description": "When hit by a basic attack, reduce current basic ability cooldowns by 0.2s."
-      }
-    ]
-  },
-  {
     "name": "The Perforator",
     "cost": 3000,
     "tags": ["Passive", "Physical Power", "Ability Haste"],
@@ -2037,7 +2016,7 @@
     },
     "descriptions": [{
       "descriptionType": "Calamity",
-      "description": "Abilities deal 0% to 35% (based on 0 to 1600 maximum health difference) bonus physical damage against Enemy Heroes with greater maximum health than you."
+      "description": "Abilities deal 0% to 40% (based on 0 to 1600 maximum health difference) bonus physical damage against Enemy Heroes with greater maximum health than you."
       },{
       "descriptionType": "Desolate",
       "description": "Your physical damage ignores 35% of your target's physical armor (Before Penetration)."
@@ -2056,7 +2035,7 @@
     },
     "descriptions": [{
       "descriptionType": "Blighted Strikes",
-      "description": "Dealing physical damage to an Enemy Target reduces their Healing by 30% for 3s."
+      "description": "Dealing physical damage to an Enemy Target reduces their Healing by 40% for 3s."
       },{
       "descriptionType": "Hex",
       "description": "Damaging an Enemy Target affected by Blight with an ability deals an additional 20 physical damage and causes them to take 10% more damage for 3s - 1s CD."
@@ -2182,10 +2161,10 @@
     },
     "descriptions": [{
       "descriptionType": "Colossus",
-      "description": "Killing an Enemy Minion grants 4 bonus health per stack, up to a maximum of 300 bonus health. At maximum stacks, gain 10 ability haste."
+      "description": "Killing an Enemy Minion grants 2 bonus health per stack, up to a maximum of 300 bonus health. At maximum stacks, gain 15 ability haste."
       },{
       "descriptionType": "Hasty Colossus",
-      "description": "Gain (+1% Maximum Health) ability haste."
+      "description": "Gain (+0.5% Maximum Health) ability haste."
       }
     ]
   },
@@ -2371,7 +2350,7 @@
     },
     "descriptions": [{
       "descriptionType": "Blighted Spells",
-      "description": "Dealing magical damage to an Enemy Target reduces their Healing by 30% for 3s."
+      "description": "Dealing magical damage to an Enemy Target reduces their Healing by 40% for 3s."
       },{
       "descriptionType": "Malice",
       "description": "Every second, gain a stack of Malice, up to a maximum of 15. Damaging an Enemy Hero with an ability consumes Malice to deal 6 true damage per stack. Takedowns grant maximum stacks of Malice instantly."
@@ -2439,7 +2418,7 @@
     },
     "descriptions": [{
       "descriptionType": "Leech",
-      "description": "Damaging an Enemy Hero with an ability restores 4% (+1% per 100 Magical Power) of your maximum health over 8s. Additional applications refresh the duration."
+      "description": "Slowing or Immobilising an Enemy Hero restores (+30% magical power) health and grants 200 movement speed for 3s - 6 CD."
       },{
       "descriptionType": "Magi",
       "description": "Achieving a Takedown grants 50 magical power for 8s."
@@ -2544,7 +2523,7 @@
     },
     "descriptions": [{
       "descriptionType": "Blighted Strikes",
-      "description": "Successful Basic Attacks reduce the Target's Healing by 30% for 3s."
+      "description": "Successful Basic Attacks reduce the Target's Healing by 40% for 3s."
       },{
       "descriptionType": "Wicked Strikes",
       "description": "Basic attacks deal (+12% Total Physical Power) magical damage on-hit, increasing by up to 100% based on the Target's missing health."
@@ -2568,6 +2547,24 @@
       },{
       "descriptionType": "MPA",
       "description": "Rend's bonus damage deals a minimum of 10 and is capped at 50 against Monsters and Minions."
+      }
+    ]
+  },
+  {
+    "name": "Warden's Faith",
+    "cost": 3200,
+    "tags": ["Passive", "Health", "Physical Armor"],
+    "components": ["Steel Mail", "Banded Emerald", "Steel Mail"],
+    "stats": {
+      "Health": 300,
+      "Physical Armor": 70
+    },
+    "descriptions": [{
+      "descriptionType": "Stalwart",
+      "description": "Take 15% reduced damage from Critical Strikes."
+      },{
+      "descriptionType": "Retribution",
+      "description": "When hit by a basic attack, reduce current basic ability cooldowns by 0.2s."
       }
     ]
   },
@@ -2750,7 +2747,7 @@
       "description": "Basic attacks deal 15 (+20 Magical Power) bonus magic damage on-hit."
       },{
       "descriptionType": "Hasty",
-      "description": "Gain (+75% Ability Haste)% attack speed."
+      "description": "Gain (+60% Ability Haste)% attack speed."
       }
     ]
   },
@@ -2760,13 +2757,13 @@
     "tags": ["Passive", "Physical Power", "Ability Haste", "Omnivamp"],
     "components": ["Bloodlust", "Temporal Ripper"],
     "stats": {
-      "Physical Power": 45,
+      "Physical Power": 40,
       "Ability Haste": 20,
       "Omnivamp": 8
     },
     "descriptions": [{
       "descriptionType": "Mutilate",
-      "description": "Basic attacks deal 1.5% of the Enemy Hero's maximum health as bonus physical damage. Applies twice on non-DOT abilities."
+      "description": "Basic attacks deal 1.25% of the Enemy Hero's maximum health as bonus physical damage. Applies twice on non-DOT abilities."
       },{
       "descriptionType": "Devour",
       "description": "Damaging an Enemy Hero with an ability steals 8% of their maximum health for 20s. Can only occur once per Target."
@@ -2834,7 +2831,7 @@
     "components": ["Zealous Tomahawk", "Composite Bow", "Crossbow"],
     "stats": {
       "Physical Power": 30,
-      "Attack Speed": 20,
+      "Attack Speed": 25,
       "Ability Haste": 10,
       "Critical Chance": 20
     },

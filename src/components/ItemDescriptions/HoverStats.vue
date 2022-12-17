@@ -1,11 +1,11 @@
 <template>
   <div id="hover-details" class="hover-item-details">
-    <ItemStats :hover="true" />
+    <ItemStats />
   </div>
 </template>
 
 <script>
-import ItemStats from '@/components/ItemStats.vue'
+import ItemStats from '@/components/ItemDescriptions/ItemStats.vue'
 
 export default {
   components: {

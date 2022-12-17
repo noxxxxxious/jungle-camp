@@ -2,7 +2,7 @@
   <div class="item-recipe-container">
     <div ref="imageEl" class="item-image" @click="selectComponent" @mouseenter="repositionStats" :style="`background-image: url('${getImgUrl()}')`">
       <div ref="statsEl" v-if="recipeIndex > 0" class="hover-stats" >
-        <ItemStats :itemObject="itemObject" />
+        <ItemStats :item="itemObject" />
       </div>
     </div>
     <div v-if="hasComponents" class="separator">
@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import ItemStats from '@/components/ItemStats.vue'
+import ItemStats from '@/components/ItemDescriptions/ItemStats.vue'
 
 export default {
   name: 'RecipeItem',
@@ -133,7 +133,7 @@ export default {
     position: absolute;
     transform: translate(-110%, -100%);
     display: none;
-    padding: 50px;
+    padding: 10px;
     border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
     border: 1px solid gold;

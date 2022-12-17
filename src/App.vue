@@ -1,12 +1,33 @@
 <template>
   <div class="app-wrapper">
-    <div class="header">The Jungle Camp</div>
+    <SiteHeader />
       <div class="main">
         <router-view/>
       </div>
-    <div class="footer">Discord: noxxxxxious#7568</div>
+    <div class="footer">Discord: noxxxxxious#7568 | Hire me as a front end developer!</div>
   </div>
 </template>
+
+<script>
+import SiteHeader from '@/components/SiteHeader.vue'
+export default {
+  components: {
+    SiteHeader
+  },
+
+  beforeMount() {
+    //Check if login cookie exists
+    //Only 1 cookie, so we can simply separate on '=' without needing to search through other cookies
+    //Then split on . to get the payload
+    //Decode from base64 and parse the JSON
+    const splitCookie = document.cookie.split('=')
+    if (splitCookie.length > 1 && splitCookie[0] === 'access_token'){
+      const userInfo = JSON.parse(atob(splitCookie[1].split('%20')[1].split('.')[1]))
+      this.$store.dispatch('setUserInfo', userInfo)
+    }
+  }
+}
+</script>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
@@ -31,19 +52,9 @@
     color: #ddd;
   }
 
-  .header {
-    padding: 20px;
-    padding-left: 75px;
-    background-color: #202020;
-    box-shadow: 0px 5px 5px #0004;
-    z-index: 20;
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
-
   .footer {
     background-color: #202020;
-    padding: 1px 20px;
+    padding: 2px 20px;
     text-align: right;
     z-index: 20;
   }

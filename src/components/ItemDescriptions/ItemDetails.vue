@@ -2,7 +2,7 @@
   <div class="item-details-container">
     <span v-if="!item">No item selected.</span>
     <div class="item-details" v-else>
-      <ItemStats :itemObject="item" />
+      <ItemStats :item="item" />
       <div v-if="hasComponents" class="item-components">
         <div class="components-headline">COMPONENTS</div>
         <div class="separator"></div>
@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import RecipeItem from '@/components/RecipeItem.vue'
-import ItemStats from '@/components/ItemStats.vue'
+import RecipeItem from '@/components/ItemDescriptions/RecipeItem.vue'
+import ItemStats from '@/components/ItemDescriptions/ItemStats.vue'
 
 export default {
   props: {

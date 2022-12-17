@@ -1,5 +1,5 @@
 <template>
-  <div class="card-container" :style="`background-image: url('${getImgUrl()}')`">
+  <div class="card-container" :id="itemElementId" draggable="true" :ondragstart="dragStart" :style="`background-image: url('${getImgUrl()}')`">
     <div class="card-container-overlay"></div>
     <div class="item-glance-details">
       <div class="item-name">
@@ -29,6 +29,17 @@ export default {
   methods: {
     getImgUrl () {
       return require('@/assets/images/' + this.item.name.replace(/\s/g, '_').replace(/'/g, "")  + '.png')
+    },
+
+    dragStart (event) {
+      event.dataTransfer.setData("text", event.target.id)
+      event.dataTransfer.effectAllowed = "copyMove"
+    }
+  },
+
+  computed: {
+    itemElementId () {
+      return `card-${this.item.name.replace(/\s/g, '-').replace(/'/g, "")}`
     }
   }
 }

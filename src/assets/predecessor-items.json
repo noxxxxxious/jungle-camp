@@ -1,419 +1,111 @@
 [
   {
-    "name": "Sentry",
-    "cost": 25,
-    "rarity": "Common",
-    "tags": ["Consumable", "Active"],
-    "components": [],
+    "name": "Solstone",
+    "cost": 0,
+    "tags": ["Active", "Vision"],
     "descriptions": [{
-      "descriptionType": "Consume",
-      "description": "Reveal all wards in an 800 unit radius for 15 seconds. Max stacks: 1"
-    }]
+      "descriptionType": "Active - Oracle Ward",
+      "description": "Place an invisible Oracle Ward for 120s at your target location, revealing any nearby Visible and Stealthed Enemy Units - 174s (-3s per level) CD."
+      },{
+     "descriptionType": "Max Charges",
+     "description": "3."
+      },{
+     "descriptionType": "Refill",
+     "description": "Charges are restored upon visiting base."
+      }
+    ]
   },
   {
     "name": "Stealth Ward",
     "cost": 25,
-    "rarity": "Common",
-    "tags": ["Consumable", "Active"],
-    "components": [],
+    "tags": ["Active", "Vision"],
     "descriptions": [{
-      "descriptionType": "Consume",
-      "description": "Place an invisible ward at target location that revealse nearby Visible and Camouflagued enemy targets, lasts for 2 and a half minutes. Max stacks: 2"
+      "descriptionType": "Active - Stealth Ward",
+      "description": "Place an invisible Ward for 84s (+2 per level) at your target location, revealing any nearby Visible and Camouflagued Enemy Units - 174s (-3s per level) CD."
     }]
   },
   {
-    "name": "Compound Potion",
-    "cost": 50,
-    "rarity": "Common",
-    "tags": ["Consumable", "Active"],
-    "components": [],
+    "name": "Sentry",
+    "cost": 25,
+    "tags": ["Active", "Vision"],
     "descriptions": [{
-      "descriptionType": "Consume",
-      "description": "Regenerates 6 health and 3 mana per second for 16 seconds, restoring a total of 90 health and 45 mana."
+      "descriptionType": "Active - Sentry",
+      "description": "Reveal nearby Enemy Wards in a small area around you for 15s - 96s (-2 per level) CD."
+    },{
+      "descriptionType": "Max Charges",
+      "description": "2."
     }]
   },
   {
-    "name": "Health Potion",
-    "cost": 50,
-    "rarity": "Common",
-    "tags": ["Consumable", "Active"],
-    "components": [],
+    "name": "Wild Hunt",
+    "tags": ["Active", "Passive", "On-hit"],
     "descriptions": [{
-      "descriptionType": "Consume",
-      "description": "Regenerates 10 health per second for 15 seconds, restoring a total of 150 health."
-    }]
-  },
-  {
-    "name": "Mana Potion",
-    "cost": 50,
-    "rarity": "Common",
-    "tags": ["Consumable", "Active"],
-    "components": [],
-    "descriptions": [{
-      "descriptionType": "Consume",
-      "description": "Restores 6 mana per second for 15 seconds, restoring a total of 90 mana."
-    }]
+      "descriptionType": "Active - Slay",
+      "description": "Deal 1000 true damage to an Enemy Minion or Monster"
+      },{
+      "descriptionType": "Jungler",
+      "description": "Dealing damage to Monsters applies a burn, dealing 30 (+15% Magical Power)(+3% bonus health) magical damage over 3s. Basic attacks against Monsters restore 3 mana on-hit and you restore 1-6 mana per second based on your missing mana whilst in the jungle. Melee Heroes heal for 5% of damage dealt to Monsters. Gain an additional 140XP for the first Monster you kill. Additionally, you receive diminishing gold from excessive Minion kills."
+      }]
   },
   {
     "name": "Hunt",
-    "cost": 50,
-    "rarity": "Uncommon",
-    "tags": ["Passive"],
-    "components": [],
+    "tags": ["Active", "Passive", "On-hit"],
     "descriptions": [{
-      "descriptionType": "Passive - Artifact",
-      "description": "Deal additional damage to monsters and if melee, heal based on the damage dealt. Basic attacks against monsters regenerate mana on-hit and execute large monsters under 300 (+50 per level) health."
+      "descriptionType": "Active - Slay",
+      "description": "Deal 500 true damage to an Enemy Minion or Monster"
       },{
-      "descriptionType": "Passive - Slayer",
-      "description": "Gain additional XP for each large monster kill as well as additional XP for your first large monster kill."
+      "descriptionType": "Jungler",
+      "description": "Dealing damage to Monsters applies a burn, dealing 30 (+15% Magical Power)(+3% bonus health) magical damage over 3s. Basic attacks against Monsters restore 3 mana on-hit and you restore 1-6 mana per second based on your missing mana whilst in the jungle. Melee Heroes heal for 5% of damage dealt to Monsters. Gain an additional 140XP for the first Monster you kill. Additionally, you receive diminishing gold from excessive Minion kills."
       },{
-      "descriptionType": "Passive - Jungler",
-      "description": "Receive less gold from lane minion kills. This effect disables after 15 minutes. Hunt is consumed after killing 30 monsters, removing the item, but granting the passives permanently."
+      "descriptionType": "BGH",
+      "description": "Killing Monsters grants a stack of Hunt. At 40 stacks, the item evolves, increasing the damage of Cull to 1000."
+      }]
+  },
+  {
+    "name": "Titan Crest",
+    "tags": ["Passive", "Crest", "Health", "When-hit"],
+    "stats": {
+      "Health": 80
+    },
+    "descriptions": [{
+      "descriptionType": "Titan",
+      "description": "After taking damage, heal 15 (+0.75% of maximum health) over 15s. This healing is doubled for 5s after killing an Enemy Unit. Upon restoring 400 health, evolves into Goliath Crest."
+      },{
+      "descriptionType": "Creep Slayer",
+      "description": "Deal 20 extra basic damage to Minions."
       }
     ]
   },
   {
-    "name": "Refillable Potion",
-    "cost": 150,
-    "rarity": "Common",
-    "tags": ["Consumable", "Active"],
-    "components": ["Health Potion"],
-    "descriptions": [{
-      "descriptionType": "Consume",
-      "description": "Restores 12 health per second for 12 seconds, restoring a total of 120 health. Holds 2 charges that refill upon visiting the base."
-    }]
-  },
-  {
-    "name": "Energy Stream",
-    "cost": 200,
-    "rarity": "Uncommon",
-    "tags": ["Passive", "Mana Regeneration"],
-    "components": [],
+    "name": "Goliath Crest",
+    "tags": ["Passive", "Crest", "Health", "Base Health Regen", "When-hit"],
+    "components": ["Titan Crest"],
     "stats": {
-      "Mana Regeneration": 1
-    }
-  },
-  {
-    "name": "Life Stream",
-    "cost": 200,
-    "rarity": "Uncommon",
-    "tags": ["Passive", "Health Regeneration"],
-    "components": [],
-    "stats": {
-      "Health Regeneration": 1
-    }
-  },
-  {
-    "name": "Longbow",
-    "cost": 300,
-    "rarity": "Uncommon",
-    "tags": ["Passive", "Attack Speed"],
-    "components": [],
-    "stats": {
-      "Attack Speed": 10
-    }
-  },
-  {
-    "name": "Wraps",
-    "cost": 300,
-    "rarity": "Uncommon",
-    "tags": ["Passive", "Magical Armor"],
-    "components": [],
-    "stats": {
-      "Magical Armor": 10
-    }
-  },
-  {
-    "name": "Tunic",
-    "cost": 300,
-    "rarity": "Uncommon",
-    "tags": ["Passive", "Physical Armor"],
-    "components": [],
-    "stats": {
-      "Physical Armor": 10
-    }
-  },
-  {
-    "name": "Vitality Beads",
-    "cost": 300,
-    "rarity": "Uncommon",
-    "tags": ["Passive", "Health"],
-    "components": [],
-    "stats": {
-      "Health": 100
-    }
-  },
-  {
-    "name": "Assassin Crest",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Crest", "Physical Power", "Ability Haste", "Physical Penetration"],
-    "components": ["Rogue Crest"],
-    "stats": {
-      "Physical Power": 10,
-      "Ability Haste": 10,
-      "Physical Penetration": 8
+      "Health": 120,
+      "Base Health Regen": 25
     },
     "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Dealing damage to an enemy hero/monster with an ability restores 10 Health (Once per ability), killing an enemy target restores 5 Health. After restoring 300 Health, Allows the purchase of a \"Legendary\" Item."
+      "descriptionType": "Legendary Titan",
+      "description": "After taking damage, heal 15 (+0.75% of maximum health) over 15s. This healing is doubled for 5s after killing an Enemy Unit. Upon restoring 400 health, return to base to evolve into a Legendary Crest."
       },{
-      "descriptionType": "Passive",
-      "description": "Deal 15 extra basic damage to minions"
-      }
-    ]
-  },
-  {
-    "name": "Nex",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Crest", "Physical Power", "Ability Haste", "Physical Penetration"],
-    "components": ["Assassin Crest"],
-    "stats": {
-      "Physical Power": 25,
-      "Ability Haste": 10,
-      "Physical Penetration": 12
-    },
-    "descriptions": [{
-      "descriptionType": "Active",
-      "description": "Dash forward and deal (+100% Bonus Physical Power)(100% of Sow) physical damage to all nearby enemy heroes and slow them by 80% for 1 seconds - 90s CD."
-      },{
-      "descriptionType": "Passive",
-      "description": "Store 20% of damage dealt to enemy heroes (109% for AOE abilities) in the past 3 seconds as Sow."
-      },{
-      "descriptionType": "Passive",
-      "description": "Deal 15 extra basic damage to minions."
-      }
-    ]
-  },
-  {
-    "name": "Ortus",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Crest", "Physical Power", "Ability Haste", "Physical Penetration"],
-    "components": ["Assassin Crest"],
-    "stats": {
-      "Physical Power": 20,
-      "Ability Haste": 20,
-      "Physical Penetration": 6
-    },
-    "descriptions": [{
-      "descriptionType": "Active",
-      "description": "Gain 15% bonus movement speed decaying over 5s. During this time your next 3 basic attacks or damaging abilities will deal bonus true damage and reduce current basic ability cooldowns by 2s - 90s CD."
-      },{
-      "descriptionType": "Passive",
+      "descriptionType": "Creep Slayer",
       "description": "Deal 30 extra basic damage to Minions."
       }
     ]
   },
   {
-    "name": "Rogue Crest",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Crest", "Physical Power", "Ability Haste"],
-    "components": [],
+    "name": "Saphir's Mantle",
+    "tags": ["Passive", "Active", "Crest", "Health", "Base Health Regen", "Physical Armor", "Magical Armor"],
+    "components": ["Goliath Crest"],
     "stats": {
-      "Physical Power": 6,
-      "Ability Haste": 5
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Dealing damage to an Enemy Hero/Jungle Minion with an ability restores 5 health (Once per ability), killing an Enemy Target restores 10 health. After restoring 300 health, evolve into Assassin Crest."
-      },{
-      "descriptionType": "Passive",
-      "description": "Deal 15 extra basic damage to Minions."
-      }
-    ]
-  },
-  {
-    "name": "Witchstalker",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Crest", "Physical Power", "Ability Haste", "Physical Penetration", "Omnivamp"],
-    "components": ["Assassin Crest"],
-    "stats": {
-      "Physical Power": 15,
-      "Ability Haste": 10,
-      "Physical Penetration": 4,
-      "Omnivamp": 8
-    },
-    "descriptions": [{
-      "descriptionType": "Active",
-      "description": "Cleanse all Negative Debuffs, your next basic attack or damaging ability within 8s will deal bonus true damage based on the target's maximum health, increased by each negative effect removed and heal you equal to the damage dealt - 120s CD."
-      },{
-      "descriptionType": "Passive",
-      "description": "Deal 30 extra basic damage to Minions."
-      }
-    ]
-  },
-  {
-    "name": "Eviscerator",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Crest", "Physical Power", "Attack Speed", "Critical Chance"],
-    "components": ["Sharpshooter Crest"],
-    "stats": {
-      "Physical Power": 10,
-      "Attack Speed": 20,
-      "Critical Chance": 20
-    },
-    "descriptions": [{
-      "descriptionType": "Active",
-      "description": "Basic attacks deal an additional 5% of the target's maximum health as magic damage and heal for 50% of the damage dealt for 6s - 90s CD."
-      },{
-      "descriptionType": "Passive",
-      "description": "Deal 30 extra basic damage to Minions."
-      }
-    ]
-  },
-  {
-    "name": "Liberator",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Crest", "Physical Power", "Attack Speed", "Critical Chance", "Lifesteal"],
-    "components": ["Sharpshooter Crest"],
-    "stats": {
-      "Physical Power": 10,
-      "Attack Speed": 10,
-      "Critical Chance": 20,
-      "Lifesteal": 10
-    },
-    "descriptions": [{
-      "descriptionType": "Active",
-      "description": "Gain a large shield and 10% lifesteal for 5s - 120s CD."
-      },{
-      "descriptionType": "Passive",
-      "description": "Deal 30 extra basic damage to Minions."
-      }
-    ]
-  },
-  {
-    "name": "Marksman Crest",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Crest", "Physical Power", "Attack Speed"],
-    "components": [],
-    "stats": {
-      "Physical Power": 5,
-      "Attack Speed": 5
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Successful basic attacks restore 1 health, killing a unit restores 10 health. After restoring 400 health, evolve into Sharpshooter Crest."
-      },{
-      "descriptionType": "Passive",
-      "description": "Deal 15 extra basic damage to Minions."
-      }
-    ]
-  },
-  {
-    "name": "Pacifier",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Crest", "Physical Power", "Attack Speed", "Critical Chance"],
-    "components": ["Sharpshooter Crest"],
-    "stats": {
-      "Physical Power": 18,
-      "Attack Speed": 10,
-      "Critical Chance": 20
-    },
-    "descriptions": [{
-      "descriptionType": "Active",
-      "description": "Dash forward and gain attack speed for 6s, killing an Enemy Hero within the duration resets the cooldown - 150s CD."
-      },{
-      "descriptionType": "Passive",
-      "description": "Deal 30 extra basic damage to Minions."
-      }
-    ]
-  },
-  {
-    "name": "Sharpshooter Crest",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Crest", "Physical Power", "Attack Speed"],
-    "components": ["Marksman Crest"],
-    "stats": {
-      "Physical Power": 10,
-      "Attack Speed": 10
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Successful basic attacks restore 1 health, killing a unit restores 10 health. After restoring 400 health, allows the purchase of a Legendary Item."
-      }
-    ]
-  },
-  {
-    "name": "Brutallax",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Crest", "Physical Power", "Health", "Lifesteal"],
-    "components": ["Champion Crest"],
-    "stats": {
-      "Physical Power": 20,
-      "Health": 100,
-      "Lifesteal": 10
-    },
-    "descriptions": [{
-      "descriptionType": "Active",
-      "description": "Cleans all Negative Debuffs, then gain additional tenacity and attack speed for 8s. Successful basic attacks extend this duration by 0.5s on-hit - 120s CD"
-      },{
-      "descriptionType": "Passive",
-      "description": "Deal 30 extra basic damage to Minions."
-      }
-    ]
-  },
-  {
-    "name": "Champion Crest",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Crest", "Physical Power", "Health"],
-    "components": ["Warrior Crest"],
-    "stats": {
-      "Physical Power": 10,
-      "Health": 100
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Dealing damage to an Enemy Hero/Jungle Minion or killing an Enemy Target restores 2.5% maximum health over 15s. After restoring 400 health, allows the purchase of a \"Legendary\" Item."
-      },{
-      "descriptionType": "Passive",
-      "description": "Deal 15 extra basic damage to Minions."
-      }
-    ]
-  },
-  {
-    "name": "Fenix",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Crest", "Physical Power", "Health"],
-    "components": ["Champion Crest"],
-    "stats": {
-      "Physical Power": 30,
-      "Health": 100
-    },
-    "descriptions": [{
-      "descriptionType": "Active",
-      "description": "Mark your current location. For the next 6s, upon taking lethal damage, resurrect at the target location and restore 40% maximum health and mana - 210s CD."
-      },{
-      "descriptionType": "Passive",
-      "description": "Deal 30 extra basic damage to Minions."
-      }
-    ]
-  },
-  {
-    "name": "Iceskorn Talons",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Crest", "Physical Power", "Health", "Ability Haste"],
-    "components": ["Champion Crest"],
-    "stats": {
-      "Physical Power": 25,
       "Health": 200,
-      "Ability Haste": 10
+      "Base Health Regen": 75,
+      "Physical Armor": 5,
+      "Magical Armor": 10
     },
     "descriptions": [{
-      "descriptionType": "Active",
-      "description": "Create a dueling zone around you in a large area that remains for 15s. Enemy units within are slowed by 15% and you gain increased damage and movement speed whilst inside - 30s CD."
+      "descriptionType": "Active - Sturdy",
+      "description": "Gain (+20% Maximum Health) bonus health for 6s. During this time, dealing damage Slows Enemies by 15% for 1s - 90s CD."
       },{
       "descriptionType": "Passive",
       "description": "Deal 30 extra basic damage to Minions."
@@ -421,110 +113,300 @@
     ]
   },
   {
-    "name": "Warrior Crest",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Crest", "Physical Power", "Health"],
-    "components": [],
+    "name": "Razorback",
+    "tags": ["Passive", "Active", "Crest", "Health", "Base Health Regen", "Physical Armor", "Magical Armor", "When-hit"],
+    "components": ["Goliath Crest"],
     "stats": {
-      "Physical Power": 6,
-      "Health": 40
+      "Health": 150,
+      "Base Health Regen": 50,
+      "Physical Armor": 15,
+      "Magical Armor": 8
     },
     "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Dealing damage to an Enemy Hero/Jungle Minion or killing an Enemy Target restores 2.5% maximum health over 15s. After restoring 400 health, evolve into Champion Crest."
+      "descriptionType": "Active - Echidna",
+      "description": "Reflect 50% of damage received from Enemy Heroes as true damage for 4s - 90s CD."
       },{
-      "descriptionType": "Passive",
-      "description": "Deal 15 extra basic damage to Minions."
+      "descriptionType": "Creep Slayer",
+      "description": "Deal 40 extra basic damage to Minions."
       }
     ]
   },
   {
-    "name": "Epoch",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Crest", "Magical Power", "Mana", "Magical Penetration", "Health"],
-    "components": ["Wizard Crest"],
+    "name": "Nyr Warboots",
+    "tags": ["Passive", "Active", "Crest", "Health", "Base Health Regen", "Physical Armor", "Magical Armor", "When-hit"],
+    "components": ["Goliath Crest"],
+    "stats": {
+      "Health": 175,
+      "Base Health Regen": 75,
+      "Physical Armor": 8,
+      "Magical Armor": 8
+    },
+    "descriptions": [{
+      "descriptionType": "Active - Resilience",
+      "description": "Gain 30% movement speed and store 45% of damage received for 5s. After the duration, regenerate health equal to the damage stored over 3s - 120s CD."
+      },{
+      "descriptionType": "Creep Slayer",
+      "description": "Deal 40 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Guardian Crest",
+    "tags": ["Passive", "Crest", "Health", "Base Health Regen"],
+    "stats": {
+      "Health": 40,
+      "Base Health Regen": 25
+    },
+    "descriptions": [{
+      "descriptionType": "Guardian",
+      "description": "Your next basic attack or damaging ability against an Enemy Target will restore 20 health and grant you 25 gold. Charges generate every 30s, up to a maximum of 3, and require a nearby Allied Hero within 3000u to activate. Upon granting 300 gold, evolves into Warden Crest."
+      },{
+      "descriptionType": "Pacifist",
+      "description": "Receive diminishing gold from excessive Minion kills."
+      }
+    ]
+  },
+  {
+    "name": "Warden Crest",
+    "tags": ["Passive", "Crest", "Health", "Base Health Regen", "Gold Per Second"],
+    "components": ["Guardian Crest"],
+    "stats": {
+      "Health": 120,
+      "Base Health Regen": 50,
+      "Gold Per Second": 0.2
+    },
+    "descriptions": [{
+      "descriptionType": "Legendary Guardian",
+      "description": "Your next basic attack or damaging ability against an Enemy Target will restore 30 health and grant you 25 gold. Charges generate every 30s, up to a maximum of 3, and require a nearby Allied Hero within 3000u to activate. After granting 300 gold, return to base to evolve into a Legendary Crest."
+      },{
+      "descriptionType": "Passive",
+      "description": "Receive diminishing gold from excessive Minion kills."
+      },{
+      "descriptionType": "Oracle",
+      "description": "Gain Solstone upon completion of Legendary Guardian."
+      }
+    ]
+  },
+  {
+    "name": "Sanctification",
+    "tags": ["Passive", "Active", "Crest", "Health", "Base Health Regen", "Base Mana Regen"],
+    "components": ["Warden Crest"],
+    "stats": {
+      "Health": 200,
+      "Base Health Regen": 75,
+      "Base Mana Regen": 75
+    },
+    "descriptions": [{
+      "descriptionType": "Active - Safeguard",
+      "description": "Grants yourself and nearby Allied Heroes a 250 (+12% of Caster's Maximum Health) shield for 3s. While the shield holds, Heroes gain 60% tenacity - 120s CD."
+      },{
+      "descriptionType": "Wealthy Pacifist",
+      "description": "Increase Passive Gold Income by 50% and receive diminishing gold from excessive Minion kills."
+      },{
+      "descriptionType": "Visionary",
+      "description": "Gain Solstone and increase your Ward Cap from 2 to 3."
+      }
+    ]
+  },
+  {
+    "name": "Rift Walkers",
+    "tags": ["Passive", "Active", "Crest", "Magical Power", "Health", "Base Health Regen", "Mana"],
+    "components": ["Warden Crest"],
+    "stats": {
+      "Magical Power": 15,
+      "Health": 150,
+      "Base Health Regen": 100,
+      "Mana": 100
+    },
+    "descriptions": [{
+      "descriptionType": "Active - Rift Snatcher",
+      "description": "Dash forward a short distance and pull all nearby Enemy Heroes towards you. Enemy Heroes pulled by Rift Snatcher take 15% increased damage for 3s - 120s CD."
+      },{
+      "descriptionType": "Wealthy Pacifist",
+      "description": "Increase Passive Gold Income by 50% and receive diminishing gold from excessive Minion kills."
+      },{
+      "descriptionType": "Visionary",
+      "description": "Gain Solstone and increase your Ward Cap from 2 to 3."
+      }
+    ]
+  },
+  {
+    "name": "Leafsong",
+    "tags": ["Active", "Passive", "Crest", "Health", "Base Health Regen", "Physical Armor", "Magical Armor"],
+    "components": ["Warden Crest"],
+    "stats": {
+      "Health": 150,
+      "Base Health Regen": 75,
+      "Physical Armor": 15,
+      "Magical Armor": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Active - Phantom Rush",
+      "description": "Increase the movement speed of yourself and nearby Allies by 50% for 4s. Heroes affected by Phantom Rush are immune to Slows and may pass through Enemy Heroes - 120s CD."
+      },{
+      "descriptionType": "Wealthy Pacifist",
+      "description": "Increase Passive Gold Income by 50% and receive diminishing gold from excessive Minion kills."
+      },{
+      "descriptionType": "Visionary",
+      "description": "Gain Solstone and increase your Ward Cap from 2 to 3."
+      }
+    ]
+  },
+  {
+    "name": "Consort Crest",
+    "tags": ["Passive", "Crest", "Magical Power", "Base Mana Regen"],
+    "stats": {
+      "Magical Power": 5,
+      "Base Mana Regen": 25
+    },
+    "descriptions": [{
+      "descriptionType": "Consort",
+      "description": "Your next basic attack or damaging ability against an Enemy Target will deal 10 additional magic damage and grant you 25 gold. Charges generate every 30s, up to a maximum of 3, and require a nearby Allied Hero within 3000u to activate. Upon granting 300 gold, evolves into Keeper Crest."
+      },{
+      "descriptionType": "Pacifist",
+      "description": "Receive diminishing gold from excessive Minion kills."
+      }
+    ]
+  },
+  {
+    "name": "Keeper Crest",
+    "tags": ["Passive", "Crest", "Magical Power", "Base Mana Regen", "Gold Per Second"],
+    "components": ["Consort Crest"],
+    "stats": {
+      "Magical Power": 10,
+      "Base Mana Regen": 50,
+      "Gold Per Second": 0.2
+    },
+    "descriptions": [{
+      "descriptionType": "Legendary Consort",
+      "description": "Your next basic attack or damaging ability against an Enemy Target will deal 15 additional magic damage and grant you 25 gold. Charges generate every 30s, up to a maximum of 3, and require a nearby Allied Hero within 3000u to activate. Upon granting 300 gold, return to base to evolve into a Legendary Crest."
+      },{
+      "descriptionType": "Pacifist",
+      "description": "Receive diminishing gold from excessive Minion kills."
+      },{
+      "descriptionType": "Oracle",
+      "description": "Gain Solstone upon completion of Legendary Consort."
+      }
+    ]
+  },
+  {
+    "name": "Tranquility",
+    "tags": ["Passive", "Active", "Crest", "Magical Power", "Base Mana Regen", "Ability Haste"],
+    "components": ["Keeper Crest"],
+    "stats": {
+      "Magical Power": 20,
+      "Base Mana Regen": 50,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Active - Grace",
+      "description": "Heal yourself and nearby Allied Heroes for 150 (+50% Magical Power) and grant affected Units 10% damage mitigation for 3s - 30s CD."
+      },{
+      "descriptionType": "Wealthy Pacifist",
+      "description": "Increase Passive Gold Income by 50% and receive diminishing gold from excessive Minion kills."
+      },{
+      "descriptionType": "Visionary",
+      "description": "Gain Solstone and increase Ward Cap from 2 to 3."
+      }
+    ]
+  },
+  {
+    "name": "Silentium",
+    "tags": ["Passive", "Active", "Crest", "Magical Power", "Magical Armor", "Base Mana Regen"],
+    "components": ["Keeper Crest"],
     "stats": {
       "Magical Power": 25,
-      "Mana": 120,
-      "Magical Penetration": 8,
-      "Health": 120
+      "Magical Armor": 18,
+      "Base Mana Regen": 75
     },
     "descriptions": [{
-      "descriptionType": "Active",
-      "description": "Enter Stasis for 2.5s, rendering yourself invulnerable for the duration but unable to perform actions - 120s CD."
+      "descriptionType": "Active - Muzzle",
+      "description": "Silence an Enemy Hero for 1.5s. If Muzzle interrupts an ability, deal 150 (+50% Magical Power)(+50% Bonus Physical Power) magical damage to the Target - 120s CD."
       },{
-      "descriptionType": "Passive",
-      "description": "Deal 30 extra basic damage to Minions."
+      "descriptionType": "Wealthy Pacifist",
+      "description": "Increase Passive Gold Income by 50% and receive diminishing gold from excessive Minion kills."
+      },{
+      "descriptionType": "Visionary",
+      "description": "Gain Solstone and increase Ward Cap from 2 to 3."
+      }
+    ]
+  },
+  {
+    "name": "Malediction",
+    "tags": ["Passive", "Active", "Crest", "Magical Power", "Physical Armor", "Base Mana Regen"],
+    "components": ["Keeper Crest"],
+    "stats": {
+      "Magical Power": 20,
+      "Physical Armor": 20,
+      "Base Mana Regen": 75
+    },
+    "descriptions": [{
+      "descriptionType": "Active - Cripple",
+      "description": "Target a nearby Enemy Hero, Slowing them and reducing their total attack speed by 30% for 2.5s - 120s CD."
+      },{
+      "descriptionType": "Wealthy Pacifist",
+      "description": "Increase Passive Gold Income by 50% and receive diminishing gold from excessive Minion kills."
+      },{
+      "descriptionType": "Visionary",
+      "description": "Gain Solstone and increase Ward Cap from 2 to 3."
       }
     ]
   },
   {
     "name": "Magician Crest",
-    "cost": 400,
-    "rarity": "Legendary",
     "tags": ["Passive", "Crest", "Magical Power", "Mana"],
-    "components": [],
     "stats": {
       "Magical Power": 10,
       "Mana": 50
     },
     "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Dealing damage to an Enemy Hero/Jungle Minion with an ability restores 5 mana (Once per ability), killing an Enemy Target restores 10 mana. After restoring 400 mana, evolve into Wizard Crest."
+      "descriptionType": "Magician",
+      "description": "Restore 5 mana each time you deal damage to an Enemy Hero or Monster with an ability (once per ability), or 8 mana when killing an Enemy Unit. Upon restoring 400 mana, evolves into Wizard Crest."
       },{
-      "descriptionType": "Passive",
-      "description": "Deal 15 extra basic damage to Minions."
+      "descriptionType": "Creep Slayer",
+      "description": "Deal 20 extra basic damage to Minions."
       }
     ]
   },
   {
-    "name": "Obelisk",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Crest", "Magical Power", "Health", "Magical Penetration"],
-    "components": ["Warlock Crest"],
+    "name": "Wizard Crest",
+    "tags": ["Passive", "Crest", "Magical Power", "Mana", "Magical Penetration"],
+    "components": ["Magician Crest"],
     "stats": {
-      "Magical Power": 35,
-      "Health": 100,
-      "Magical Penetration": 8
+      "Magical Power": 12,
+      "Mana": 120,
+      "Magical Penetration": 4
     },
     "descriptions": [{
-      "descriptionType": "Active",
-      "description": "Enhance your next basic attack to deal additional magic damage, increased by the amount of Souls you have gathered. If this kills the target or they die within 4s, gain an additional Soul - 30s CD."
+      "descriptionType": "Legendary Magician",
+      "description": "Restore 5 mana each time you deal damage to an Enemy Hero or Monster with an ability (once per ability), or 8 mana when killing an Enemy Unit. Upon restoring 400 mana, return to base to evolve into a Legendary Crest."
       },{
-      "descriptionType": "Passive",
-      "description": "When you achieve a takedown, gain a Soul that permanently grants you 3 Magical Power."
-      },{
-      "descriptionType": "Passive",
+      "descriptionType": "Creep Slayer",
       "description": "Deal 30 extra basic damage to Minions."
       }
     ]
   },
   {
-    "name": "Occult Crest",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Crest", "Magical Power", "Health"],
-    "components": [],
+    "name": "Time-Flux Band",
+    "tags": ["Passive", "Active", "Crest", "Magical Power", "Mana", "Magical Penetration", "Ability Haste"],
+    "components": ["Wizard Crest"],
     "stats": {
-      "Magical Power": 10,
-      "Health": 40
+      "Magical Power": 20,
+      "Mana": 150,
+      "Magical Penetration": 8,
+      "Ability Haste": 15
     },
     "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Dealing damage to an Enemy Hero/Jungle Minion with an ability restores 5 health (Once per ability), killing an Enemy Target restores 10 health. After restoring 400 health, evolve into Warlock Crest."
+      "descriptionType": "Active - Turntable",
+      "description": "Mark your current location and gain 20% movement speed for 4s. After 4s, teleport back to the marked location and reset your basic ability cooldowns - 90s CD."
       },{
-      "descriptionType": "Passive",
-      "description": "Deal 15 extra basic damage to Minions."
+      "descriptionType": "Creep Slayer",
+      "description": "Deal 40 extra basic damage to Minions."
       }
     ]
   },
   {
     "name": "Soulbearer",
-    "cost": 400,
-    "rarity": "Legendary",
     "tags": ["Passive", "Active", "Crest", "Magical Power", "Mana", "Magical Penetration", "Ability Haste"],
     "components": ["Wizard Crest"],
     "stats": {
@@ -534,60 +416,70 @@
       "Ability Haste": 10
     },
     "descriptions": [{
-      "descriptionType": "Active",
-      "description": "Shield yourself based on your maximum mana for 4s, while shielded you are immune to CC - 120s CD."
+      "descriptionType": "Active - Anima",
+      "description": "Gain a (+25% maximum mana) shield, 20% magical lifesteal, and 10% movement speed for 8s - 90s CD"
       },{
-      "descriptionType": "Passive",
-      "description": "Deal 30 extra basic damage to Minions."
+      "descriptionType": "Creep Slayer",
+      "description": "Deal 40 extra basic damage to Minions."
       }
     ]
   },
   {
-    "name": "Tempest",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Crest", "Magical Power", "Health", "Magical Penetration", "Ability Haste"],
-    "components": ["Warlock Crest"],
-    "stats": {
-      "Magical Power": 15,
-      "Health": 150,
-      "Magical Penetration": 8,
-      "Ability Haste": 20
-    },
-    "descriptions": [{
-      "descriptionType": "Active",
-      "description": "Overcharge for 8s causing lightning to zap up to 3 nearby Enemy Heroes every second dealing magical damage and healing you equal to the damage dealt. Multiple strikes can hit the same target dealing 50% damage per each strike beyond the first - 90s CD."
-      },{
-      "descriptionType": "Passive",
-      "description": "Deal 30 extra basic damage to Minions."
-      }
-    ]
-  },
-  {
-    "name": "Time-Flux Band",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Crest", "Magical Power", "Mana", "Magical Penetration", "Ability Haste"],
+    "name": "Epoch",
+    "tags": ["Passive", "Active", "Crest", "Magical Power", "Mana", "Magical Penetration", "Health"],
     "components": ["Wizard Crest"],
     "stats": {
-      "Magical Power": 20,
+      "Magical Power": 25,
       "Mana": 150,
       "Magical Penetration": 8,
-      "Ability Haste": 20
+      "Health": 100
     },
     "descriptions": [{
-      "descriptionType": "Active",
-      "description": "Mark your current location. After 4s, teleport back to the marked location and reset your basic ability cooldowns - 60s CD."
+      "descriptionType": "Active - Stasis Device",
+      "description": "Enter Stasis for 2.5s, rendering yourself invulnerable for the duration but unable to move, attack, or use abilities - 120s CD."
       },{
-      "descriptionType": "Passive",
+      "descriptionType": "Creep Slayer",
+      "description": "Deal 40 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Occult Crest",
+    "tags": ["Passive", "Crest", "Magical Power", "Health"],
+    "components": [],
+    "stats": {
+      "Magical Power": 10,
+      "Health": 40
+    },
+    "descriptions": [{
+      "descriptionType": "Occultist",
+      "description": "Restore 4 health each time you deal damage to an Enemy Hero or Monster with an ability (once per ability), or 6 health when killing an Enemy Unit. Upon restoring 300 health, evolves into Warlock Crest."
+      },{
+      "descriptionType": "Creep Slayer",
+      "description": "Deal 20 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Warlock Crest",
+    "tags": ["Passive", "Crest", "Magical Power", "Health", "Magical Penetration"],
+    "components": ["Occult Crest"],
+    "stats": {
+      "Magical Power": 12,
+      "Health": 100,
+      "Magical Penetration": 4
+    },
+    "descriptions": [{
+      "descriptionType": "Legendary Occultist",
+      "description": "Restore 4 health each time you deal damage to an Enemy Hero or Monster with an ability (once per ability), or 6 health when killing an Enemy Unit. Upon restoring 300 health, return to base to evolve into a Legendary Crest."
+      },{
+      "descriptionType": "Creep Slayer",
       "description": "Deal 30 extra basic damage to Minions."
       }
     ]
   },
   {
     "name": "Typhoon",
-    "cost": 400,
-    "rarity": "Legendary",
     "tags": ["Passive", "Active", "Crest", "Magical Power", "Health", "Magical Penetration", "Attack Speed"],
     "components": ["Warlock Crest"],
     "stats": {
@@ -597,527 +489,508 @@
       "Attack Speed": 15
     },
     "descriptions": [{
-      "descriptionType": "Active",
-      "description": "When at maximum stacks of Typhoon, dash in current movement direction and reduce your current basic ability cooldowns by 3s - 30s CD."
+      "descriptionType": "Cyclone",
+      "description": "Basic attacks grant a stack of Cyclone for 3s, increasing your attack speed by 2(+2% Magical Power)%. Cyclone stacks up to 6 times."
       },{
-      "descriptionType": "Passive",
-      "description": "Basic attacks grant a stack of Typhoon for 3s, stacking up to 6 times. Each stack grants additional attack speed."
+      "descriptionType": "Active - Mirage",
+      "description": "When at maximum stacks of Cyclone, dash a short distance and reduce your current basic ability cooldowns by 3s - 30s CD."
       },{
-      "descriptionType": "Passive",
-      "description": "Deal 30 extra basic damage to Minions."
+      "descriptionType": "Creep Slayer",
+      "description": "Deal 40 extra basic damage to Minions."
       }
     ]
   },
   {
-    "name": "Warlock Crest",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Crest", "Magical Power", "Health", "Magical Penetration"],
-    "components": ["Occult Crest"],
+    "name": "Tempest",
+    "tags": ["Passive", "Active", "Crest", "Magical Power", "Health", "Magical Penetration", "Ability Haste"],
+    "components": ["Warlock Crest"],
     "stats": {
-      "Magical Power": 12,
+      "Magical Power": 15,
+      "Health": 150,
+      "Magical Penetration": 8,
+      "Ability Haste": 15
+    },
+    "descriptions": [{
+      "descriptionType": "Active - Overcharge",
+      "description": "Overcharge for 8s causing lightning to zap up to 3 nearby Enemy Heroes each second, dealing 30 (+10% Magical Power) magical damage and healing you equal to the damage dealt. Multiple strikes against the same Target deal 50% reduced damage - 90s CD."
+      },{
+      "descriptionType": "Creep Slayer",
+      "description": "Deal 40 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Obelisk",
+    "tags": ["Passive", "Active", "Crest", "Magical Power", "Health", "Magical Penetration"],
+    "components": ["Warlock Crest"],
+    "stats": {
+      "Magical Power": 35,
       "Health": 100,
-      "Magical Penetration": 4
+      "Magical Penetration": 8
     },
     "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Dealing damage to an Enemy Hero/Jungle Minion with an ability restores 5 health (Once per ability), killing an Enemy Target restores 10 health. After restoring 400 health, allows the purchase of a \"Legendary\" Item."
+      "descriptionType": "Soul Stealer",
+      "description": "When you achieve a Takedown, gain a Soul which permanently grants you 2 Magical Power."
       },{
-      "descriptionType": "Passive",
+      "descriptionType": "Active - Condemn",
+      "description": "Enhance your next basic attack to deal 80 (+30% Magical Power)(+15 per Soul) additional magic damage. If a Target struck by Condemn dies within 4s, gain a Soul - 30s CD."
+      },{
+      "descriptionType": "Creep Slayer",
+      "description": "Deal 40 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Warrior Crest",
+    "tags": ["Passive", "Crest", "Physical Power", "Health"],
+    "stats": {
+      "Physical Power": 6,
+      "Health": 40
+    },
+    "descriptions": [{
+      "descriptionType": "Warrior",
+      "description": "Upon dealing damage to an Enemy Hero or Monster, or killing an Enemy Unit, regenerate (+3% Maximum Health) over 15s. Upon restoring 400 health, evolves into Champion Crest."
+      },{
+      "descriptionType": "Creep Slayer",
       "description": "Deal 15 extra basic damage to Minions."
       }
     ]
   },
   {
-    "name": "Wizard Crest",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Crest", "Magical Power", "Mana", "Magical Penetration"],
-    "components": ["Magician Crest"],
+    "name": "Champion Crest",
+    "tags": ["Passive", "Crest", "Physical Power", "Health"],
+    "components": ["Warrior Crest"],
     "stats": {
-      "Magical Power": 12,
-      "Mana": 120,
-      "Magical Penetration": 4
+      "Physical Power": 10,
+      "Health": 100
     },
     "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Dealing a damage to an Enemy Hero/Jungle Minion with an ability restores 5 mana (Once per ability), killing an Enemy Target restores 10 mana. After restoring 400 mana, allows the purchase of a \"Legendary\" Item."
+      "descriptionType": "Legendary Warrior",
+      "description": "Upon dealing damage to an Enemy Hero or Monster, or killing an Enemy Unit, regenerate (+3.5% Maximum Health) over 15s. Upon restoring 600 health, return to base to evolve into a legendary Crest."
       },{
-      "descriptionType": "Passive",
+      "descriptionType": "Creep Slayer",
       "description": "Deal 15 extra basic damage to Minions."
       }
     ]
   },
   {
-    "name": "Citadel",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Crest", "Health", "Health Regeneration", "Physical Armor", "Magical Armor"],
-    "components": ["Warden Crest"],
+    "name": "Iceskorn Talons",
+    "tags": ["Passive", "Active", "Crest", "Physical Power", "Health", "Ability Haste"],
+    "components": ["Champion Crest"],
     "stats": {
+      "Physical Power": 15,
       "Health": 150,
-      "Health Regeneration": 1,
-      "Physical Armor": 15,
-      "Magical Armor": 10
+      "Ability Haste": 15
     },
     "descriptions": [{
-      "descriptionType": "Active",
-      "description": "Redirect 35% of all damage dealt to nearby Allied Heroes to yourself and reduce it by 80% for 8s. This effect disables if you fall below 15% maximum health - 120s CD."
+      "descriptionType": "Active - Glacial Colosseum",
+      "description": "Create a dueling zone around you in a large area that remains for 15s. Yourself and Allied Heroes within the zone gain 15% increased damage and 15% bonus movement speed for 3s. Enemy Units within the zone are Slowed by 15% - 40s CD."
       },{
-      "descriptionType": "Passive",
-      "description": "Increase Passive Gold Income by 50% and receive diminishing gold from excessive Minion kills."
-      },{
-      "descriptionType": "Passive",
-      "description": "Increase Ward Cap from 2 to 3."
+      "descriptionType": "Creep Slayer",
+      "description": "Deal 30 extra basic damage to Minions."
       }
     ]
   },
   {
-    "name": "Consort Crest",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Crest", "Magical Power", "Mana Regeneration"],
-    "components": [],
+    "name": "Fenix",
+    "tags": ["Passive", "Active", "Crest", "Physical Power", "Health"],
+    "components": ["Champion Crest"],
     "stats": {
-      "Magical Power": 5,
-      "Mana Regeneration": 0.5
+      "Physical Power": 30,
+      "Health": 100
     },
     "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Grants a charge every 30s, up to 3 charges. Your next basic attack or damaging ability against an Enemy Hero, Minion or Structure will deal 10 additional magical damage and grant you 40 gold. Does not accur if no Allied Hero is within 3000 units. After granting 400 gold, evolves into Keeper Crest."
+      "descriptionType": "Active - Rebirth",
+      "description": "Mark your current location and resurrect at the mark with 40% maximum health and mana should you die within the next 6s - 210s CD."
       },{
-      "descriptionType": "Passive",
-      "description": "Receive diminishing gold from excessive Minion kills."
+      "descriptionType": "Creep Slayer",
+      "description": "Deal 30 extra basic damage to Minions."
       }
     ]
   },
   {
-    "name": "Guardian Crest",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Crest", "Health", "Health Regeneration"],
-    "components": [],
+    "name": "Brutallax",
+    "tags": ["Passive", "Active", "Crest", "Physical Power", "Health", "Lifesteal", "On-hit"],
+    "components": ["Champion Crest"],
     "stats": {
-      "Health": 40,
-      "Health Regeneration": 0.5
+      "Physical Power": 20,
+      "Health": 125,
+      "Lifesteal": 8
     },
     "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Grants a charge every 30s, up to 3 charges. Your next basic attack or damaging ability against an Enemy Hero, Minion or Structure will restore 20 health and grant you 40 gold. Does not occur if no Allied Hero is within 3000 units. After granting 400 gold, evolves into Warden Crest."
+      "descriptionType": "Active - Purifying Rage",
+      "description": "Cleans all Negative Debuffs, then gain 60% tenacity and 30% attack speed for 8s. Successful basic attacks extend this duration by 0.5s on-hit - 150s CD."
       },{
-      "descriptionType": "Passive",
-      "description": "Receive diminishing gold from excessive Minion kills."
+      "descriptionType": "Creep Slayer",
+      "description": "Deal 30 extra basic damage to Minions."
       }
     ]
   },
   {
-    "name": "Keeper Crest",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Crest", "Magical Power", "Mana Regeneration", "Gold Per Second"],
-    "components": ["Consort Crest"],
+    "name": "Marksman Crest",
+    "tags": ["Passive", "Crest", "Physical Power", "Attack Speed"],
     "stats": {
-      "Magical Power": 10,
-      "Mana Regeneration": 1,
-      "Gold Per Second": 0.5
+      "Physical Power": 5,
+      "Attack Speed": 5
     },
     "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Grants a charge every 30s, up to 3 charges. Your next basic attack or damaging ability against an Enemy Hero, Minion or Structure will deal 15 additional magical damage and grant you 40 gold. Does not occur if no Allied Hero is within 3000 units. After granting 400 gold, allows the purchase of a \"Legendary\" Item."
+      "descriptionType": "Marksman",
+      "description": "Restore 1 health when landing successful basic attacks against Enemy Heroes and Monsters, or 6 health when killing an Enemy Unit. Upon restoring 400 health, evolves into Sharpshooter Crest."
       },{
-      "descriptionType": "Passive",
-      "description": "Receive diminishing gold from excessive Minion kills."
-      }
-    ]
-  },
-  {
-    "name": "Malediction",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Crest", "Magical Power", "Physical Armor", "Mana Regeneration"],
-    "components": ["Keeper Crest"],
-    "stats": {
-      "Magical Power": 20,
-      "Physical Armor": 15,
-      "Mana Regeneration": 2
-    },
-    "descriptions": [{
-      "descriptionType": "Active",
-      "description": "Target a nearby Enemy Hero, slowing and reducing their attack speed by for 2.5s - 90s CD."
-      },{
-      "descriptionType": "Passive",
-      "description": "Increase Passive Gold income by 50% and receive diminishing gold from excessive Minion kills."
-      },{
-      "descriptionType": "Passive",
-      "description": "Increase Ward Cap from 2 to 3."
-      }
-    ]
-  },
-  {
-    "name": "Rift Walkers",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Crest", "Magical Power", "Health", "Health Regeneration", "Mana"],
-    "components": ["Warden Crest"],
-    "stats": {
-      "Magical Power": 20,
-      "Health": 150,
-      "Health Regeneration": 1,
-      "Mana": 100
-    },
-    "descriptions": [{
-      "descriptionType": "Active",
-      "description": "Dash forward a short distance and pull all nearby Enemy Heroes towards you. Enemy Heroes pulled take increased damage for 3s - 120s CD."
-      },{
-      "descriptionType": "Passive",
-      "description": "Increase Passive Gold Income by 50% and receive diminishing gold from excessive Minion kills."
-      },{
-      "descriptionType": "Passive",
-      "description": "Increase Ward Cap from 2 to 3."
-      }
-    ]
-  },
-  {
-    "name": "Sanctification",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Crest", "Health", "Health Regeneration", "Mana Regeneration"],
-    "components": ["Warden Crest"],
-    "stats": {
-      "Health": 200,
-      "Health Regeneration": 2,
-      "Mana Regeneration": 2
-    },
-    "descriptions": [{
-      "descriptionType": "Active",
-      "description": "Grants nearby Allied Heroes a large shield for 3s. Whilst the shield holds, Heroes gain tenacity - 120s CD."
-      },{
-      "descriptionType": "Passive",
-      "description": "Increase Passive Gold Income by 50% and receive diminishing gold from excessive Minion kills."
-      },{
-      "descriptionType": "Passive",
-      "description": "Increase Ward Cap from 2 to 3."
-      }
-    ]
-  },
-  {
-    "name": "Silentium",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Crest", "Magical Power", "Magical Armor", "Mana Regeneration"],
-    "components": ["Keeper Crest"],
-    "stats": {
-      "Magical Power": 25,
-      "Magical Armor": 10,
-      "Mana Regeneration": 2
-    },
-    "descriptions": [{
-      "descriptionType": "Active",
-      "description": "Silences a target within 700 units for 1.5s, if this interrupts an ability, they additionally take magical damage - 90s CD."
-      },{
-      "descriptionType": "Passive",
-      "description": "Increase Passive Gold Income by 50% and receive diminishing gold from excessive Minion kills."
-      },{
-      "descriptionType": "Passive",
-      "description": "Increase Ward Cap from 2 to 3."
-      }
-    ]
-  },
-  {
-    "name": "Thread of Mortality",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Crest", "Magical Power", "Mana Regeneration", "Ability Haste"],
-    "components": ["Keeper Crest"],
-    "stats": {
-      "Magical Power": 25,
-      "Mana Regeneration": 2,
-      "Ability Haste": 10
-    },
-    "descriptions": [{
-      "descriptionType": "Active",
-      "description": "Designate an Allied Hero as a Companion, if your Companion is nearby and takes damage greater than 8% of their maximum health, they gain a large shield and you both deal increased damage for 5s. If either you or your Companion die, the other receives a 10% movement speed boost for 5s - 15s CD."
-      },{
-      "descriptionType": "Passive",
-      "description": "Increase Passive Gold Income by 50% and receive diminishing gold from excessive Minion kills."
-      },{
-      "descriptionType": "Passive",
-      "description": "Increase Ward Cap from 2 to 3."
-      }
-    ]
-  },
-  {
-    "name": "Warden Crest",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Crest", "Health", "Health Regeneration", "Gold Per Second"],
-    "components": ["Guardian Crest"],
-    "stats": {
-      "Health": 120,
-      "Health Regeneration": 1,
-      "Gold Per Second": 0.5
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Grants a charge every 30s, up to 3 charges. Your next basic attack or damaging ability against an Enemy Hero, Minion or Structure will restore 30 health and grant you 40 gold. Does not occur if no Allied Hero is within 3000 units. After granting 400 gold, allows the purchase of a \"Legendary\" Item."
-      },{
-      "descriptionType": "Passive",
-      "description": "Receive diminishing gold from excessive Minion kills."
-      }
-    ]
-  },
-  {
-    "name": "Goliath Crest",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Crest", "Health", "Health Regeneration"],
-    "components": ["Titan Crest"],
-    "stats": {
-      "Health": 120,
-      "Health Regeneration": 1
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "After taking damage, heal 15 (+1% of maximum health) over 15s. This healing is doubled for 5s after killing an Enemy Target. After restoring 400 health, allows the purchase of a \"Legendary\" Item."
-      },{
-      "descriptionType": "Passive",
+      "descriptionType": "Creep Slayer",
       "description": "Deal 15 extra basic damage to Minions."
       }
     ]
   },
   {
-    "name": "Nyr Warboots",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Crest", "Health", "Health Regeneration", "Physical Armor", "Magical Armor"],
-    "components": ["Goliath Crest"],
+    "name": "Sharpshooter Crest",
+    "tags": ["Passive", "Crest", "Physical Power", "Attack Speed"],
+    "components": ["Marksman Crest"],
     "stats": {
-      "Health": 160,
-      "Health Regeneration": 2,
-      "Physical Armor": 12,
-      "Magical Armor": 12
+      "Physical Power": 10,
+      "Attack Speed": 10
     },
     "descriptions": [{
-      "descriptionType": "Active",
-      "description": "Gain 20% movement speed and gain stacks of Resilience equal to damage taken for 5s. After the duration, restore health equal to 60% of Resilience over 3s - 120s CD."
+      "descriptionType": "Legendary Marksman",
+      "description": "Restore 1 health when landing successful basic attacks against Enemy Heroes and Monsters, or 6 health when killing an Enemy Unit. Upon restoring 400 health, return to base to evolve into a Legendary Crest."
       },{
-      "descriptionType": "Passive",
-      "description": "Deal 30 extra basic damage to Minions."
-      }
-    ]
-  },
-  {
-    "name": "Razorback",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Crest", "Health", "Health Regeneration", "Physical Armor", "Magical Armor"],
-    "components": ["Goliath Crest"],
-    "stats": {
-      "Health": 120,
-      "Health Regeneration": 2,
-      "Physical Armor": 20,
-      "Magical Armor": 8
-    },
-    "descriptions": [{
-      "descriptionType": "Active",
-      "description": "For 3s, reflect 60% of the damage dealt to you back to the source - 90s CD."
-      },{
-      "descriptionType": "Passive",
-      "description": "Deal 30 extra basic damage to Minions."
-      }
-    ]
-  },
-  {
-    "name": "Saphir's Mantle",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Active", "Crest", "Health", "Health Regeneration", "Physical Armor", "Magical Armor"],
-    "components": ["Goliath Crest"],
-    "stats": {
-      "Health": 180,
-      "Health Regeneration": 2,
-      "Physical Armor": 8,
-      "Magical Armor": 15
-    },
-    "descriptions": [{
-      "descriptionType": "Active",
-      "description": "Take 0.8% less damage and deal 0.4% less damage per 1% missing health for 8s - 90s CD."
-      },{
-      "descriptionType": "Passive",
-      "description": "Deal 30 extra basic damage to Minions."
-      }
-    ]
-  },
-  {
-    "name": "Titan Crest",
-    "cost": 400,
-    "rarity": "Legendary",
-    "tags": ["Passive", "Crest", "Health"],
-    "components": [],
-    "stats": {
-      "Health": 80
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "After taking damage, heal 15 (+1% of maximum health) over 15s. This healing is doubled for 5s after killing an Enemy Target. After restoring 400 health, evolves into Goliath Crest."
-      },{
-      "descriptionType": "Passive",
+      "descriptionType": "Creep Slayer",
       "description": "Deal 15 extra basic damage to Minions."
       }
     ]
   },
   {
-    "name": "Nocstone",
-    "cost": 400,
-    "rarity": "Uncommon",
-    "tags": ["Passive", "Magical Power", "Ability Haste"],
-    "components": [],
+    "name": "Pacifier",
+    "tags": ["Passive", "Active", "Crest", "Physical Power", "Attack Speed", "Critical Chance", "Lifesteal"],
+    "components": ["Sharpshooter Crest"],
     "stats": {
-      "Magical Power": 5,
+      "Physical Power": 15,
+      "Attack Speed": 10,
+      "Critical Chance": 20,
+      "Lifesteal": 5
+    },
+    "descriptions": [{
+      "descriptionType": "Active - Adrenalize",
+      "description": "Dash a short distance and empower your next basic attack within 6s to deal 40 (+20% Bonus Physical Power) additional physical damage, doubled against Targets below 40% maximum health. Killing an Enemy Hero within 6s allows Adrenalize to be recast for 10s - 120s CD."
+      },{
+      "descriptionType": "Creep Slayer",
+      "description": "Deal 30 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Liberator",
+    "tags": ["Passive", "Active", "Crest", "Physical Power", "Attack Speed", "Critical Chance", "Lifesteal"],
+    "components": ["Sharpshooter Crest"],
+    "stats": {
+      "Physical Power": 10,
+      "Attack Speed": 15,
+      "Critical Chance": 20,
+      "Lifesteal": 5
+    },
+    "descriptions": [{
+      "descriptionType": "Active - Purifying Guard",
+      "description": "Cleanse all Negative Debuffs and gain a 100 (+10 per level)(+150% Bonus Physical Power) shield for 2.5s - 150s CD."
+      },{
+      "descriptionType": "Creep Slayer",
+      "description": "Deal 30 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Eviscerator",
+    "tags": ["Passive", "Active", "Crest", "Physical Power", "Attack Speed", "Critical Chance", "On-hit"],
+    "components": ["Sharpshooter Crest"],
+    "stats": {
+      "Physical Power": 12,
+      "Attack Speed": 20,
+      "Critical Chance": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Active - Rending Strikes",
+      "description": "Upon activation, gain 25% attack speed and empower your basic attacks to deal (+10% Total Physical Power) true damage on-hit for 6s, increasing by (+5% Total Physical Power) for each successful hit against Enemy Heroes - 90s CD."
+      },{
+      "descriptionType": "Creep Slayer",
+      "description": "Deal 30 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Rogue Crest",
+    "tags": ["Passive", "Crest", "Physical Power", "Ability Haste"],
+    "stats": {
+      "Physical Power": 6,
       "Ability Haste": 5
     },
     "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Stealth Wards last 30s longer."
+      "descriptionType": "Rogue",
+      "description": "Restore 4 health each time you deal damage to an Enemy Hero or Monster with an ability (once per ability), or 6 health when killing an Enemy Unit. Upon restoring 300 health, evolves into Assassin Crest."
+      },{
+      "descriptionType": "Creep Slayer",
+      "description": "Deal 15 extra basic damage to Minions."
       }
     ]
   },
   {
+    "name": "Assassin Crest",
+    "tags": ["Passive", "Crest", "Physical Power", "Ability Haste", "Physical Penetration"],
+    "components": ["Rogue Crest"],
+    "stats": {
+      "Physical Power": 10,
+      "Ability Haste": 10,
+      "Physical Penetration": 4
+    },
+    "descriptions": [{
+      "descriptionType": "Legendary Rogue",
+      "description": "Restore 4 health each time you deal damage to an Enemy Hero or Monster with an ability (once per ability), or 6 health when killing an Enemy Unit. Upon restoring 300 health, return to base to evolve into a Legendary Crest."
+      },{
+      "descriptionType": "Creep Slayer",
+      "description": "Deal 15 extra basic damage to minions"
+      }
+    ]
+  },
+  {
+    "name": "Witchstalker",
+    "tags": ["Passive", "Active", "Crest", "Physical Power", "Ability Haste", "Physical Penetration", "Omnivamp"],
+    "components": ["Assassin Crest"],
+    "stats": {
+      "Physical Power": 15,
+      "Ability Haste": 10,
+      "Physical Penetration": 4,
+      "Omnivamp": 6
+    },
+    "descriptions": [{
+      "descriptionType": "Active - Purifying Strike",
+      "description": "Cleanse all Negative Debuffs and empower your next basic attack or damaging ability against an Enemy Hero to deal 4% (+4% per effect removed) of their maximum health as bonus true damage, healing you for an equal amount - 150s CD."
+      },{
+      "descriptionType": "Creep Slayer",
+      "description": "Deal 30 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Ortus",
+    "tags": ["Passive", "Active", "Crest", "Physical Power", "Ability Haste", "Physical Penetration"],
+    "components": ["Assassin Crest"],
+    "stats": {
+      "Physical Power": 15,
+      "Ability Haste": 15,
+      "Physical Penetration": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Active - Limit Breaker",
+      "description": "Upon activiation, gain 20% decaying movement speed for 5s. During this time, your next 3 basic attacks or damaging abilities reduce current basic ability cooldowns by 1s and deal 30 (+25% Bonus Physical Power) bonus true damage - 90s CD."
+      },{
+      "descriptionType": "Creep Slayer",
+      "description": "Deal 30 extra basic damage to Minions."
+      }
+    ]
+  },
+  {
+    "name": "Nex",
+    "tags": ["Passive", "Active", "Crest", "Physical Power", "Ability Haste", "Physical Penetration"],
+    "components": ["Assassin Crest"],
+    "stats": {
+      "Physical Power": 20,
+      "Ability Haste": 10,
+      "Physical Penetration": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Sow",
+      "description": "Store 30% of all damage dealt to Enemy Heroes (15% for AOE abilities) in the past 5s as Sow. Sow charges are expended upon using Reap."
+      },{
+      "descriptionType": "Active - Reap",
+      "description": "Dash a short distance and deal (+100% Bonus Physical Power)(+100% of Sow) physical damage to all nearby Enemy Heroes and Slow them by 80% for 1s - 90s CD."      
+      },{
+      "descriptionType": "Creep Slayer",
+      "description": "Deal 30 extra basic damage to minions."
+      }
+    ]
+  },
+  {
+    "name": "Refillable Potion",
+    "tags": ["Consumable", "Active"],
+    "descriptions": [{
+      "descriptionType": "Consume",
+      "description": "Restores 80 (+10 per level) health per second for 10s, restoring a total of 80-260 health."
+    },{
+      "descriptionType": "Max Charges",
+      "description": "2."
+      },{
+      "descriptionType": "Refill",
+      "description": "Charges are restored upon visiting base."
+    }]
+  },
+  {
+    "name": "Wraps",
+    "cost": 350,
+    "tags": ["Magical Armor"],
+    "stats": {
+      "Magical Armor": 10
+    }
+  },
+  {
+    "name": "Vitality Beads",
+    "cost": 350,
+    "tags": ["Health"],
+    "stats": {
+      "Health": 100
+    }
+  },
+  {
+    "name": "Tunic",
+    "cost": 350,
+    "tags": ["Physical Armor"],
+    "stats": {
+      "Physical Armor": 12
+    }
+  },
+  {
+    "name": "Spirit Beads",
+    "cost": 350,
+    "tags": ["Mana"],
+    "stats": {
+      "Mana": 150
+    }
+  },
+  {
     "name": "Shortsword",
-    "cost": 400,
-    "rarity": "Uncommon",
-    "tags": ["Passive", "Physical Power"],
-    "components": [],
+    "cost": 350,
+    "tags": ["Physical Power"],
     "stats": {
       "Physical Power": 8
     }
   },
   {
-    "name": "Spirit Beads",
-    "cost": 400,
-    "rarity": "Uncommon",
-    "tags": ["Passive", "Mana"],
-    "components": [],
+    "name": "Longbow",
+    "cost": 350,
+    "tags": ["Attack Speed"],
     "stats": {
-      "Mana": 200
+      "Attack Speed": 10
+    }
+  },
+  {
+    "name": "Life Stream",
+    "cost": 350,
+    "tags": ["Base Health Regen"],
+    "stats": {
+      "Base Health Regen": 75
+    }
+  },
+  {
+    "name": "Energy Stream",
+    "cost": 350,
+    "tags": ["Base Mana Regen"],
+    "stats": {
+      "Base Mana Regen": 50
     }
   },
   {
     "name": "Codex",
-    "cost": 450,
-    "rarity": "Uncommon",
-    "tags": ["Passive", "Magical Power"],
-    "components": [],
+    "cost": 350,
+    "tags": ["Magical Power"],
     "stats": {
       "Magical Power": 15
     }
   },
   {
+    "name": "Spell Slasher",
+    "cost": 600,
+    "tags": ["Passive"],
+    "descriptions": [{
+      "descriptionType": "Spellblade",
+      "description": "After using an ability, your next basic attack within 6s deals (+40% Total Physical Power) bonus physical damage - 1.5s CD."
+      }
+    ]
+  },
+  {
     "name": "Crossbow",
     "cost": 600,
-    "rarity": "Uncommon",
-    "tags": ["Passive", "Critical Chance"],
-    "components": [],
+    "tags": ["Critical Chance"],
     "stats": {
       "Critical Chance": 15
     }
   },
   {
-    "name": "Spell Slasher",
-    "cost": 600,
-    "rarity": "Uncommon",
-    "tags": ["Passive"],
-    "components": [],
-    "descriptions": [{
-      "descriptionType": "Passive - Spellblade",
-      "description": "After using an ability, your next 2 basic attacks within 6s deal bonus physical damage - 3s CD."
-      }
-    ]
-  },
-  {
     "name": "Sabre",
-    "cost": 700,
-    "rarity": "Uncommon",
-    "tags": ["Passive", "Physical Power"],
-    "components": [],
+    "cost": 650,
+    "tags": ["Physical Power"],
     "stats": {
       "Physical Power": 15
     }
   },
   {
-    "name": "Crimson Edge",
-    "cost": 700,
-    "rarity": "Rare",
-    "tags": ["Passive", "Physical Power", "Lifesteal"],
-    "components": ["Shortsword"],
-    "stats": {
-      "Physical Power": 10,
-      "Lifesteal": 5
-    }
-  },
-  {
     "name": "Nullifying Mask",
     "cost": 700,
-    "rarity": "Rare",
-    "tags": ["Passive", "Magical Armor"],
+    "tags": ["Magical Armor"],
     "components": ["Wraps"],
     "stats": {
-      "Magical Armor": 10
+      "Magical Armor": 25
     }
   },
   {
-    "name": "Intellect Tonic",
+    "name": "Strength Tonic",
     "cost": 750,
-    "rarity": "Epic",
-    "tags": ["Consumable", "Active"],
-    "components": [],
+    "tags": ["Consumable"],
     "descriptions": [{
       "descriptionType": "Consume",
-      "description": "Grant 50 magical power and 5 mana regeneration for 5 minutes. Level 11 required for purchase. Effect is lost upon death."
-      }
-    ]
-  },
-  {
-    "name": "Protection Tonic",
-    "cost": 750,
-    "rarity": "Epic",
-    "tags": ["Consumable", "Active"],
-    "components": [],
-    "descriptions": [{
-      "descriptionType": "Consume",
-      "description": "Grant 20 physical armor, 20 magical armor and 15 tenacity for 5 minutes. Level 11 required for purchase. Effect is lost upon death."
+      "description": "Grant 30 physical power and 10% omnivamp for 5 minutes. Effect is lost upon death."
       }
     ]
   },
   {
     "name": "Stamina Tonic",
     "cost": 750,
-    "rarity": "Epic",
-    "tags": ["Consumable", "Active"],
-    "components": [],
+    "tags": ["Consumable"],
     "descriptions": [{
       "descriptionType": "Consume",
-      "description": "Grant 300 health and 20% increased healing for 5 minutes. Level 11 required for purchase. Effect is lost upon death."
+      "description": "Grant 300 health and 20% increased healing for 5 minutes. Effect is lost upon death."
       }
     ]
   },
   {
-    "name": "Strength Tonic",
+    "name": "Protection Tonic",
     "cost": 750,
-    "rarity": "Epic",
-    "tags": ["Consumable", "Active"],
-    "components": [],
+    "tags": ["Consumable"],
     "descriptions": [{
       "descriptionType": "Consume",
-      "description": "Grant 30 physical power and 10% omnivamp for 5 minutes. Level 11 required for purchase. Effect is lost upon death."
+      "description": "Grant 20 physical armor, 20 magical armor and 15 tenacity for 5 minutes. Effect is lost upon death."
       }
     ]
+  },
+  {
+    "name": "Intellect Tonic",
+    "cost": 750,
+    "tags": ["Consumable"],
+    "descriptions": [{
+      "descriptionType": "Consume",
+      "description": "Grant 50 magical power and 5 Base Mana Regen for 5 minutes. Effect is lost upon death."
+      }
+    ]
+  },
+  {
+    "name": "Violet Brooch",
+    "cost": 800,
+    "tags": ["Health", "Ability Haste"],
+    "components": ["Vitality Beads"],
+    "stats": {
+      "Health": 150,
+      "Ability Haste": 10
+    }
+  },
+  {
+    "name": "Steel Mail",
+    "cost": 800,
+    "tags": ["Physical Armor"],
+    "components": ["Tunic"],
+    "stats": {
+      "Physical Armor": 30
+    }
   },
   {
     "name": "Blood Tome",
     "cost": 800,
-    "rarity": "Rare",
-    "tags": ["Passive", "Magical Power", "Magical Lifesteal"],
+    "tags": ["Magical Power", "Magical Lifesteal"],
     "components": ["Codex"],
     "stats": {
       "Magical Power": 20,
@@ -1125,77 +998,49 @@
     }
   },
   {
-    "name": "Essence Ring",
-    "cost": 800,
-    "rarity": "Rare",
-    "tags": ["Passive", "Mana Regeneration", "Ability Haste"],
-    "components": ["Energy Stream", "Energy Stream"],
-    "stats": {
-      "Mana Regeneration": 2.5,
-      "Ability Haste": 10
-    }
-  },
-  {
-    "name": "Steel Mail",
-    "cost": 800,
-    "rarity": "Rare",
-    "tags": ["Passive", "Physical Armor"],
-    "components": ["Tunic"],
-    "stats": {
-      "Physical Armor": 25
-    }
-  },
-  {
-    "name": "Violet Brooch",
-    "cost": 800,
-    "rarity": "Rare",
-    "tags": ["Passive", "Health", "Ability Haste"],
+    "name": "Tenacious Drape",
+    "cost": 900,
+    "tags": ["Health", "Tenacity"],
     "components": ["Vitality Beads"],
     "stats": {
       "Health": 150,
+      "Tenacity": 15
+    }
+  },
+  {
+    "name": "Stalwart Gauntlets",
+    "cost": 900,
+    "tags": ["Health", "Base Health Regen"],
+    "components": ["Vitality Beads", "Life Stream"],
+    "stats": {
+      "Health": 150,
+      "Base Health Regen": 125
+    }
+  },
+  {
+    "name": "Essence Ring",
+    "cost": 900,
+    "tags": ["Base Mana Regen", "Ability Haste"],
+    "components": ["Energy Stream", "Energy Stream"],
+    "stats": {
+      "Base Mana Regen": 125,
       "Ability Haste": 10
     }
   },
   {
-    "name": "Barbed Pauldron",
-    "cost": 850,
-    "rarity": "Rare",
-    "tags": ["Passive", "Physical Armor"],
-    "components": ["Tunic"],
-    "stats": {
-      "Physical Armor": 20
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Stifle",
-      "description": "When hit by a basic attack, reduce the source's attack speed by 5% for 3s, stacking up to 3 times."
-      }
-    ]
-  },
-  {
-    "name": "Scepter",
+    "name": "Crimson Edge",
     "cost": 900,
-    "rarity": "Uncommon",
-    "tags": ["Passive", "Magical Power"],
-    "components": [],
+    "tags": ["Physical Power", "Lifesteal"],
+    "components": ["Shortsword"],
     "stats": {
-      "Magical Power": 30
-    }
-  },
-  {
-    "name": "Banded Emerald",
-    "cost": 900,
-    "rarity": "Rare",
-    "tags": ["Passive", "Health"],
-    "components": ["Vitality Beads"],
-    "stats": {
-      "Health": 275
+      "Physical Power": 15,
+      "Lifesteal": 5
     }
   },
   {
     "name": "Chronomatic Wand",
     "cost": 900,
-    "rarity": "Rare",
-    "tags": ["Passive", "Magical Power", "Ability Haste"],
+    "tags": ["Magical Power", "Ability Haste"],
     "components": ["Codex"],
     "stats": {
       "Magical Power": 20,
@@ -1203,124 +1048,157 @@
     }
   },
   {
-    "name": "Stalwart Gauntlets",
+    "name": "Banded Emerald",
     "cost": 900,
-    "rarity": "Rare",
-    "tags": ["Passive", "Health", "Health Regeneration"],
-    "components": ["Vitality Beads", "Life Stream"],
+    "tags": ["Health"],
+    "components": ["Vitality Beads"],
     "stats": {
-      "Health": 150,
-      "Health Regeneration": 2
+      "Health": 275
+    }
+  },
+  {
+    "name": "Scepter",
+    "cost": 900,
+    "tags": ["Magical Power"],
+    "stats": {
+      "Magical Power": 30
     }
   },
   {
     "name": "Polar Treads",
     "cost": 950,
-    "rarity": "Rare",
-    "tags": ["Passive", "Magical Armor", "Mana Regeneration"],
+    "tags": ["Passive", "Magical Armor", "Base Mana Regen", "Movement Speed"],
     "components": ["Wraps", "Energy Stream"],
     "stats": {
       "Magical Armor": 12,
-      "Mana Regeneration": 2
+      "Base Mana Regen": 75
     },
     "descriptions": [{
-      "descriptionType": "Passive - Celerity",
+      "descriptionType": "Celerity",
       "description": "Gain 5% bonus movement speed out of combat."
       }
     ]
   },
   {
-    "name": "Divine Wreath",
-    "cost": 1000,
-    "rarity": "Rare",
-    "tags": ["Passive", "Magical Power", "Mana Regeneration"],
-    "components": ["Energy Stream", "Codex"],
+    "name": "Horned Plate",
+    "cost": 950,
+    "tags": ["Passive", "Physical Armor"],
+    "components": ["Tunic", "Tunic"],
     "stats": {
-      "Magical Power": 15,
-      "Mana Regeneration": 2
+      "Physical Armor": 25
     },
     "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Your heals and shields are 15% more effective."
+      "descriptionType": "Blighted Skin",
+      "description": "When hit by a basic attack, reduce the Source's Healing by 15% for 3s."
       }
     ]
   },
   {
-    "name": "Soul Chalice",
+    "name": "Rune Bow",
     "cost": 1000,
-    "rarity": "Rare",
-    "tags": ["Passive", "Mana"],
-    "components": ["Spirit Beads", "Spirit Beads"],
+    "tags": ["Attack Speed"],
+    "components": ["Longbow", "Longbow"],
     "stats": {
-      "Mana": 400
+      "Attack Speed": 30
+    }
+  },
+  {
+    "name": "Hallowed Braid",
+    "cost": 1000,
+    "tags": ["Passive", "Health", "Base Mana Regen"],
+    "components": ["Energy Stream", "Vitality Beads"],
+    "stats": {
+      "Health": 150,
+      "Base Mana Regen": 50
     },
     "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Gain physical power based on your maximum mana."
+      "descriptionType": "Elegy",
+      "description": "Hero Deaths grant a stack of Elegy, up to a maximum of 20. Each stack grants 1 magical power and 10% base manage regeneration."
       }
     ]
   },
-{
-    "name": "Barbaric Cleaver",
+  {
+    "name": "Spiked Birch",
     "cost": 1050,
-    "rarity": "Rare",
+    "tags": ["Passive", "Magical Power"],
+    "components": ["Codex", "Codex"],
+    "stats": {
+      "Magical Power": 35
+    },
+    "descriptions": [{
+      "descriptionType": "Blighted Spells",
+      "description": "Dealing magical damage reduces the Target's Healing by 15% for 3s."
+      }
+    ]
+  },
+  {
+    "name": "Serrated Blade",
+    "cost": 1050,
     "tags": ["Passive", "Physical Power"],
     "components": ["Shortsword", "Shortsword"],
     "stats": {
       "Physical Power": 20
     },
     "descriptions": [{
-      "descriptionType": "Passive - Cleave",
-      "description": "Basic attacks deal physical damage in a small area around the target."
+      "descriptionType": "Blighted Strikes",
+      "description": "Dealing physical damage reduces the Target's Healing by 15% for 3s."
       }
     ]
   },
-{
-    "name": "Brimstone",
+  {
+    "name": "Alchemical Rod",
     "cost": 1050,
-    "rarity": "Rare",
-    "tags": ["Passive", "Health", "Mana"],
-    "components": ["Vitality Beads", "Spirit Beads"],
+    "tags": ["Passive", "Magical Power", "Mana"],
+    "components": ["Codex", "Spirit Beads"],
     "stats": {
-      "Health": 120,
+      "Magical Power": 20,
       "Mana": 200
     },
     "descriptions": [{
-      "descriptionType": "Passive - Blaze",
-      "description": "Deal 15 magical damage per second to nearby enemies."
+      "descriptionType": "Font",
+      "description": "Killing an Enemy Minion grants 8 bonus mana, up to a maximum of 400. At maximum stacks, gain 10 ability haste."
       }
     ]
   },
-{
-    "name": "Fortified Mantle",
-    "cost": 1050,
-    "rarity": "Rare",
-    "tags": ["Passive", "Physical Armor", "Magical Armor"],
-    "components": ["Tunic", "Wraps"],
-    "stats": {
-      "Physical Armor": 20,
-      "Magical Armor": 15
-    }
-  },
-{
+  {
     "name": "Honed Kris",
     "cost": 1050,
-    "rarity": "Rare",
-    "tags": ["Passive", "Physical Power"],
+    "tags": ["Physical Power", "Physical Penetration"],
     "components": ["Shortsword", "Shortsword"],
     "stats": {
-      "Physical Power": 20
+      "Physical Power": 20,
+      "Physical Penetration": 4
+    }
+  },
+  {
+    "name": "Divine Wreath",
+    "cost": 1050,
+    "tags": ["Magical Power", "Base Mana Regen", "Heal & Shield Power"],
+    "components": ["Energy Stream", "Codex"],
+    "stats": {
+      "Magical Power": 15,
+      "Base Mana Regen": 75,
+      "Heal & Shield Power": 10
+    }
+  },
+  {
+    "name": "Soul Chalice",
+    "cost": 1100,
+    "tags": ["Passive", "Physical Power", "Mana"],
+    "components": ["Shortsword", "Spirit Beads"],
+    "stats": {
+      "Physical Power": 15,
+      "Mana": 400
     },
     "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Gain 4 physical penetration."
+      "descriptionType": "Critical Font",
+      "description": "Killing an Enemy Minion grants 8 bonus mana, up to a maximum of 400. At maximum stacks, gain 2.5% of your bonus mana as additional critical strike chance."
       }
     ]
   },
   {
     "name": "Claymore",
     "cost": 1100,
-    "rarity": "rare",
     "tags": ["Passive", "Physical Power", "Health"],
     "components": ["Shortsword", "Vitality Beads"],
     "stats": {
@@ -1328,61 +1206,15 @@
       "Health": 120
     },
     "descriptions": [{
-      "descriptionType": "Passive - Sunder",
-      "description": "Every third conescutive basic attack deals bonus physical damage based on your bonus health and slows the target by 10% for 1s."
+      "descriptionType": "Sunder",
+      "description": "Every third consecutive basic attack deals 15% (+3% of Bonus Health) bonus physical damage and slows the Target by 10% for 1s."
       }
     ]
   },
   {
-    "name": "Serrated Blade",
-    "cost": 1100,
-    "rarity": "Rare",
-    "tags": ["Passive", "Physical Power"],
-    "components": ["Shortsword", "Shortsword"],
-    "stats": {
-      "Physical Power": 20
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Blight",
-      "description": "Dealing physical damage reduces the target's healing by 40% for 3s."
-      }
-    ]
-  },
-  {
-    "name": "Spiked Birch",
-    "cost": 1100,
-    "rarity": "Rare",
-    "tags": ["Passive", "Magical Power"],
-    "components": ["Codex", "Codex"],
-    "stats": {
-      "Magical Power": 30
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Blight",
-      "description": "Dealing magical damage reduces the target's healing by 40% for 3s."
-      }
-    ]
-  },
-  {
-    "name": "Composite Bow",
+    "name": "Cerulean Stone",
     "cost": 1150,
-    "rarity": "Rare",
-    "tags": ["Passive", "Attack Speed"],
-    "components": ["Longbow", "Longbow"],
-    "stats": {
-      "Attack Speed": 20
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Basic attacks deal 12 bonus physical damage on-hit."
-      }
-    ]
-  },
-  {
-    "name": "Frosted Quartz",
-    "cost": 1150,
-    "rarity": "Rare",
-    "tags": ["Passive", "Physical Armor", "Mana", "Ability Haste"],
+    "tags": ["Physical Armor", "Mana", "Ability Haste"],
     "components": ["Tunic", "Spirit Beads"],
     "stats": {
       "Physical Armor": 15,
@@ -1391,66 +1223,52 @@
     }
   },
   {
-    "name": "Horned Plate",
+    "name": "Composite Bow",
     "cost": 1150,
-    "rarity": "Legendary",
+    "tags": ["Passive", "Attack Speed", "On-hit"],
+    "components": ["Longbow", "Longbow"],
+    "stats": {
+      "Attack Speed": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Honed Strikes",
+      "description": "Basic attacks deal 12 bonus physical damage on-hit."
+      }
+    ]
+  },
+  {
+    "name": "Barbed Pauldron",
+    "cost": 1150,
     "tags": ["Passive", "Physical Armor"],
     "components": ["Tunic", "Tunic"],
     "stats": {
       "Physical Armor": 25
     },
     "descriptions": [{
-      "descriptionType": "Passive - Blight",
-      "description": "Receiving physical damage reduces the target's healing by 40% for 3s."
+      "descriptionType": "Stifle",
+      "description": "When hit by a basic attack, reduce the Source's total attack speed by 3% for 3s, stacking up to 5 times."
       }
     ]
   },
   {
-    "name": "Potent Staff",
-    "cost": 1200,
-    "rarity": "Uncommon",
-    "tags": ["Passive", "Magical Power"],
-    "components": [],
-    "stats": {
-      "Magical Power": 40
-    }
-  },
-  {
     "name": "Abyssal Bracers",
-    "cost": 1200,
-    "rarity": "Rare",
+    "cost": 1150,
     "tags": ["Passive", "Magical Power", "Physical Armor"],
     "components": ["Codex", "Tunic"],
     "stats": {
       "Magical Power": 20,
-      "Physical Armor": 10
+      "Physical Armor": 15
     },
     "descriptions": [{
-      "descriptionType": "Passive - Ferrumancer",
+      "descriptionType": "Ferrumancer",
       "description": "Casting an ability grants 3 magical power and physical armor for 5s, stacking up to 5 times."
-      }
-    ]
-  },
-  {
-    "name": "Hallowed Braid",
-    "cost": 1200,
-    "rarity": "Rare",
-    "tags": ["Active", "Magical Armor"],
-    "components": ["Wraps"],
-    "stats": {
-      "Magical Armor": 25
-    },
-    "descriptions": [{
-      "descriptionType": "Active - Purify",
-      "description": "Cleanse all Negative Debuffs from yourself - 90s CD."
       }
     ]
   },
   {
     "name": "Temporal Ripper",
     "cost": 1200,
-    "rarity": "Rare",
-    "tags": ["Passive", "Physical Power", "Ability Haste"],
+    "tags": ["Physical Power", "Ability Haste"],
     "components": ["Shortsword", "Shortsword"],
     "stats": {
       "Physical Power": 20,
@@ -1458,24 +1276,74 @@
     }
   },
   {
-    "name": "Dusk Stave",
-    "cost": 1250,
-    "rarity": "Rare",
-    "tags": ["Passive", "Magical Power"],
-    "components": ["Spell Slasher", "Codex"],
+    "name": "Ravenous Rapier",
+    "cost": 1200,
+    "tags": ["Passive", "Physical Power", "Lifesteal", "On-hit"],
+    "components": ["Sabre"],
     "stats": {
-      "Magical Power": 30
+      "Physical Power": 20,
+      "Lifesteal": 5
     },
     "descriptions": [{
-      "descriptionType": "Passive - Spellblade",
-      "description": "After using an ability, your next 2 basic attacks within 6s deal bonus magical damage based on your magical power - 3s CD."
+      "descriptionType": "Sever",
+      "description": "Basic attacks against Enemy Heroes deal 2.5% of their current health as bonus physical damage on-hit."
       }
     ]
   },
   {
+    "name": "Fortified Mantle",
+    "cost": 1200,
+    "tags": ["Physical Power", "Physical Armor"],
+    "components": ["Shortsword", "Tunic"],
+    "stats": {
+      "Physical Power": 15,
+      "Physical Armor": 15
+    }
+  },
+  {
+    "name": "Brimstone",
+    "cost": 1200,
+    "tags": ["Passive", "Health", "Mana", "Aura"],
+    "components": ["Vitality Beads", "Spirit Beads"],
+    "stats": {
+      "Health": 150,
+      "Mana": 200
+    },
+    "descriptions": [{
+      "descriptionType": "Blaze",
+      "description": "Deal 20 magical damage per second to nearby Enemies, increased by 50% against Monsters."
+      }
+    ]
+  },
+  {
+    "name": "Bloodlust",
+    "cost": 1200,
+    "tags": ["Physical Power", "Omnivamp"],
+    "components": ["Sabre"],
+    "stats": {
+      "Physical Power": 20,
+      "Omnivamp": 5
+    }
+  },
+  {
+    "name": "Potent Staff",
+    "cost": 1200,
+    "tags": ["Magical Power"],
+    "stats": {
+      "Magical Power": 40
+    }
+  },
+  {
+    "name": "Greatsword",
+    "cost": 1200,
+    "tags": ["Physical Power"],
+    "stats": {
+      "Physical Power": 30
+    }
+  },
+  {
     "name": "Robust Arbalest",
     "cost": 1250,
-    "rarity": "Rare",
     "tags": ["Passive", "Critical Chance", "Attack Speed"],
     "components": ["Crossbow", "Longbow"],
     "stats": {
@@ -1483,165 +1351,78 @@
       "Attack Speed": 15
     },
     "descriptions": [{
-      "descriptionType": "Passive",
+      "descriptionType": "Swift",
       "description": "Basic attacking an Enemy Hero grants 3% movement speed for 3s."
-      }
-    ]
-  },
-  {
-    "name": "Swift Shawl",
-    "cost": 1250,
-    "rarity": "Rare",
-    "tags": ["Passive", "Physical Power", "Magical Armor"],
-    "components": ["Shortsword", "Wraps"],
-    "stats": {
-      "Physical Power": 15,
-      "Magical Armor": 20
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Safeguard",
-      "description": "If you take significant magical damage in the last 5s, gain 10% movement speed and 30 magical armor for 5s - 90s CD."
-      }
-    ]
-  },
-  {
-    "name": "Greatsword",
-    "cost": 1300,
-    "rarity": "Uncommon",
-    "tags": ["Passive", "Physical Power"],
-    "components": [],
-    "stats": {
-      "Physical Power": 30
-    }
-  },
-  {
-    "name": "Ravenous Rapier",
-    "cost": 1300,
-    "rarity": "Rare",
-    "tags": ["Passive", "Physical Power", "Lifesteal"],
-    "components": ["Sabre"],
-    "stats": {
-      "Physical Power": 15,
-      "Lifesteal": 8
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Warlord",
-      "description": "Basic attacks against Enemy Heroes deal 1.5% of their maximum health as physical damage on-hit."
-      }
-    ]
-  },
-  {
-    "name": "Tenacious Drape",
-    "cost": 1300,
-    "rarity": "Rare",
-    "tags": ["Passive", "Magical Armor", "Health", "Health Regeneration"],
-    "components": ["Wraps", "Vitality Beads", "Life Stream"],
-    "stats": {
-      "Magical Armor": 15,
-      "Health": 120,
-      "Health Regeneration": 1.5
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Tenacity",
-      "description": "Gain 20% tenacity."
-      }
-    ]
-  },
-  {
-    "name": "Void Crystal",
-    "cost": 1300,
-    "rarity": "Rare",
-    "tags": ["Passive", "Magical Power", "Health"],
-    "components": ["Codex", "Vitality Beads"],
-    "stats": {
-      "Magical Power": 25,
-      "Health": 150
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Fiend",
-      "description": "Dealing magical damage to an Enemy Hero increases magical damage dealt by 3% for 5s, stacking up to 4 times."
       }
     ]
   },
   {
     "name": "Zealous Tomahawk",
     "cost": 1300,
-    "rarity": "Rare",
     "tags": ["Passive", "Physical Power"],
     "components": ["Sabre"],
+    "stats": {
+      "Physical Power": 15
+    },
+    "descriptions": [{
+      "descriptionType": "Desolate",
+      "description": "Your physical damage ignores 15% of your target's physical armor (Before Penetration)."
+      }
+    ]
+  },
+  {
+    "name": "Loch Shawl",
+    "cost": 1300,
+    "tags": ["Passive", "Health", "Base Health Regen"],
+    "components": ["Vitality Beads", "Life Stream"],
+    "stats": {
+      "Health": 200,
+      "Base Health Regen": 75
+    },
+    "descriptions": [{
+      "descriptionType": "Colossus",
+      "description": "Killing an Enemy Minion grants 4 bonus health per stack, up to a maximum of 400. At maximum stacks, gain 10 ability haste."
+      }
+    ]
+  },
+  {
+    "name": "Dusk Stave",
+    "cost": 1300,
+    "tags": ["Magical Power", "Mana", "Ability Haste"],
+    "components": ["Spirit Beads", "Codex"],
+    "stats": {
+      "Magical Power": 25,
+      "Mana": 150,
+      "Ability Haste": 10
+    }
+  },
+  {
+    "name": "Barbaric Cleaver",
+    "cost": 1300,
+    "tags": ["Passive", "Physical Power"],
+    "components": ["Shortsword", "Shortsword"],
     "stats": {
       "Physical Power": 20
     },
     "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Gain 15% physical penetration."
+      "descriptionType": "Cleave",
+      "description": "Basic attack deal an additional (+25% Total Physical Power) physical damage in a small area around the Target. Damage ranges from 100% to 50% based on distance between Targets."
       }
     ]
   },
   {
     "name": "Diffusal Cane",
     "cost": 1350,
-    "rarity": "Rare",
-    "tags": ["Passive", "Magical Power"],
+    "tags": ["Magical Power", "Magical Penetration"],
     "components": ["Codex", "Codex"],
     "stats": {
-      "Physical Power": 10,
-      "Attack Speed": 10,
-      "Critical Chance": 20,
-      "Lifesteal": 10
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Gain 8 magical penetration."
-      }
-    ]
-  },
-  {
-    "name": "Ironwood Warbow",
-    "cost": 1350,
-    "rarity": "Rare",
-    "tags": ["Passive", "Physical Power", "Attack Speed"],
-    "components": ["Shortsword", "Longbow", "Shortsword"],
-    "stats": {
-      "Physical Power": 20,
-      "Attack Speed": 15
+      "Magical Power": 35,
+      "Magical Penetration": 8
     }
-  },
-  {
-    "name": "Scalding Sceptre",
-    "cost": 1350,
-    "rarity": "Rare",
-    "tags": ["Passive", "Magical Power"],
-    "components": ["Scepter"],
-    "stats": {
-      "Magical Power": 30
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Gain 15% magical penetration."
-      }
-    ]
-  },
-  {
-    "name": "Heroic Guard",
-    "cost": 1400,
-    "rarity": "Rare",
-    "tags": ["Passive", "Health", "Physical Armor"],
-    "components": ["Vitality Beads", "Tunic", "Vitality Beads"],
-    "stats": {
-      "Health": 220,
-      "Physical Armor": 15
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Bravery",
-      "description": "If you would take damage that would reduce you below 30% of your maximum health, cleanse all CC debuffs from yourself - 90s CD."
-      }
-    ]
   },
   {
     "name": "Ruthless Broadsword",
     "cost": 1400,
-    "rarity": "Rare",
     "tags": ["Passive", "Physical Power", "Ability Haste"],
     "components": ["Shortsword", "Shortsword"],
     "stats": {
@@ -1649,63 +1430,70 @@
       "Ability Haste": 10
     },
     "descriptions": [{
-      "descriptionType": "Passive - Corrode",
+      "descriptionType": "Corrode",
       "description": "Dealing damage to an Enemy Hero reduces their physical armor by 5% for 2s, stacking up to 6 times."
       }
     ]
   },
-{
-    "name": "Flourishing Totem",
-    "cost": 1500,
-    "rarity": "Rare",
-    "tags": ["Passive", "Magical Power", "Mana"],
-    "components": ["Codex", "Spirit Beads"],
+  {
+    "name": "Ironwood Warbow",
+    "cost": 1400,
+    "tags": ["Passive", "Physical Power", "Attack Speed"],
+    "components": ["Shortsword", "Longbow", "Shortsword"],
     "stats": {
-      "Magical Power": 20,
-      "Mana": 250
+      "Physical Power": 25,
+      "Attack Speed": 10
     },
     "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Gain 2 magical power when damaging Enemy Heroes with an ability, stacking up to 15 times (3s CD). At maximum stacks, gain an additional 20 magical power. Lose all stacks on death."
+      "descriptionType": "Zap",
+      "description": "Every fourth successful basic attack deals 15 (+40% Bonus Physical Power) bonus magical damage."
       }
     ]
   },
-{
-    "name": "Rod of Thirst",
-    "cost": 1500,
-    "rarity": "Rare",
-    "tags": ["Passive", "Magical Power", "Mana"],
-    "components": ["Codex", "Codex", "Spirit Beads"],
+  {
+    "name": "Heroic Guard",
+    "cost": 1400,
+    "tags": ["Passive", "Physical Power", "Magical Armor"],
+    "components": ["Sabre", "Wraps"],
+    "stats": {
+      "Physical Power": 20,
+      "Magical Armor": 15
+    },
+    "descriptions": [{
+      "descriptionType": "Bravery",
+      "description": "Upon falling below 40% maximum health, Cleanse all Negative Debuffs - 90s CD."
+      }
+    ]
+  },
+  {
+    "name": "Scalding Sceptre",
+    "cost": 1450,
+    "tags": ["Magical Power", "Magical Penetration"],
+    "components": ["Scepter"],
     "stats": {
       "Magical Power": 30,
-      "Mana": 250
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "When you damage an Enemy target with an ability or basic attack, restore maximum mana over 3s, stacking up to 4 times. At maximum stacks, gain ability haste."
-      }
-    ]
+      "Magical Penetration": 20
+    }
   },
-{
-    "name": "Sawtoothed Scimitar",
-    "cost": 1500,
-    "rarity": "Rare",
-    "tags": ["Passive", "Physical Power"],
-    "components": ["Sabre", "Shortsword"],
+  {
+    "name": "Void Crystal",
+    "cost": 1800,
+    "tags": ["Passive", "Magical Power", "Health"],
+    "components": ["Codex", "Vitality Beads", "Codex"],
     "stats": {
-      "Physical Power": 30
+      "Magical Power": 400,
+      "Health": 150
     },
     "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Gain 8 physical penetration."
+      "descriptionType": "Fiend",
+      "description": "Dealing magical damage to an Enemy Hero increases your magical damage dealt by 3% for 5s, stacking up to 4 times."
       }
     ]
   },
   {
     "name": "Chaotic Core",
     "cost": 1800,
-    "rarity": "Rare",
-    "tags": ["Passive", "Magical Power", "Ability Haste"],
+    "tags": ["Magical Power", "Ability Haste"],
     "components": ["Potent Staff"],
     "stats": {
       "Magical Power": 50,
@@ -1713,878 +1501,498 @@
     }
   },
   {
-    "name": "Solstone",
-    "cost": 1950,
-    "rarity": "Rare",
-    "tags": ["Passive", "Active", "Magical Power", "Health", "Ability Haste"],
-    "components": ["Nocstone", "Violet Brooch"],
+    "name": "Vanguardian",
+    "cost": 2600,
+    "tags": ["Passive", "Health", "Magical Armor", "Tenacity", "When-hit", "Aura"],
+    "components": ["Tenacious Drape", "Vitality Beads", "Nullifying Mask"],
     "stats": {
-      "Magical Power": 20,
-      "Health": 250,
-      "Ability Haste": 15
+      "Health": 300,
+      "Magical Armor": 30,
+      "Tenacity": 30
     },
     "descriptions": [{
-      "descriptionType": "Active",
-      "description": "Place an Oracle Ward that lasts for 3 minutes."
+      "descriptionType": "Vanguard",
+      "description": "Receiving damage from an Enemy Hero grants you 30 physical armor and 30 magical armor for 4s. While active, damage received from Enemy Heroes refreshes the duration - 60s CD."
       },{
-     "descriptionType": "Passive",
-     "description": "Stores 4 Oracle Wards that are invisible and additionally reveal invisible Enemy Targets within their vision. Refills at base. Oracle Wards count towards normal Ward Cap."
+      "descriptionType": "Guardian",
+      "description": "Nearby Allied Heroes gain 10 physical armor and 10 magical armor."
       }
     ]
   },
   {
-    "name": "Book of Dreams",
+    "name": "Truesilver Bracelet",
     "cost": 2600,
-    "rarity": "Epic",
-    "tags": ["Passive", "Magical Power", "Mana Regeneration"],
-    "components": ["Divine Wreath", "Scepter"],
+    "tags": ["Passive", "Magical Power", "Health", "Magical Armor", "Ability Haste"],
+    "components": ["Nullifying Mask", "Violet Brooch", "Codex"],
     "stats": {
-      "Magical Power": 50,
-      "Mana Regeneration": 3
+      "Magical Power": 25,
+      "Health": 250,
+      "Magical Armor": 25,
+      "Ability Haste": 10
     },
     "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Healing or shielding an Allied Hero will additionally heal them over 5s. Dealing damage to an Enemy Hero reduces the cooldown by 5s per instance - 40s CD."
-      },{
-      "descriptionType": "Passive",
-      "description": "Your heals and shields are 15% more effective."
+      "descriptionType": "Reprisal",
+      "description": "Casting your ultimate grants you a 250 (+15% Bonus Health) shield for 5s. While the shield holds, gain CC immunity. Upon removal, it explodes dealing magical damage to nearby Enemies for 60% of the initial strength - 40s CD."
       }
     ]
   },
   {
     "name": "Marshal",
     "cost": 2600,
-    "rarity": "Epic",
-    "tags": ["Passive", "Magical Power", "Mana Regeneration", "Ability Haste"],
-    "components": ["Essence Ring", "Chronomatic Wand", "Codex"],
+    "tags": ["Passive", "Magical Power", "Base Mana Regen", "Ability Haste", "On-hit"],
+    "components": ["Essence Ring", "Scepter", "Codex"],
     "stats": {
-      "Magical Power": 35,
-      "Mana Regeneration": 3,
+      "Magical Power": 45,
+      "Base Mana Regen": 125,
       "Ability Haste": 15
     },
     "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Yourself and nearby Allied Heroes gain attack speed and deal magical damage."
-      }
-    ]
-  },
-  {
-    "name": "Requiem",
-    "cost": 2600,
-    "rarity": "Epic",
-    "tags": ["Passive", "Health", "Health Regeneration", "Ability Haste"],
-    "components": ["Stalwart Gauntlets", "Violet Brooch"],
-    "stats": {
-      "Health": 350,
-      "Health Regeneration": 2,
-      "Ability Haste": 10
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "When another Hero dies, gain a stack of Vitality up to a maximum of 10 stacks, each stack grants 0.4 health regeneration and 0.1 mana regeneration. Dying causes you to lose all stacks."
-      },{
-      "descriptionType": "Passive",
-      "description": "Grants nearby allies 1% omnivamp and 1% increased physical power and magical power per stack of Vitality."
+      "descriptionType": "Sheriff",
+      "description": "Yourself and nearby Allied Heroes gain 20% attack speed and deal 15 (+1 per the Target's level) magical damage on-hit."
       }
     ]
   },
   {
     "name": "Crystal Tear",
     "cost": 2650,
-    "rarity": "Epic",
-    "tags": ["Passive", "Magical Power", "Magical Armor", "Mana Regeneration", "Ability Haste"],
-    "components": ["Essence Ring", "Wraps", "Divine Wreath"],
+    "tags": ["Passive", "Magical Power", "Base Mana Regen", "Ability Haste", "Heal & Shield Power"],
+    "components": ["Essence Ring", "Codex", "Divine Wreath"],
     "stats": {
-      "Magical Power": 20,
-      "Magical Armor": 15,
-      "Mana Regeneration": 5,
-      "Ability Haste": 10
+      "Magical Power": 30,
+      "Base Mana Regen": 225,
+      "Ability Haste": 10,
+      "Heal & Shield Power": 15
     },
     "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Healing or shielding Allied Heroes grants you and them 30 magical power and 20 ability haste for 5s."
-      },{
-      "descriptionType": "Passive",
-      "description": "Your heals and shields are 15% more effective."
-      }
-    ]
-  },
-  {
-    "name": "Dynamo",
-    "cost": 2700,
-    "rarity": "Epic",
-    "tags": ["Passive", "Health", "Physical Armor", "Mana"],
-    "components": ["Banded Emerald", "Steel Mail", "Spirit Beads"],
-    "stats": {
-      "Health": 300,
-      "Physical Armor": 40,
-      "Mana": 200
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Immobilizing an Enemy deals bonus magical damage based on your bonus health to the target and nearby enemies, increased by 150% against Jungle Minions. Damaged targets have their magical armor shredded by 35% for 4s - 6s CD."
-      }
-    ]
-  },
-  {
-    "name": "Fire Blossom",
-    "cost": 2700,
-    "rarity": "Epic",
-    "tags": ["Passive", "Health", "Mana", "Physical Armor"],
-    "components": ["Brimstone", "Steel Mail"],
-    "stats": {
-      "Health": 200,
-      "Mana": 200,
-      "Physical Armor": 40
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Blaze",
-      "description": "Deal magical damage per second to nearby enemies, increased by 50% against immobilized targets and 100% against Jungle Minions."
-      }
-    ]
-  },
-  {
-    "name": "Hellfire",
-    "cost": 2700,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Power", "Health", "Mana", "Ability Haste"],
-    "components": ["Brimstone", "Temporal Ripper"],
-    "stats": {
-      "Physical Power": 35,
-      "Health": 150,
-      "Mana": 200,
-      "Ability Haste": 10
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Blaze",
-      "description": "Deal magic damage based on your physical power per second to nearby enemies, increased by 100% against targets below 30% maximum health and 50% against Jungle Minions."
-      }
-    ]
-  },
-  {
-    "name": "Leviathan",
-    "cost": 2700,
-    "rarity": "Epic",
-    "tags": ["Passive", "Health", "Health Regeneration"],
-    "components": ["Banded Emerald", "Stalwart Gauntlets"],
-    "stats": {
-      "Health": 500,
-      "Health Regeneration": 3
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Killing a Minion grants 6 bonus health per stack, up to a maximum of 300 bonus health. At maximum stacks, gain 10 ability haste."
-      },{
-      "descriptionType": "Passive",
-      "description": "Gain (+1% Maximum Health) ability haste."
-      }
-    ]
-  },
-  {
-    "name": "Parabox",
-    "cost": 2700,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Armor", "Magical Armor", "Mana Regeneration", "Ability Haste"],
-    "components": ["Fortified Mantle", "Essence Ring"],
-    "stats": {
-      "Physical Armor": 25,
-      "Magical Armor": 20,
-      "Mana Regeneration": 2,
-      "Ability Haste": 10
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Yin",
-      "description": "Allied Heroes within 700 units receive 20% increased healing and shielding."
-      },{
-      "descriptionType": "Passive - Yang",
-      "description": "Enemy Heroes within 700 units have their healing reduced by 60%."
+      "descriptionType": "Elation",
+      "description": "Healing or Shielding Allied Heroes grants you both 40 magical power and 20 ability haste for 5s."
       }
     ]
   },
   {
     "name": "Timewarp",
     "cost": 2700,
-    "rarity": "Epic",
-    "tags": ["Passive", "Magical Power", "Physical Armor", "Mana Regeneration", "Ability Haste"],
+    "tags": ["Passive", "Magical Power", "Physical Armor", "Base Mana Regen", "Ability Haste"],
     "components": ["Abyssal Bracers", "Essence Ring"],
     "stats": {
       "Magical Power": 25,
       "Physical Armor": 15,
-      "Mana Regeneration": 3,
-      "Ability Haste": 20
+      "Base Mana Regen": 150,
+      "Ability Haste": 15
     },
     "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "When you cast an ability, reduce all other current basic ability cooldowns by 15%."
+      "descriptionType": "Ferrumancer",
+      "description": "Casting an ability grants you 5 magical power and 5 physical armor for 5s, stacking up to 5 times."
       },{
-      "descriptionType": "Passive - Ferrumancer",
-      "description": "Casting an ability grants 5 magical power and physical armor for 5s stacking up to 5 times."
+      "descriptionType": "Chime",
+      "description": "When you cast an ability, reduce all other current basic ability cooldowns by 15%, with a maximum reduction of 1s."
+      }
+    ]
+  },
+  {
+    "name": "Requiem",
+    "cost": 2700,
+    "tags": ["Passive", "Magical Power", "Health", "Base Mana Regen", "Heal & Shield Power", "Aura"],
+    "components": ["Hallowed Braid", "Divine Wreath"],
+    "stats": {
+      "Magical Power": 20,
+      "Health": 200,
+      "Base Mana Regen": 125,
+      "Heal & Shield Power": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Elegy",
+      "description": "When a Hero dies, gain a stack of Elegy, up to a maximum of 20 stacks. Each stack grants 1 magical power and 10% base mana regeneration."
+      },{
+      "descriptionType": "Remembrance",
+      "description": "Grant nearby Allies 1 physical power and 0.5% lifesteal per stack of Elegy."
+      }
+    ]
+  },
+  {
+    "name": "Fire Blossom",
+    "cost": 2700,
+    "tags": ["Passive", "Health", "Mana", "Physical Armor", "Aura"],
+    "components": ["Brimstone", "Steel Mail"],
+    "stats": {
+      "Health": 275,
+      "Mana": 200,
+      "Physical Armor": 40
+    },
+    "descriptions": [{
+      "descriptionType": "Heatwave",
+      "description": "Deal 25 (+1.5% Bonus Health) magical damage per second to nearby Enemies, increased by 50% against Immobilied Targets, and 100% against Monsters."
       }
     ]
   },
   {
     "name": "Elafrost",
-    "cost": 2750,
-    "rarity": "Epic",
-    "tags": ["Passive", "Magical Power", "Attack Speed", "Ability Haste"],
-    "components": ["Chronomatic Wand", "Scepter", "Longbow"],
-    "stats": {
-      "Magical Power": 50,
-      "Attack Speed": 15,
-      "Ability Haste": 10
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Frostbite",
-      "description": "Basic attacks Slow the target by 3% for 2s, stacking up to 8 times. At max stacks, Root the target for 1.25s. The Root has an 8s cooldown per target."
-      }
-    ]
-  },
-  {
-    "name": "Leafsong",
-    "cost": 2750,
-    "rarity": "Epic",
-    "tags": ["Active", "Passive", "Magical Power", "Health", "Mana Regeneration", "Ability Haste"],
-    "components": ["Divine Wreath", "Chronomatic Wand", "Vitality Beads"],
+    "cost": 2700,
+    "tags": ["Passive", "Magical Power", "Health", "Mana", "Ability Haste"],
+    "components": ["Scepter", "Violet Brooch", "Spirit Beads"],
     "stats": {
       "Magical Power": 30,
-      "Health": 150,
-      "Mana Regeneration": 3.5,
-      "Ability Haste": 10
-    },
-    "descriptions": [{
-      "descriptionType": "Active",
-      "description": "Expend all stacks of Penance to heal nearby Allied Heroes for 20% of Penance - 15s CD."
-      },{
-      "descriptionType": "Passive",
-      "description": "Healing or shielding an ally grants charges of Penance equal to the value shielded/healed. Stacks cap at 1000."
-      },{
-      "descriptionType": "Passive",
-      "description": "Your heals and shields are 15% more effective."
-      }
-    ]
-  },
-  {
-    "name": "Stonewall",
-    "cost": 2750,
-    "rarity": "Epic",
-    "tags": ["Passive", "Health", "Health Regeneration", "Physical Armor"],
-    "components": ["Stalwart Gauntlets", "Steel Mail", "Vitality Beads"],
-    "stats": {
-      "Health": 300,
-      "Health Regeneration": 3,
-      "Physical Armor": 35
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Shockwave",
-      "description": "If you would take damage that would reduce you below 30% maximum health, you unleash a shockwave that stuns all nearby enemies for 1s - 90s CD."
-      },{
-      "descriptionType": "Passive - Stalwart",
-      "description": "Reduce physical damage taken by 8 (+8% Physical Armor)."
-      }
-    ]
-  },
-  {
-    "name": "Truesilver Bracelet",
-    "cost": 2750,
-    "rarity": "Epic",
-    "tags": ["Passive", "Magical Power", "Health", "Magical Armor", "Ability Haste"],
-    "components": ["Tenacious Drape", "Chronomatic Wand"],
-    "stats": {
-      "Magical Power": 35,
       "Health": 200,
-      "Magical Armor": 25,
+      "Mana": 300,
       "Ability Haste": 10
     },
     "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "When you cast your ultimate ability, gain a Spell Shield for 6s - 45s CD."
+      "descriptionType": "Frostbite",
+      "description": "Basic attacks Slow Enemies by 3% for 2s, stacking up to 8 times. Melee basic attacks apply 2 stacks."
       },{
-      "descriptionType": "Passive - Tenacity",
-      "description": "Gain 35% Tenacity."
+      "descriptionType": "Frostfang",
+      "description": "Applying 8 stacks of Frostbite to a Target deals an additional (+10% Maximum Mana) magical damage and Roots them for 1s - 8s CD per Target."
       }
     ]
   },
   {
-    "name": "Bonesaw",
-    "cost": 2800,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Power", "Health"],
-    "components": ["Claymore", "Banded Emerald"],
+    "name": "Wellspring",
+    "cost": 2700,
+    "tags": ["Passive", "Magical Power", "Base Mana Regen", "Heal & Shield Power"],
+    "components": ["Divine Wreath", "Scepter"],
     "stats": {
-      "Physical Power": 20,
-      "Health": 400
+      "Magical Power": 45,
+      "Base Mana Regen": 100,
+      "Heal & Shield Power": 20
     },
     "descriptions": [{
-      "descriptionType": "Passive - Sunder",
-      "description": "Every third consecutive basic attack deals bonus physical damage based on your maximum health and Slows them by 20% for 1s."
+      "descriptionType": "Vital Waters",
+      "description": "Casting an ability heals nearby Allies for 40 (+20% Magical Power) over 2s."
       },{
-      "descriptionType": "Passive",
-      "description": "Dealing damage with Sunder grants attack speed for 4s, stacking up to 6 times."
+      "descriptionType": "Soothing Waters",
+      "description": "Vital Waters heals an additional 15% of your lowest Ally's maximum health. Basic attacks against Enemy Heroes reduce the cooldown of Soothing Waters by 1s - 15s CD."
       }
     ]
   },
   {
-    "name": "Breach",
+    "name": "Golem's Gift",
     "cost": 2800,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Power", "Attack Speed", "Ability Haste"],
-    "components": ["Ironwood Warbow", "Temporal Ripper"],
-    "stats": {
-      "Physical Power": 40,
-      "Attack Speed": 20,
-      "Ability Haste": 10
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Deal 30% bonus damage to shielded targets as physical damage on-hit and slow the target by 20% for 1s."
-      }
-    ]
-  },
-  {
-    "name": "Dreambinder",
-    "cost": 2800,
-    "rarity": "Epic",
-    "tags": ["Passive", "Magical Power", "Health"],
-    "components": ["Void Crystal", "Scepter"],
+    "tags": ["Passive", "Magical Power", "Physical Armor", "Ability Haste"],
+    "components": ["Abyssal Bracers", "Chronomatic Wand"],
     "stats": {
       "Magical Power": 70,
-      "Health": 250
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Damaging abilities slow affected units by 20% for 1s."
-      },{
-      "descriptionType": "Passive - Fiend",
-      "description": "Dealing magic damage to an Enemy Hero increases magical damage dealt by 3% for 5s. Stacks up to 5 times."
-      }
-    ]
-  },
-  {
-    "name": "Galaxy Greaves",
-    "cost": 2800,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Armor", "Magical Armor", "Mana Regeneration"],
-    "components": ["Fortified Mantle", "Polar Treads"],
-    "stats": {
       "Physical Armor": 30,
+      "Ability Haste": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Artillery Golem",
+      "description": "Gain 40 magical power and 40 physical armor. Whenever you take physical damage from an Enemy Hero, decrease both bonuses by 10. This efect resets to full when you leave combat."
+      }
+    ]
+  },
+  {
+    "name": "Tainted Totem",
+    "cost": 2800,
+    "tags": ["Passive", "Physical Armor", "Magical Armor", "Base Mana Regen", "Ability Haste", "Aura"],
+    "components": ["Steel Mail", "Essence Ring", "Nullifying Mask"],
+    "stats": {
+      "Physical Armor": 40,
       "Magical Armor": 30,
-      "Mana Regeneration": 3
+      "Base Mana Regen": 150,
+      "Ability Haste": 15
     },
     "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Moving generates stacks of ZeroG, at 100 stacks your next jump will have increased height."
+      "descriptionType": "Chilling Blight",
+      "description": "Nearby Enemy Heroes have their Healing reduced by 30% and are Slowed by 10%."
       },{
-      "descriptionType": "Passive - Celerity",
-      "description": "Gain 10% movement speed out of combat."
+      "descriptionType": "Nirvana",
+      "description": "Yourself and nearby Allied Heroes receive 20% increased Healing and Shielding."
       }
-    ]
-  },
-  {
-    "name": "Hexbound Bracers",
-    "cost": 2800,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Armor", "Mana", "Ability Haste"],
-    "components": ["Frosted Quartz", "Frosted Quartz"],
-    "stats": {
-      "Physical Armor": 45,
-      "Mana": 450,
-      "Ability Haste": 20
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Restore mana equal to 10% of damage taken from Heroes."
-      },{
-      "descriptionType": "Passive",
-      "description": "Gain 20 ability haste when above 60% maximum mana."
-      }
-    ]
-  },
-  {
-    "name": "Mirage",
-    "cost": 2800,
-    "rarity": "Epic",
-    "tags": ["Passive", "Attack Speed", "Critical Chance"],
-    "components": ["Robust Arbalest", "Composite Bow"],
-    "stats": {
-      "Attack Speed": 50,
-      "Critical Chance": 20
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Basic attacking an Enemy Hero grants the ability to travel through units and 1% movement speed for 3s stacking up to 5 times."
-      },{
-      "descriptionType": "Passive",
-      "description": "Reaching max stacks of Dancer grants a large shield for 4s - 30s CD."
-      },{
-    "descriptionType": "Passive",
-    "description": "Basic attacks deal 20 bonus true damage on-hit."
-    }
     ]
   },
   {
     "name": "Overlord",
     "cost": 2800,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Power", "Health"],
+    "tags": ["Passive", "Physical Power", "Health", "On-hit"],
     "components": ["Barbaric Cleaver", "Banded Emerald"],
     "stats": {
       "Physical Power": 25,
       "Health": 350
     },
     "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Basic attacks deal physical damage based on your bonus health."
+      "descriptionType": "Colossal Cleave",
+      "description": "Basic attacks deal (+30% Total Physical Power)(+2% Maximum Health) physical damage in a small area around the Target. Damage ranges from 100% to 50% based on the distance between Targets."
       },{
-      "descriptionType": "Passive - Cleave",
-      "description": "Basic attacks deal physical damage in a small area around the target."
+      "descriptionType": "Bludgeon",
+      "description": "Basic attacks deal (+3.5% Bonus Health) physical damage on-hit."
       }
     ]
   },
   {
-    "name": "The Perforator",
+    "name": "Hexbound Bracers",
     "cost": 2800,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Power"],
-    "components": ["Zealous Tomahawk", "Greatsword"],
+    "tags": ["Passive", "Physical Armor", "Mana", "Ability Haste"],
+    "components": ["Steel Mail", "Cerulean Stone", "Spirit Beads"],
     "stats": {
-      "Physical Power": 50
+      "Physical Armor": 50,
+      "Mana": 400,
+      "Ability Haste": 15
     },
     "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Gain 40% physical penetration."
+      "descriptionType": "Meditation",
+      "description": "Gain 20 ability haste while above 60% maximum mana."
+      },{
+      "descriptionType": "Mana Reactor",
+      "description": "Restore mana equal to 10% of the damage taken from Enemy Heroes."
+      }
+    ]
+  },
+  {
+    "name": "Galaxy Greaves",
+    "cost": 2800,
+    "tags": ["Passive", "Physical Armor", "Magical Armor", "Base Mana Regen", "Ability Haste", "Movement Speed"],
+    "components": ["Steel Mail", "Polar Treads", "Wraps"],
+    "stats": {
+      "Physical Armor": 30,
+      "Magical Armor": 30,
+      "Base Mana Regen": 100,
+      "Ability Haste": 10
+    },
+    "descriptions": [{
+      "descriptionType": "ZeroG",
+      "description": "Moving generates stacks of ZeroG. At 100 stacks, your next jump will have increased height."
+      },{
+      "descriptionType": "Celerity",
+      "description": "Gain 10% bonus movement speed out of combat."
       }
     ]
   },
   {
     "name": "Flux Matrix",
-    "cost": 2850,
-    "rarity": "Epic",
-    "tags": ["Passive", "Health", "Health Regeneration", "Magical Armor", "Ability Haste"],
-    "components": ["Tenacious Drape", "Violet Brooch"],
+    "cost": 2800,
+    "tags": ["Passive", "Health", "Magical Armor", "Ability Haste", "Aura"],
+    "components": ["Violet Brooch", "Nullifying Mask", "Violet Brooch"],
     "stats": {
-      "Health": 300,
-      "Health Regeneration": 2,
-      "Magical Armor": 30,
-      "Ability Haste": 10
+      "Health": 350,
+      "Magical Armor": 35,
+      "Ability Haste": 20
     },
     "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Nearby Enemy Heroes take 15% additional magical damage."
-      },{
-      "descriptionType": "Passive - Tenacity",
-      "description": "Gain 35% Tenacity."
+      "descriptionType": "Unstable Shackles",
+      "description": "Nearby Enemy Heroes take 15% additional magical damage and have their tenacity decreased by 20%."
       }
     ]
   },
   {
-    "name": "Palisade",
-    "cost": 2850,
-    "rarity": "Epic",
-    "tags": ["Passive", "Health", "Physical Armor", "Ability Haste"],
-    "components": ["Horned Plate", "Violet Brooch", "Tunic"],
+    "name": "Dynamo",
+    "cost": 2800,
+    "tags": ["Passive", "Health", "Physical Armor", "Mana"],
+    "components": ["Banded Emerald", "Steel Mail", "Spirit Beads"],
     "stats": {
-      "Health": 200,
-      "Physical Armor": 60,
+      "Health": 300,
+      "Physical Armor": 55,
+      "Mana": 200
+    },
+    "descriptions": [{
+      "descriptionType": "Immobilizer",
+      "description": "Immobilizing an Enemy deals 30 (+5% Maximum Health) bonus magical damage to the Target and nearby Enemies, shredding their physical armor and magical armor by 30% for 4s. Damage is increased by 200% against Monsters - 12s CD."
+      }
+    ]
+  },
+  {
+    "name": "Breach",
+    "cost": 2800,
+    "tags": ["Passive", "Physical Power", "Physical Penetration", "Ability Haste"],
+    "components": ["Honed Kris", "Temporal Ripper"],
+    "stats": {
+      "Physical Power": 50,
+      "Attack Speed": 10,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Shatter",
+      "description": "Deal 50% bonus damage to Shielded Targets as physical damage."
+      }
+    ]
+  },
+  {
+    "name": "Bonesaw",
+    "cost": 2800,
+    "tags": ["Passive", "Physical Power", "Health", "On-hit"],
+    "components": ["Claymore", "Banded Emerald"],
+    "stats": {
+      "Physical Power": 25,
+      "Health": 400
+    },
+    "descriptions": [{
+      "descriptionType": "Colossal Sunder",
+      "description": "Every third consecutive basic attack deals (+3% Maximum Health) bonus physical damage on-hit and slows the Target by 20% for 1s."
+      },{
+      "descriptionType": "Flurry",
+      "description": "Dealing damage with Colossal Sunder grants 8% attack speed for 5s, stacking up to 6 times."
+      }
+    ]
+  },
+  {
+    "name": "Malady",
+    "cost": 2800,
+    "tags": ["Passive", "Physical Power", "Physical Penetration", "Ability Haste"],
+    "components": ["Honed Kris", "Temporal Ripper"],
+    "stats": {
+      "Physical Power": 45,
+      "Physical Penetration": 8,
+      "Ability Haste": 15
+    },
+    "descriptions": [{
+      "descriptionType": "Parting Gift",
+      "description": "Killing an Enemy Unit causes them to explode in a small radius, dealing (+30% of the Target's Maximum Health) as physical damage. Damage ranges from 100% to 40% based on distance between Targets and is capped at 500 - 2s CD."
+      },{
+      "descriptionType": "Demise",
+      "description": "Dealing damage to an Enemy Hero that is below 40% maximum health deals an additional 40 (+30% Bonus Physical Power) physical damage, increasing by 10 with each activation. Takedowns reset Demise's cooldown - 45s CD."
+      }
+    ]
+  },
+  {
+    "name": "Azure Core",
+    "cost": 2800,
+    "tags": ["Passive", "Magical Power", "Mana", "Ability Haste"],
+    "components": ["Alchemical Rod", "Dusk Stave"],
+    "stats": {
+      "Magical Power": 50,
+      "Mana": 350,
       "Ability Haste": 10
     },
     "descriptions": [{
-      "descriptionType": "Passive - Blight",
-      "description": "When struck by a basic attack on-hit, reduce the attacker's healing by 60% and apply a bleed that deals magical damage based on your physical armor over 3s, increased by 150% to Jungle minions."
+      "descriptionType": "Font",
+      "description": "Killing an Enemy Minion grants 8 bonus mana per stack, up to a maximum of 400. At maximum stacks, gain 10 ability haste."
+      },{
+      "descriptionType": "Arcane Magic",
+      "description": "Grants bonus magical power equal to (+3% Maximum Mana)."
+      }
+    ]
+  },
+  {
+    "name": "Tainted Guard",
+    "cost": 2850,
+    "tags": ["Passive", "Health", "Physical Armor", "Ability Haste"],
+    "components": ["Violet Brooch", "Horned Plate", "Vitality Beads"],
+    "stats": {
+      "Health": 400,
+      "Physical Armor": 40,
+      "Ability Haste": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Blighted Thorns",
+      "description": "When hit by a basic attack, reduce the Source's Healing by 30% and apply a bleed dealing 30 (+30% Bonus Physical Armor) magical damage over 3s."
+      }
+    ]
+  },
+  {
+    "name": "Spellbreaker",
+    "cost": 2900,
+    "tags": ["Passive", "Magical Power", "Magical Armor", "Ability Haste"],
+    "components": ["Chronomatic Wand", "Scepter", "Nullifying Mask"],
+    "stats": {
+      "Magical Power": 55,
+      "Magical Armor": 35,
+      "Ability Haste": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Veil",
+      "description": "Grants a Spell Shield that blocks the next Enemy ability - 60s CD."
+      },{
+      "descriptionType": "Malefic",
+      "description": "Gain 20% increased magical power while Veil is active."
+      }
+    ]
+  },
+  {
+    "name": "Dreambinder",
+    "cost": 2900,
+    "tags": ["Passive", "Magical Power", "Health", "Tenacity"],
+    "components": ["Scepter", "Tenacious Drape", "Codex"],
+    "stats": {
+      "Magical Power": 60,
+      "Health": 350,
+      "Tenacity": 15
+    },
+    "descriptions": [{
+      "descriptionType": "Chilling Spells",
+      "description": "Damaging abilities Slow affected Units by 25% for 1.5s."
+      },{
+      "descriptionType": "Thaw",
+      "description": "Abilities deal 10% additional damage to Slowed Enemy Heroes."
+      }
+    ]
+  },
+  {
+    "name": "Mesmer",
+    "cost": 2900,
+    "tags": ["Passive", "Physical Power", "Magical Armor", "Physical Penetration"],
+    "components": ["Sabre", "Honed Kris", "Nullifying Mask"],
+    "stats": {
+      "Physical Power": 40,
+      "Magical Armor": 25,
+      "Physical Penetration": 8
+    },
+    "descriptions": [{
+      "descriptionType": "Vengeful Shroud",
+      "description": "Grants a Spell Shield that blocks the next Enemy ability. Upon blocking an Enemy Ability, gain 30 physical power for 3s - 60s CD."
       }
     ]
   },
   {
     "name": "Demon Edge",
     "cost": 2900,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Power", "Physical Penetration"],
-    "components": ["Serrated Blade", "Honed Kris"],
+    "tags": ["Passive", "Physical Power"],
+    "components": ["Shortsword", "Zealous Tomahawk", "Shortsword"],
     "stats": {
-      "Physical Power": 50,
-      "Physical Penetration": 14
+      "Physical Power": 45
     },
     "descriptions": [{
-      "descriptionType": "Passive - Blight",
-      "description": "Dealing physical damage reduces the target's healing by 60% for 3s."
-      }
-    ]
-  },
-  {
-    "name": "Dreadwind",
-    "cost": 2900,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Power", "Physical Penetration", "Health"],
-    "components": ["Honed Kris", "Claymore"],
-    "stats": {
-      "Physical Power": 35,
-      "Physical Penetration": 8,
-      "Health": 180
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Spell Shield",
-      "description": "Grants a Spell Shield that blocks the next Enemy ability - 80s CD."
+      "descriptionType": "Demonic",
+      "description": "While above 40% maximum health gain (+15% Bonus Physical Power)."
       },{
-      "descriptionType": "Passive - Sunder",
-      "description": "Every third consecutive basic attack or ability deals bonus physical damage, Slows them by 20% for 1s and reduces the cooldown of Spell Shield by 5s."
+      "descriptionType": "Ceaseless",
+      "description": "While below 40% maximum health, gain 10% omnivamp."
+      },{
+      "descriptionType": "Desolate",
+      "description": "Your physical damage ignores 35% of your target's physical armor (Before Penetration)."
       }
     ]
   },
   {
-    "name": "Lethea",
+    "name": "Astral Catalyst",
     "cost": 2900,
-    "rarity": "Epic",
-    "tags": ["Passive", "Magical Power", "Magical Penetration"],
-    "components": ["Spiked Birch", "Diffusal Cane"],
+    "tags": ["Passive", "Magical Power", "Mana", "Ability Haste"],
+    "components": ["Dusk Stave", "Chronomatic Wand"],
     "stats": {
-      "Magical Power": 80,
-      "Magical Penetration": 12
+      "Magical Power": 50,
+      "Mana": 350,
+      "Ability Haste": 25
     },
     "descriptions": [{
-      "descriptionType": "Passive - Blight",
-      "description": "Dealing magical damage reduces the target's healing by 60% for 3s."
+      "descriptionType": "Spellslinger",
+      "description": "Using an ability grants you 3% increased magical power for 3s, stacking up to 4 times."
+      },{
+      "descriptionType": "Ravenous",
+      "description": "Takedowns refund 25% of your ultimate's total cooldown."
       }
     ]
   },
   {
     "name": "Unbroken Will",
-    "cost": 2900,
-    "rarity": "Epic",
-    "tags": ["Passive", "Health", "Health Regeneration", "Magical Armor"],
-    "components": ["Tenacious Drape", "Banded Emerald"],
-    "stats": {
-      "Health": 450,
-      "Health Regeneration": 2.5,
-      "Magical Armor": 20
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "If you are hit by a displacement, you restore (+16% Maximum Health) health over 8s."
-      },{
-      "descriptionType": "Passive - Tenacity",
-      "description": "Gain 35% Tenacity."
-      }
-    ]
-  },
-  {
-    "name": "Blackout",
     "cost": 2950,
-    "rarity": "Epic",
-    "tags": ["Active", "Physical Power", "Physical Penetration", "Ability Haste"],
-    "components": ["Honed Kris", "Temporal Ripper"],
+    "tags": ["Passive", "Health", "Base Health Regen", "Magical Armor", "Tenacity"],
+    "components": ["Nullifying Mask", "Stalwart Gauntlets", "Tenacious Drape"],
     "stats": {
-      "Physical Power": 40,
-      "Physical Penetration": 8,
-      "Ability Haste": 20
-    },
-    "descriptions": [{
-      "descriptionType": "Active",
-      "description": "Reveal nearby stealthed Heroes and Wards and gain 15% decaying movement speed for 10s - 90s CD."
-      }
-    ]
-  },
-  {
-    "name": "Azure Core",
-    "cost": 3000,
-    "rarity": "Epic",
-    "tags": ["Passive", "Magical Power", "Mana", "Ability Haste"],
-    "components": ["Rod of Thirst", "Chronomatic Wand"],
-    "stats": {
-      "Magical Power": 60,
-      "Mana": 400,
-      "Ability Haste": 20
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Font",
-      "description": "Killing an Enemy Minion grants 8 bonus mana per stack, up to a maximum of 400 bonus mana. At maximum stacks, gain 20 ability haste."
-      },{
-      "descriptionType": "Passive",
-      "description": "When you damage an Enemy target with an ability or basic attack, restore maximum mana over 3s, stacking up to 4 times. At maximum stacks, gain ability haste."
-      }
-    ]
-  },
-  {
-    "name": "Basilisk",
-    "cost": 3000,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Power", "Health", "Ability Haste"],
-    "components": ["Claymore", "Ruthless Broadsword"],
-    "stats": {
-      "Physical Power": 35,
-      "Health": 250,
-      "Ability Haste": 20
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Corrode",
-      "description": "Dealing damage to an Enemy Hero reduces their physical armor by 5% for 2s. Stacks up to 6 times."
-      },{
-      "descriptionType": "Passive - Sunder",
-      "description": "Every third consecutive basic attack deals bonus physical damage and slows them by 20% for 1s."
-      }
-    ]
-  },
-  {
-    "name": "Draconum",
-    "cost": 3000,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Power", "Physical Armor", "Magical Armor", "Ability Haste"],
-    "components": ["Fortified Mantle", "Temporal Ripper"],
-    "stats": {
-      "Physical Power": 25,
-      "Physical Armor": 25,
-      "Magical Armor": 25,
-      "Ability Haste": 10
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Hero takedowns grant you 30 attack speed and regenerate 6% of your missing health per second for 8s."
-      }
-    ]
-  },
-  {
-    "name": "Frostguard",
-    "cost": 3000,
-    "rarity": "Epic",
-    "tags": ["Passive", "Health", "Physical Armor", "Mana", "Ability Haste"],
-    "components": ["Barbed Pauldron", "Frosted Quartz", "Vitality Beads"],
-    "stats": {
-      "Health": 120,
-      "Physical Armor": 40,
-      "Mana": 250,
-      "Ability Haste": 10
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Slow nearby enemies by 10% and apply a stack of Stifle every 0.5s."
-      },{
-      "descriptionType": "Passive - Stifle",
-      "description": "When hit by a basic attack, reduce the source's attack speed by 5% for 3s, stacking up to 5 times."
-      }
-    ]
-  },
-  {
-    "name": "Glacial Maul",
-    "cost": 3000,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Armor", "Mana", "Ability Haste"],
-    "components": ["Spell Slasher", "Horned Plate", "Frosted Quartz"],
-    "stats": {
-      "Physical Armor": 50,
-      "Mana": 300,
-      "Ability Haste": 20
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Spellblade",
-      "description": "After using an ability, your next 2 basic attacks within 6s deal bonus physical damage based on your maximum health and slows the target by 10% for 1s, stacking up to 2 times - 3s CD."
-      },{
-      "descriptionType": "Passive - Blight",
-      "description": "Receiving physical damage reduces the target's healing by 60% for 3s."
-      }
-    ]
-  },
-  {
-    "name": "Kingsbane",
-    "cost": 3000,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Power", "Physical Armor", "Critical Chance"],
-    "components": ["Greatsword", "Steel Mail", "Crossbow"],
-    "stats": {
-      "Physical Power": 40,
-      "Physical Armor": 25,
-      "Critical Chance": 20
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Shockwave",
-      "description": "If you would take damage that would reduce you below 30% maximum health, you unleash a shockwave that stuns all nearby enemies for 1s - 90s CD."
-      },{
-      "descriptionType": "Passive",
-      "description": "Successful critical strikes increase your physical armor for 3s, stacking up to 5 times."
-      }
-    ]
-  },
-  {
-    "name": "Legacy",
-    "cost": 3000,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Power", "Physical Armor", "Health"],
-    "components": ["Heroic Guard", "Sabre"],
-    "stats": {
-      "Physical Power": 20,
-      "Physical Armor": 25,
-      "Health": 250
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Bravery",
-      "description": "If you would take damage that would reduce you below 30% of your maximum health, cleanse all Negative Debuffs and gain 20% lifesteal for 8s - 90s CD."
-      },{
-      "descriptionType": "Passive",
-      "description": "Gain 1 physical power for every 2% missing health, for a maximum of 35 physical power."
-      }
-    ]
-  },
-  {
-    "name": "Lifebinder",
-    "cost": 3000,
-    "rarity": "Epic",
-    "tags": ["Passive", "Magical Power", "Magical Lifesteal", "Health", "Ability Haste"],
-    "components": ["Blood Tome", "Violet Brooch", "Blood Tome"],
-    "stats": {
-      "Magical Power": 55,
-      "Magical Lifesteal": 10,
-      "Health": 200,
-      "Ability Haste": 15
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Hitting an Enemy Hero with an ability restores health over 5s. Excess healing will be converted to a shield for 10s."
-      }
-    ]
-  },
-  {
-    "name": "Magnify",
-    "cost": 3000,
-    "rarity": "Epic",
-    "tags": ["Passive", "Magical Power", "Ability Haste"],
-    "components": ["Dusk Stave", "Chronomatic Wand"],
-    "stats": {
-      "Magical Power": 70,
-      "Ability Haste": 20
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Spellblade",
-      "description": "After using an ability, your next 2 basic attacks within 6s deal bonus magical damage based on your magical power - 3s CD."
-      }
-    ]
-  },
-  {
-    "name": "Nullifier",
-    "cost": 3000,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Power", "Magical Armor", "Ability Haste"],
-    "components": ["Swift Shawl", "Temporal Ripper"],
-    "stats": {
-      "Physical Power": 40,
+      "Health": 350,
+      "Base Health Regen": 150,
       "Magical Armor": 30,
-      "Ability Haste": 10
+      "Tenacity": 15
     },
     "descriptions": [{
-      "descriptionType": "Passive - Safeguard",
-      "description": "If you take significant magical damage in the last 5s, gain 10% movement speed, 15% lifesteal and 40 magical armor for 5s. This duration is refreshed upon taking additional magical damage - 40s CD."
-      }
-    ]
-  },
-  {
-    "name": "Painweaver",
-    "cost": 3000,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Power", "Physical Penetration", "Ability Haste"],
-    "components": ["Honed Kris", "Spell Slasher", "Sabre"],
-    "stats": {
-      "Physical Power": 40,
-      "Physical Penetration": 12,
-      "Ability Haste": 10
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Spellblade",
-      "description": "After using an ability, your next 2 basic attacks or abilities within 6s deal bonus physical damage - 3s CD."
-      }
-    ]
-  },
-  {
-    "name": "Raiment of Renewal",
-    "cost": 3000,
-    "rarity": "Epic",
-    "tags": ["Passive", "Health", "Health Regeneration", "Mana"],
-    "components": ["Banded Emerald", "Stalwart Gauntlets", "Spirit Beads"],
-    "stats": {
-      "Health": 600,
-      "Health Regeneration": 4,
-      "Mana": 250
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Regenerate 15% of damage taken over 5s."
+      "descriptionType": "Undying",
+      "description": "When you are Immobilized, take 20% decreased damage for 2s."
       },{
-      "descriptionType": "Passive",
-      "description": "Increases all healing received by 20%"
-      }
-    ]
-  },
-  {
-    "name": "Severance",
-    "cost": 3000,
-    "rarity": "Epic",
-    "tags": ["Active", "Physical Power", "Magical Armor"],
-    "components": ["Hallowed Braid", "Greatsword"],
-    "stats": {
-      "Physical Power": 50,
-      "Magical Armor": 30
-    },
-    "descriptions": [{
-      "descriptionType": "Active",
-      "description": "Cleanse all Negative Debuffs from yourself and gain 30% movement speed for 3s - 90s CD."
-      }
-    ]
-  },
-  {
-    "name": "Spellbreaker",
-    "cost": 3000,
-    "rarity": "Epic",
-    "tags": ["Passive", "Magical Power", "Magical Armor", "Ability Haste"],
-    "components": ["Chronomatic Wand", "Nullifying Mask", "Scepter"],
-    "stats": {
-      "Magical Power": 60,
-      "Magical Armor": 35,
-      "Ability Haste": 10
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Spell Shield",
-      "description": "Grants a Spell Shield that blocks the next Enemy ability - 60s CD."
-      }
-    ]
-  },
-  {
-    "name": "Terminus",
-    "cost": 3000,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Power", "Ability Haste", "Critical Chance"],
-    "components": ["Temporal Ripper", "Spell Slasher", "Crossbow"],
-    "stats": {
-      "Physical Power": 40,
-      "Ability Haste": 20,
-      "Critical Chance": 20
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Spellblade",
-      "description": "After using an ability, your next 2 basic attacks within 6s deal bonus physical damage based on your critical strike chance - 3s CD."
-      },{
-      "descriptionType": "Passive",
-      "description": "Basic attacks restore 1% maximum mana on-hit."
-      }
-    ]
-  },
-  {
-    "name": "Warden's Faith",
-    "cost": 3000,
-    "rarity": "Epic",
-    "tags": ["Passive", "Health","Physical Armor"],
-    "components": ["Steel Mail", "Banded Emerald", "Barbed Pauldron"],
-    "stats": {
-      "Health": 300,
-      "Physical Armor": 60
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Stalwart",
-      "description": "Enemy critical strikes deal 20% reduced damage."
-      },{
-      "descriptionType": "Passive - Stifle",
-      "description": "When hit by a basic attack, reduce the source's attack speed by 5% for 3s, stacking up to 5 times. Max stacks are applied if the damage received is a critical strike."
+      "descriptionType": "Persistence",
+      "description": "If you are Immobilized or Displaced, you restore (+6% Maximum Health) health over 4s."
       }
     ]
   },
   {
     "name": "Wraith Leggings",
     "cost": 3000,
-    "rarity": "Epic",
     "tags": ["Passive", "Magical Power", "Magical Penetration"],
     "components": ["Diffusal Cane", "Scepter"],
     "stats": {
@@ -2592,69 +2000,471 @@
       "Magical Penetration": 15
     },
     "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Dealing magical damage to an Enemy Hero grants increased magical power for 6s stacking up to 3 times. At maximum stacks, gain 10% movement speed."
+      "descriptionType": "Spectre",
+      "description": "Dealing damage to an Enemy Hero with an ability grants 100 movement speed for 1.5s."
+      },{
+      "descriptionType": "Carnage",
+      "description": "Abilities deal an additional 20% magical damage against Enemy Heroes below 40% maximum health."
       }
     ]
   },
   {
-    "name": "Zephyr",
+    "name": "Warden's Faith",
     "cost": 3000,
-    "rarity": "Epic",
-    "tags": ["Active", "Magical Power", "Physical Armor", "Ability Haste"],
-    "components": ["Abyssal Bracers", "Chronomatic Wand"],
+    "tags": ["Passive", "Health", "Physical Armor"],
+    "components": ["Steel Mail", "Banded Emerald", "Steel Mail"],
     "stats": {
-      "Magical Power": 70,
-      "Physical Armor": 40,
+      "Health": 300,
+      "Physical Armor": 70
+    },
+    "descriptions": [{
+      "descriptionType": "Stalwart",
+      "description": "Take 15% reduced damage from Critical Strikes."
+      },{
+      "descriptionType": "Retribution",
+      "description": "When hit by a basic attack, reduce current basic ability cooldowns by 0.2s."
+      }
+    ]
+  },
+  {
+    "name": "The Perforator",
+    "cost": 3000,
+    "tags": ["Passive", "Physical Power", "Ability Haste"],
+    "components": ["Zealous Tomahawk", "Greatsword"],
+    "stats": {
+      "Physical Power": 50,
       "Ability Haste": 10
     },
     "descriptions": [{
-      "descriptionType": "Active",
-      "description": "Displace all nearby enemies and deal magical damage to them - 30s CD."
-      }
-    ]
-  },
-  {
-    "name": "Reckoning",
-    "cost": 3050,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Power", "Critical Chance", "Lifesteal"],
-    "components": ["Greatsword", "Crimson Edge", "Crossbow"],
-    "stats": {
-      "Physical Power": 45,
-      "Critical Chance": 20,
-      "Lifesteal": 12
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Basic Attacks deal bonus physical damage (doubled for critical strikes) vs targets below 40% max health."
+      "descriptionType": "Calamity",
+      "description": "Abilities deal 0% to 35% (based on 0 to 1600 maximum health difference) bonus physical damage against Enemy Heroes with greater maximum health than you."
       },{
-      "descriptionType": "Passive",
-      "description": "Takedowns heal you over 5s based on your physical power."
+      "descriptionType": "Desolate",
+      "description": "Your physical damage ignores 35% of your target's physical armor (Before Penetration)."
       }
     ]
   },
   {
-    "name": "Crystalline Cuirass",
-    "cost": 3100,
-    "rarity": "Epic",
-    "tags": ["Passive", "Health", "Magical Armor", "Ability Haste"],
-    "components": ["Violet Brooch", "Nullifying Mask", "Nullifying Mask"],
+    "name": "Tainted Blade",
+    "cost": 3000,
+    "tags": ["Passive", "Physical Power", "Health", "Ability Haste"],
+    "components": ["Violet Brooch", "Serrated Blade", "Sabre"],
     "stats": {
-      "Physical Power": 45,
-      "Critical Chance": 20,
-      "Lifesteal": 12
+      "Physical Power": 40,
+      "Health": 200,
+      "Ability Haste": 15
     },
     "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "When you take magical damage, release a pulse of energy dealing magical damage to enemies within 800 units - 1.5s CD."
+      "descriptionType": "Blighted Strikes",
+      "description": "Dealing physical damage to an Enemy Target reduces their Healing by 30% for 3s."
+      },{
+      "descriptionType": "Hex",
+      "description": "Damaging an Enemy Target affected by Blight with an ability deals an additional 20 physical damage and causes them to take 10% more damage for 3s - 1s CD."
       }
     ]
   },
   {
-    "name": "Fell Blade",
+    "name": "Storm Breaker",
+    "cost": 3000,
+    "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance", "Movement Speed"],
+    "components": ["Ironwood Warbow", "Robust Arbalest"],
+    "stats": {
+      "Physical Power": 25,
+      "Attack Speed": 40,
+      "Critical Chance": 20,
+      "Movement Speed": 3
+    },
+    "descriptions": [{
+      "descriptionType": "Chain Zap",
+      "description": "Every fourth successful basic attack releases a bolt of lightning which leaps between 7 Targets, dealing 50 (+1.5 per 1% Critical Strike Chance) magical damage to each."
+      }
+    ]
+  },
+  {
+    "name": "Stonewall",
+    "cost": 3000,
+    "tags": ["Passive", "Health", "Base Health Regen", "Physical Armor", "When-hit"],
+    "components": ["Stalwart Gauntlets", "Steel Mail", "Steel Mail"],
+    "stats": {
+      "Health": 150,
+      "Base Health Regen": 150,
+      "Physical Armor": 70
+    },
+    "descriptions": [{
+      "descriptionType": "Shockwave",
+      "description": "Taking damage that would reduce you below 40% maximum health unleashes a shockwave, Stunning all nearby Enemies for 1s - 90s CD."
+      },{
+      "descriptionType": "Bulwark",
+      "description": "Take 10 (+7.5% Bonus Physical Armor)% decreased damage from physical abilities."
+      }
+    ]
+  },
+  {
+    "name": "Raiment of Renewal",
+    "cost": 3000,
+    "tags": ["Passive", "Health", "Base Health Regen", "Mana", "Ability Haste"],
+    "components": ["Violet Brooch", "Stalwart Gauntlets", "Vitality Beads"],
+    "stats": {
+      "Health": 600,
+      "Base Health Regen": 150,
+      "Mana": 200,
+      "Ability Haste": 15
+    },
+    "descriptions": [{
+      "descriptionType": "Regenerator",
+      "description": "Regenerate 10% of damage taken over 5s."
+      },{
+      "descriptionType": "Synthesis",
+      "description": "Increase all Healing received by 20%."
+      }
+    ]
+  },
+  {
+    "name": "Oathkeeper",
+    "cost": 3000,
+    "tags": ["Passive", "Magical Power", "Health", "Ability Haste", "On-hit"],
+    "components": ["Chronomatic Wand", "Spell Slasher", "Violet Brooch"],
+    "stats": {
+      "Magical Power": 60,
+      "Health": 250,
+      "Ability Haste": 25
+    },
+    "descriptions": [{
+      "descriptionType": "Celestial Spellblade",
+      "description": "After using an ability, your next basic attack within 6s deals (+60% Total Physical Power)(+40% Magical Power) bonus magical damage on-hit - 1.5s CD."
+      }
+    ]
+  },
+  {
+    "name": "Magnify",
+    "cost": 3000,
+    "tags": ["Passive", "Magical Power", "Attack Speed", "Ability Haste"],
+    "components": ["Chaotic Core", "Rune Bow"],
+    "stats": {
+      "Magical Power": 50,
+      "Attack Speed": 30,
+      "Ability Haste": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Shredding Strikes",
+      "description": "Your basic attacks decrease the Target's magical armor by 6% for 3s, stacking up to 5 times."
+      },{
+      "descriptionType": "Magnifying Strikes",
+      "description": "Basic attacks against Enemy Heroes grant you 8 magical power for 3s, stacking up to 5 times."
+      }
+    ]
+  },
+  {
+    "name": "Lightning Hawk",
+    "cost": 3000,
+    "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance", "Movement Speed"],
+    "components": ["Ironwood Warbow", "Robust Arbalest"],
+    "stats": {
+      "Physical Power": 35,
+      "Attack Speed": 25,
+      "Critical Chance": 20,
+      "Movement Speed": 3
+    },
+    "descriptions": [{
+      "descriptionType": "Chilling Zap",
+      "description": "Every fourth successful basic attack deals 30 (+100% Bonus Physical Power) bonus magical damage and Slows the Target by 35% for 0.5s."
+      }
+    ]
+  },
+  {
+    "name": "Leviathan",
+    "cost": 3000,
+    "tags": ["Passive", "Health", "Base Health Regen"],
+    "components": ["Loch Shawl", "Stalwart Gauntlets"],
+    "stats": {
+      "Health": 400,
+      "Base Health Regen": 225
+    },
+    "descriptions": [{
+      "descriptionType": "Colossus",
+      "description": "Killing an Enemy Minion grants 4 bonus health per stack, up to a maximum of 300 bonus health. At maximum stacks, gain 10 ability haste."
+      },{
+      "descriptionType": "Hasty Colossus",
+      "description": "Gain (+1% Maximum Health) ability haste."
+      }
+    ]
+  },
+  {
+    "name": "Legacy",
+    "cost": 3000,
+    "tags": ["Passive", "Physical Power", "Magical Armor", "Ability Haste"],
+    "components": ["Heroic Guard", "Temporal Ripper"],
+    "stats": {
+      "Physical Power": 30,
+      "Magical Armor": 30,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Tenacious Bravery",
+      "description": "Upon falling below 40% maximum health, Cleans all Negative Debuffs and gain 60% tenacity for 5s - 60s CD."
+      },{
+      "descriptionType": "Resolute",
+      "description": "Gain 1 physical power for every 2% missing health, for a maximum of 30 physical power."
+      }
+    ]
+  },
+  {
+    "name": "Dread",
+    "cost": 3000,
+    "tags": ["Passive", "Physical Power", "Physical Penetration", "Magical Armor", "Base Mana Regen", "Movement Speed"],
+    "components": ["Honed Kris", "Sabre", "Polar Treads"],
+    "stats": {
+      "Physical Power": 40,
+      "Physical Penetration": 10,
+      "Magical Armor": 30,
+      "Base Mana Regen": 150
+    },
+    "descriptions": [{
+      "descriptionType": "Voracity",
+      "description": "Killing an Enemy Target restores 5% of your missing health, increased to 25% for Enemy Heroes."
+      },{
+      "descriptionType": "Celerity",
+      "description": "Gain 10% bonus movement speed out of combat."
+      }
+    ]
+  },
+  {
+    "name": "Tectonic Mallet",
+    "cost": 3000,
+    "tags": ["Passive", "Physical Power", "Magical Armor", "Omnivamp", "Movement Speed"],
+    "components": ["Nullifying Mask", "Bloodlust", "Shortsword"],
+    "stats": {
+      "Physical Power": 35,
+      "Magical Armor": 40,
+      "Omnivamp": 5
+    },
+    "descriptions": [{
+      "descriptionType": "Magnitude",
+      "description": "Gain 25% of your bonus movement speed as bonus physical power."
+      },{
+      "descriptionType": "Harmonic Absorber",
+      "description": "While Slowed, gain 10% increased movement speed."
+      }
+    ]
+  },
+  {
+    "name": "Frostguard",
+    "cost": 3000,
+    "tags": ["Passive", "Health", "Physical Armor", "Mana", "Ability Haste", "Aura"],
+    "components": ["Barbed Pauldron", "Cerulean Stone", "Vitality Beads"],
+    "stats": {
+      "Health": 200,
+      "Physical Armor": 50,
+      "Mana": 250,
+      "Ability Haste": 15
+    },
+    "descriptions": [{
+      "descriptionType": "Chilling Presence",
+      "description": "Slow nearby Enemies by 10% and apply a stack of Stifle every 0.5s."
+      },{
+      "descriptionType": "Stifle",
+      "description": "When hit by a basic attack, reduce the Source's total attack speed by 3% for 3s, stacking up to 5 times."
+      }
+    ]
+  },
+  {
+    "name": "Combustion",
+    "cost": 3000,
+    "tags": ["Passive", "Magical Power", "Magical Penetration", "Mana"],
+    "components": ["Scepter", "Diffusal Cane", "Spirit Beads"],
+    "stats": {
+      "Magical Power": 70,      
+      "Magical Penetration": 10,
+      "Mana": 200
+    },
+    "descriptions": [{
+      "descriptionType": "Pyro",
+      "description": "Your next instance of ability damage will deal 80 (+10% Magical Power) bonus magical damage to the Target and nearby Enemies - 12s CD."
+      },{
+      "descriptionType": "Pyromaniac",
+      "description": "Damaging Enemy Heroes reduces the cooldown of Pyro by 0.5s."
+      }
+    ]
+  },
+  {
+    "name": "Citadel",
+    "cost": 3000,
+    "tags": ["Passive", "Physical Power", "Health", "Physical Armor", "Aura"],
+    "components": ["Fortified Mantle", "Vitality Beads", "Fortified Mantle"],
+    "stats": {
+      "Physical Power": 35,
+      "Health": 200,
+      "Physical Armor": 35
+    },
+    "descriptions": [{
+      "descriptionType": "Fortification",
+      "description": "Gain 10 physical armor far each nearby Enemy Hero."
+      },{
+      "descriptionType": "Intimidation",
+      "description": "Nearby Enemy Heroes have their physical armor decreased by 20%."
+      }
+    ]
+  },
+  {
+    "name": "Draconum",
+    "cost": 3050,
+    "tags": ["Passive", "Physical Power", "Physical Armor", "Ability Haste", "When-hit"],
+    "components": ["Temporal Ripper", "Fortified Mantle"],
+    "stats": {
+      "Physical Power": 35,
+      "Physical Armor": 35,
+      "Ability Haste": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Surge",
+      "description": "Taking or dealing damage generates 2 physical power and 2% increased Healing, stacking up to 10 times. Stacks are lost out of combat."
+      },{
+      "descriptionType": "Flow",
+      "description": "Takedowns restore 12% of your missing health and grant you 3% Attack Speed per stack of Surge for 8s."
+      }
+    ]
+  },
+  {
+    "name": "Void Helm",
     "cost": 3100,
-    "rarity": "Epic",
+    "tags": ["Passive", "Health", "Magical Armor", "Ability Haste", "When-hit", "Movement Speed"],
+    "components": ["Nullifying Mask", "Violet Brooch", "Banded Emerald"],
+    "stats": {
+      "Health": 500,
+      "Magical Armor": 25,
+      "Ability Haste": 15
+    },
+    "descriptions": [{
+      "descriptionType": "Justicar",
+      "description": "For every 40 magical damage received, gain 4 magical armor and 75% base health regeneration for 8s, stacking up to 8 times. At maximum stacks, gain 10% movement speed."
+      }
+    ]
+  },
+  {
+    "name": "Vanquisher",
+    "cost": 3100,
+    "tags": ["Passive", "Physical Power", "Mana", "Physical Penetration"],
+    "components": ["Honed Kris", "Spirit Beads", "Honed Kris"],
+    "stats": {
+      "Physical Power": 45,
+      "Mana": 20,
+      "Ability Haste": 10
+    },
+    "descriptions": [{
+      "descriptionType": "Arcane Power",
+      "description": "Gain (+2% Maximum Mana) Physical Power."
+      },{
+      "descriptionType": "Annihilate",
+      "description": "If you deal damage that would leave a Hero below 5% of their maximum health, execute them."
+      }
+    ]
+  },
+  {
+    "name": "Tainted Scepter",
+    "cost": 3100,
+    "tags": ["Passive", "Magical Power", "Health", "Ability Haste"],
+    "components": ["Scepter", "Spiked Birch", "Violet Brooch"],
+    "stats": {
+      "Magical Power": 65,
+      "Health": 200,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Blighted Spells",
+      "description": "Dealing magical damage to an Enemy Target reduces their Healing by 30% for 3s."
+      },{
+      "descriptionType": "Malice",
+      "description": "Every second, gain a stack of Malice, up to a maximum of 15. Damaging an Enemy Hero with an ability consumes Malice to deal 6 true damage per stack. Takedowns grant maximum stacks of Malice instantly."
+      }
+    ]
+  },
+  {
+    "name": "Painweaver",
+    "cost": 3100,
+    "tags": ["Passive", "Physical Power", "Physical Penetration", "Ability Haste", "On-hit"],
+    "components": ["Honed Kris", "Spell Slasher", "Temporal Ripper"],
+    "stats": {
+      "Physical Power": 45,
+      "Physical Penetration": 12,
+      "Ability Haste": 15
+    },
+    "descriptions": [{
+      "descriptionType": "Spellweaver",
+      "description": "After using an ability, your next basic attack within 6s deal (+50% Bonus Physical Power) bonus physical damage on-hit, increasing by up to 50% based on the Target's missing health - 1.5s CD."
+      }
+    ]
+  },
+  {
+    "name": "Omen",
+    "cost": 3100,
+    "tags": ["Passive", "Physical Power", "Physical Penetration", "Ability Haste"],
+    "components": ["Honed Kris", "Temporal Ripper"],
+    "stats": {
+      "Physical Power": 45,
+      "Physical Penetration": 8,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Bestial Torment",
+      "description": "Moving generates stacks of Torment. At 100 stacks, your next basic attack consumes them to deal 30 (+40% Bonus Physical Power) bonus physical damage and reduce your curent basic ability cooldowns by 1.5s."
+      }
+    ]
+  },
+  {
+    "name": "Nightfall",
+    "cost": 3100,
+    "tags": ["Passive", "Physical Power", "Physical Penetration", "Omnivamp"],
+    "components": ["Sabre", "Honed Kris", "Crimson Edge"],
+    "stats": {
+      "Physical Power": 45,
+      "Physical Penetration": 8,
+      "Omnivamp": 5
+    },
+    "descriptions": [{
+      "descriptionType": "Eclipse",
+      "description": "Dealing damage to an isolated Enemy Hero grants 10% attack speed and 10 ability haste for 5s, stacking up to 3 times. At maximum stacks, gain 10% omnivamp."
+      }
+    ]
+  },
+  {
+    "name": "Lifebinder",
+    "cost": 3100,
+    "tags": ["Passive", "Magical Power", "Health", "Magical Lifesteal", "Tenacity"],
+    "components": ["Blood Tome", "Tenacious Drape", "Blood Tome"],
+    "stats": {
+      "Magical Power": 55,
+      "Health": 200,
+      "Magical Lifesteal": 15,
+      "Tenacity": 15
+    },
+    "descriptions": [{
+      "descriptionType": "Leech",
+      "description": "Damaging an Enemy Hero with an ability restores 4% (+1% per 100 Magical Power) of your maximum health over 8s. Additional applications refresh the duration."
+      },{
+      "descriptionType": "Magi",
+      "description": "Achieving a Takedown grants 50 magical power for 8s."
+      }
+    ]
+  },
+  {
+    "name": "Infernum",
+    "cost": 3100,
+    "tags": ["Passive", "Physical Power", "Health", "Ability Haste"],
+    "components": ["Temporal Ripper", "Vitality Beads", "Temporal Ripper"],
+    "stats": {
+      "Physical Power": 40,
+      "Health": 300,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Cinder",
+      "description": "Abilities burn Enemy Units, dealing an additional (+80% Total Physical Power) physical damage over 3s."
+      }
+    ]
+  },
+  {
+    "name": "Deathstalker",
+    "cost": 3100,
     "tags": ["Passive", "Physical Power", "Physical Penetration", "Ability Haste"],
     "components": ["Honed Kris", "Ruthless Broadsword"],
     "stats": {
@@ -2663,508 +2473,412 @@
       "Ability Haste": 20
     },
     "descriptions": [{
-      "descriptionType": "Passive - Corrode",
+      "descriptionType": "Corrode",
       "description": "Dealing damage to an Enemy Hero reduces their physical armor by 5% for 2s. Stacks up to 6 times."
       },{
-      "descriptionType": "Passive",
-      "description": "Your abilities deal 20% bonus true damage against targets with 6 stacks of Corrode."
+      "descriptionType": "Virulence",
+      "description": "Your abilities deal 20% bonus true damage against Targets with 6 stacks of Corrode."
       }
     ]
   },
   {
-    "name": "Megacosm",
+    "name": "Crystalline Cuirass",
     "cost": 3100,
-    "rarity": "Epic",
-    "tags": ["Passive", "Magical Power", "Health", "Ability Haste"],
-    "components": ["Chaotic Core", "Violet Brooch"],
-    "stats": {
-      "Magical Power": 55,
-      "Health": 200,
-      "Ability Haste": 20
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Disintegrate",
-      "description": "Dealing damage to an Enemy Hero with an ability deals 4.5% of their maximum health as magical damage over 3s. Additional applications from separate abilities within the duration will deal additional magical damage instantly and refresh the duration."
-      }
-    ]
-  },
-  {
-    "name": "Nightfall",
-    "cost": 3100,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Power", "Physical Penetration", "Omnivamp"],
-    "components": ["Honed Kris", "Crimson Edge", "Sabre"],
-    "stats": {
-      "Physical Power": 45,
-      "Physical Penetration": 8,
-      "Omnivamp": 8
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Dusk",
-      "description": "Dealing damage to an isolated Enemyh Hero (no other Enemy Heroes within 600 units) grants additional attack speed and ability haste for 3s. Dusk stacks up to 3 times."
-      }
-    ]
-  },
-  {
-    "name": "Salvation",
-    "cost": 3100,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Power", "Magical Armor", "Health"],
-    "components": ["Sabre", "Banded Emerald", "Nullifying Mask"],
-    "stats": {
-      "Physical Power": 45,
-      "Magical Armor": 25,
-      "Health": 300
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "If you would take damage that would reduce you below 30% of your maximum health, you gain a large shield (halved for Ranged Heroes) for 6s. - 60s CD"
-      },{
-      "descriptionType": "Passive",
-      "description": "Successful basic attacks against Enemy Heroes heal you for 4% of your missing health."
-      }
-    ]
-  },
-  {
-    "name": "Storm Breaker",
-    "cost": 3100,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance", "Movement Speed"],
-    "components": ["Ironwood Warbow", "Robust Arbalest"],
-    "stats": {
-      "Physical Power": 20,
-      "Attack Speed": 35,
-      "Critical Chance": 20,
-      "Movement Speed": 3
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Zap",
-      "description": "Every fourth successful basic attack within 3s releases a bolt of lightning that leaps between 7 targets, dealing magical damage to each."
-      }
-    ]
-  },
-  {
-    "name": "Tainted Scepter",
-    "cost": 3100,
-    "rarity": "Epic",
-    "tags": ["Passive", "Magical Power", "Magical Lifesteal", "Health"],
-    "components": ["Spiked Birch", "Blood Tome", "Banded Emerald"],
-    "stats": {
-      "Magical Power": 60,
-      "Magical Lifesteal": 10,
-      "Health": 300
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Blight",
-      "description": "Dealing magical damage reduces the target's healing by 60% for 3s."
-      }
-    ]
-  },
-  {
-    "name": "Void Helm",
-    "cost": 3100,
-    "rarity": "Epic",
     "tags": ["Passive", "Health", "Magical Armor", "Ability Haste"],
-    "components": ["Nullifying Mask", "Stalwart Gauntlets", "Banded Emerald"],
+    "components": ["Nullifying Mask", "Violet Brooch", "Nullifying Mask"],
     "stats": {
-      "Health": 500,
-      "Magical Armor": 25,
-      "Ability Haste": 15
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "When receiving magical damage, gain 5 magical armor and 2 health regeneration per each 40 magical damage dealt for 8s, stacking up to 8 times."
-      }
-    ]
-  },
-  {
-    "name": "Lightning Hawk",
-    "cost": 3150,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance", "Movement Speed"],
-    "components": ["Ironwood Warbow", "Robust Arbalest"],
-    "stats": {
-      "Physical Power": 30,
-      "Attack Speed": 30,
-      "Critical Chance": 20,
-      "Movement Speed": 3
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Zap",
-      "description": "Every third successful basic attack deals bonus magical damage."
-      }
-    ]
-  },
-  {
-    "name": "Ashbringer",
-    "cost": 3200,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance"],
-    "components": ["Ironwood Warbow", "Sabre", "Crossbow"],
-    "stats": {
-      "Physical Power": 40,
-      "Attack Speed": 20,
-      "Critical Chance": 20
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Basic Attacks against Enemy Heroes decrease current basic ability cooldowns by 0.25 seconds (doubled for critical stikes)."
-      },{
-      "descriptionType": "Passive",
-      "description": "Abilities deal an additional 20% physical damage against Enemy Heroes below 40% maximum health."
-      }
-    ]
-  },
-  {
-    "name": "Astral Catalyst",
-    "cost": 3200,
-    "rarity": "Epic",
-    "tags": ["Passive", "Magical Power", "Mana", "Ability Haste"],
-    "components": ["Rod of Thirst", "Scepter"],
-    "stats": {
-      "Magical Power": 60,
-      "Mana": 500,
+      "Health": 200,
+      "Magical Armor": 70,
       "Ability Haste": 10
     },
     "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Grants bonus magical power equal to (+4% Maximum Mana)."
-      },{
-      "descriptionType": "Passive",
-      "description": "When you damage an Enemy target with an ability or basic attack, restore maximum mana over 3s, stacking up to 4 times. At maximum stacks, gain ability haste."
+      "descriptionType": "Volatile",
+      "description": "When you take ability damage, release a pulse of energy dealing 20 (+3% Maximum Health) magical damage to all nearby Enemies - 1.5s CD."
       }
     ]
   },
   {
-    "name": "Caustica",
-    "cost": 3200,
-    "rarity": "Epic",
-    "tags": ["Passive", "Magical Power"],
-    "components": ["Scalding Sceptre", "Potent Staff"],
+    "name": "Basilisk",
+    "cost": 3150,
+    "tags": ["Passive", "Physical Power", "Health", "Ability Haste"],
+    "components": ["Sabre", "Ruthless Broadsword", "Vitality Beads"],
     "stats": {
-      "Magical Power": 80
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Archmage",
-      "description": "Gain 40% magical penetration."
-      }
-    ]
-  },
-  {
-    "name": "Combustion",
-    "cost": 3200,
-    "rarity": "Epic",
-    "tags": ["Passive", "Magical Power", "Magical Penetration", "Mana"],
-    "components": ["Rod of Thirst", "Diffusal Cane"],
-    "stats": {
-      "Magical Power": 60,      
-      "Magical Penetration": 10,
-      "Mana": 400
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Gain charges upon moving. At 100 charges, the next instance of magical damage you deal will expend all charges to deal bonus magical damage in a large radius."
-      },{
-      "descriptionType": "Passive",
-      "description": "When you damage an Enemy target with an ability or basic attack, restore maximum mana over 3s, stacking up to 4 times. At maximum stacks, gain ability haste."
-      }
-    ]
-  },
-  {
-    "name": "Mindrazor",
-    "cost": 3200,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Power", "Mana", "Ability Haste"],
-    "components": ["Barbaric Cleaver", "Temporal Ripper", "Spirit Beads"],
-    "stats": {
-      "Physical Power": 50,
-      "Mana": 200,
+      "Physical Power": 35,
+      "Health": 250,
       "Ability Haste": 20
     },
     "descriptions": [{
-      "descriptionType": "Passive - Cleave",
-      "description": "Dealing damage to an enemy target deals an additional physical damage in a small area around them."
-      }
-    ]
-  },
-  {
-    "name": "Mooncleaver",
-    "cost": 3200,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Power", "Critical Chance", "Ability Haste"],
-    "components": ["Ruthless Broadsword", "Sabre", "Crossbow"],
-    "stats": {
-      "Physical Power": 50,
-      "Critical Chance": 20,
-      "Ability Haste": 20
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Corrode",
+      "descriptionType": "Corrode",
       "description": "Dealing damage to an Enemy Hero reduces their physical armor by 5% for 2s. Stacks up to 6 times."
       },{
-      "descriptionType": "Passive",
-      "description": "Critical strikes deal 10% more damage against targets with 6 stacks of Corrode."
+      "descriptionType": "Eminence",
+      "description": "Your basic attacks against Targets with 6 stacks of Corrode deal 4% of their missing health as bonus physical damage."
+      }
+    ]
+  },
+  {
+    "name": "Terminus",
+    "cost": 3200,
+    "tags": ["Passive", "Physical Power", "Lifesteal", "Critical Chance", "On-hit"],
+    "components": ["Crimson Edge", "Crossbow", "Crimson Edge"],
+    "stats": {
+      "Physical Power": 50,
+      "Lifesteal": 15,
+      "Critical Chance": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Anon",
+      "description": "Excess healing from lifesteal is converted into a shield, up to (+80% Total Physical Power) total. The shield slowly decays after 15s of leaving combat."
       }
     ]
   },
   {
     "name": "Tainted Rounds",
     "cost": 3200,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance"],
-    "components": ["Serrated Blade", "Ironwood Warbow", "Crossbow"],
+    "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance", "On-hit"],
+    "components": ["Serrated Blade", "Crossbow", "Rune Bow"],
     "stats": {
-      "Physical Power": 50,
-      "Attack Speed": 25,
+      "Physical Power": 25,
+      "Attack Speed": 30,
       "Critical Chance": 20
     },
     "descriptions": [{
-      "descriptionType": "Passive - Blight",
-      "description": "Dealing physical damage reduces the target's healing by 60% for 3s."
-      }
-    ]
-  },
-  {
-    "name": "Vanquisher",
-    "cost": 3200,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Power", "Mana", "Ability Haste"],
-    "components": ["Soul Chalice", "Temporal Ripper", "Sabre"],
-    "stats": {
-      "Physical Power": 30,
-      "Mana": 400,
-      "Ability Haste": 10
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Font",
-      "description": "Killing an Enemy Minion grants 8 bonus mana per stack, up to a maximum of 400 bonus mana. At maximum stacks, gain 10 ability haste."
+      "descriptionType": "Blighted Strikes",
+      "description": "Successful Basic Attacks reduce the Target's Healing by 30% for 3s."
       },{
-      "descriptionType": "Passive",
-      "description": "Basic attacks and physical damage abvilities deal bonus physical damage based on your maximum mana."
-      },{
-      "descriptionType": "Passive",
-      "description": "Gain (+1.5 Maximum Mana) physical power."
-      }
-    ]
-  },
-  {
-    "name": "Cyclone",
-    "cost": 3300,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance", "Movement Speed"],
-    "components": ["Robust Arbalest", "Greatsword"],
-    "stats": {
-      "Physical Power": 30,
-      "Attack Speed": 20,
-      "Critical Chance": 20,
-      "Movement Speed": 3
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Critical strikes gain additional attack speed for 5 seconds, stacking up to 8 times. At maximum stacks you gain additional Physical Power and Movement Speed."
-      }
-    ]
-  },
-  {
-    "name": "Prophecy",
-    "cost": 3300,
-    "rarity": "Epic",
-    "tags": ["Passive", "Magical Power", "Attack Speed", "Ability Haste"],
-    "components": ["Chaotic Core", "Composite Bow"],
-    "stats": {
-      "Magical Power": 50,
-      "Attack Speed": 20,
-      "Ability Haste": 20
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Basic attacks deal 15 (+20 Magical Power) bonus magic damage on-hit."
-      },{
-      "descriptionType": "Passive",
-      "description": "Gain (+75% Ability Haste) attack speed."
+      "descriptionType": "Wicked Strikes",
+      "description": "Basic attacks deal (+12% Total Physical Power) magical damage on-hit, increasing by up to 100% based on the Target's missing health."
       }
     ]
   },
   {
     "name": "Sky Splitter",
-    "cost": 3300,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance", "Omnivamp"],
+    "cost": 3200,
+    "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance", "Lifesteal", "On-hit"],
     "components": ["Ravenous Rapier", "Composite Bow", "Crossbow"],
     "stats": {
-      "Physical Power": 15,
+      "Physical Power": 25,
       "Attack Speed": 25,
       "Critical Chance": 20,
-      "Omnivamp": 10
+      "Lifesteal": 5
     },
     "descriptions": [{
-      "descriptionType": "Passive - Warlord",
-      "description": "Basic attacks against Enemy Heroes deal 4% of their maximum health as physical damage on-hit."
+      "descriptionType": "Rend",
+      "description": "Basic attacks deal 5% of the Target's current health as bonus physical damage on-hit and heal you equal to 50% of the bonus damage dealt."
+      },{
+      "descriptionType": "MPA",
+      "description": "Rend's bonus damage deals a minimum of 10 and is capped at 50 against Monsters and Minions."
       }
     ]
   },
   {
-    "name": "Star Slayer",
-    "cost": 3300,
-    "rarity": "Epic",
-    "tags": ["Passive", "Magical Power", "Ability Haste", "Mana Regeneration"],
-    "components": ["Chaotic Core", "Essence Ring"],
+    "name": "Absolution",
+    "cost": 3200,
+    "tags": ["Passive", "Physical Power", "Magical Armor", "Critical Chance", "Movement Speed"],
+    "components": ["Sabre", "Heroic Guard", "Crossbow"],
     "stats": {
-      "Magical Power": 80,
-      "Ability Haste": 20,
-      "Mana Regeneration": 3
+      "Physical Power": 40,
+      "Magical Armor": 30,
+      "Critical Chance": 20
     },
     "descriptions": [{
-      "descriptionType": "Passive - Disintegrate",
-      "description": "Abilities deal additional magical damage based on how much more health the target has than you."
+      "descriptionType": "Swift Bravery",
+      "description": "Upon falling below 40% maximum health, cleans all Negative Debuffs and gain 20% movement speed for 3s - 60s CD."
+      },{
+      "descriptionType": "Determined",
+      "description": "Gain 1% attack speed for every 2% missing health, for a maximum of 30% attack speed."
+      }
+    ]
+  },
+  {
+    "name": "Resolution",
+    "cost": 3200,
+    "tags": ["Passive", "Physical Power", "Mana", "Critical Chance", "On-hit"],
+    "components": ["Greatsword", "Soul Chalice", "Crossbow"],
+    "stats": {
+      "Physical Power": 45,
+      "Mana": 200,
+      "Critical Chance": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Critical Font",
+      "description": "Killing an Enemy Minion grants 8 bonus mana, up to a maximum of 400. At maximum stacks, gain gain 2.5% of your bonus mana as additional critical strike chance."
+      },{
+      "descriptionType": "Arcane Strikes",
+      "description": "Deal 3% of your maximum mana as bonus physical damage on-hit."
+      }
+    ]
+  },
+  {
+    "name": "Viper",
+    "cost": 3200,
+    "tags": ["Passive", "Physical Power", "Critical Chance", "Ability Haste"],
+    "components": ["Sabre", "Ruthless Broadsword", "Crossbow"],
+    "stats": {
+      "Physical Power": 45,
+      "Critical Chance": 20,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Corrode",
+      "description": "Dealing damage to an Enemy Hero reduces their physical armor by 5% for 2s. Stacks up to 6 times."
+      },{
+      "descriptionType": "Diligence",
+      "description": "Your Critical Strikes deal 15% more damage against Targets with 6 stacks of Corrode."
+      }
+    ]
+  },
+  {
+    "name": "Mindrazor",
+    "cost": 3200,
+    "tags": ["Passive", "Physical Power", "Mana", "Ability Haste"],
+    "components": ["Barbaric Cleaver", "Spirit Beads", "Temporal Ripper"],
+    "stats": {
+      "Physical Power": 40,
+      "Mana": 200,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Ingenious Cleave",
+      "description": "Dealing damage to an Enemy Unit with a basic attack or ability deals an additional (+25% Total Physical Power) physical damage in a small area around them. Damage ranges from 100% to 50% based on distance between Targets. DOT sources are excluded."
+      },{
+      "descriptionType": "Arcane Power",
+      "description": "Gain (+2.5% Maximum Mana) Physical Power."
+      }
+    ]
+  },
+  {
+    "name": "Megacosm",
+    "cost": 3200,
+    "tags": ["Passive", "Magical Power", "Mana", "Ability Haste"],
+    "components": ["Potent Staff", "Dusk Stave"],
+    "stats": {
+      "Magical Power": 70,
+      "Mana": 200,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Disintegrate",
+      "description": "Dealing damage to an Enemy Target with an ability deals 5% of their maximum health as magical damage over 3s. Additional applications within the duration deal 2.5% of their maximum health as magical damage instantly and refresh the duration."
+      }
+    ]
+  },
+  {
+    "name": "Kingsbane",
+    "cost": 3200,
+    "tags": ["Passive", "Physical Power", "Physical Armor", "Critical Chance"],
+    "components": ["Greatsword", "Crimson Edge", "Crossbow"],
+    "stats": {
+      "Physical Power": 45,
+      "Lifesteal": 8,
+      "Critical Chance": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Order",
+      "description": "Successful Basic Attacks against Enemy Heroes grant you a shield equal to 12% of the damage dealt for 3s."
+      },{
+      "descriptionType": "Regicide",
+      "description": "Takedowns grant you a (+150% Total Physical Power) shield for 3s."
+      }
+    ]
+  },
+  {
+    "name": "Caustica",
+    "cost": 3200,
+    "tags": ["Passive", "Magical Power", "Magical Penetration"],
+    "components": ["Scalding Sceptre", "Potent Staff"],
+    "stats": {
+      "Magical Power": 80,
+      "Magical Penetration": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Magus",
+      "description": "While above 50% maximum mana, gain 20% magical penetration."
+      },{
+      "descriptionType": "Arcane Resolve",
+      "description": "While below 50% maximum mana, gain (+1% Maximum Mana) mana regeneration per second."
       }
     ]
   },
   {
     "name": "World Breaker",
     "cost": 3300,
-    "rarity": "Epic",
-    "tags": ["Passive", "Magical Power", "Health"],
-    "components": ["Scalding Sceptre", "Void Crystal"],
+    "tags": ["Passive", "Magical Power", "Health", "Tenacity"],
+    "components": ["Void Crystal", "Tenacious Drape"],
     "stats": {
-      "Magical Power": 60,
-      "Health": 200
+      "Magical Power": 45,
+      "Health": 200,
+      "Tenacity": 30
     },
     "descriptions": [{
-      "descriptionType": "Passive - Archmage",
-      "description": "Gain 20% magical penetration plus an additional 1% per 100 bonus health."
+      "descriptionType": "Fiend",
+      "description": "Dealing magical damage to an Enemy Hero increases your magical damage dealt by 4% for 5s, stacking up to 5 times"
       },{
-      "descriptionType": "Passive - Fiend",
-      "description": "Dealing magical damage to an Enemy Hero increases magic damage dealt by 3% for 5s. Stacks up to 5 times."
+      "descriptionType": "Maya",
+      "description": "Gain (+2% Maximum Health) bonus magical power."
       }
     ]
   },
   {
-    "name": "Imperator",
-    "cost": 3400,
-    "rarity": "Epic",
+    "name": "Salvation",
+    "cost": 3300,
+    "tags": ["Passive", "Physical Power", "Health", "Tenacity"],
+    "components": ["Greatsword", "Banded Emerald", "Tenacious Drape"],
+    "stats": {
+      "Physical Power": 35,
+      "Health": 500,
+      "Tenacity": 30
+    },
+    "descriptions": [{
+      "descriptionType": "Aegis",
+      "description": "Falling below 40% maximum health grants you a (+20% Maximum Health) shield (halved for Ranged Heroes) and 10% Omnivamp for 6s - 60s CD."
+      }
+    ]
+  },
+  {
+    "name": "Prophecy",
+    "cost": 3300,
+    "tags": ["Passive", "Magical Power", "Attack Speed", "Ability Haste", "On-hit"],
+    "components": ["Scepter", "Composite Bow", "Chronomatic Wand"],
+    "stats": {
+      "Magical Power": 60,
+      "Attack Speed": 25,
+      "Ability Haste": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Magical Strikes",
+      "description": "Basic attacks deal 15 (+20 Magical Power) bonus magic damage on-hit."
+      },{
+      "descriptionType": "Hasty",
+      "description": "Gain (+75% Ability Haste)% attack speed."
+      }
+    ]
+  },
+  {
+    "name": "Mutilator",
+    "cost": 3300,
+    "tags": ["Passive", "Physical Power", "Ability Haste", "Omnivamp"],
+    "components": ["Bloodlust", "Temporal Ripper"],
+    "stats": {
+      "Physical Power": 45,
+      "Ability Haste": 20,
+      "Omnivamp": 8
+    },
+    "descriptions": [{
+      "descriptionType": "Mutilate",
+      "description": "Basic attacks deal 1.5% of the Enemy Hero's maximum health as bonus physical damage. Applies twice on non-DOT abilities."
+      },{
+      "descriptionType": "Devour",
+      "description": "Damaging an Enemy Hero with an ability steals 8% of their maximum health for 20s. Can only occur once per Target."
+      }
+    ]
+  },
+  {
+    "name": "Demolisher",
+    "cost": 3300,
     "tags": ["Passive", "Physical Power", "Critical Chance"],
-    "components": ["Greatsword", "Sabre", "Crossbow"],
+    "components": ["Sabre", "Zealous Tomahawk", "Crossbow"],
     "stats": {
       "Physical Power": 50,
       "Critical Chance": 20
     },
     "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Critical strikes deal 4% increased damage against Enemy Heroes per every 500 maximum health."
+      "descriptionType": "First Strike",
+      "description": "Your first basic attack when entering combat deals 50% additional physical damage. Takedowns refresh this effect."
       },{
-      "descriptionType": "Passive - Dire Strikes",
-      "description": "Gain 10% Critical Strike Damage."
+      "descriptionType": "Desolate",
+      "description": "Your physical damage ignores 35% of your target's physical armor (Before Penetration)."
       }
     ]
   },
   {
-    "name": "Insanity",
-    "cost": 3400,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Power", "Physical Penetration"],
-    "components": ["Sawtoothed Scimitar", "Honed Kris"],
-    "stats": {
-      "Physical Power": 50,
-      "Physical Penetration": 10
-    },
-    "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Moving generates stacks of Insanity. At 100 stacks your next basic attack will consume them to deal bonus physical damage."
-      },{
-      "descriptionType": "Passive - Massacre",
-      "description": "Increase flat physical penetration by 50%."
-      }
-    ]
-  },
-  {
-    "name": "Oathkeeper",
-    "cost": 3400,
-    "rarity": "Epic",
-    "tags": ["Passive", "Magical Power", "Ability Haste"],
-    "components": ["Potent Staff", "Chaotic Core"],
-    "stats": {
-      "Magical Power": 90,
-      "Ability Haste": 10
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Order",
-      "description": "Increase your ability haste by (+20% Magical Power)%."
-      }
-    ]
-  },
-  {
-    "name": "Oblivion Crown",
-    "cost": 3400,
-    "rarity": "Epic",
-    "tags": ["Passive", "Magical Power"],
-    "components": ["Potent Staff", "Potent Staff"],
-    "stats": {
-      "Magical Power": 100
-    },
-    "descriptions": [{
-      "descriptionType": "Passive - Order",
-      "description": "Increase your magical power by 40%."
-      }
-    ]
-  },
-  {
-    "name": "Omen",
-    "cost": 3400,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Power", "Physical Penetration", "Ability Haste"],
-    "components": ["Sawtoothed Scimitar", "Temporal Ripper"],
+    "name": "Dust Devil",
+    "cost": 3300,
+    "tags": ["Passive", "Physical Power", "Attack Speed", "Critical Chance", "Movement Speed"],
+    "components": ["Robust Arbalest", "Greatsword"],
     "stats": {
       "Physical Power": 45,
-      "Physical Penetration": 8,
-      "Ability Haste": 20
+      "Attack Speed": 20,
+      "Critical Chance": 20,
+      "Movement Speed": 3
     },
     "descriptions": [{
-      "descriptionType": "Passive",
-      "description": "Dealing damage to an Enemy Hero slows them by 20% and grants you 20% movement speed for 3s. This effect refreshes on takedowns - 60s CD."
-      },{
-      "descriptionType": "Passive - Massacre",
-      "description": "Increase flat physical penetration by 50%."
+      "descriptionType": "Menace",
+      "description": "Critical Strikes grant 2% attack speed for 5s, stacking up to 6 times. At maximum stacks, gain 30 physical power and 10% movement speed."
       }
     ]
   },
   {
     "name": "Augmentation",
-    "cost": 3500,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Power", "Health", "Attack Speed"],
-    "components": ["Spell Slasher", "Ironwood Warbow", "Banded Emerald"],
+    "cost": 3300,
+    "tags": ["Passive", "Physical Power", "Health", "Attack Speed", "On-hit", "Movement Speed"],
+    "components": ["Sabre", "Composite Bow", "Banded Emerald"],
     "stats": {
       "Physical Power": 30,
       "Health": 300,
       "Attack Speed": 30
     },
     "descriptions": [{
-      "descriptionType": "Passive - Spellblade",
-      "description": "After using an ability, your next 2 basic attacks within 6s deal bonus physical damage - 3s CD."
+      "descriptionType": "True Strikes",
+      "description": "Basic attacks deal (+30% Base Physical Power) bonus true damage on-hit."
       },{
-      "descriptionType": "Passive",
-      "description": "Basic attacks deal bonus true damage."
+      "descriptionType": "Overclocked",
+      "description": "Upon casting your ultimate, gain 15% movement speed for 6s - 20s CD."
       }
     ]
   },
   {
-    "name": "Mutilator",
-    "cost": 3500,
-    "rarity": "Epic",
-    "tags": ["Passive", "Physical Power", "Omnivamp", "Ability Haste"],
-    "components": ["Spell Slasher", "Ravenous Rapier", "Temporal Ripper"],
+    "name": "Ashbringer",
+    "cost": 3300,
+    "tags": ["Passive", "Physical Power", "Attack Speed", "Ability Haste", "Critical Chance", "On-hit"],
+    "components": ["Zealous Tomahawk", "Composite Bow", "Crossbow"],
     "stats": {
-      "Physical Power": 45,
-      "Omnivamp": 10,
-      "Ability Haste": 20
+      "Physical Power": 30,
+      "Attack Speed": 20,
+      "Ability Haste": 10,
+      "Critical Chance": 20
     },
     "descriptions": [{
-      "descriptionType": "Passive - Spellblade",
-      "description": "After using an ability, your next 2 basic attacks within 6s deal 4% of the target's maximum health as bonus physical damage - 3s CD."
+      "descriptionType": "Clockwork",
+      "description": "Basic Attacks against Enemy Heroes decrease your current basic ability cooldowns by 0.25 seconds. This effect is doubled when you deal a Critical Strike."
       },{
-      "descriptionType": "Passive - Warlord",
-      "description": "Basic attacks against Enemy Heroes deal 2% of their maximum health as physical damage on-hit."
+      "descriptionType": "Honed Strikes",
+      "description": "Basic attacks deal 20 bonus physical damage on-hit."
+      },{
+      "descriptionType": "Desolate",
+      "description": "Your physical damage ignores 35% of your target's physical armor (Before Penetration)."
+      }
+    ]
+  },
+  {
+    "name": "Oblivion Crown",
+    "cost": 3600,
+    "tags": ["Passive", "Magical Power"],
+    "components": ["Potent Staff", "Potent Staff"],
+    "stats": {
+      "Magical Power": 120
+    },
+    "descriptions": [{
+      "descriptionType": "Annihilate",
+      "description": "Increase your magical power by 35%."
+      }
+    ]
+  },
+  {
+    "name": "Imperator",
+    "cost": 3600,
+    "tags": ["Passive", "Physical Power", "Critical Chance"],
+    "components": ["Greatsword", "Sabre", "Crossbow"],
+    "stats": {
+      "Physical Power": 55,
+      "Critical Chance": 20
+    },
+    "descriptions": [{
+      "descriptionType": "Perfection",
+      "description": "Gain 1 physical power per 4% critical strike chance."
+      },{
+      "descriptionType": "Precision",
+      "description": "Critical strikes deal 15% more damage."
       }
     ]
   }

@@ -941,7 +941,7 @@
     "tags": ["Consumable"],
     "descriptions": [{
       "descriptionType": "Consume",
-      "description": "Grant 300 health and 20% increased healing for 5 minutes. Effect is lost upon death."
+      "description": "Grant 300 health and 12 health regeneration for 5 minutes. Effect is lost upon death."
       }
     ]
   },
@@ -951,7 +951,7 @@
     "tags": ["Consumable"],
     "descriptions": [{
       "descriptionType": "Consume",
-      "description": "Grant 20 physical armor, 20 magical armor and 15 tenacity for 5 minutes. Effect is lost upon death."
+      "description": "Grant 20 physical armor, 20 magical armor and 30% tenacity for 5 minutes. Effect is lost upon death."
       }
     ]
   },
@@ -961,7 +961,7 @@
     "tags": ["Consumable"],
     "descriptions": [{
       "descriptionType": "Consume",
-      "description": "Grant 50 magical power and 5 Base Mana Regen for 5 minutes. Effect is lost upon death."
+      "description": "Grant 50 magical power and 200% base mana regeneration for 5 minutes. Effect is lost upon death."
       }
     ]
   },
@@ -1793,7 +1793,7 @@
     "components": ["Honed Kris", "Temporal Ripper"],
     "stats": {
       "Physical Power": 50,
-      "Attack Speed": 10,
+      "Physical Penetration": 10,
       "Ability Haste": 20
     },
     "descriptions": [{
@@ -2326,7 +2326,7 @@
     "components": ["Honed Kris", "Spirit Beads", "Honed Kris"],
     "stats": {
       "Physical Power": 45,
-      "Mana": 20,
+      "Mana": 200,
       "Ability Haste": 10
     },
     "descriptions": [{
@@ -2744,7 +2744,7 @@
     },
     "descriptions": [{
       "descriptionType": "Magical Strikes",
-      "description": "Basic attacks deal 15 (+20 Magical Power) bonus magic damage on-hit."
+      "description": "Basic attacks deal 15 (+20% Magical Power) bonus magic damage on-hit."
       },{
       "descriptionType": "Hasty",
       "description": "Gain (+60% Ability Haste)% attack speed."
